@@ -1,7 +1,6 @@
 {
   "writingPlatform": "yuque",
   "writingPlatformConfig": {
-    "token": "QHD7vhpPfeW9krHnh8YwS6YczCAzSYAxbDBrgWjA",
     "login": "1874w",
     "repo": "iblog-doc",
     "onlyPublic": true,
@@ -19,7 +18,6 @@
     "user": "LetTTGACO",
     "repo": "image",
     "branch": "master",
-    "token": "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",
     "prefixKey": "iblog-test1"
   }
 }
