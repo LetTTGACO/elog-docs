@@ -1,0 +1,25 @@
+{
+  "writingPlatform": "yuque",
+  "writingPlatformConfig": {
+    "token": "QHD7vhpPfeW9krHnh8YwS6YczCAzSYAxbDBrgWjA",
+    "login": "1874w",
+    "repo": "iblog-doc",
+    "onlyPublic": true,
+    "onlyPublished": true
+  },
+  "deployPlatform": "default",
+  "deployPlatformConfig": {
+    "postPath": "./docs/docs",
+    "mdNameFormat": "title",
+    "adapter": "matter-markdown"
+  },
+  "imgConfig": {
+    "enable": false,
+    "imgBed": "github",
+    "user": "LetTTGACO",
+    "repo": "image",
+    "branch": "master",
+    "token": "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",
+    "prefixKey": "iblog-test1"
+  }
+}

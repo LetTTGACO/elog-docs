@@ -1,0 +1,33 @@
+{
+  "name": "@iblog/doc",
+  "version": "0.0.1",
+  "description": "IBlog文档",
+  "homepage": "https://github.com/LetTTGACO/iblog/tree/master/packages/iblog-doc#readme",
+  "author": "1874 <i@1874.cool>",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LetTTGACO/iblog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LetTTGACO/iblog/issues"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "init": "node node_modules/@iblog/cli/bin/iblog.js init",
+    "sync": "node node_modules/@iblog/cli/bin/iblog.js sync"
+  },
+  "dependencies": {
+    "@iblog/cli": "^0.0.1",
+    "@types/node": "^18.11.9",
+    "vitepress": "1.0.0-alpha.29",
+    "vue": "^3.2.45"
+  }
+}
