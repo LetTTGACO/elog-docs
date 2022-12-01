@@ -21,8 +21,9 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "init": "node node_modules/@iblog/cli/bin/iblog.js init",
-    "sync": "node node_modules/@iblog/cli/bin/iblog.js sync"
+    "elog:init": "node node_modules/@iblog/cli/bin/iblog.js init",
+    "elog:sync": "node node_modules/@iblog/cli/dist/index sync -e .env",
+    "elog:clean": "node node_modules/@iblog/cli/bin/iblog.js clean"
   },
   "dependencies": {
     "@iblog/cli": "^0.0.1",
