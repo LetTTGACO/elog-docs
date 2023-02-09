@@ -1,8 +1,8 @@
 ---
 layout: home
 
-title: Elog
-titleTemplate: Elog Docs
+title: Elog 介绍
+titleTemplate: Elog 文档
 
 hero:
   name: Elog
