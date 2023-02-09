@@ -8,7 +8,7 @@ on:
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
-      - start
+      - deploy
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
       - name: 安装node环境
         uses: actions/setup-node@master
         with:
-          node-version: "12.x"
+          node-version: "16.x"
 
       - name: 缓存依赖
         uses: actions/cache@v1
@@ -36,7 +36,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           export TZ='Asia/Shanghai'
-          npm install
+          npm install pnpm -g
+          pnpm install
 
       - name: 安装COS相关依赖
         run: |
@@ -45,24 +46,23 @@ jobs:
 
       - name: 配置COS
         env:
-          SECRET_ID: ${{ secrets.SECRET_ID }}
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
-          BUCKET: ${{ secrets.BUCKET }}
-          REGION: ${{ secrets.REGION }}
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+          COS_BUCKET: ${{ secrets.COS_BUCKET }}
+          COS_REGION: ${{ secrets.COS_REGION }}
         run: |
-          coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
-          tccli configure set secretId $SECRET_ID
-          tccli configure set secretKey $SECRET_KEY
-          tccli configure set region $REGION
+          coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET -r $COS_REGION
+          tccli configure set secretId $COS_SECRET_ID
+          tccli configure set secretKey $COS_SECRET_KEY
+          tccli configure set region $COS_REGION
 
       - name: 拉取语雀的文章
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
-          SECRET_ID: ${{ secrets.SECRET_ID }}
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        if: ${{ env.ENABLE_YUQUE == 'true' }}
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
         run: |
-          npm run yuque:sync
+          pnpm elog:sync
 
       - name: 配置Git用户名邮箱
         run: |
