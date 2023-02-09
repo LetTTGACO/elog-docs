@@ -25,18 +25,22 @@ jobs:
         with:
           node-version: "16.x"
 
+      - name: 安装pnpm
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install pnpm -g
+
       - name: 缓存依赖
         uses: actions/cache@v1
         id: cache
         with:
           path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+          key: ${{runner.OS}}-${{hashFiles('**/pnpm-lock.yaml')}}
 
       - name: 安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           export TZ='Asia/Shanghai'
-          npm install pnpm -g
           pnpm install
 
       - name: 安装COS相关依赖
