@@ -1,34 +1,40 @@
 {
-  "name": "@iblog/doc",
-  "version": "0.0.1",
-  "description": "IBlog文档",
-  "homepage": "https://github.com/LetTTGACO/iblog/tree/master/packages/iblog-doc#readme",
+  "name": "@elog/doc",
+  "version": "1.0.0",
+  "description": "Elog文档",
+  "homepage": "https://github.com/LetTTGACO/elog/tree/master/packages/elog-doc#readme",
   "author": "1874 <i@1874.cool>",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "license": "MIT",
+  "private": true,
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LetTTGACO/iblog.git"
+    "url": "git+https://github.com/LetTTGACO/elog.git"
   },
   "bugs": {
-    "url": "https://github.com/LetTTGACO/iblog/issues"
+    "url": "https://github.com/LetTTGACO/elog/issues"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "elog:init": "node node_modules/@iblog/cli/bin/iblog.js init",
-    "elog:sync": "node node_modules/@iblog/cli/dist/index sync -e .env",
-    "elog:clean": "node node_modules/@iblog/cli/bin/iblog.js clean"
+    "elog:init": "node node_modules/@elog/cli/bin/elog.js init",
+    "elog:sync": "node node_modules/@elog/cli/bin/elog.js sync -e .env",
+    "elog:clean": "node node_modules/@elog/cli/bin/elog.js clean"
   },
   "dependencies": {
-    "@iblog/cli": "^0.0.1",
+    "@elog/cli": "^0.0.1-beta.0",
     "@types/node": "^18.11.9",
-    "vitepress": "1.0.0-alpha.29",
+    "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.45"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }

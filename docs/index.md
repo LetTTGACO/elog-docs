@@ -1,8 +1,18 @@
 ---
-title: 首页
-urlname: index
-author: '1874'
-date: '2022-11-29 13:40:18'
-updated: '2022-11-29 13:43:09'
+layout: home
+
+title: VitePress
+titleTemplate: Vite & Vue Powered Static Site Generator
+
+hero:
+  name: Elog
+  text: 开放式跨平台博客解决方案
+  tagline: 随意组合写作平台(语雀/Notion)和部署平台(Hexo/Vitepress/HuGo)
+  actions:
+    - theme: brand
+      text: 快速开始
+      link: /elog/入门指引/快速开始
+    - theme: alt
+      text: GitHub
+      link: https://github.com/LetTTGACO/elog
 ---
-首页

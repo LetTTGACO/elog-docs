@@ -1,4 +1,7 @@
-node_modules
+node_modules/
 .idea
 .env
 .env*
+.DS_Store
+dist/
+cache/

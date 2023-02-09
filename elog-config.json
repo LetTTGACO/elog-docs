@@ -2,23 +2,22 @@
   "writing": {
     "platform": "yuque",
     "login": "1874w",
-    "repo": "yuque-hexo-demo",
+    "repo": "elog-docs",
     "onlyPublic": true,
     "onlyPublished": true
   },
   "deploy": {
     "platform": "default",
     "classify": "classify",
-    "postPath": "./docs/docs",
+    "postPath": "./docs/elog",
     "mdNameFormat": "title",
     "adapter": "matter-markdown"
   },
   "image": {
     "enable": true,
-    "bed": "github",
-    "user": "LetTTGACO",
-    "repo": "image",
-    "branch": "master",
-    "prefixKey": "iblog-test1"
+    "bed": "cos",
+    "bucket": "blogimagesrep-1257180516",
+    "region": "ap-guangzhou",
+    "prefixKey": "elog-docs-images"
   }
 }

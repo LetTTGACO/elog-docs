@@ -1,0 +1,91 @@
+name: Deplo To COS
+
+on:
+  # 允许手动push触发
+  push:
+    branches:
+      - master
+  # 允许外部仓库事件触发
+  repository_dispatch:
+    types:
+      - start
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ENABLE_YUQUE: ${{ secrets.ENABLE_YUQUE }}
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@master
+
+      - name: 安装node环境
+        uses: actions/setup-node@master
+        with:
+          node-version: "12.x"
+
+      - name: 缓存依赖
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install
+
+      - name: 安装COS相关依赖
+        run: |
+          sudo pip install coscmd
+          sudo pip install tccli==3.0.575.1
+
+      - name: 配置COS
+        env:
+          SECRET_ID: ${{ secrets.SECRET_ID }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          BUCKET: ${{ secrets.BUCKET }}
+          REGION: ${{ secrets.REGION }}
+        run: |
+          coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+          tccli configure set secretId $SECRET_ID
+          tccli configure set secretKey $SECRET_KEY
+          tccli configure set region $REGION
+
+      - name: 拉取语雀的文章
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+          SECRET_ID: ${{ secrets.SECRET_ID }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        if: ${{ env.ENABLE_YUQUE == 'true' }}
+        run: |
+          npm run yuque:sync
+
+      - name: 配置Git用户名邮箱
+        run: |
+          git config --global user.name "1874"
+          git config --global user.email "1225751694@qq.com"
+
+      - name: 提交yuque拉取的文章到GitHub仓库
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
+          git add .
+          git commit -m "Refresh yuque json" -a
+
+      - name: 推送文章到仓库
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成静态文件
+        run: |
+          pnpm docs:build
+
+      - name: 上传文章到cos并刷新CDN
+        run: |
+          coscmd upload -rfs --delete ./docs/.vitepress/dist/ /
+          tccli cdn PurgePathCache --cli-unfold-argument --Paths https://elog.1874.cool/ --FlushType flush
+          # from https://github.com/peaceiris/actions-gh-pages
