@@ -6,7 +6,12 @@ export default defineConfig({
   title: 'Elog',
   description: 'doc for elog',
   lastUpdated: true,
-  head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
+  head: [
+    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    [
+      'link', { rel: 'icon', href: '/favicon.ico' }
+    ]
+  ],
   markdown: {
     headers: {
       level: [0, 0]
