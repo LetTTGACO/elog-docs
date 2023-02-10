@@ -5,7 +5,7 @@ title: Elog能干什么
 urlname: index
 author: '1874'
 date: '2022-11-29 05:40:18'
-updated: '2023-02-09 13:47:32'
+updated: '2023-02-10 11:20:16'
 ---
 # Elog 能干什么
 
@@ -54,8 +54,10 @@ Elog 将这些平台揉合在一起，你可以随意组合写作平台和部署
 - [x] Hexo
 - [x] Vitepress
 - [x] HuGo
-- [ ] WordPress（即将上线）
+- [x] Docusaurus
+- [x] Docz
   > 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 md 文档来进行渲染的方式
+  > Docusaurus
 
 ## 图床功能
 

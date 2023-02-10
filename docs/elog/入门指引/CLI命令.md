@@ -5,7 +5,7 @@ title: CLI命令
 urlname: bry3d3lwe206xuor
 author: '1874'
 date: '2023-02-07 14:16:56'
-updated: '2023-02-09 14:37:52'
+updated: '2023-02-10 10:01:34'
 ---
 # CLI 命令
 
@@ -32,7 +32,8 @@ elog sync [option] [value]
 
 | option   | alias | 说明                | 默认值            |
 | -------- | ----- | ------------------- | ----------------- |
-| --env    | -e    | 指定环境文件 path   | .env              |
+| --env    | -e    | 指定环境文件 path   |
+|  |
 | --config | -c    | 指定配置文件 path   | iblog-config.json |
 | --cache  | -a    | 指定缓存文件 path   | iblog-cache.json  |
 | --time   | -t    | 指定 time 文件 path | iblog-time.txt    |
