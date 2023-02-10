@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { genSideBar } from "../../utils/route";
+import { YuQueSVG } from "../../utils/assists";
 
 export default defineConfig({
   lang: "zh-CN",
@@ -25,7 +26,12 @@ export default defineConfig({
       next: '下一篇'
     },
     socialLinks: [
+      { icon: { svg: YuQueSVG }, link: "https://www.yuque.com/1874w/elog-docs" },
       { icon: 'github', link: "https://github.com/LetTTGACO/elog" },
-    ]
+    ],
+    footer: {
+      message: 'Powered by <a href="https://www.yuque.com/1874w/elog-docs" target="_blank">语雀</a> & VitePress with Elog',
+      copyright: 'Copyright © 2023-present'
+    },
   }
 })
