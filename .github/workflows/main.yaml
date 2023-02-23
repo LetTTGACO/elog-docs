@@ -61,11 +61,11 @@ jobs:
           tccli configure set region $COS_REGION
 
       - name: 清除语雀缓存(拉取全部文章)
-          env:
-            CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
-          if: ${{ env.CLEAN_CACHE == 'true' }}
-          run: |
-            pnpm elog:clean
+        env:
+          CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
+        if: ${{ env.CLEAN_CACHE == 'true' }}
+        run: |
+          pnpm elog:clean
 
       - name: 拉取语雀的文章
         env:
