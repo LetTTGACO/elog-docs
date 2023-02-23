@@ -5,7 +5,7 @@ title: CLI命令
 urlname: bry3d3lwe206xuor
 author: '1874'
 date: '2023-02-07 14:16:56'
-updated: '2023-02-11 05:19:32'
+updated: '2023-02-23 03:02:30'
 ---
 # CLI 命令
 
@@ -29,12 +29,12 @@ elog init [option] [value]
 elog sync [option] [value]
 ```
 
-| option   | alias | 说明                | 默认值            |
-| -------- | ----- | ------------------- | ----------------- |
-| --env    | -e    | 指定环境文件 path   | -                 |
-| --config | -c    | 指定配置文件 path   | iblog-config.json |
-| --cache  | -a    | 指定缓存文件 path   | iblog-cache.json  |
-| --time   | -t    | 指定 time 文件 path | iblog-time.txt    |
+| option   | alias | 说明                | 默认值             |
+| -------- | ----- | ------------------- | ------------------ |
+| --env    | -e    | 指定环境文件 path   | -                  |
+| --config | -c    | 指定配置文件 path   | eblog-config.json  |
+| --cache  | -a    | 指定缓存文件 path   | eblog-cache.json   |
+| --time   | -t    | 指定 time 文件 path | elog-timestamp.txt |
 
 ## clean
 
@@ -44,8 +44,18 @@ elog sync [option] [value]
 elog clean [option] [value]
 ```
 
-| option      | alias | 说明                                    | 默认值            |
-| ----------- | ----- | --------------------------------------- | ----------------- |
-| --config    | -c    | 指定配置文件 path，用于读取存储文章目录 | iblog-config.json |
-| --cache     | -a    | 指定缓存文件 path                       | iblog-cache.json  |
-| --timestamp | -t    | 指定 time 文件 path                     | iblog-time.txt    |
+| option      | alias | 说明                                    | 默认值             |
+| ----------- | ----- | --------------------------------------- | ------------------ |
+| --config    | -c    | 指定配置文件 path，用于读取存储文章目录 | eblog-config.json  |
+| --cache     | -a    | 指定缓存文件 path                       | eblog-cache.json   |
+| --timestamp | -t    | 指定 time 文件 path                     | elog-timestamp.txt |
+
+## upgrade
+
+更新全局 `elog` 版本到 `latest` 版本
+
+> v0.0.5 以上版本支持。
+
+```bash
+elog upgrade
+```
