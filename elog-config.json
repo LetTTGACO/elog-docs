@@ -3,7 +3,7 @@
     "platform": "yuque",
     "login": "1874w",
     "repo": "elog-docs",
-    "onlyPublic": true,
+    "onlyPublic": false,
     "onlyPublished": true
   },
   "deploy": {
