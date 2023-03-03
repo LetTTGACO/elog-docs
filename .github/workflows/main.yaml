@@ -41,7 +41,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           export TZ='Asia/Shanghai'
-          pnpm install
+          pnpm install --prod
 
       - name: 安装COS相关依赖
         run: |

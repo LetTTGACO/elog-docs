@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@elog/cli': ^0.2.1
+  '@elog/cli': ^0.2.2
   '@types/node': ^18.11.9
   vitepress: 1.0.0-alpha.45
   vue: ^3.2.45
 
 dependencies:
-  '@elog/cli': 0.2.1
+  '@elog/cli': 0.2.2
   '@types/node': 18.13.0
   vitepress: 1.0.0-alpha.45_@types+node@18.13.0
   vue: 3.2.47
@@ -192,13 +192,13 @@ packages:
       - '@algolia/client-search'
     dev: false
 
-  /@elog/cli/0.2.1:
-    resolution: {integrity: sha512-UnHr3x0Xlb+6w3yR47ZpFUyE6MuaiMx+WlF2kC7N1X6TFDpT8+1siVTcWavIVwXBmY5a0e+gp4V6CJWPOPIYoA==}
+  /@elog/cli/0.2.2:
+    resolution: {integrity: sha512-tgfMYSsyHpsvr8VcYKVyHetCHs6FjYKO5HklPhk6N8tSfL9ieSq5O4M4P8WbUYGyOf5n6pVVoDdTCVTH0oH9Xg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@elog/core': 0.2.1
-      '@elog/shared': 0.2.1
+      '@elog/core': 0.2.2
+      '@elog/shared': 0.2.2
       commander: 9.5.0
       dotenv: 16.0.3
       inquirer: 8.2.5
@@ -211,37 +211,38 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/core/0.2.1:
-    resolution: {integrity: sha512-f9Qfkn6xf6SqE0Y/HQrnScqnYoJdq2IYP9QEiKulxTAqFK3qBKYzK6RByHLBgIEZrsmPI5BiPm9tr4up6EUE2w==}
+  /@elog/core/0.2.2:
+    resolution: {integrity: sha512-xbkYBRW1oe1ZlpFR6UFt+GW85N4viN7g1UO664k40QETHVcP/5HDv9Za9Y+3Zt001eWwuJcbKrrIc9xwluM+tg==}
     dependencies:
-      '@elog/deploy': 0.2.1
-      '@elog/plugin-image': 0.2.1
-      '@elog/sdk-notion': 0.2.1
-      '@elog/sdk-yuque': 0.2.1
-      '@elog/shared': 0.2.1
+      '@elog/deploy': 0.2.2
+      '@elog/plugin-image': 0.2.2
+      '@elog/sdk-notion': 0.2.2
+      '@elog/sdk-yuque': 0.2.2
+      '@elog/shared': 0.2.2
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
     dev: false
 
-  /@elog/deploy/0.2.1:
-    resolution: {integrity: sha512-UAicM6GlhpHRN0t8GA/cX/kYjY27Lg/GVstms3vxLZJgwwONdeH8BtZjIQvu28CqiVKhPQvAorXgW0Xp/5ZkwQ==}
+  /@elog/deploy/0.2.2:
+    resolution: {integrity: sha512-S/SoAZAmNDbl0VFp78izF6JX93d45Ik+ZOkmDg+Hua40qz02+Vp/3iRO8X4gxFyodlEtfxA8t7D/UvUN9gWwLw==}
     dependencies:
-      '@elog/plugin-adapter': 0.2.1
-      '@elog/shared': 0.2.1
+      '@elog/plugin-adapter': 0.2.2
+      '@elog/shared': 0.2.2
       filenamify: 4.3.0
       mkdirp: 1.0.4
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@elog/plugin-adapter/0.2.1:
-    resolution: {integrity: sha512-JRx0LRLngOskwSJjI77fnYBCmKnQrX3ct8vlMS3fXuRhMchJcFYj8WCnEjudnu+q8RmvrwkNUNMbqWV4TSDyqg==}
+  /@elog/plugin-adapter/0.2.2:
+    resolution: {integrity: sha512-28hQeh9iTfJkoidNe4KHHaH4bWcLoXpe0nCrzHQ6Y6cm8dg4vQw6mSVShHIIpl0g4Bu/bpaS+IzSusf165IRvw==}
     dependencies:
-      '@elog/shared': 0.2.1
+      '@elog/shared': 0.2.2
       gray-matter: 4.0.3
       prettier: 2.8.4
+      remark-frontmatter: 3.0.0
       remark-gfm: 1.0.0
       remark-parse: 9.0.0
       remark-stringify: 9.0.1
@@ -250,10 +251,10 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/plugin-image/0.2.1:
-    resolution: {integrity: sha512-2CNWIbkhTFuJJtwDm3298F2FM4X9NuNwMFRlYnXqUC5oPtBCL+a76iyvMoT1QY7VosAMaTXw+IJxKjZ6WFC5Kg==}
+  /@elog/plugin-image/0.2.2:
+    resolution: {integrity: sha512-wr3UeROV2yq3W91AI4RbObBXUqdT7A8dcBSffjqtY90saM+EBroVWyGx25Rn77v7wfa9tr7JxsIJ1JwYAAJBzQ==}
     dependencies:
-      '@elog/shared': 0.2.1
+      '@elog/shared': 0.2.2
       ali-oss: 6.17.1
       axios: 1.1.3
       cos-nodejs-sdk-v5: 2.11.19
@@ -267,10 +268,10 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/sdk-notion/0.2.1:
-    resolution: {integrity: sha512-9268w/bI7GxwBC/S0PuwibPjibo/hfWpZTu4x0TD5X6Z4OWWsHVSbick10aoPXkhUDPJ9RmoG/56FR+C9jhmOQ==}
+  /@elog/sdk-notion/0.2.2:
+    resolution: {integrity: sha512-VBiCvZpJz+dnFrOmNPYeHMT1g2G5GwT39J7VJyopICcn/G2KCPmmScMb3geGhj9vdADVBJBthR2yDktBQnjAYQ==}
     dependencies:
-      '@elog/shared': 0.2.1
+      '@elog/shared': 0.2.2
       '@notionhq/client': 2.2.3
       moment: 2.29.4
       notion-to-md: 2.5.5
@@ -280,10 +281,10 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/sdk-yuque/0.2.1:
-    resolution: {integrity: sha512-yObUIvnvjnb207CzqhTF0qsIsqVQCyY2dw1NWC5BFtLFkxQkPD8xLBHyO8bh/jJoyFNFMPrja7MbQ0S5hJYX8g==}
+  /@elog/sdk-yuque/0.2.2:
+    resolution: {integrity: sha512-oryRpH90tCG34Keeu3hcmwPdh2D8WQtI6YwbC39exJfUGSN2jWJknpl2LZo9eb9Kft1DdqIFcj+witgFJmFy4g==}
     dependencies:
-      '@elog/shared': 0.2.1
+      '@elog/shared': 0.2.2
       front-matter: 4.0.2
       moment: 2.29.4
       tiny-async-pool: 1.3.0
@@ -292,8 +293,8 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/shared/0.2.1:
-    resolution: {integrity: sha512-Zlsg2feMz47uTSLpIRQCtGrOisLBGRwaEn+RVnIYvABZUdwtkQHNbPc8xJXY8Go2z7Mm21brGLI4okp3YH6chg==}
+  /@elog/shared/0.2.2:
+    resolution: {integrity: sha512-yRjZOUI8toGJVQIbAnPpHOQAvQlhBM0R4VFg2tXtLK72N0EVcJP5WA0E2BZnz3TvRI256egNFr05+1dhLN76xg==}
     dependencies:
       chalk: 4.1.2
       debug: 4.3.4
@@ -926,13 +927,13 @@ packages:
     dependencies:
       buffer: 5.7.1
       inherits: 2.0.4
-      readable-stream: 3.6.0
+      readable-stream: 3.6.1
     dev: false
 
   /block-stream2/2.1.0:
     resolution: {integrity: sha512-suhjmLI57Ewpmq00qaygS8UgEq2ly2PCItenIyhMqVjo4t4pGzqMvfgJuX8iWTeSDdfSSqS6j38fL4ToNL7Pfg==}
     dependencies:
-      readable-stream: 3.6.0
+      readable-stream: 3.6.1
     dev: false
 
   /body-scroll-lock/4.0.0-beta.0:
@@ -1417,6 +1418,12 @@ packages:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: false
 
+  /fault/1.0.4:
+    resolution: {integrity: sha512-CJ0HCB5tL5fYTEA7ToAq5+kTwd++Borf1/bifxd9iT70QcXr4MRrO3Llf8Ifs70q+SJcGHFtnIE/Nw6giCtECA==}
+    dependencies:
+      format: 0.2.2
+    dev: false
+
   /figures/3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
     engines: {node: '>=8'}
@@ -1489,6 +1496,11 @@ packages:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       mime-types: 2.1.35
+    dev: false
+
+  /format/0.2.2:
+    resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
+    engines: {node: '>=0.4.x'}
     dev: false
 
   /formstream/1.1.1:
@@ -2068,6 +2080,12 @@ packages:
       - supports-color
     dev: false
 
+  /mdast-util-frontmatter/0.2.0:
+    resolution: {integrity: sha512-FHKL4w4S5fdt1KjJCwB0178WJ0evnyyQr5kXTM3wrOVpytD0hrkvd+AOOjU9Td8onOejCkmZ+HQRT3CZ3coHHQ==}
+    dependencies:
+      micromark-extension-frontmatter: 0.2.2
+    dev: false
+
   /mdast-util-gfm-autolink-literal/0.1.3:
     resolution: {integrity: sha512-GjmLjWrXg1wqMIO9+ZsRik/s7PLwTaeCHVB7vRxUwLntZc8mzmTsLVr6HW1yLokcnhfURsn5zmSVdi3/xWWu1A==}
     dependencies:
@@ -2126,6 +2144,12 @@ packages:
 
   /merge-descriptors/1.0.1:
     resolution: {integrity: sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==}
+    dev: false
+
+  /micromark-extension-frontmatter/0.2.2:
+    resolution: {integrity: sha512-q6nPLFCMTLtfsctAuS0Xh4vaolxSFUWUWR6PZSrXXiRy+SANGllpcqdXFv2z07l0Xz/6Hl40hK0ffNCJPH2n1A==}
+    dependencies:
+      fault: 1.0.4
     dev: false
 
   /micromark-extension-gfm-autolink-literal/0.5.7:
@@ -2225,15 +2249,15 @@ packages:
       brace-expansion: 1.1.11
     dev: false
 
-  /minimist/1.2.7:
-    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
+  /minimist/1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: false
 
   /mkdirp/0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
     hasBin: true
     dependencies:
-      minimist: 1.2.7
+      minimist: 1.2.8
     dev: false
 
   /mkdirp/1.0.4:
@@ -2392,7 +2416,7 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
-      minimist: 1.2.7
+      minimist: 1.2.8
     dev: false
 
   /p-cancelable/1.1.0:
@@ -2430,7 +2454,7 @@ packages:
       http-proxy-agent: 4.0.1
       https-proxy-agent: 5.0.1
       pac-resolver: 5.0.1
-      raw-body: 2.5.1
+      raw-body: 2.5.2
       socks-proxy-agent: 5.0.1
     transitivePeerDependencies:
       - supports-color
@@ -2611,8 +2635,8 @@ packages:
       inherits: 2.0.4
     dev: false
 
-  /raw-body/2.5.1:
-    resolution: {integrity: sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==}
+  /raw-body/2.5.2:
+    resolution: {integrity: sha512-8zGqypfENjCIqGhgXToC8aB2r7YrBX+AQAfIPs/Mlk+BtPTztOvTS01NRW/3Eh60J+a48lt8qsCzirQ6loCVfA==}
     engines: {node: '>= 0.8'}
     dependencies:
       bytes: 3.1.2
@@ -2627,7 +2651,7 @@ packages:
     dependencies:
       deep-extend: 0.6.0
       ini: 1.3.8
-      minimist: 1.2.7
+      minimist: 1.2.8
       strip-json-comments: 2.0.1
     dev: false
 
@@ -2640,8 +2664,8 @@ packages:
       string_decoder: 0.10.31
     dev: false
 
-  /readable-stream/2.3.7:
-    resolution: {integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==}
+  /readable-stream/2.3.8:
+    resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
     dependencies:
       core-util-is: 1.0.3
       inherits: 2.0.4
@@ -2652,8 +2676,8 @@ packages:
       util-deprecate: 1.0.2
     dev: false
 
-  /readable-stream/3.6.0:
-    resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
+  /readable-stream/3.6.1:
+    resolution: {integrity: sha512-+rQmrWMYGA90yenhTYsLWAsLsqVC8osOw6PKE1HDYiO0gdPeKe/xDHNzIAIn4C91YQ6oenEhfYqqc1883qHbjQ==}
     engines: {node: '>= 6'}
     dependencies:
       inherits: 2.0.4
@@ -2680,6 +2704,13 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       rc: 1.2.8
+    dev: false
+
+  /remark-frontmatter/3.0.0:
+    resolution: {integrity: sha512-mSuDd3svCHs+2PyO29h7iijIZx4plX0fheacJcAoYAASfgzgVIcXGYSq9GFyYocFLftQs8IOmmkgtOovs6d4oA==}
+    dependencies:
+      mdast-util-frontmatter: 0.2.0
+      micromark-extension-frontmatter: 0.2.2
     dev: false
 
   /remark-gfm/1.0.0:
@@ -2955,7 +2986,7 @@ packages:
     dependencies:
       builtin-status-codes: 3.0.0
       inherits: 2.0.4
-      readable-stream: 2.3.7
+      readable-stream: 2.3.8
       to-arraybuffer: 1.0.1
       xtend: 4.0.2
     dev: false
