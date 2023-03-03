@@ -30,15 +30,6 @@
     "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.45"
   },
-  "devDependencies": {
-    "@elog/core": "^0.2.2",
-    "@elog/deploy": "^0.2.2",
-    "@elog/plugin-adapter": "^0.2.2",
-    "@elog/plugin-image": "^0.2.2",
-    "@elog/sdk-notion": "^0.2.2",
-    "@elog/sdk-yuque": "^0.2.2",
-    "@elog/shared": "^0.2.2"
-  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
