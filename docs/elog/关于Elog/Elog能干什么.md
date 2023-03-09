@@ -1,16 +1,14 @@
 ---
-classify: 关于Elog
-order: 1-1
 title: Elog能干什么
 urlname: index
 author: "1874"
 date: "2022-11-29 05:40:18"
-updated: "2023-03-06 12:12:14"
+updated: "2023-03-09 16:57:13"
 ---
 
 # Elog 能干什么
 
-## Introduce
+## 介绍
 
 `Elog`名为 `Easy Blogging`，简单、轻松的书写&部署博客
 

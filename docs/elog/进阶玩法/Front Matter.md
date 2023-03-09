@@ -1,12 +1,11 @@
 ---
-classify: 进阶玩法
-order: 4-1
 title: Front Matter
 urlname: raqyleng501h23p1
-author: '1874'
-date: '2023-02-09 03:31:45'
-updated: '2023-02-23 17:02:25'
+author: "1874"
+date: "2023-02-09 03:31:45"
+updated: "2023-03-09 16:56:16"
 ---
+
 # Front Matter
 
 Elog 会将用户自定义的 front matter 和 预定义属性合并后，输出新的带有 front matter 的 markdown 文档。
@@ -33,10 +32,10 @@ tags:
 
 Elog 预设置了一些常用的属性，会在`matter-markdown`模式默认下生成包含这些属性的 markdown 文档。
 
-| 属性    | 说明             |
-| ------- | ---------------- |
-| title   | 文章标题         |
-| urlname | url 名称         |
-| author  | 作者（仅限语雀） |
-| date    | 创建时间         |
-| updated | 更新时间         |
+| 属性     | 说明             |
+| -------- | ---------------- |
+| title    | 文章标题         |
+| urlname� | url 名称         |
+| author�  | 作者（仅限语雀） |
+| date�    | 创建时间         |
+| updated� | 更新时间         |

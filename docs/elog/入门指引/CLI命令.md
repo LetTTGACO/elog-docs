@@ -1,12 +1,11 @@
 ---
-classify: 入门指引
-order: 2-4
 title: CLI命令
 urlname: bry3d3lwe206xuor
-author: '1874'
-date: '2023-02-07 14:16:56'
-updated: '2023-02-23 03:02:30'
+author: "1874"
+date: "2023-02-07 14:16:56"
+updated: "2023-03-09 16:55:54"
 ---
+
 # CLI 命令
 
 ## init
