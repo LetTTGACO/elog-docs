@@ -17,15 +17,17 @@
     "url": "https://github.com/LetTTGACO/elog/issues"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:dev": "node router.js && vitepress dev docs",
+    "docs:build": "node router.js && vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "elog:init": "elog init",
     "elog:sync": "elog sync -e .env",
     "elog:clean": "elog clean"
   },
   "dependencies": {
-    "@elog/cli": "^0.2.2",
+    "@elog/cli": "0.3.0-beta.6",
+    "@elog/sdk-yuque": "0.3.0-beta.6",
+    "@kaciras/deasync": "^1.0.3",
     "@types/node": "^18.11.9",
     "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.45"
