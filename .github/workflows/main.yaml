@@ -92,6 +92,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 生成静态文件
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
           pnpm docs:build
 
