@@ -39,7 +39,7 @@ function genRoute(arr, pathname) {
 }
 
 
-const yuque = new YuqueClient.default({ login: '1874w', repo: 'elog-docs', token: '' })
+const yuque = new YuqueClient.default({ login: '1874w', repo: 'elog-docs', token: process.env.YUQUE_TOKEN })
 const toc = awaitSync(yuque.ctx.getToc())
 const router = genRoute(toc, 'elog')
 fs.writeFileSync('./router.json', JSON.stringify(router) )
