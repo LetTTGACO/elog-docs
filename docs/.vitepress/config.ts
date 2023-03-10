@@ -20,7 +20,7 @@ export default defineConfig({
   },
   themeConfig: {
     siteTitle: 'Elog Docs', // 标题
-    sidebar: genSideBar(),
+    sidebar: genSideBar('elog'),
     docFooter: {
       prev: '上一篇',
       next: '下一篇'
