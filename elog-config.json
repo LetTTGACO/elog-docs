@@ -8,7 +8,7 @@
   },
   "deploy": {
     "platform": "default",
-    "directory": true,
+    "needCatalog": true,
     "postPath": "./docs/elog",
     "mdNameFormat": "title",
     "adapter": "matter-markdown"
