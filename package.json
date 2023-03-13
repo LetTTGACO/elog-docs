@@ -17,9 +17,9 @@
     "url": "https://github.com/LetTTGACO/elog/issues"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
+    "docs:dev": "cp ./docs/index.md ./docs/elog/index.md && vitepress dev docs",
+    "docs:build": "cp ./docs/index.md ./docs/elog/index.md && vitepress build docs",
+    "docs:serve": "cp ./docs/index.md ./docs/elog/index.md && vitepress serve docs",
     "elog:init": "elog init",
     "elog:sync": "elog sync -e .env",
     "elog:clean": "elog clean"
