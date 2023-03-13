@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /elog/入门指引/快速开始
+      link: /elog/start
     - theme: alt
       text: GitHub
       link: https://github.com/LetTTGACO/elog
