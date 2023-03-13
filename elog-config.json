@@ -9,7 +9,7 @@
   "deploy": {
     "platform": "default",
     "needCatalog": false,
-    "postPath": "./docs",
+    "postPath": "./docs/elog",
     "mdNameFormat": "urlname",
     "adapter": "markdown"
   },

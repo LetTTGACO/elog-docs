@@ -7,6 +7,8 @@ export default defineConfig({
   title: 'Elog',
   description: 'doc for elog',
   lastUpdated: true,
+  srcDir: './elog',
+  cleanUrls: true,
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     [
