@@ -8,10 +8,10 @@
   },
   "deploy": {
     "platform": "default",
-    "needCatalog": true,
+    "needCatalog": false,
     "postPath": "./docs/elog",
-    "mdNameFormat": "title",
-    "adapter": "matter-markdown"
+    "mdNameFormat": "urlname",
+    "adapter": "markdown"
   },
   "image": {
     "enable": true,

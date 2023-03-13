@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "@elog/cli": "0.3.0-beta.7",
-    "@kaciras/deasync": "^1.0.3",
     "@types/node": "^18.11.9",
     "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.45"

@@ -2,8 +2,9 @@ function genRoute(arr, pathname) {
   function loop(parId) {
     return arr.reduce((acc, cur) => {
       if (cur.parent_uuid === parId) {
-        const parent = arr.find(item => item.uuid === parId)
-        cur.path = (parent?.path || '') + '/' + cur.title
+        // const parent = arr.find(item => item.uuid === parId)
+        // cur.path = (parent?.path || '') + '/' + cur.title
+        cur.path = '/' + cur.slug
         cur.items = loop(cur.uuid)
         let route
         if (cur.items.length) {

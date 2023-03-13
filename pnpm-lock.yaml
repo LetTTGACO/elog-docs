@@ -2,14 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@elog/cli': 0.3.0-beta.7
-  '@kaciras/deasync': ^1.0.3
   '@types/node': ^18.11.9
   vitepress: 1.0.0-alpha.45
   vue: ^3.2.45
 
 dependencies:
   '@elog/cli': 0.3.0-beta.7
-  '@kaciras/deasync': 1.0.3
   '@types/node': 18.13.0
   vitepress: 1.0.0-alpha.45_@types+node@18.13.0
   vue: 3.2.47
