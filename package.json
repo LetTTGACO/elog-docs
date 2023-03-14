@@ -17,9 +17,10 @@
     "url": "https://github.com/LetTTGACO/elog/issues"
   },
   "scripts": {
-    "docs:dev": "cp ./docs/index.md ./docs/elog/index.md && vitepress dev docs",
-    "docs:build": "cp ./docs/index.md ./docs/elog/index.md && vitepress build docs",
-    "docs:serve": "cp ./docs/index.md ./docs/elog/index.md && vitepress serve docs",
+    "copy": "cp ./docs/index.md ./docs/elog/index.md && cp ./docs/favicon.ico ./docs/elog/favicon.ico",
+    "docs:dev": "pnpm copy && vitepress dev docs",
+    "docs:build": "pnpm copy && vitepress build docs",
+    "docs:serve": "pnpm copy && vitepress serve docs",
     "elog:init": "elog init",
     "elog:sync": "elog sync -e .env",
     "elog:clean": "elog clean"
