@@ -20,12 +20,11 @@ elog init [option] [value]
 elog sync [option] [value]
 ```
 
-| option   | alias | 说明                | 默认值             |
-| -------- | ----- | ------------------- | ------------------ |
-| --env    | -e    | 指定环境文件 path   | -                  |
-| --config | -c    | 指定配置文件 path   | eblog-config.json  |
-| --cache  | -a    | 指定缓存文件 path   | eblog-cache.json   |
-| --time   | -t    | 指定 time 文件 path | elog-timestamp.txt |
+| option   | alias | 说明              | 默认值            |
+| -------- | ----- | ----------------- | ----------------- |
+| --env    | -e    | 指定环境文件 path | -                 |
+| --config | -c    | 指定配置文件 path | eblog-config.json |
+| --cache  | -a    | 指定缓存文件 path | eblog-cache.json  |
 
 ## clean
 
@@ -35,11 +34,10 @@ elog sync [option] [value]
 elog clean [option] [value]
 ```
 
-| option      | alias | 说明                                    | 默认值             |
-| ----------- | ----- | --------------------------------------- | ------------------ |
-| --config    | -c    | 指定配置文件 path，用于读取存储文章目录 | eblog-config.json  |
-| --cache     | -a    | 指定缓存文件 path                       | eblog-cache.json   |
-| --timestamp | -t    | 指定 time 文件 path                     | elog-timestamp.txt |
+| option   | alias | 说明                                    | 默认值            |
+| -------- | ----- | --------------------------------------- | ----------------- |
+| --config | -c    | 指定配置文件 path，用于读取存储文章目录 | eblog-config.json |
+| --cache  | -a    | 指定缓存文件 path                       | eblog-cache.json  |
 
 ## upgrade
 

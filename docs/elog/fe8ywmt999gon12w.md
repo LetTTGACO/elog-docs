@@ -15,7 +15,6 @@
 ├── _config.yml
 ├── elog-cache.json			// Elog的缓存文件，用于缓存上次同步的文件
 ├── elog-config.json		// Elog的配置文件
-├── elog-timestamp.txt	// Elog的时间戳缓存文件，用于记录上一次同步时间
 └── package.json
 ```
 
