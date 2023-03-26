@@ -22,7 +22,8 @@
     "docs:build": "pnpm copy && vitepress build docs",
     "docs:serve": "pnpm copy && vitepress serve docs",
     "elog:init": "elog init",
-    "elog:sync": "elog sync -e .env",
+    "local": "elog sync -e .env",
+    "elog:sync": "elog sync",
     "elog:clean": "elog clean"
   },
   "dependencies": {
