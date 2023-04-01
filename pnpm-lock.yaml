@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@elog/cli': 0.3.0
+  '@elog/cli': 0.3.1-beta.0
   '@types/node': ^18.11.9
   vitepress: 1.0.0-alpha.45
   vue: ^3.2.45
 
 dependencies:
-  '@elog/cli': 0.3.0
+  '@elog/cli': 0.3.1-beta.0
   '@types/node': 18.13.0
   vitepress: 1.0.0-alpha.45_@types+node@18.13.0
   vue: 3.2.47
@@ -192,13 +192,13 @@ packages:
       - '@algolia/client-search'
     dev: false
 
-  /@elog/cli/0.3.0:
-    resolution: {integrity: sha512-g1ttzPY9Pe0aVcRUbOEWCer8Mw3KOkbk2hO5pOkbt/j7hy4if+b8ggmATlp8PUpvc5nAm+Pdlj6LAr4JnFmLQQ==}
+  /@elog/cli/0.3.1-beta.0:
+    resolution: {integrity: sha512-C1FKlNrREuFr3m+kUXQlKwVN/ZfTuI6VL/n/It7Ects+7H4L/vO7m0kpuqGa4FMOPlsPplZ4XbkEM1QapiViKA==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@elog/core': 0.3.0
-      '@elog/shared': 0.3.0
+      '@elog/core': 0.3.1-beta.0
+      '@elog/shared': 0.3.1-beta.0
       commander: 9.5.0
       dotenv: 16.0.3
       inquirer: 8.2.5
@@ -211,36 +211,36 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/core/0.3.0:
-    resolution: {integrity: sha512-axh08kpa55q2Z0IDuhBZ1jN82q7uKWvu57lcm8FiXy1i29pN2tko4Snt5h7IoPM62WeCDRrvv0BTKI/hO1FMUg==}
+  /@elog/core/0.3.1-beta.0:
+    resolution: {integrity: sha512-PBUIlStXDwz8QsQ1yM9bJJl+9hApDJ1RwBpcl+h6zbF3yk7aeK2RSqmkJXFLwMxg3dDtwMjJb5DvYiLjAh1v8w==}
     dependencies:
-      '@elog/deploy': 0.3.0
-      '@elog/plugin-image': 0.3.0
-      '@elog/sdk-notion': 0.3.0
-      '@elog/sdk-yuque': 0.3.0
-      '@elog/shared': 0.3.0
+      '@elog/deploy': 0.3.1-beta.0
+      '@elog/plugin-image': 0.3.1-beta.0
+      '@elog/sdk-notion': 0.3.1-beta.0
+      '@elog/sdk-yuque': 0.3.1-beta.0
+      '@elog/shared': 0.3.1-beta.0
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
     dev: false
 
-  /@elog/deploy/0.3.0:
-    resolution: {integrity: sha512-LsY10DFY50Xp1erDwlodzFIERLqhOTMWENpCoUslBB7UZqN9xBUxiRfYCZv9cSqfs/0MwJ2KVSO0ydciqkuZBA==}
+  /@elog/deploy/0.3.1-beta.0:
+    resolution: {integrity: sha512-UpoEKw8tFFlwZfP5+ty8Il+YucE/11rJ9GhP7r+9VPL7vJniplZjpjWQa+XSjWS3Bdu5t9ijtPfST1YAjuzeyw==}
     dependencies:
-      '@elog/plugin-adapter': 0.3.0
-      '@elog/sdk-confluence': 0.3.0
-      '@elog/shared': 0.3.0
+      '@elog/plugin-adapter': 0.3.1-beta.0
+      '@elog/sdk-confluence': 0.3.1-beta.0
+      '@elog/shared': 0.3.1-beta.0
       filenamify: 4.3.0
       mkdirp: 1.0.4
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@elog/plugin-adapter/0.3.0:
-    resolution: {integrity: sha512-CxIP5kJNNYvdrGrXpY+ucVExREXNwXjXD57bkVAUPALL+BwOSgrELjKMhDmS3pWdsULR92lhv/Ti7+HJrohKEA==}
+  /@elog/plugin-adapter/0.3.1-beta.0:
+    resolution: {integrity: sha512-p/nHaqU1PwhFxckgi4t0LUa2eMJ3lrQiq/y5H0XCOrSv+DjIV7RK1vbH33mVgKjVWgk6uCln6L0s9mHZKU4i6Q==}
     dependencies:
-      '@elog/shared': 0.3.0
+      '@elog/shared': 0.3.1-beta.0
       gray-matter: 4.0.3
       marked: 4.2.12
       prettier: 2.8.4
@@ -253,10 +253,10 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/plugin-image/0.3.0:
-    resolution: {integrity: sha512-LRxtokp8v1BInRChfz3Ylrj6f7/bMpMRSbyyM/FFWXld8qjmYYMFg+seP230olMFqndA/vXCR06wo/xICjcpBQ==}
+  /@elog/plugin-image/0.3.1-beta.0:
+    resolution: {integrity: sha512-QDCnCoNvQ8R4nDmNuuQ59+TjoHlDe/0L5n33Ck734zIC/wqE1Tjjz0eHCA+B1xylCr1Tb1NblfaUDkHSEOF3mg==}
     dependencies:
-      '@elog/shared': 0.3.0
+      '@elog/shared': 0.3.1-beta.0
       '@kaciras/deasync': 1.0.3
       ali-oss: 6.17.1
       axios: 1.1.3
@@ -271,18 +271,18 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/sdk-confluence/0.3.0:
-    resolution: {integrity: sha512-1erQHf4qtBW6KJHDr0SB8aaIq7bg7H79UNwduyylvo9LD9+kn0cokhpHmCYYcOsn9HCT9RHq+HgQkDgoU6yBug==}
+  /@elog/sdk-confluence/0.3.1-beta.0:
+    resolution: {integrity: sha512-JmA6Ckfe9cKk5zFPLFGIz9CZlpyc3LXul0nHpCkutOgQ2FvQb5aGOB209Bg+4wPkO9KylkP83EpGiBMBKRXX6g==}
     dependencies:
-      '@elog/shared': 0.3.0
+      '@elog/shared': 0.3.1-beta.0
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@elog/sdk-notion/0.3.0:
-    resolution: {integrity: sha512-dsJGT+/N9LPCN6+ZIYJsdSiteUIfWX07KItezloY8yoJ5eZf0+l/Aoe9B24NJRHwPKzctU1V9lpoydk8mmSNiA==}
+  /@elog/sdk-notion/0.3.1-beta.0:
+    resolution: {integrity: sha512-pmShb3KWibUA2MeGr8IgdKf9tiNu1O0FYc1x8U2dZvPzXKK9Sk9hOXTE+bED/EvhG6wjj62aB7xVd+oQZhzB8w==}
     dependencies:
-      '@elog/shared': 0.3.0
+      '@elog/shared': 0.3.1-beta.0
       '@notionhq/client': 2.2.3
       moment: 2.29.4
       notion-to-md: 2.5.5
@@ -292,10 +292,10 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/sdk-yuque/0.3.0:
-    resolution: {integrity: sha512-hH6sARI5pQQXSLefulIsG4nnL93VCCCICb7iGDP7dLl/xdrXBk9JIk2O7vvDiV4Z6Ni7Mb14MY0GzUnA1PWwCQ==}
+  /@elog/sdk-yuque/0.3.1-beta.0:
+    resolution: {integrity: sha512-zzTJJ51cxseRq7ffPobQkibLarTenPIs7UOe2D4XVmXP0LDxv1rDJ5MSYg3pDrfMZTZ7AIYFrptTVinVrCY4pQ==}
     dependencies:
-      '@elog/shared': 0.3.0
+      '@elog/shared': 0.3.1-beta.0
       front-matter: 4.0.2
       moment: 2.29.4
       tiny-async-pool: 1.3.0
@@ -304,8 +304,8 @@ packages:
       - supports-color
     dev: false
 
-  /@elog/shared/0.3.0:
-    resolution: {integrity: sha512-nSmyXdINxZdVgyU1LhYR518YYBusRLPzflv72MujTcpaAISeiBVVKVlN7z40rh7LmQOd3S+FW/NsGfwXR7x3qQ==}
+  /@elog/shared/0.3.1-beta.0:
+    resolution: {integrity: sha512-bwb0dIUhK9foXDLhz6kBVmn3BGSNe2bnRokQgQ1dhVYufHPvaQ3SbCjjQiNdIHg+DN6AkD9PzSu/vJbuLJ/GVw==}
     dependencies:
       chalk: 4.1.2
       debug: 4.3.4
