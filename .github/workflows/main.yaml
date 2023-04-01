@@ -28,7 +28,7 @@ jobs:
       - name: 安装pnpm
         run: |
           export TZ='Asia/Shanghai'
-          npm install pnpm -g
+          npm install pnpm@7.9.5 -g
 
       - name: 缓存依赖
         uses: actions/cache@v1
