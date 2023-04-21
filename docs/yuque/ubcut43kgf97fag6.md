@@ -9,14 +9,8 @@
 
 ## 最佳实践
 
-### Notion 云端写作 Vitepress+Github Action + COS 持续集成
+### Elog Doc 多写作平台云端写作 + vitepress 按目录生成路由 + Github Action + COS 持续集成
 
-作者
-网站
-Github
-
-### 语雀云端写作 Hexo+Github Actions+Github Page 持续集成
-
-作者
-网站
-Github
+作者：1874
+网站: <https://elog.1874.cool>
+Github: <https://github.com/LetTTGACO/elog-docs>

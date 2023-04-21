@@ -1,7 +1,6 @@
 node_modules/
 .idea
-.env
-.env*
+.elog.env
 .DS_Store
 dist/
 cache/

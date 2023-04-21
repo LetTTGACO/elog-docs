@@ -11,8 +11,21 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /start
+      link: /notion/start
     - theme: alt
       text: GitHub
       link: https://github.com/LetTTGACO/elog
+features:
+  - icon: 📝
+    title: 多写作平台
+    details: 写作平台支持语雀/Notion
+  - icon: 🚀
+    title: 多部署平台
+    details: 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台，以及Confluence；支持自定义文档处理适配器。
+  - icon: 🌅
+    title: 多图床平台
+    details: 图片支持本地存储或上传到阿里云/腾讯云/Github/七牛云/又拍云；支持通过拓展配置注入密钥。
+  - icon: 📦
+    title: 多文档格式支持
+    details: 支持生成带Front Matter Markdown/支持代码高亮的HTML/适用于Confluence的wiki。
 ---

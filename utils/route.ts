@@ -1,4 +1,4 @@
-function genRoute(arr, pathname) {
+function genYuqueRoute(arr, pathname) {
   function loop(parId) {
     return arr.reduce((acc, cur) => {
       if (cur.parent_uuid === parId) {
@@ -10,7 +10,7 @@ function genRoute(arr, pathname) {
         if (cur.items.length) {
           route = {
             text: cur.title,
-            collapsible: true,
+            collapsed: false,
             items: cur.items
           }
           acc.push(route)
@@ -30,10 +30,56 @@ function genRoute(arr, pathname) {
   return loop('')
 }
 
-
-export const genSideBar = (pathname: string) => {
-  const cache = require('../elog-cache.json')
+/**
+ * 生成语雀导航
+ * @param pathname
+ */
+export const genYuqueSideBar = (pathname: string) => {
+  const cache = require('../elog.cache.yuque.json')
   const { catalog } = cache
-  return genRoute(catalog, pathname)
+ return genYuqueRoute(catalog, pathname)
+  // console.log('res', res)
 }
 
+/**
+ * 生成notion导航
+ * @param pathname
+ */
+export const genNotionSideBar = (pathname: string) => {
+  const cache = require('../elog.cache.notion.json')
+  const { catalog } = cache
+  return genNotionRoute(catalog, pathname)
+}
+
+
+const genNotionRoute = (catalog: any[], pathname: string) => {
+  let route = []
+  let directory = {}
+  catalog.forEach(item => {
+    const dir = directory[item.properties.catalog]
+    if (dir?.items?.length) {
+      dir.items.push({
+        text: item.properties.title,
+        link: `${pathname}/${item.properties.urlname}`
+      })
+    } else {
+      directory[item.properties.catalog] = {
+        text: item.properties.catalog,
+        collapsed: false,
+        items: [{
+          text: item.properties.title,
+          link: `${pathname}/${item.properties.urlname}`
+        }]
+      }
+      route.push(directory[item.properties.catalog])
+    }
+  })
+
+  return route
+  // // 获取结构目录
+  // const catalogs = docs.map(item => item.properties).sort((a, b) => {
+  //   const itema = a.catalog.split('-')[0]
+  //   const itemb = b.catalog.split('-')[0]
+  // })
+
+}

@@ -15,10 +15,9 @@ tags:
 ---
 ```
 
-> 提示
-> front matter 目前只支持语雀，如果想用 Notion 指定额外的属性，可以直接添加文章属性
-> 由于语雀 API 的问题，Elog 目前只支持使用三点划线来声明 front matter
-> 如果需要生成的 markdown 文件具有 front matter，需要在部署平台配置的 `deploy.adapter` 指定为 `matter-markdown`
+> 手动指定文档的 `front matter` 只适用于语雀，Notion 可以直接添加数据库属性，不需要手动指定 `front matter`。
+> 由于语雀 API 的问题，Elog 目前只支持使用三点划线来声明 `front matter`
+> 如果需要生成的 markdown 文件具有 `front matter`，需要在配置文件中配置`deploy.local.format=matter-markdown`
 
 ## 预定义属性
 

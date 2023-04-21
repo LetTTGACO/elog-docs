@@ -17,18 +17,19 @@
     "url": "https://github.com/LetTTGACO/elog/issues"
   },
   "scripts": {
-    "copy": "cp ./docs/index.md ./docs/elog/index.md && cp ./docs/favicon.ico ./docs/elog/favicon.ico",
-    "docs:dev": "pnpm copy && vitepress dev docs",
-    "docs:build": "pnpm copy && vitepress build docs",
-    "docs:serve": "pnpm copy && vitepress serve docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
     "elog:init": "elog init",
-    "local": "elog sync -e .env",
+    "local:yuque": "elog sync -c elog.config.yuque.js -e .elog.env -a elog.cache.yuque.json",
+    "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
     "elog:sync": "elog sync",
     "elog:clean": "elog clean"
   },
   "dependencies": {
-    "@elog/cli": "0.3.1-beta.0",
+    "@elog/cli": "0.4.0-beta.2",
     "@types/node": "^18.11.9",
+    "markdown-it-task-lists": "^2.1.1",
     "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.45"
   },

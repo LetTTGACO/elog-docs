@@ -6,7 +6,7 @@ Elog 项目基于 node，请确保已具备较新的 node 环境（>=12.0.0）�
 
 ## CLI 工具安装
 
-首先，你需要使用 npm / yarn / pnpm 全局安装`@elog/cli`，或者直接使用 [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b):
+首先，你需要使用 npm / yarn / pnpm 全局安装`@elog/cli`
 
 ```bash
 # 使用 npm 安装 CLI
@@ -27,8 +27,7 @@ pnpm install @elog/cli -g
 elog init
 ```
 
-![image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FmGLy-wYhbW0ZWirPz_4bQ-lts8x.png)
-根据提示初始化成功后，会在根目录生成一份`elog-config.json`配置文件。你需要修改一些配置才能进行下一步，详情移步**配置详情**页面
+根据提示初始化成功后，会在根目录生成一份`elog.config.js` 配置文件。你需要修改一些配置才能进行下一步，详情移步 [配置详情](/yuque/fe8ywmt999gon12w) 页面
 
 ## 开始同步
 

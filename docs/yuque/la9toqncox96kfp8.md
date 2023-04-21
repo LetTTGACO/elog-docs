@@ -6,3 +6,5 @@
 ![IMG_1672.PNG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FuBJmZMQwvgi4bgVyd0dAJ5qPS5I.png)
 
 ## 问题反馈与建议
+
+可以前往 [Github Issues](https://github.com/LetTTGACO/elog/issues)
