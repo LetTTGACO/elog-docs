@@ -543,7 +543,7 @@
     {
       "id": 113693555,
       "slug": "bry3d3lwe206xuor",
-      "title": "CLI命令",
+      "title": "CLI 命令",
       "book_id": 35284301,
       "book": {
         "id": 35284301,
@@ -557,8 +557,8 @@
         "items_count": 15,
         "likes_count": 0,
         "watches_count": 0,
-        "content_updated_at": "2023-04-21T18:12:01.518Z",
-        "updated_at": "2023-04-21T18:12:02.000Z",
+        "content_updated_at": "2023-04-21T19:23:19.392Z",
+        "updated_at": "2023-04-21T19:23:19.000Z",
         "created_at": "2022-11-29T05:40:14.000Z",
         "namespace": "1874w/elog-docs",
         "user": {
@@ -609,7 +609,7 @@
       "content_updated_at": "2023-04-21T17:30:07.000Z",
       "deleted_at": null,
       "created_at": "2023-02-07T14:16:56.000Z",
-      "updated_at": "2023-04-21T17:30:07.000Z",
+      "updated_at": "2023-04-21T19:23:19.000Z",
       "published_at": "2023-04-21T17:30:07.000Z",
       "first_published_at": "2023-02-09T03:15:31.484Z",
       "word_count": 183,
@@ -640,13 +640,13 @@
       ],
       "body_original": "<a name=\"LF8JJ\"></a>\n# CLI命令\n<a name=\"S9WUA\"></a>\n## init\n初始化Elog配置\n```bash\nelog init [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --name | -n | 自定义配置文件的名称 | elog-config.json |\n| --env | -e | 自定义缓存文件的名称 | elog.cache.json |\n\n<a name=\"pVMaD\"></a>\n## sync\n同步文章\n```bash\nelog sync [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --env | -e | 指定环境文件path | - |\n| --config | -c | 指定配置文件path | elog.config.js |\n| --cache | -a | 指定缓存文件path | elog.cache.json |\n\n<a name=\"zq07D\"></a>\n## clean\n清理文章、上次同步缓存、上次同步时间\n```bash\nelog clean [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --config | -c | 指定配置文件path，用于读取存储文章目录 | elog.config.js |\n| --cache | -a | 指定缓存文件path | elog.cache.json |\n\n<a name=\"mHpZU\"></a>\n## upgrade\n更新全局 `elog` 版本到 `latest` 版本\n> v0.0.5 以上版本支持。\n\n```bash\nelog upgrade\n```\n",
       "properties": {
-        "title": "CLI命令",
+        "title": "CLI 命令",
         "urlname": "bry3d3lwe206xuor",
         "author": "1874",
-        "date": "2023-02-07 22:16:56",
-        "updated": "2023-04-22 01:30:07"
+        "date": "2023-02-07 14:16:56",
+        "updated": "2023-04-21 19:23:19"
       },
-      "updated": 1682098207000
+      "updated": 1682104999000
     },
     {
       "id": 113891385,
@@ -1777,7 +1777,7 @@
     },
     {
       "type": "DOC",
-      "title": "CLI命令",
+      "title": "CLI 命令",
       "uuid": "iGeJmpy-GdWzUrB3",
       "url": "bry3d3lwe206xuor",
       "prev_uuid": "I8CjT1JSywVxa8X4",
