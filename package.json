@@ -23,10 +23,10 @@
     "elog:init": "elog init",
     "local:yuque": "elog sync -c elog.config.yuque.js -e .elog.env -a elog.cache.yuque.json",
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
-    "sync:yuque": "elog sync -c elog.config.yuque.js",
-    "sync:notion": "elog sync -c elog.config.notion.js ",
-    "clean:yuque": "elog clean -c elog.config.yuque.js -e .elog.env -a elog.cache.yuque.json",
-    "clean:notion": "elog clean -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json"
+    "sync:yuque": "elog sync -c elog.config.yuque.js -a elog.cache.yuque.json",
+    "sync:notion": "elog sync -c elog.config.notion.js -a elog.cache.notion.json",
+    "clean:yuque": "elog clean -c elog.config.yuque.js -a elog.cache.yuque.json",
+    "clean:notion": "elog clean -c elog.config.notion.js -a elog.cache.notion.json"
   },
   "dependencies": {
     "@elog/cli": "0.4.0-beta.2",
