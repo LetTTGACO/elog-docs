@@ -37,4 +37,4 @@ elog init
 elog sync
 ```
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FsG-eBqS2X695mxQRn0piXGvG8GY.png)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/aac179a3-e1f3-4d35-9c81-8dd4b2c38700/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230421%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230421T192055Z&X-Amz-Expires=3600&X-Amz-Signature=eabb09f8176607b734c816a5f16f6ed2d83935c31b0fa8061f805d98db7bf87a&X-Amz-SignedHeaders=host&x-id=GetObject)
