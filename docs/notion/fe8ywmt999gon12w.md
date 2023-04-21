@@ -139,12 +139,12 @@ module.exports = {
 
 ### Notion
 
-| 字段       | 必填 | 类型    | 说明                 | 默认值   |
-| ---------- | ---- | ------- | -------------------- | -------- | ---- |
-| **token**  | 是   | string  | Notion Token         |          |
-| databaseId | 是   | string  | notion 中的数据库 id | -        |
-| filter     | 否   | boolean | any                  | 过滤条件 | true |
-| sorts      | 否   | boolean | any[]                | 排序条件 | true |
+| 字段       | 必填 | 类型             | 说明                 | 默认值 |
+| ---------- | ---- | ---------------- | -------------------- | ------ |
+| **token**  | 是   | string           | Notion Token         |        |
+| databaseId | 是   | string           | notion 中的数据库 id | -      |
+| filter     | 否   | boolean ｜ any   | 过滤条件             | true   |
+| sorts      | 否   | boolean ｜ any[] | 排序条件             | true   |
 
 Filter 字段说明
 
@@ -178,13 +178,13 @@ Sorts 字段说明
 
 适用于所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的博客平台
 
-| 字段      | 必填 | 说明                                 | 默认值          |
-| --------- | ---- | ------------------------------------ | --------------- | ----- | ---- | -------- |
-| outputDir | 否   | 文档输出目录                         | -               |
-| filename  | 否   | 生成文档的命名格式，取值 urlname     | title           | title |
-| format    | 否   | 适配器，取值 markdown                | matter-markdown | wiki  | html | markdown |
-| catalog   | 否   | 是否按照目录生成文档（暂只支持语雀） | false           |
-| formatExt | 否   | 自定义文档处理适配器路径             | -               |
+| 字段      | 必填 | 说明                                                     | 默认值   |
+| --------- | ---- | -------------------------------------------------------- | -------- |
+| outputDir | 否   | 文档输出目录                                             | -        |
+| filename  | 否   | 生成文档的命名格式，取值 urlname ｜ title                | title    |
+| format    | 否   | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
+| catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
+| formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
 formatExt 说明
 
@@ -194,7 +194,17 @@ formatExt 说明
 2. 处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法。**
 
 ```javascript
-// 自定义文档处理器// doc的类型定义为 DocDetail，详情见下方 DocDetail 类型定义const format = (doc) => {    // ...对文档进行处理  const newPost = xxx  return newPost}module.exports = {  format,}
+// 自定义文档处理器
+// doc的类型定义为 DocDetail，详情见下方 DocDetail 类型定义
+const format = (doc) => {
+  // ...对文档进行处理
+  const newPost = xxx;
+  return newPost;
+};
+
+module.exports = {
+  format,
+};
 ```
 
 DocDetail 类型定义如下：
@@ -263,12 +273,12 @@ export interface YuqueCatalog {
 
 ### 通用字段
 
-| 字段      | 必填 | 说明                                  | 默认值 |
-| --------- | ---- | ------------------------------------- | ------ |
-| enable    | 是   | 是否启用图床                          | false  |
-| bed       | 是   | 图床，取值 cos/oss/github/qiniu/upyun | github |
-| prefixKey | 否   | 上传路径                              |        |
-| host      | 否   | 指定域名                              |        |
+| 字段      | 必填 | 说明                                              | 默认值 |
+| --------- | ---- | ------------------------------------------------- | ------ |
+| enable    | 是   | 是否启用图床                                      | false  |
+| bed       | 是   | 图床，取值 cos ｜ oss ｜ github ｜ qiniu ｜ upyun | github |
+| prefixKey | 否   | 上传路径                                          |        |
+| host      | 否   | 指定域名                                          |        |
 
 ### 本地存储（local）
 

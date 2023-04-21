@@ -145,8 +145,8 @@ module.exports = {
 | ---------- | ---- | ---------------- | -------------------- | ------ |
 | **token**  | 是   | string           | Notion Token         |        |
 | databaseId | 是   | string           | notion 中的数据库 id | -      |
-| filter     | 否   | boolean \| any   | 过滤条件             | true   |
-| sorts      | 否   | boolean \| any[] | 排序条件             | true   |
+| filter     | 否   | boolean ｜ any   | 过滤条件             | true   |
+| sorts      | 否   | boolean ｜ any[] | 排序条件             | true   |
 
 #### Filter 字段说明
 
@@ -181,8 +181,8 @@ module.exports = {
 | 字段      | 必填 | 说明                                                     | 默认值   |
 | --------- | ---- | -------------------------------------------------------- | -------- |
 | outputDir | 否   | 文档输出目录                                             | -        |
-| filename  | 否   | 生成文档的命名格式，取值 urlname \| title                | title    |
-| format    | 否   | 适配器，取值 markdown \| matter-markdown \| wiki \| html | markdown |
+| filename  | 否   | 生成文档的命名格式，取值 urlname ｜ title                | title    |
+| format    | 否   | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
 | catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
 | formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
@@ -273,12 +273,12 @@ export interface YuqueCatalog {
 
 ### 通用字段
 
-| 字段      | 必填 | 说明                                  | 默认值 |
-| --------- | ---- | ------------------------------------- | ------ |
-| enable    | 是   | 是否启用图床                          | false  |
-| bed       | 是   | 图床，取值 cos/oss/github/qiniu/upyun | github |
-| prefixKey | 否   | 上传路径                              |        |
-| host      | 否   | 指定域名                              |        |
+| 字段      | 必填 | 说明                                              | 默认值 |
+| --------- | ---- | ------------------------------------------------- | ------ |
+| enable    | 是   | 是否启用图床                                      | false  |
+| bed       | 是   | 图床，取值 cos ｜ oss ｜ github ｜ qiniu ｜ upyun | github |
+| prefixKey | 否   | 上传路径                                          |        |
+| host      | 否   | 指定域名                                          |        |
 
 ### 本地存储（local）
 
