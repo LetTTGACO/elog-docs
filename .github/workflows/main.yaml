@@ -60,7 +60,7 @@ jobs:
           tccli configure set secretKey $COS_SECRET_KEY
           tccli configure set region $COS_REGION
 
-      - name: 清除语雀缓存(拉取全部文章)
+      - name: 清除缓存(拉取全部文章)
         env:
           CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
         if: ${{ env.CLEAN_CACHE == 'true' }}
@@ -68,7 +68,7 @@ jobs:
           pnpm clean:yuque
           pnpm clean:notion
 
-      - name: 拉取语雀的文章
+      - name: 拉取语雀&Notion的文章
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
