@@ -65,15 +65,23 @@ jobs:
           CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
         if: ${{ env.CLEAN_CACHE == 'true' }}
         run: |
-          pnpm elog:clean
+          pnpm clean:yuque
+          pnpm clean:notion
 
       - name: 拉取语雀的文章
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
+          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
           COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+          COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
+          COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
-          pnpm elog:sync
+          pnpm sync:yuque
+          pnpm sync:notion
 
       - name: 配置Git用户名邮箱
         run: |
