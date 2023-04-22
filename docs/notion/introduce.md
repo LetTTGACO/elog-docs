@@ -48,8 +48,9 @@
 - [x] HuGo
 - [x] Docusaurus
 - [x] Docz
+- [x] Confluence
 
-> 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 md 文档来进行渲染的方式
+> 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的方式
 
 ## 图床功能
 
