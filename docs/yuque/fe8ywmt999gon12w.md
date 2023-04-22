@@ -120,7 +120,7 @@ module.exports = {
 | ------ | ---------------- |
 | write  | 写作平台详细配置 |
 | deploy | 部署平台详细配置 |
-| image  | 图床平台配置详情 |
+| image  | 图床平台详情配置 |
 
 ## 写作平台
 
@@ -164,13 +164,35 @@ module.exports = {
 ```
 
 2.  当`filter = false`时，不进行筛选，默认下载数据库所有文档
-3.  当需要自定义时，需要按照 Notion 的筛选规则进行。具体请参考[Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
+3.  当需要自定义筛选时，需要按照 Notion 的筛选规则进行。具体请参考[Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
 
 #### Sorts 字段说明
 
 `sorts`字段是为了对 Notion 数据库文档进行排序，以便生成一定顺序的目录信息，**对文档的同步不影响。**
 例如，使用 VitePress 部署文档时，需要对文档按照指定顺序和结构生成路由和 sidebar。
 详情见 [Elog Docs 文档源码](https://github.com/LetTTGACO/elog-docs)
+
+1.  elog 提供了一些预设参数，如下。例如`sorts=sortDesc`即按照数据库的 sort 字段进行倒序排列
+
+```typescript
+export const enum NotionSortPreset {
+  /** 按自定义日期排序 */
+  dateDesc = "dateDesc", // 倒序
+  dateAsc = "dateAsc", // 升序
+  /** 按创建时间排序 */
+  createTimeDesc = "createTimeDesc", // 倒序
+  createTimeAsc = "createTimeAsc", // 升序
+  /** 按更新时间排序 */
+  updateTimeDesc = "updateTimeDesc", // 倒序
+  updateTimeAsc = "updateTimeAsc", // 升序
+  /** 按数据库的sort字段进行排序 */
+  sortDesc = "sortDesc", // 倒序
+  sortAsc = "sortAsc", // 升序
+}
+```
+
+2.  当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序。
+3.  当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
 
 ## 部署平台
 
