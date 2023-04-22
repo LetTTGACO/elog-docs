@@ -126,7 +126,7 @@ module.exports = {
 
 | 字段          | 必填 | 说明                                 | 默认值                       |
 | ------------- | ---- | ------------------------------------ | ---------------------------- |
-| **token**     | 是   | 语雀 Token                           | -                            |
+| token         | 是   | 语雀 Token                           | -                            |
 | baseUrl       | 否   | 语雀 API 请求的 Base Url             | https://www.yuque.com/api/v2 |
 | login         | 是   | 个人路径/空间 ID                     | -                            |
 | repo          | 是   | 语雀仓库短名称，也称为语雀知识库路径 | -                            |
@@ -141,7 +141,7 @@ module.exports = {
 
 | 字段       | 必填 | 类型                       | 说明                 | 默认值 |
 | ---------- | ---- | -------------------------- | -------------------- | ------ |
-| **token**  | 是   | string                     | Notion Token         |        |
+| token      | 是   | string                     | Notion Token         |        |
 | databaseId | 是   | string                     | notion 中的数据库 id | -      |
 | filter     | 否   | boolean ｜ any             | 过滤条件             | true   |
 | sorts      | 否   | boolean ｜ string ｜ any[] | 排序条件             | true   |
@@ -152,17 +152,17 @@ module.exports = {
 
 1. 默认值为 true ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
 
-```json
-{
-  "property": "status",
-  "select": {
-    "equals": "已发布"
-  }
-}
-```
+   ```json
+   {
+     "property": "status",
+     "select": {
+       "equals": "已发布"
+     }
+   }
+   ```
 
-1. 当`filter = false`时，不进行筛选，默认下载数据库所有文档
-2. 当需要自定义筛选时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
+2. 当`filter = false`时，不进行筛选，默认下载数据库所有文档
+3. 当需要自定义筛选时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
 
 **Sorts 字段说明**
 
@@ -174,25 +174,25 @@ module.exports = {
 
 1. elog 提供了一些预设参数，如下。例如`sorts=sortDesc`即按照数据库的 sort 字段进行倒序排列
 
-```typescript
-export const enum NotionSortPreset {
-  /** 按自定义日期排序 */
-  dateDesc = "dateDesc", // 倒序
-  dateAsc = "dateAsc", // 升序
-  /** 按创建时间排序 */
-  createTimeDesc = "createTimeDesc", // 倒序
-  createTimeAsc = "createTimeAsc", // 升序
-  /** 按更新时间排序 */
-  updateTimeDesc = "updateTimeDesc", // 倒序
-  updateTimeAsc = "updateTimeAsc", // 升序
-  /** 按数据库的sort字段进行排序 */
-  sortDesc = "sortDesc", // 倒序
-  sortAsc = "sortAsc", // 升序
-}
-```
+   ```typescript
+   export const enum NotionSortPreset {
+     /** 按自定义日期排序 */
+     dateDesc = "dateDesc", // 倒序
+     dateAsc = "dateAsc", // 升序
+     /** 按创建时间排序 */
+     createTimeDesc = "createTimeDesc", // 倒序
+     createTimeAsc = "createTimeAsc", // 升序
+     /** 按更新时间排序 */
+     updateTimeDesc = "updateTimeDesc", // 倒序
+     updateTimeAsc = "updateTimeAsc", // 升序
+     /** 按数据库的sort字段进行排序 */
+     sortDesc = "sortDesc", // 倒序
+     sortAsc = "sortAsc", // 升序
+   }
+   ```
 
-1. 当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序。
-2. 当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
+2. 当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序。
+3. 当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
 
 ## 部署平台
 
@@ -208,77 +208,77 @@ export const enum NotionSortPreset {
 | catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
 | formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
-formatExt 说明
+**FormatExt 字段说明**
 
 自定义文档处理适配器`.js`文件路径，当需要对文档进一步处理时，可配置此选项
 
 1. 目前只支持 Common Js 标准的处理器。
 2. 处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法。**
 
-```javascript
-// 自定义文档处理器
-// doc的类型定义为 DocDetail，详情见下方 DocDetail 类型定义
-const format = (doc) => {
-  // ...对文档进行处理
-  const newPost = xxx;
-  return newPost;
-};
+   ```javascript
+   // 自定义文档处理器
+   // doc的类型定义为 DocDetail，详情见下方 DocDetail 类型定义
+   const format = (doc) => {
+     // ...对文档进行处理
+     const newPost = xxx;
+     return newPost;
+   };
 
-module.exports = {
-  format,
-};
-```
+   module.exports = {
+     format,
+   };
+   ```
 
-DocDetail 类型定义如下：
+   **DocDetail 类型定义如下：**
 
-```typescript
-/** 文章详情 */
-export interface DocDetail extends BaseDoc {
-  /** 实际部署时的markdown文档字符串 */
-  body: string;
-  /** 原始markdown文档字符串 */
-  body_original: string;
-  /** 部署到wiki时会存在 */
-  body_wiki?: string;
-  /** html字符串 */
-  body_html?: string;
-  /** 文章属性 */
-  properties: DocProperties;
-  /** 语雀文章目录路径， Notion暂不支持 */
-  catalog?: YuqueCatalog[];
-}
+   ```typescript
+   /** 文章详情 */
+   export interface DocDetail extends BaseDoc {
+     /** 实际部署时的markdown文档字符串 */
+     body: string;
+     /** 原始markdown文档字符串 */
+     body_original: string;
+     /** 部署到wiki时会存在 */
+     body_wiki?: string;
+     /** html字符串 */
+     body_html?: string;
+     /** 文章属性 */
+     properties: DocProperties;
+     /** 语雀文章目录路径， Notion暂不支持 */
+     catalog?: YuqueCatalog[];
+   }
 
-export interface BaseDoc {
-  /** 文章唯一ID */
-  id: string;
-  /** 文章ID */
-  doc_id: string;
-  /** 更新时间，冗余字段 */
-  updated: number;
-}
+   export interface BaseDoc {
+     /** 文章唯一ID */
+     id: string;
+     /** 文章ID */
+     doc_id: string;
+     /** 更新时间，冗余字段 */
+     updated: number;
+   }
 
-/** 文章属性 */
-export interface DocProperties {
-  urlname: string;
-  title: string;
-  date: string;
-  updated: string;
-  [key: string]: any;
-}
+   /** 文章属性 */
+   export interface DocProperties {
+     urlname: string;
+     title: string;
+     date: string;
+     updated: string;
+     [key: string]: any;
+   }
 
-/** 语雀知识库目录 */
-export interface YuqueCatalog {
-  /** 类型：文章/分组 */
-  type: "DOC" | "TITLE";
-  title: string;
-  uuid: string;
-  child_uuid: string;
-  parent_uuid: string;
-  slug: string;
-  depth: number;
-  level: number;
-}
-```
+   /** 语雀知识库目录 */
+   export interface YuqueCatalog {
+     /** 类型：文章/分组 */
+     type: "DOC" | "TITLE";
+     title: string;
+     uuid: string;
+     child_uuid: string;
+     parent_uuid: string;
+     slug: string;
+     depth: number;
+     level: number;
+   }
+   ```
 
 ### Confluence
 
@@ -309,39 +309,39 @@ export interface YuqueCatalog {
 | outputDir | 是   | 图片输出目录     | -      |
 | prefixKey | 否   | 图片资源统一前缀 | -      |
 
-prefixKey 说明
+P**refixKey 字段说明**
 
 1. 本地部署平台一般会有资源根目录，会将某个文件夹视为根目录，而`prefixKey`就是配置资源目录的前缀
 2. 例如 Vitpress，如果`outputDir=./docs/asset/images`，则`prefixKey=/asset/images`
 
 ### 腾讯云（cos）/阿里云（oss）/七牛云（qiniu）
 
-| 字段          | 必填 | 说明                       | 默认值 |
-| ------------- | ---- | -------------------------- | ------ |
-| **secretId**  | 是   | 图床密钥 ID                | -      |
-| **secretKey** | 是   | 图床密钥 KEY               | -      |
-| bucket        | 是   | 桶名称/七牛云空间          | -      |
-| region        | 是   | 存储区域                   | -      |
-| host          | 否   | 指定域名，**七牛云必填**   | -      |
-| prefixKey     | 否   | 上传路径，默认上传到根路径 | -      |
-| secretExt     | 否   | 图床密钥拓展点             | -      |
+| 字段      | 必填 | 说明                       | 默认值 |
+| --------- | ---- | -------------------------- | ------ |
+| secretId  | 是   | 图床密钥 ID                | -      |
+| secretKey | 是   | 图床密钥 KEY               | -      |
+| bucket    | 是   | 桶名称/七牛云空间          | -      |
+| region    | 是   | 存储区域                   | -      |
+| host      | 否   | 指定域名，**七牛云必填**   | -      |
+| prefixKey | 否   | 上传路径，默认上传到根路径 | -      |
+| secretExt | 否   | 图床密钥拓展点             | -      |
 
 ### 又拍云（upyun）
 
-| 字段         | 必填 | 说明                                                               | 默认值                                   |
-| ------------ | ---- | ------------------------------------------------------------------ | ---------------------------------------- |
-| **user**     | 是   | 操作员账号                                                         | -                                        |
-| **password** | 是   | 操作员密码                                                         | -                                        |
-| bucket       | 是   | 地区                                                               | -                                        |
-| host         | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：http://${bucket}.est.upcdn.net |
-| prefixKey    | 否   | 上传路径，默认上传到根路径                                         | -                                        |
-| secretExt    | 否   | 图床密钥拓展点                                                     | -                                        |
+| 字段      | 必填 | 说明                                                               | 默认值                                   |
+| --------- | ---- | ------------------------------------------------------------------ | ---------------------------------------- |
+| user      | 是   | 操作员账号                                                         | -                                        |
+| password  | 是   | 操作员密码                                                         | -                                        |
+| bucket    | 是   | 地区                                                               | -                                        |
+| host      | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：http://${bucket}.est.upcdn.net |
+| prefixKey | 否   | 上传路径，默认上传到根路径                                         | -                                        |
+| secretExt | 否   | 图床密钥拓展点                                                     | -                                        |
 
 ### Github 图床（github）
 
 | 字段      | 必填 | 说明                            | 默认值 |
 | --------- | ---- | ------------------------------- | ------ |
-| **token** | 是   | Github Token                    | -      |
+| token     | 是   | Github Token                    | -      |
 | user      | 是   | 用户名                          | -      |
 | repo      | 是   | 仓库名                          | -      |
 | branch    | 否   | 分支                            | master |
@@ -356,55 +356,61 @@ prefixKey 说明
 1. 目前只支持 Common Js 标准拓展点。
 2. 拓展点需要暴露一个**同步/异步**的 `getSecret` 的方法**。**
 
-```typescript
-const axios = require("axios");
+   ```typescript
+   const axios = require("axios");
 
-const getOssSts = async () => {
-  return await axios.get("https://xxxx/oss/sts?directory=elog");
-};
+   const getOssSts = async () => {
+     return await axios.get("https://xxxx/oss/sts?directory=elog");
+   };
 
-const getSecret = async () => {
-  const res = await getOssSts();
-  const { accessKeyId, accessKeySecret, securityToken, dir, region, bucket } =
-    res.data.data;
-  return {
-    secretId: accessKeyId,
-    secretKey: accessKeySecret,
-    stsToken: securityToken,
-    secure: true,
-    prefixKey: dir,
-    region,
-    bucket,
-  };
-};
+   const getSecret = async () => {
+     const res = await getOssSts();
+     const {
+       accessKeyId,
+       accessKeySecret,
+       securityToken,
+       dir,
+       region,
+       bucket,
+     } = res.data.data;
+     return {
+       secretId: accessKeyId,
+       secretKey: accessKeySecret,
+       stsToken: securityToken,
+       secure: true,
+       prefixKey: dir,
+       region,
+       bucket,
+     };
+   };
 
-module.exports = {
-  getSecret,
-};
-```
+   module.exports = {
+     getSecret,
+   };
+   ```
 
-1. `getSecret` 返回的密钥信息需要符合图床实例 SDK 的字段要求，具体请参考对应图床 SDK/API
+3. `getSecret` 返回的密钥信息需要符合图床实例 SDK 的字段要求，具体请参考对应图床 SDK/API
 
 ### 环境变量配置
 
 1. 当 Elog 配置文件为 Js 类型时，可在配置文件中通过`process.env.xxx`自定义环境变量。
 2. 当 ELog 配置文件为 Json 类型时，Elog 会优先从配置文件中获取，如果获取不到，则会从环境变量中获取。Elog 默认只会读取以下环境变量值：
 
-| Key              | Value                          |
-| ---------------- | ------------------------------ |
-| YUQUE_TOKEN      | 语雀 Token                     |
-| NOTION_TOKEN     | Notion Token                   |
-| CONFLUENCE_USER  | Confluence 账号                |
-| CONFLUENCE_PWD   | Confluence 密码                |
-| GITHUB_TOKEN     | Github Token                   |
-| COS_SECRET_ID    | 腾讯云 COS 的 secretId         |
-| COS_SECRET_KEY   | 腾讯云 COS 的 secretKey        |
-| OSS_SECRET_ID    | 阿里云 OSS 的 AccessKey ID     |
-| OSS_SECRET_KEY   | 阿里云 OSS 的 AccessKey Secret |
-| QINIU_SECRET_ID  | 七牛云的 AccessKey             |
-| QINIU_SECRET_KEY | 七牛云的 SecretKey             |
-| UPYUN_SECRET_ID  | 又拍云的操作员账号             |
-| UPYUN_SECRET_KEY | 又拍云的操作员密码             |
+   | Key              | Value                          |
+   | ---------------- | ------------------------------ |
+   | YUQUE_TOKEN      | 语雀 Token                     |
+   | NOTION_TOKEN     | Notion Token                   |
+   | CONFLUENCE_USER  | Confluence 账号                |
+   | CONFLUENCE_PWD   | Confluence 密码                |
+   | GITHUB_TOKEN     | Github Token                   |
+   | COS_SECRET_ID    | 腾讯云 COS 的 secretId         |
+   | COS_SECRET_KEY   | 腾讯云 COS 的 secretKey        |
+   | OSS_SECRET_ID    | 阿里云 OSS 的 AccessKey ID     |
+   | OSS_SECRET_KEY   | 阿里云 OSS 的 AccessKey Secret |
+   | QINIU_SECRET_ID  | 七牛云的 AccessKey             |
+   | QINIU_SECRET_KEY | 七牛云的 SecretKey             |
+   | UPYUN_SECRET_ID  | 又拍云的操作员账号             |
+   | UPYUN_SECRET_KEY | 又拍云的操作员密码             |
 
 > ⚠️ 为了安全，在实际配置中请不要将敏感信息写在配置文件中，Elog 提供了更优雅的本地调试方式。
 

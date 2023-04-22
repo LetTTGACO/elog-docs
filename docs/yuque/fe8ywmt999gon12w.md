@@ -128,7 +128,7 @@ module.exports = {
 
 | 字段          | 必填 | 说明                                 | 默认值                         |
 | ------------- | ---- | ------------------------------------ | ------------------------------ |
-| **token**     | 是   | 语雀 Token                           | -                              |
+| token         | 是   | 语雀 Token                           | -                              |
 | baseUrl       | 否   | 语雀 API 请求的 Base Url             | <https://www.yuque.com/api/v2> |
 | login         | 是   | 个人路径/空间 ID                     | -                              |
 | repo          | 是   | 语雀仓库短名称，也称为语雀知识库路径 | -                              |
@@ -143,7 +143,7 @@ module.exports = {
 
 | 字段       | 必填 | 类型             | 说明                 | 默认值 |
 | ---------- | ---- | ---------------- | -------------------- | ------ |
-| **token**  | 是   | string           | Notion Token         |        |
+| token      | 是   | string           | Notion Token         |        |
 | databaseId | 是   | string           | notion 中的数据库 id | -      |
 | filter     | 否   | boolean ｜ any   | 过滤条件             | true   |
 | sorts      | 否   | boolean ｜ any[] | 排序条件             | true   |
@@ -208,7 +208,7 @@ export const enum NotionSortPreset {
 | catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
 | formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
-#### formatExt 说明
+#### FormatExt 字段说明
 
 自定义文档处理适配器`.js`文件路径，当需要对文档进一步处理时，可配置此选项
 
@@ -229,7 +229,7 @@ module.exports = {
 };
 ```
 
-DocDetail 类型定义如下：
+**DocDetail 类型定义如下：**
 
 ```typescript
 /** 文章详情 */
@@ -309,29 +309,29 @@ export interface YuqueCatalog {
 | outputDir | 是   | 图片输出目录     | -      |
 | prefixKey | 否   | 图片资源统一前缀 | -      |
 
-#### prefixKey 说明
+#### PrefixKey 字段说明
 
 1.  本地部署平台一般会有资源根目录，会将某个文件夹视为根目录，而`prefixKey`就是配置资源目录的前缀
 2.  例如 Vitpress，如果`outputDir=./docs/asset/images`，则`prefixKey=/asset/images`
 
 ### 腾讯云（cos）/阿里云（oss）/七牛云（qiniu）
 
-| 字段          | 必填 | 说明                       | 默认值 |
-| ------------- | ---- | -------------------------- | ------ |
-| **secretId**  | 是   | 图床密钥 ID                | -      |
-| **secretKey** | 是   | 图床密钥 KEY               | -      |
-| bucket        | 是   | 桶名称/七牛云空间          | -      |
-| region        | 是   | 存储区域                   | -      |
-| host          | 否   | 指定域名，**七牛云必填**   | -      |
-| prefixKey     | 否   | 上传路径，默认上传到根路径 | -      |
-| secretExt     | 否   | 图床密钥拓展点             | -      |
+| 字段              | 必填 | 说明                       | 默认值 |
+| ----------------- | ---- | -------------------------- | ------ |
+| secretId          | 是   | 图床密钥 ID                | -      |
+| secretKey\*\*\*\* | 是   | 图床密钥 KEY               | -      |
+| bucket            | 是   | 桶名称/七牛云空间          | -      |
+| region            | 是   | 存储区域                   | -      |
+| host              | 否   | 指定域名，**七牛云必填**   | -      |
+| prefixKey         | 否   | 上传路径，默认上传到根路径 | -      |
+| secretExt         | 否   | 图床密钥拓展点             | -      |
 
 ### 又拍云（upyun）
 
 | 字段         | 必填 | 说明                                                               | 默认值                                   |
 | ------------ | ---- | ------------------------------------------------------------------ | ---------------------------------------- |
-| **user**     | 是   | 操作员账号                                                         | -                                        |
-| **password** | 是   | 操作员密码                                                         | -                                        |
+| user\*\*\*\* | 是   | 操作员账号                                                         | -                                        |
+| password     | 是   | 操作员密码                                                         | -                                        |
 | bucket       | 是   | 地区                                                               | -                                        |
 | host         | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：http://${bucket}.est.upcdn.net |
 | prefixKey    | 否   | 上传路径，默认上传到根路径                                         | -                                        |
@@ -341,7 +341,7 @@ export interface YuqueCatalog {
 
 | 字段      | 必填 | 说明                            | 默认值 |
 | --------- | ---- | ------------------------------- | ------ |
-| **token** | 是   | Github Token                    | -      |
+| token     | 是   | Github Token                    | -      |
 | user      | 是   | 用户名                          | -      |
 | repo      | 是   | 仓库名                          | -      |
 | branch    | 否   | 分支                            | master |
