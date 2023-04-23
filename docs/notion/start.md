@@ -1,12 +1,12 @@
 ---
 status: 已发布
 sort: 5
-lastUpdated: "2023-04-21T15:29:00.000Z"
+lastUpdated: "2023-04-23T15:13:00.000Z"
 urlname: start
 date: "2023-04-06"
 catalog: 入门指引
 title: 快速开始
-updated: "2023-04-21 23:29:00"
+updated: "2023-04-23 23:13:00"
 ---
 
 # 快速开始
@@ -38,7 +38,7 @@ pnpm install @elog/cli -g
 elog init
 ```
 
-根据提示初始化成功后，会在根目录生成一份 `elog.config.js` 配置文件。你需要修改一些配置才能进行下一步，详情移步 [**配置详情**](https://elog.1874.cool/notion/fe8ywmt999gon12w) 页面
+根据提示初始化成功后，会在根目录生成一份 `elog.config.js` 配置文件和本本地调试用的`.elog.env`环境变量配置文件。你需要修改一些配置才能进行下一步，详情移步 [配置详情](/notion/fe8ywmt999gon12w) 页面
 
 ## 开始同步
 
@@ -48,4 +48,4 @@ elog init
 elog sync
 ```
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fj0KPeXuccv4EtdBQXYO56w5tOkt.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fi6HtLq5Iep895WUxTb0NWN_oAqh.png)

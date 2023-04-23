@@ -27,7 +27,7 @@ pnpm install @elog/cli -g
 elog init
 ```
 
-根据提示初始化成功后，会在根目录生成一份`elog.config.js` 配置文件。你需要修改一些配置才能进行下一步，详情移步 [配置详情](/yuque/fe8ywmt999gon12w) 页面
+根据提示初始化成功后，会在根目录生成一份`elog.config.js` 配置文件和本本地调试用的`.elog.env`环境变量配置文件。你需要修改一些配置才能进行下一步，详情移步 [配置详情](/yuque/fe8ywmt999gon12w) 页面。
 
 ## 开始同步
 

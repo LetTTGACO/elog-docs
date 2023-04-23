@@ -23,16 +23,16 @@
       "properties": {
         "status": "已发布",
         "sort": 5,
-        "lastUpdated": "2023-04-21T15:29:00.000Z",
+        "lastUpdated": "2023-04-23T15:13:00.000Z",
         "urlname": "start",
         "date": "2023-04-06",
         "catalog": "入门指引",
         "title": "快速开始",
-        "updated": "2023-04-21 23:29:00"
+        "updated": "2023-04-23 23:13:00"
       },
-      "body": "\n# 快速开始\n\n\n## 环境准备\n\n\nElog 项目基于 node，请确保已具备较新的 node 环境（>=12.0.0），推荐使用 node 版本管理工具 [nvm](https://github.com/creationix/nvm) 来管理 node，这样不仅可以很方便地切换 node 版本，而且全局安装时候也不用加 sudo 了。\n\n\n## CLI 工具安装\n\n\n首先，你需要使用 npm / yarn / pnpm 全局安装`@elog/cli`\n\n\n```shell\n# 使用 npm 安装 CLI\nnpm install @elog/cli -g\n\n# 使用 yarn 安装 CLI\nyarn global add @elog/cli\n\n# 使用 pnpm 安装 CLI\npnpm install @elog/cli -g\n```\n\n\n## 初始化\n\n\n你需要拥有一个 Hexo/Vitepress/HuGo 的项目，进入部署平台根目录下，这里以 Hexo 举例，使用命令进行初始化：\n\n\n```shell\nelog init\n```\n\n\n根据提示初始化成功后，会在根目录生成一份 `elog.config.js` 配置文件。你需要修改一些配置才能进行下一步，详情移步 [**配置详情**](https://elog.1874.cool/notion/fe8ywmt999gon12w) 页面\n\n\n## 开始同步\n\n\n在根目录下，执行同步命令：\n\n\n```shell\nelog sync\n```\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fj0KPeXuccv4EtdBQXYO56w5tOkt.png)\n\n",
-      "body_original": "\n# 快速开始\n\n\n## 环境准备\n\n\nElog 项目基于 node，请确保已具备较新的 node 环境（>=12.0.0），推荐使用 node 版本管理工具 [nvm](https://github.com/creationix/nvm) 来管理 node，这样不仅可以很方便地切换 node 版本，而且全局安装时候也不用加 sudo 了。\n\n\n## CLI 工具安装\n\n\n首先，你需要使用 npm / yarn / pnpm 全局安装`@elog/cli`\n\n\n```shell\n# 使用 npm 安装 CLI\nnpm install @elog/cli -g\n\n# 使用 yarn 安装 CLI\nyarn global add @elog/cli\n\n# 使用 pnpm 安装 CLI\npnpm install @elog/cli -g\n```\n\n\n## 初始化\n\n\n你需要拥有一个 Hexo/Vitepress/HuGo 的项目，进入部署平台根目录下，这里以 Hexo 举例，使用命令进行初始化：\n\n\n```shell\nelog init\n```\n\n\n根据提示初始化成功后，会在根目录生成一份 `elog.config.js` 配置文件。你需要修改一些配置才能进行下一步，详情移步 [**配置详情**](https://elog.1874.cool/notion/fe8ywmt999gon12w) 页面\n\n\n## 开始同步\n\n\n在根目录下，执行同步命令：\n\n\n```shell\nelog sync\n```\n\n\n![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/aac179a3-e1f3-4d35-9c81-8dd4b2c38700/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T124705Z&X-Amz-Expires=3600&X-Amz-Signature=f1a4143c2cbe32701b095de23093b24fb6b64554180b2492ee538841994d0d7b&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n",
-      "updated": 1682090940000
+      "body": "\n# 快速开始\n\n\n## 环境准备\n\n\nElog 项目基于 node，请确保已具备较新的 node 环境（>=12.0.0），推荐使用 node 版本管理工具 [nvm](https://github.com/creationix/nvm) 来管理 node，这样不仅可以很方便地切换 node 版本，而且全局安装时候也不用加 sudo 了。\n\n\n## CLI 工具安装\n\n\n首先，你需要使用 npm / yarn / pnpm 全局安装`@elog/cli`\n\n\n```shell\n# 使用 npm 安装 CLI\nnpm install @elog/cli -g\n\n# 使用 yarn 安装 CLI\nyarn global add @elog/cli\n\n# 使用 pnpm 安装 CLI\npnpm install @elog/cli -g\n```\n\n\n## 初始化\n\n\n你需要拥有一个 Hexo/Vitepress/HuGo 的项目，进入部署平台根目录下，这里以 Hexo 举例，使用命令进行初始化：\n\n\n```shell\nelog init\n```\n\n\n根据提示初始化成功后，会在根目录生成一份 `elog.config.js` 配置文件和本本地调试用的`.elog.env`环境变量配置文件。你需要修改一些配置才能进行下一步，详情移步 [配置详情](/notion/fe8ywmt999gon12w) 页面\n\n\n## 开始同步\n\n\n在根目录下，执行同步命令：\n\n\n```shell\nelog sync\n```\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fi6HtLq5Iep895WUxTb0NWN_oAqh.png)\n\n",
+      "body_original": "\n# 快速开始\n\n\n## 环境准备\n\n\nElog 项目基于 node，请确保已具备较新的 node 环境（>=12.0.0），推荐使用 node 版本管理工具 [nvm](https://github.com/creationix/nvm) 来管理 node，这样不仅可以很方便地切换 node 版本，而且全局安装时候也不用加 sudo 了。\n\n\n## CLI 工具安装\n\n\n首先，你需要使用 npm / yarn / pnpm 全局安装`@elog/cli`\n\n\n```shell\n# 使用 npm 安装 CLI\nnpm install @elog/cli -g\n\n# 使用 yarn 安装 CLI\nyarn global add @elog/cli\n\n# 使用 pnpm 安装 CLI\npnpm install @elog/cli -g\n```\n\n\n## 初始化\n\n\n你需要拥有一个 Hexo/Vitepress/HuGo 的项目，进入部署平台根目录下，这里以 Hexo 举例，使用命令进行初始化：\n\n\n```shell\nelog init\n```\n\n\n根据提示初始化成功后，会在根目录生成一份 `elog.config.js` 配置文件和本本地调试用的`.elog.env`环境变量配置文件。你需要修改一些配置才能进行下一步，详情移步 [配置详情](/notion/fe8ywmt999gon12w) 页面\n\n\n## 开始同步\n\n\n在根目录下，执行同步命令：\n\n\n```shell\nelog sync\n```\n\n\n![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/aac179a3-e1f3-4d35-9c81-8dd4b2c38700/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T151352Z&X-Amz-Expires=3600&X-Amz-Signature=82d4cc44b2f6564896b67f1510d792298441e7ef862a4cfabd21baba72b50965&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n",
+      "updated": 1682262780000
     },
     {
       "id": "effe4f69-dc4e-4b6f-87bb-e2c34dec59cc",
@@ -401,7 +401,7 @@
       "object": "page",
       "id": "e93ae9d1-7340-4545-a82f-1d7ff34bcb61",
       "created_time": "2023-04-06T13:31:00.000Z",
-      "last_edited_time": "2023-04-21T15:29:00.000Z",
+      "last_edited_time": "2023-04-23T15:13:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -423,12 +423,12 @@
       "properties": {
         "status": "已发布",
         "sort": 5,
-        "lastUpdated": "2023-04-21T15:29:00.000Z",
+        "lastUpdated": "2023-04-23T15:13:00.000Z",
         "urlname": "start",
         "date": "2023-04-06",
         "catalog": "入门指引",
         "title": "快速开始",
-        "updated": "2023-04-21 23:29:00"
+        "updated": "2023-04-23 23:13:00"
       },
       "url": "https://www.notion.so/e93ae9d173404545a82f1d7ff34bcb61"
     },
