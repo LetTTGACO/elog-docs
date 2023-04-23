@@ -52,8 +52,8 @@ module.exports = {
     cos: {
       secretId: process.env.COS_SECRET_ID,
       secretKey: process.env.COS_SECRET_KEY,
-      bucket: process.env.COS_BUCKET,
-      region: process.env.COS_REGION,
+      bucket: process.env.COS_IMAGE_BUCKET,
+      region: process.env.COS_IMAGE_REGION,
       host: process.env.COS_HOST,
       prefixKey: 'elog-docs-images',
       secretExt: '', // 可选

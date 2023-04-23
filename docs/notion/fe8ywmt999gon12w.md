@@ -1,3 +1,14 @@
+---
+status: 已发布
+sort: 6
+lastUpdated: "2023-04-22T07:00:00.000Z"
+urlname: fe8ywmt999gon12w
+date: "2023-04-22"
+catalog: 入门指引
+title: 配置详情
+updated: "2023-04-22 15:00:00"
+---
+
 # 配置详情
 
 ## 目录结构

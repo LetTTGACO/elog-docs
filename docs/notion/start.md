@@ -1,3 +1,14 @@
+---
+status: 已发布
+sort: 5
+lastUpdated: "2023-04-21T15:29:00.000Z"
+urlname: start
+date: "2023-04-06"
+catalog: 入门指引
+title: 快速开始
+updated: "2023-04-21 23:29:00"
+---
+
 # 快速开始
 
 ## 环境准备
@@ -37,4 +48,4 @@ elog init
 elog sync
 ```
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/aac179a3-e1f3-4d35-9c81-8dd4b2c38700/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230421%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230421T192055Z&X-Amz-Expires=3600&X-Amz-Signature=eabb09f8176607b734c816a5f16f6ed2d83935c31b0fa8061f805d98db7bf87a&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fj0KPeXuccv4EtdBQXYO56w5tOkt.png)

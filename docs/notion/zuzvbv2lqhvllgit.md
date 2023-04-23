@@ -1,3 +1,14 @@
+---
+status: 已发布
+sort: 2
+lastUpdated: "2023-04-21T18:41:00.000Z"
+urlname: zuzvbv2lqhvllgit
+date: "2023-04-06"
+catalog: 关于Elog
+title: Features
+updated: "2023-04-22 02:41:00"
+---
+
 # Features
 
 - [x] 写作平台支持语雀/Notion

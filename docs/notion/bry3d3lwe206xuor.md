@@ -1,3 +1,14 @@
+---
+status: 已发布
+sort: 8
+lastUpdated: "2023-04-21T17:30:00.000Z"
+urlname: bry3d3lwe206xuor
+date: "2023-04-06"
+catalog: 入门指引
+title: CLI 命令
+updated: "2023-04-22 01:30:00"
+---
+
 # CLI 命令
 
 ## init

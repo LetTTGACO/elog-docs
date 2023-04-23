@@ -1,3 +1,14 @@
+---
+status: 已发布
+sort: 12
+lastUpdated: "2023-04-21T18:00:00.000Z"
+urlname: raqyleng501h23p1
+date: "2023-04-06"
+catalog: 进阶玩法
+title: Front Matter
+updated: "2023-04-22 02:00:00"
+---
+
 # Front Matter
 
 Elog 会将用户自定义的 front matter 和 预定义属性合并后，输出新的带有 front matter 的 markdown 文档。 任何包含 YAML front matter 的 Markdown 文件都将由 [front-matter](https://www.npmjs.com/package/front-matter)处理。front matter 必须是 markdown 文件中的第一部分，并且必须采用在三点划线之间书写的有效的 YAML。 这是一个基本的例子：

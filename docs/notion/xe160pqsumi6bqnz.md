@@ -1,3 +1,14 @@
+---
+status: 已发布
+sort: 13
+lastUpdated: "2023-04-21T18:11:00.000Z"
+urlname: xe160pqsumi6bqnz
+date: "2023-04-06"
+catalog: 进阶玩法
+title: 按目录存放文档
+updated: "2023-04-22 02:11:00"
+---
+
 # 按目录存放文档
 
 ## 适用场景
