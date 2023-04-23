@@ -8,10 +8,10 @@
 elog init [option] [value]
 ```
 
-| option | alias | 说明                 | 默认值           |
-| ------ | ----- | -------------------- | ---------------- |
-| --name | -n    | 自定义配置文件的名称 | elog-config.json |
-| --env  | -e    | 自定义缓存文件的名称 | elog.cache.json  |
+| option   | alias | 说明                 | 默认值          |
+| -------- | ----- | -------------------- | --------------- |
+| --config | -c    | 自定义配置文件的名称 | elog.config.js  |
+| --env    | -e    | 自定义缓存文件的名称 | elog.cache.json |
 
 ## sync
 
