@@ -4,8 +4,8 @@ sort: 7
 urlname: gvnxobqogetukays
 catalog: 入门指引
 title: 关键信息获取
-date: "2023-04-06 13:31:00"
-updated: "2023-04-23 15:26:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-04-24 00:10:00"
 ---
 
 # 关键信息获取
@@ -36,9 +36,10 @@ updated: "2023-04-23 15:26:00"
 
 ### 模版
 
-1. 使用 [Database 模板](/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库
-2. 获取 Token
-3. 将之前创建好的页面连接到刚刚创建的应用，[Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
+使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库
+
+1. 获取 Token
+2. 将之前创建好的页面连接到刚刚创建的应用，[Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
 
 ### token
 
