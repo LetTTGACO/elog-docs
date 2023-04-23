@@ -1,12 +1,12 @@
 ---
 status: 已发布
 sort: 6
-lastUpdated: "2023-04-22T07:00:00.000Z"
+lastUpdated: "2023-04-23T15:37:00.000Z"
 urlname: fe8ywmt999gon12w
 date: "2023-04-22"
 catalog: 入门指引
 title: 配置详情
-updated: "2023-04-22 15:00:00"
+updated: "2023-04-23 15:37:00"
 ---
 
 # 配置详情
@@ -29,7 +29,9 @@ updated: "2023-04-22 15:00:00"
 └── package.json
 ```
 
-以下配置都是基于`elog.config.js`来说明 ## 完整示例
+以下配置都是基于`elog.config.js`来说明
+
+## 完整示例
 
 ```javascript
 module.exports = {
@@ -148,6 +150,10 @@ module.exports = {
 > 当知识库类型为个人知识库时，无需配置。  
 > 当知识库类型为团队知识库时，`baseUrl=https://空间id.yuque.com/api/v2`，`login=空间id`，`repo=空间中的语雀知识库路径`
 
+**语雀配置**
+
+语雀关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays) 页面。
+
 ### Notion
 
 | 字段       | 必填 | 类型                       | 说明                 | 默认值 |
@@ -156,6 +162,10 @@ module.exports = {
 | databaseId | 是   | string                     | notion 中的数据库 id | -      |
 | filter     | 否   | boolean ｜ any             | 过滤条件             | true   |
 | sorts      | 否   | boolean ｜ string ｜ any[] | 排序条件             | true   |
+
+**Notion 配置**
+
+Notion 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays) 页面。
 
 **Filter 字段说明**
 
@@ -339,14 +349,14 @@ P**refixKey 字段说明**
 
 ### 又拍云（upyun）
 
-| 字段      | 必填 | 说明                                                               | 默认值                                   |
-| --------- | ---- | ------------------------------------------------------------------ | ---------------------------------------- |
-| user      | 是   | 操作员账号                                                         | -                                        |
-| password  | 是   | 操作员密码                                                         | -                                        |
-| bucket    | 是   | 地区                                                               | -                                        |
-| host      | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：http://${bucket}.est.upcdn.net |
-| prefixKey | 否   | 上传路径，默认上传到根路径                                         | -                                        |
-| secretExt | 否   | 图床密钥拓展点                                                     | -                                        |
+| 字段      | 必填 | 说明                                                               | 默认值                             |
+| --------- | ---- | ------------------------------------------------------------------ | ---------------------------------- |
+| user      | 是   | 操作员账号                                                         | -                                  |
+| password  | 是   | 操作员密码                                                         | -                                  |
+| bucket    | 是   | 地区                                                               | -                                  |
+| host      | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：http://xxx.est.upcdn.net |
+| prefixKey | 否   | 上传路径，默认上传到根路径                                         | -                                  |
+| secretExt | 否   | 图床密钥拓展点                                                     | -                                  |
 
 ### Github 图床（github）
 

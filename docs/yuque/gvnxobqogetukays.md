@@ -22,9 +22,9 @@
 
 ### 模版
 
-1.  使用 [Database 模板](https://letttgaco.notion.site/Notion-Database-eb4c5d1f6bd248a2b27cf83b38dec117) 创建一个数据库
+1.  使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库
 2.  获取 Token
-3.  将之前创建好的页面分享给刚刚创建的应用，[Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
+3.  将之前创建好的页面分享给刚刚创建的应用，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
 
 ### token
 

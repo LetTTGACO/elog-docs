@@ -1,12 +1,12 @@
 ---
 status: 已发布
 sort: 7
-lastUpdated: "2023-04-21T17:21:00.000Z"
+lastUpdated: "2023-04-23T15:26:00.000Z"
 urlname: gvnxobqogetukays
 date: "2023-04-06"
 catalog: 入门指引
 title: 关键信息获取
-updated: "2023-04-22 01:21:00"
+updated: "2023-04-23 15:26:00"
 ---
 
 # 关键信息获取
@@ -37,7 +37,7 @@ updated: "2023-04-22 01:21:00"
 
 ### 模版
 
-1. 使用 [Database 模板](https://letttgaco.notion.site/Notion-Database-eb4c5d1f6bd248a2b27cf83b38dec117) 创建一个数据库
+1. 使用 [Database 模板](/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库
 2. 获取 Token
 3. 将之前创建好的页面连接到刚刚创建的应用，[Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
 
