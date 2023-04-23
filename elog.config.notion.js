@@ -20,7 +20,7 @@ module.exports = {
     local: {
       outputDir: './docs/notion',
       filename: 'urlname',
-      format: 'markdown',
+      format: 'matter-markdown',
       catalog: false,
       formatExt: '',
     },
