@@ -11,7 +11,7 @@
 ├── source
 ├── themes
 ├── .elog.env						// Elog用于本地调试时的环境变量配置
-├── .gitignore					// git忽略文件，请将.env文件加入，防止密码等信息误提交
+├── .gitignore					// git忽略文件，请将.elog.env文件加入，防止密码等信息误提交
 ├── _config.yml
 ├── elog.cache.json			// Elog的缓存文件，用于缓存上次同步的文件
 ├── elog.config.js		  // Elog的配置文件
@@ -126,6 +126,8 @@ module.exports = {
 
 ### 语雀
 
+语雀关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays#语雀) 页面
+
 | 字段          | 必填 | 说明                                 | 默认值                         |
 | ------------- | ---- | ------------------------------------ | ------------------------------ |
 | token         | 是   | 语雀 Token                           | -                              |
@@ -139,11 +141,9 @@ module.exports = {
 > 当知识库类型为个人知识库时，无需配置。
 > 当知识库类型为团队知识库时，`baseUrl=https://空间id.yuque.com/api/v2`，`login=空间id`，`repo=空间中的语雀知识库路径`
 
-#### 语雀配置
-
-语雀关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays) 页面
-
 ### Notion
+
+Notion 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays#notion) 页面
 
 | 字段       | 必填 | 类型             | 说明                 | 默认值 |
 | ---------- | ---- | ---------------- | -------------------- | ------ |
@@ -151,10 +151,6 @@ module.exports = {
 | databaseId | 是   | string           | notion 中的数据库 id | -      |
 | filter     | 否   | boolean ｜ any   | 过滤条件             | true   |
 | sorts      | 否   | boolean ｜ any[] | 排序条件             | true   |
-
-#### Notion 配置
-
-Notion 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays) 页面
 
 #### Filter 字段说明
 
@@ -301,14 +297,7 @@ export interface YuqueCatalog {
 
 ## 图床平台
 
-### 通用字段
-
-| 字段      | 必填 | 说明                                              | 默认值 |
-| --------- | ---- | ------------------------------------------------- | ------ |
-| enable    | 是   | 是否启用图床                                      | false  |
-| bed       | 是   | 图床，取值 cos ｜ oss ｜ github ｜ qiniu ｜ upyun | github |
-| prefixKey | 否   | 上传路径                                          |        |
-| host      | 否   | 指定域名                                          |        |
+图床关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays#图床) 页面。
 
 ### 本地存储（local）
 
