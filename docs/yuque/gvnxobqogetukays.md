@@ -23,8 +23,9 @@
 ### 模版
 
 1.  使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库
-2.  获取 Token
-3.  将之前创建好的页面分享给刚刚创建的应用，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
+2.  创建 Integration Token，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-1-create-an-integration)
+3.  将刚复制的 Database 模版连接到刚刚创建的 Integration，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-2-share-a-database-with-your-integration)
+4.  获取数据库 DatabaseId
 
 ### token
 
