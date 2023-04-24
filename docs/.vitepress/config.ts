@@ -6,8 +6,9 @@ export default defineConfig({
   lang: "zh-CN",
   title: 'Elog',
   description: 'doc for elog',
-  lastUpdated: true,
+  lastUpdated: false,
   cleanUrls: true,
+  ignoreDeadLinks: true,
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     [
