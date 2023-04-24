@@ -4,8 +4,8 @@ sort: 5
 urlname: start
 catalog: 入门指引
 title: 快速开始
-date: "2023-04-06 13:31:00"
-updated: "2023-04-23 15:58:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-04-23 23:58:00"
 ---
 
 # 快速开始
@@ -47,4 +47,4 @@ elog init
 elog sync
 ```
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FnR-UDh6fpgBbQYMyPj08-kKHv0S.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fjaaxpnqigk1Wwdt9p2nc1FJdZcy.png)

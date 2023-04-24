@@ -210,7 +210,7 @@ retq
 
 - 行内公式【Inline equation/行级方程】【不可用，解析到一些博客平台会报错，例如 vitepress 会导致页面报错，这里转成图片】
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FgDQvIvHMp3LYoWauXmjHnymvE1r.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FtXQORqePi_nzyDWgUerezSuc53F.png)
 
 ## 3. 图表
 
@@ -225,11 +225,11 @@ graph LR;
 
 ## 4. PDF 嵌入
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fbdf623f-21ce-48a2-b8b6-152680ad6dfe/tailwindcss.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230424T055628Z&X-Amz-Expires=3600&X-Amz-Signature=3313bb721b869cab934eadb110b8b639e39a8525393fd133d2881e560e18dcf8&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fbdf623f-21ce-48a2-b8b6-152680ad6dfe/tailwindcss.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230424T075526Z&X-Amz-Expires=3600&X-Amz-Signature=6d34e50412cc568374bb280df18a670c03bc69c5a565fb86d2ef2ad0da39fdb7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## 5.下载附件
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fab11580-96c3-4230-90f6-05257f00fb0a/%E6%B5%8B%E8%AF%95%E5%B5%8C%E5%85%A5PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230424T055628Z&X-Amz-Expires=3600&X-Amz-Signature=81aff901443eace5b0ce3648f8832c864088658e42cc5f0ac17d11ee2b15d31f&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fab11580-96c3-4230-90f6-05257f00fb0a/%E6%B5%8B%E8%AF%95%E5%B5%8C%E5%85%A5PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230424T075526Z&X-Amz-Expires=3600&X-Amz-Signature=1b7abdf68653c23c478958476a80a392c062133a255f4f16b4a7f38f15afb17f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## 6. 照片集（Callery 视图数据库）
 
@@ -295,7 +295,7 @@ graph LR;
 
 ### 12.图片
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FlWPcCiOAgjzQQJ7Gs-XNJNDsTHK.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FlZGA7Owpp0UiR8KPK_Q81yeMANd.png)
 
 ### 13. Emoji
 

@@ -4,8 +4,8 @@ sort: 8
 urlname: bry3d3lwe206xuor
 catalog: 入门指引
 title: CLI 命令
-date: "2023-04-06 13:31:00"
-updated: "2023-04-23 16:46:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-04-24 00:46:00"
 ---
 
 # CLI 命令
