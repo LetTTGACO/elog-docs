@@ -30,20 +30,12 @@ jobs:
           export TZ='Asia/Shanghai'
           npm install pnpm@7.9.5 -g
 
-      - name: 缓存依赖
-        uses: actions/cache@v1
-        id: cache
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/pnpm-lock.yaml')}}
-
       - name: 安装依赖
-        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           export TZ='Asia/Shanghai'
           pnpm install --prod
 
-      - name: 清除缓存(拉取全部文章)
+      - name: 清除缓存
         env:
           CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
         if: ${{ env.CLEAN_CACHE == 'true' }}
@@ -75,7 +67,7 @@ jobs:
         run: |
           echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
           git add .
-          git commit -m "Refresh yuque json" -a
+          git commit -m "Refresh elog.cache.json" -a
 
       - name: 推送文章到仓库
         uses: ad-m/github-push-action@master
@@ -88,7 +80,7 @@ jobs:
         run: |
           pnpm docs:build
 
-      - name: Deploy
+      - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
