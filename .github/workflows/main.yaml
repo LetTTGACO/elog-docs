@@ -1,4 +1,4 @@
-name: Deplo To COS
+name: Deplo To Github Pages
 
 on:
   # 允许手动push触发
@@ -92,7 +92,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          publish_dir: ./public
+          publish_dir: docs/.vitepress/dist
           external_repository: LetTTGACO/LetTTGACO.github.io
           publish_branch: master
           commit_message: ${{ github.event.head_commit.message }}
