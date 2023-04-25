@@ -105,8 +105,8 @@ jobs:
         run: |
           pnpm docs:build
 
-      - name: 上传文章到cos并刷新CDN
-        run: |
-          coscmd upload -rfs --delete ./docs/.vitepress/dist/ /
-          tccli cdn PurgePathCache --cli-unfold-argument --Paths https://elog.1874.cool/ --FlushType flush
-          # from https://github.com/peaceiris/actions-gh-pages
+      - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
