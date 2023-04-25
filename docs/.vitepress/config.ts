@@ -1,12 +1,17 @@
 import { defineConfig } from "vitepress";
 import { genNotionSideBar, genYuqueSideBar } from "../../utils/route";
 import { NotionSVG, YuQueSVG } from "../../utils/assists";
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
+import { SitemapStream } from 'sitemap'
+
+const links = []
 
 export default defineConfig({
   lang: "zh-CN",
   title: 'Elog',
   description: 'doc for elog',
-  lastUpdated: false,
+  lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
   head: [
@@ -31,6 +36,22 @@ export default defineConfig({
     config: (md) => {
       md.use(require('markdown-it-task-lists'))
     }
+  },
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id))
+      links.push({
+        // you might need to change this if not using clean urls mode
+        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2'),
+        lastmod: pageData.lastUpdated
+      })
+  },
+
+  buildEnd: ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: 'https://elog.1874.cool/' })
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+    sitemap.pipe(writeStream)
+    links.forEach((link) => sitemap.write(link))
+    sitemap.end()
   },
   themeConfig: {
     nav: [
