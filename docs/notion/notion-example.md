@@ -2,14 +2,16 @@
 status: 已发布
 sort: 13
 urlname: notion-example
-上次编辑时间: "2023-04-26T13:43:00.000Z"
+上次编辑时间: "2023-04-26T13:48:00.000Z"
 catalog: 功能和API适配情况
 title: Notion示例文章
 date: "2023-04-26 12:37:00"
-updated: "2023-04-26 13:43:00"
+updated: "2023-04-26 13:48:00"
 ---
 
 # Notion-Markdown
+
+[Notion 示例文章源地址](https://1874.notion.site/Notion-0658ee89cadf4d0e9b6adfbb1d953c70)
 
 ## 行内样式
 
@@ -88,7 +90,7 @@ _斜体_
 
 [bookmark](https://elog.1874.cool)
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T134319Z&X-Amz-Expires=3600&X-Amz-Signature=f1e089c78905e212b0df08dbbf6e732a6a8be4766f6d487977d47a5a8fe9c696&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T141750Z&X-Amz-Expires=3600&X-Amz-Signature=17241040136dd0394638964836cdd939503a23fe23aff1d45fcfe9c22e697b05&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ```python
 pwd='123456'
@@ -98,7 +100,7 @@ print(f"password={pwd!r}")
 #password='123456'
 ```
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T134319Z&X-Amz-Expires=3600&X-Amz-Signature=07a78ae7b1f117f30668daa0572903efd835b3264716e7bb9250d13c86c3563d&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T141750Z&X-Amz-Expires=3600&X-Amz-Signature=2390465bd6e669a0493bbb3643e86d4ccdb8fea0b69639bdd2a5d32d58ce8fee&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## DataBase（数据库）
 
@@ -106,7 +108,7 @@ print(f"password={pwd!r}")
 
 ## AI block
 
-APi 不支持， 会报错
+API 不支持，会报错`Block type ai_block is not supported via the API.`
 
 ## Advanced block（高级块）
 
