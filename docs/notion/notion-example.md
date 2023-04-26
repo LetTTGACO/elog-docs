@@ -2,11 +2,11 @@
 status: 已发布
 sort: 13
 urlname: notion-example
-上次编辑时间: "2023-04-26T13:27:00.000Z"
+上次编辑时间: "2023-04-26T13:43:00.000Z"
 catalog: 功能和API适配情况
 title: Notion示例文章
 date: "2023-04-26 12:37:00"
-updated: "2023-04-26 13:27:00"
+updated: "2023-04-26 13:43:00"
 ---
 
 # Notion-Markdown
@@ -88,7 +88,7 @@ _斜体_
 
 [bookmark](https://elog.1874.cool)
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T134219Z&X-Amz-Expires=3600&X-Amz-Signature=a762b5a8732c11b441a2cd9581d4c3d6e2463bcef68309fc6801dd49bec02bce&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T134319Z&X-Amz-Expires=3600&X-Amz-Signature=f1e089c78905e212b0df08dbbf6e732a6a8be4766f6d487977d47a5a8fe9c696&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ```python
 pwd='123456'
@@ -98,13 +98,15 @@ print(f"password={pwd!r}")
 #password='123456'
 ```
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T134219Z&X-Amz-Expires=3600&X-Amz-Signature=c8fa81501c43bc3c0e28ec87f37cacf487481c9d5f2e2bddff2a3148dcd2c937&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230426%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230426T134319Z&X-Amz-Expires=3600&X-Amz-Signature=07a78ae7b1f117f30668daa0572903efd835b3264716e7bb9250d13c86c3563d&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## DataBase（数据库）
 
 [数据库](5e56638e-7775-4795-af57-2cc4852ae8ee)
 
 ## AI block
+
+APi 不支持， 会报错
 
 ## Advanced block（高级块）
 
