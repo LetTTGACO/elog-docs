@@ -331,32 +331,19 @@
       "id": 113665139,
       "doc_id": "zuzvbv2lqhvllgit",
       "title": "zuzvbv2lqhvllgit",
-      "updated": 1682090466000,
-      "body_original": "<a name=\"R6fm0\"></a>\n# Features\n- [x] 写作平台支持语雀/Notion\n- [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台\n- [x] 支持生成带有 Front Matter 的 Markdown 文档\n- [x] 支持生成 HTML文档，并支持代码高亮（暂只支持语雀）\n- [x] 支持生成 wiki 文档（适用于Confluence）\n- [x] 支持自定义文档处理适配器\n- [x] 图片支持存放到本地\n- [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云\n- [x] 图床支持通过拓展点注入密钥\n- [x] 支持同步到 Confluence （企业需求）\n- [ ] Elog Vscode插件（即将支持）\n\n更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)\n",
+      "updated": 1683127458000,
+      "body_original": "<a name=\"R6fm0\"></a>\n# Features\n- [x] 写作平台支持语雀/Notion\n- [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台\n- [x] 支持按目录进行分类\n- [x] 支持生成带有 Front Matter 的 Markdown 文档\n- [x] 支持生成 HTML文档，并支持代码高亮（暂只支持语雀）\n- [x] 支持生成 wiki 文档（适用于Confluence）\n- [x] 支持自定义文档处理适配器\n- [x] 图片支持存放到本地\n- [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云\n- [x] 图床支持通过拓展点注入密钥\n- [x] 支持同步到 Confluence （企业需求）\n- [ ] Elog Vscode插件（即将支持）\n\n更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)\n",
       "properties": {
         "title": "Features",
         "urlname": "zuzvbv2lqhvllgit",
         "author": "1874",
         "date": "2023-02-07 09:42:12",
-        "updated": "2023-04-21 15:21:06"
+        "updated": "2023-05-03 15:24:18"
       },
       "catalog": [
         {
-          "type": "TITLE",
           "title": "关于Elog",
-          "uuid": "5Z1oRyzOg4duQnlJ",
-          "url": "",
-          "prev_uuid": "",
-          "sibling_uuid": "mqnrHmVyj2SptIu-",
-          "child_uuid": "jpTcZgfVyKy4YBBY",
-          "parent_uuid": "",
-          "doc_id": "",
-          "level": 0,
-          "id": "",
-          "open_window": 1,
-          "visible": 1,
-          "depth": 1,
-          "slug": "#"
+          "doc_id": "zuzvbv2lqhvllgit"
         }
       ],
       "body": ""
@@ -399,32 +386,19 @@
       "id": 108094686,
       "doc_id": "xe160pqsumi6bqnz",
       "title": "xe160pqsumi6bqnz",
-      "updated": 1682100665000,
-      "body_original": "<a name=\"c3aJO\"></a>\n# 按目录存放文档\n<a name=\"gv0nm\"></a>\n## 适用场景\n当在语雀/Notion上管理文章时，需要在生成文档时按目录将文档存放在不同目录，方便部署平台按照目录渲染。<br />例如 Vitepress 一般是按照文件夹生成文档和目录。\n<a name=\"bh8Du\"></a>\n## 如何配置\n<a name=\"hFlmN\"></a>\n### 语雀\n在配置文件中配置`deploy.local.catalog=true`，即可按照语雀目录生成文档。\n<a name=\"sNSX1\"></a>\n### Notion\n暂不支持按目录存储文档，如果需要在 Vitepress中 按目录生成路由，可参考[Elog Docs 源码](https://github.com/LetTTGACO/elog-docs)。\n",
+      "updated": 1683127385000,
+      "body_original": "<a name=\"c3aJO\"></a>\n# 按目录存放文档\n<a name=\"gv0nm\"></a>\n## 适用场景\n当在语雀/Notion上管理文章时，需要在生成文档时按目录将文档存放在不同目录，方便部署平台按照目录渲染。<br />例如 Vitepress 一般是按照文件夹生成文档和目录。\n<a name=\"bh8Du\"></a>\n## 如何配置\n<a name=\"hFlmN\"></a>\n### 语雀\n在配置文件中配置`deploy.local.catalog=true`，即可按照语雀目录生成文档。\n<a name=\"sNSX1\"></a>\n### Notion\n\n1. 在 Notion 数据库新增`catalog`字段（单选/多选），设置每篇文档的所在目录信息标签。单选标签下，只能生成一层目录；多选标签下，可生成多级目录，但是需要保证标签的顺序\n2. 在 Notion 写作平台配置项中配置`write.notion.catalog=true`\n3. 在部署平台配置项中配置`deploy.local.catalog=true`\n\n如果想自定义字段，不使用默认的`catalog`字段，则需要设置`write.notion.catalog`为以下格式\n```javascript\nnotion: {\n  token: process.env.NOTION_TOKEN,\n  databaseId: process.env.NOTION_DATABASE_ID,\n  filter: true,\n  sorts: true,\n  catalog: {\n\t\tenable: true,\n\t\tproperty: \"自定义属性\"\n\t}\n}\n```\n> 你也可以不开启按目录存放文档的相关属性，但是依然在 Vitepress 中按目录生成路由，可参考 [Elog Docs 源码](https://github.com/LetTTGACO/elog-docs)。\n\n",
       "properties": {
         "title": "按目录存放文档",
         "urlname": "xe160pqsumi6bqnz",
         "author": "1874",
         "date": "2022-12-02 05:12:49",
-        "updated": "2023-04-21 18:11:05"
+        "updated": "2023-05-03 15:23:05"
       },
       "catalog": [
         {
-          "type": "TITLE",
           "title": "进阶玩法",
-          "uuid": "lyiqodb0OvCLERDP",
-          "url": "",
-          "prev_uuid": "IRlxU8BN3QGe27pc",
-          "sibling_uuid": "M8ZIXs2Fu5_wwl7x",
-          "child_uuid": "PodABt8fdN6YOzWq",
-          "parent_uuid": "",
-          "doc_id": "",
-          "level": 0,
-          "id": "",
-          "open_window": 1,
-          "visible": 1,
-          "depth": 1,
-          "slug": "#"
+          "doc_id": "xe160pqsumi6bqnz"
         }
       ],
       "body": ""

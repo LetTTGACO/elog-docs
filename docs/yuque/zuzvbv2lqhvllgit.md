@@ -2,6 +2,7 @@
 
 - [x] 写作平台支持语雀/Notion
 - [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台
+- [x] 支持按目录进行分类
 - [x] 支持生成带有 Front Matter 的 Markdown 文档
 - [x] 支持生成 HTML 文档，并支持代码高亮（暂只支持语雀）
 - [x] 支持生成 wiki 文档（适用于 Confluence）
