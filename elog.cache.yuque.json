@@ -331,14 +331,14 @@
       "id": 113665139,
       "doc_id": "zuzvbv2lqhvllgit",
       "title": "zuzvbv2lqhvllgit",
-      "updated": 1683127458000,
-      "body_original": "<a name=\"R6fm0\"></a>\n# Features\n- [x] 写作平台支持语雀/Notion\n- [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台\n- [x] 支持按目录进行分类\n- [x] 支持生成带有 Front Matter 的 Markdown 文档\n- [x] 支持生成 HTML文档，并支持代码高亮（暂只支持语雀）\n- [x] 支持生成 wiki 文档（适用于Confluence）\n- [x] 支持自定义文档处理适配器\n- [x] 图片支持存放到本地\n- [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云\n- [x] 图床支持通过拓展点注入密钥\n- [x] 支持同步到 Confluence （企业需求）\n- [ ] Elog Vscode插件（即将支持）\n\n更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)\n",
+      "updated": 1683129945000,
+      "body_original": "<a name=\"R6fm0\"></a>\n# Features\n- [x] 写作平台支持语雀/Notion\n- [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台\n- [x] 支持按目录进行分类\n- [x] 支持生成带有 Front Matter 的 Markdown 文档\n- [x] 支持生成 HTML文档，并支持代码高亮（暂只支持语雀）\n- [x] 支持生成 wiki 文档（适用于Confluence）\n- [x] 支持自定义文档处理适配器\n- [x] 图片支持存放到本地\n- [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云\n- [x] 图床支持通过拓展点注入密钥\n- [x] 支持同步到 Confluence （企业需求）\n- [ ] Elog Vscode插件（即将支持）\n\n更多详情见 [ELog 开发计划](https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c)\n",
       "properties": {
         "title": "Features",
         "urlname": "zuzvbv2lqhvllgit",
         "author": "1874",
         "date": "2023-02-07 09:42:12",
-        "updated": "2023-05-03 15:24:18"
+        "updated": "2023-05-03 16:05:45"
       },
       "catalog": [
         {
@@ -407,32 +407,19 @@
       "id": 113663727,
       "doc_id": "cq6p8hxizn1ogwgm",
       "title": "cq6p8hxizn1ogwgm",
-      "updated": 1682106818000,
-      "body_original": "<a name=\"ZGOn3\"></a>\n# Elog 更新日志\n更新日志见 [Github Releases](https://github.com/LetTTGACO/elog/releases)\n\n更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)\n",
+      "updated": 1683129953000,
+      "body_original": "<a name=\"ZGOn3\"></a>\n# Elog 更新日志\n更新日志见 [Github Releases](https://github.com/LetTTGACO/elog/releases)\n\n更多详情见 [ELog 开发计划](https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c)\n",
       "properties": {
         "title": "Elog 更新日志",
         "urlname": "cq6p8hxizn1ogwgm",
         "author": "1874",
         "date": "2023-02-07 09:35:09",
-        "updated": "2023-04-21 19:53:38"
+        "updated": "2023-05-03 16:05:53"
       },
       "catalog": [
         {
-          "type": "TITLE",
           "title": "关于Elog",
-          "uuid": "5Z1oRyzOg4duQnlJ",
-          "url": "",
-          "prev_uuid": "",
-          "sibling_uuid": "mqnrHmVyj2SptIu-",
-          "child_uuid": "jpTcZgfVyKy4YBBY",
-          "parent_uuid": "",
-          "doc_id": "",
-          "level": 0,
-          "id": "",
-          "open_window": 1,
-          "visible": 1,
-          "depth": 1,
-          "slug": "#"
+          "doc_id": "cq6p8hxizn1ogwgm"
         }
       ],
       "body": ""

@@ -13,4 +13,4 @@
 - [x] 支持同步到 Confluence （企业需求）
 - [ ] Elog Vscode 插件（即将支持）
 
-更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)
+更多详情见 [ELog 开发计划](https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c)

@@ -40,17 +40,17 @@
       "id": "a010d35b-bf1c-4e47-bd2b-0cd76e468c49",
       "doc_id": "a010d35b-bf1c-4e47-bd2b-0cd76e468c49",
       "title": "a010d35b-bf1c-4e47-bd2b-0cd76e468c49",
-      "updated": 1683122940000,
-      "body_original": "\n# Features\n\n- [x] 写作平台支持语雀/Notion\n- [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台\n- [x] 支持按目录进行分类\n- [x] 支持生成带有 Front Matter 的 Markdown 文档\n- [x] 支持生成 HTML文档，并支持代码高亮（暂只支持语雀）\n- [x] 支持生成 wiki 文档（适用于Confluence）\n- [x] 支持自定义文档处理适配器\n- [x] 图片支持存放到本地\n- [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云\n- [x] 图床支持通过拓展点注入密钥\n- [x] 支持同步到 Confluence （企业需求）\n- [ ] Elog Vscode插件（即将支持）\n\n更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)\n\n",
+      "updated": 1683129900000,
+      "body_original": "\n# Features\n\n- [x] 写作平台支持语雀/Notion\n- [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台\n- [x] 支持按目录进行分类\n- [x] 支持生成带有 Front Matter 的 Markdown 文档\n- [x] 支持生成 HTML文档，并支持代码高亮（暂只支持语雀）\n- [x] 支持生成 wiki 文档（适用于Confluence）\n- [x] 支持自定义文档处理适配器\n- [x] 图片支持存放到本地\n- [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云\n- [x] 图床支持通过拓展点注入密钥\n- [x] 支持同步到 Confluence （企业需求）\n- [ ] Elog Vscode插件（即将支持）\n\n更多详情见 [ELog 开发计划](/91dd2037c9c847e6bc90b712b124189c)\n\n",
       "properties": {
         "status": "已发布",
         "sort": 2,
         "urlname": "zuzvbv2lqhvllgit",
-        "上次编辑时间": "2023-05-03T14:09:00.000Z",
+        "上次编辑时间": "2023-05-03T16:05:00.000Z",
         "catalog": "关于Elog",
         "title": "Features",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-05-03 14:09:00"
+        "updated": "2023-05-03 16:05:00"
       },
       "body": ""
     },
@@ -347,7 +347,7 @@
       "object": "page",
       "id": "a010d35b-bf1c-4e47-bd2b-0cd76e468c49",
       "created_time": "2023-04-06T13:31:00.000Z",
-      "last_edited_time": "2023-05-03T14:09:00.000Z",
+      "last_edited_time": "2023-05-03T16:05:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -370,11 +370,11 @@
         "status": "已发布",
         "sort": 2,
         "urlname": "zuzvbv2lqhvllgit",
-        "上次编辑时间": "2023-05-03T14:09:00.000Z",
+        "上次编辑时间": "2023-05-03T16:05:00.000Z",
         "catalog": "关于Elog",
         "title": "Features",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-05-03 14:09:00"
+        "updated": "2023-05-03 16:05:00"
       },
       "url": "https://www.notion.so/Features-a010d35bbf1c4e47bd2b0cd76e468c49"
     },

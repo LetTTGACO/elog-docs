@@ -2,11 +2,11 @@
 status: 已发布
 sort: 2
 urlname: zuzvbv2lqhvllgit
-上次编辑时间: "2023-05-03T14:09:00.000Z"
+上次编辑时间: "2023-05-03T16:05:00.000Z"
 catalog: 关于Elog
 title: Features
 date: "2023-04-06 13:31:00"
-updated: "2023-05-03 14:09:00"
+updated: "2023-05-03 16:05:00"
 ---
 
 # Features
@@ -24,4 +24,4 @@ updated: "2023-05-03 14:09:00"
 - [x] 支持同步到 Confluence （企业需求）
 - [ ] Elog Vscode 插件（即将支持）
 
-更多详情见 [ELog 开发计划](https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4)
+更多详情见 [ELog 开发计划](/91dd2037c9c847e6bc90b712b124189c)
