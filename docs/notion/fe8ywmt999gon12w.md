@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-04-25T17:37:00.000Z"
+上次编辑时间: "2023-05-03T15:14:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-04-25 17:37:00"
+updated: "2023-05-03 15:14:00"
 ---
 
 # 配置详情
@@ -49,7 +49,8 @@ module.exports = {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
       filter: true, // {property: 'status', select: {equals: '已发布'}}
-      sorts: true, // [{property: 'date', direction: 'descending'}],
+      sorts: true, // [{timestamp: 'created_time', direction: 'descending'}],
+      catalog: false,
     },
   },
   deploy: {
@@ -156,18 +157,19 @@ module.exports = {
 
 Notion 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#notion) 页面。
 
-| 字段       | 必填 | 类型                       | 说明                 | 默认值 |
-| ---------- | ---- | -------------------------- | -------------------- | ------ |
-| token      | 是   | string                     | Notion Token         |        |
-| databaseId | 是   | string                     | notion 中的数据库 id | -      |
-| filter     | 否   | boolean ｜ any             | 过滤条件             | true   |
-| sorts      | 否   | boolean ｜ string ｜ any[] | 排序条件             | true   |
+| 字段       | 必填 | 类型                          | 说明                 | 默认值 |
+| ---------- | ---- | ----------------------------- | -------------------- | ------ |
+| token      | 是   | string                        | Notion Token         |        |
+| databaseId | 是   | string                        | notion 中的数据库 id | -      |
+| filter     | 否   | boolean ｜ object             | 过滤条件             | true   |
+| sorts      | 否   | boolean ｜ string ｜ object[] | 排序条件             | true   |
+| catalog    | 否   | boolean ｜ object             | 目录信息配置         | false  |
 
-**Filter 字段说明**
+#### Filter 字段说明
 
 `filter`字段是为了筛选 Notion 数据库文档，表示哪些文章需要被 Elog 下载。
 
-1. 默认值为 true ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
+1. 默认值为 `true` ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
 
    ```json
    {
@@ -181,7 +183,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 2. 当`filter = false`时，不进行筛选，默认下载数据库所有文档
 3. 当需要自定义筛选时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
 
-**Sorts 字段说明**
+#### Sorts 字段说明
 
 `sorts`字段是为了对 Notion 数据库文档进行排序，以便生成一定顺序的目录信息，**对文档的同步不影响。**
 
@@ -211,6 +213,23 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 2. 当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序。
 3. 当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
 
+#### Catalog 字段说明
+
+`catalog`字段是为了配置文档的目录信息，如果需要按照指定目录分类下载时，则需要进行配置，**对文档的同步不影响。**
+
+1. 默认值为`false`，即不记录文档的目录信息
+2. 当`catalog=true`，则表示按照数据库的`catalog`字段进行记录
+3. 当需要自定义属性时，则可按照以下格式进行配置
+
+   ```javascript
+   catalog: {
+     enable: true,
+     property: "自定义属性"
+   }
+   ```
+
+4. 当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
+
 ## 部署平台
 
 ### 本地部署（local）
@@ -225,7 +244,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
 | formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
-**FormatExt 字段说明**
+#### FormatExt 字段说明
 
 自定义文档处理适配器`.js`文件路径，当需要对文档进一步处理时，可配置此选项
 
@@ -319,7 +338,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | outputDir | 是   | 图片输出目录     | -      |
 | prefixKey | 否   | 图片资源统一前缀 | -      |
 
-P**refixKey 字段说明**
+#### PrefixKey 字段说明
 
 1. 本地部署平台一般会有资源根目录，会将某个文件夹视为根目录，而`prefixKey`就是配置资源目录的前缀
 2. 例如 Vitpress，如果`outputDir=./docs/asset/images`，则`prefixKey=/asset/images`

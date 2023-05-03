@@ -2,17 +2,18 @@
 status: 已发布
 sort: 2
 urlname: zuzvbv2lqhvllgit
-上次编辑时间: "2023-04-21T18:41:00.000Z"
+上次编辑时间: "2023-05-03T14:09:00.000Z"
 catalog: 关于Elog
 title: Features
 date: "2023-04-06 13:31:00"
-updated: "2023-04-21 18:41:00"
+updated: "2023-05-03 14:09:00"
 ---
 
 # Features
 
 - [x] 写作平台支持语雀/Notion
 - [x] 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台
+- [x] 支持按目录进行分类
 - [x] 支持生成带有 Front Matter 的 Markdown 文档
 - [x] 支持生成 HTML 文档，并支持代码高亮（暂只支持语雀）
 - [x] 支持生成 wiki 文档（适用于 Confluence）

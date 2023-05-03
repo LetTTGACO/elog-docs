@@ -38,7 +38,8 @@ module.exports = {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
       filter: true, // {property: 'status', select: {equals: '已发布'}}
-      sorts: true, // [{property: 'date', direction: 'descending'}],
+      sorts: true, // [{timestamp: 'created_time', direction: 'descending'}],
+      catalog: false,
     },
   },
   deploy: {
@@ -145,12 +146,13 @@ module.exports = {
 
 Notion 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays#notion) 页面
 
-| 字段       | 必填 | 类型             | 说明                 | 默认值 |
-| ---------- | ---- | ---------------- | -------------------- | ------ |
-| token      | 是   | string           | Notion Token         |        |
-| databaseId | 是   | string           | notion 中的数据库 id | -      |
-| filter     | 否   | boolean ｜ any   | 过滤条件             | true   |
-| sorts      | 否   | boolean ｜ any[] | 排序条件             | true   |
+| 字段       | 必填 | 类型                | 说明                 | 默认值 |
+| ---------- | ---- | ------------------- | -------------------- | ------ |
+| token      | 是   | string              | Notion Token         |        |
+| databaseId | 是   | string              | notion 中的数据库 id | -      |
+| filter     | 否   | boolean ｜ object   | 过滤条件             | true   |
+| sorts      | 否   | boolean ｜ object[] | 排序条件             | true   |
+| catalog    | 否   | boolean ｜ object   | 目录信息配置         | false  |
 
 #### Filter 字段说明
 
@@ -197,6 +199,23 @@ export const enum NotionSortPreset {
 
 2.  当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序
 3.  当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
+
+#### Catalog 字段说明
+
+`catalog`字段是为了配置文档的目录信息，如果需要按照指定目录分类下载时，则需要进行配置，**对文档的同步不影响。**
+
+1.  默认值为`false`，即不记录文档的目录信息
+2.  当`catalog=true`，则表示按照数据库的`catalog`字段进行记录
+3.  当需要自定义属性时，则可按照以下格式进行配置
+
+```jsx
+catalog: {
+  enable: true,
+  property: "自定义属性"
+}
+```
+
+4.  当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
 
 ## 部署平台
 
