@@ -57,7 +57,7 @@ export default defineConfig({
     nav: [
       { text: '语雀版', link: '/yuque/start', activeMatch: '/yuque/' },
       { text: 'Notion版', link: '/notion/start', activeMatch: '/notion/' },
-      { text: 'Elog 开发计划', link: 'https://www.notion.so/1874/Elog-91dd2037c9c847e6bc90b712b124189c?pvs=4' },
+      { text: 'Elog 开发计划', link: 'https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c' },
       {
         text: '0.4.0-beta.10',
         items: [
