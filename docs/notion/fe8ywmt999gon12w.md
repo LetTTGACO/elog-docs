@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-05-03T15:14:00.000Z"
+上次编辑时间: "2023-05-03T15:51:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-05-03 15:14:00"
+updated: "2023-05-03 15:51:00"
 ---
 
 # 配置详情
@@ -241,7 +241,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | outputDir | 否   | 文档输出目录                                             | -        |
 | filename  | 否   | 生成文档的命名格式，取值 urlname ｜ title                | title    |
 | format    | 否   | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
-| catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
+| catalog   | 否   | 是否按照目录生成文档                                     | false    |
 | formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
 #### FormatExt 字段说明

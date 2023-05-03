@@ -228,7 +228,7 @@ catalog: {
 | outputDir | 否   | 文档输出目录                                             | -        |
 | filename  | 否   | 生成文档的命名格式，取值 urlname ｜ title                | title    |
 | format    | 否   | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
-| catalog   | 否   | 是否按照目录生成文档（暂只支持语雀）                     | false    |
+| catalog   | 否   | 是否按照目录生成文档                                     | false    |
 | formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
 
 #### FormatExt 字段说明
