@@ -12,11 +12,9 @@ module.exports = {
     notion: {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
-      status: {
-        name: 'status',
-        released: '待发布',
-        published: '已发布',
-      },
+      filter: true, // {property: 'status', select: {equals: '已发布'}}
+      sorts: true, // [{timestamp: 'created_time', direction: 'descending'}],
+      catalog: false,
     },
   },
   deploy: {
