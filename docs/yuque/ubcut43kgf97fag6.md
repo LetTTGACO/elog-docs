@@ -9,7 +9,7 @@
 
 ## 最佳实践
 
-### Elog Doc 多写作平台云端写作 + vitepress 按目录生成路由 + Github Action + COS 持续集成
+### Elog Doc 多写作平台云端写作 + vitepress 按目录生成路由 + Github Action + Github Pages 持续集成
 
 作者：1874
 网站: <https://elog.1874.cool>

@@ -161,32 +161,19 @@
       "id": 113938704,
       "doc_id": "ubcut43kgf97fag6",
       "title": "ubcut43kgf97fag6",
-      "updated": 1682100558000,
-      "body_original": "<a name=\"pz1HM\"></a>\n# 最佳实践\n本篇收录了社区用户的实践项目。<br />**如何贡献**<br />欢迎各位使用者贡献搭建经验文档。可以通过以下步骤进行贡献、引流、讨论、共同成长：\n\n1. 使用Elog部署自己的博客，并提供完整的记录文档\n2. [提交Issues](https://github.com/LetTTGACO/elog/issues/2)\n<a name=\"PIHoF\"></a>\n## 最佳实践\n<a name=\"qckLB\"></a>\n### Elog Doc 多写作平台云端写作 + vitepress 按目录生成路由 + Github Action + COS 持续集成\n作者：1874<br />网站: [https://elog.1874.cool](https://elog.1874.cool)<br />Github: [https://github.com/LetTTGACO/elog-docs](https://github.com/LetTTGACO/elog-docs)\n",
+      "updated": 1683194890000,
+      "body_original": "<a name=\"pz1HM\"></a>\n# 最佳实践\n本篇收录了社区用户的实践项目。<br />**如何贡献**<br />欢迎各位使用者贡献搭建经验文档。可以通过以下步骤进行贡献、引流、讨论、共同成长：\n\n1. 使用Elog部署自己的博客，并提供完整的记录文档\n2. [提交Issues](https://github.com/LetTTGACO/elog/issues/2)\n<a name=\"PIHoF\"></a>\n## 最佳实践\n<a name=\"qckLB\"></a>\n### Elog Doc 多写作平台云端写作 + vitepress 按目录生成路由 + Github Action + Github Pages 持续集成\n作者：1874<br />网站: [https://elog.1874.cool](https://elog.1874.cool)<br />Github: [https://github.com/LetTTGACO/elog-docs](https://github.com/LetTTGACO/elog-docs)\n",
       "properties": {
         "title": "最佳实践",
         "urlname": "ubcut43kgf97fag6",
         "author": "1874",
         "date": "2023-02-09 07:56:35",
-        "updated": "2023-04-21 18:09:18"
+        "updated": "2023-05-04 10:08:10"
       },
       "catalog": [
         {
-          "type": "TITLE",
           "title": "社区生态",
-          "uuid": "M8ZIXs2Fu5_wwl7x",
-          "url": "",
-          "prev_uuid": "lyiqodb0OvCLERDP",
-          "sibling_uuid": "",
-          "child_uuid": "AXqI0yA4DwjHEnMy",
-          "parent_uuid": "",
-          "doc_id": "",
-          "level": 0,
-          "id": "",
-          "open_window": 1,
-          "visible": 1,
-          "depth": 1,
-          "slug": "#"
+          "doc_id": "ubcut43kgf97fag6"
         }
       ],
       "body": ""
