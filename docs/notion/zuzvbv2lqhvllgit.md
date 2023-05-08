@@ -2,11 +2,11 @@
 status: 已发布
 sort: 2
 urlname: zuzvbv2lqhvllgit
-上次编辑时间: "2023-05-04T14:46:00.000Z"
+上次编辑时间: "2023-05-06T09:35:00.000Z"
 catalog: 关于Elog
 title: Features
 date: "2023-04-06 13:31:00"
-updated: "2023-05-04 14:46:00"
+updated: "2023-05-06 09:35:00"
 ---
 
 # Features
@@ -22,6 +22,6 @@ updated: "2023-05-04 14:46:00"
 - [x] 图片支持上传到阿里云/腾讯云/Github/七牛云/又拍云
 - [x] 图床支持通过拓展点注入密钥
 - [x] 支持同步到 Confluence （企业需求）
-- [ ] Elog Vscode 插件（即将支持）
+- [ ] 写作平台支持 FlowUs（即将支持）
 
 更多详情见 [Elog 开发计划](https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c)
