@@ -132,7 +132,7 @@ jobs:
           # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key
           # github_token: ${{ secrets.GITHUB_TOKEN }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh公钥
+          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
@@ -278,7 +278,7 @@ jobs:
           # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key
           # github_token: ${{ secrets.GITHUB_TOKEN }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh公钥
+          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
