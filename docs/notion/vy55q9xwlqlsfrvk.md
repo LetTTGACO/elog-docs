@@ -2,11 +2,11 @@
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-05-09T16:09:00.000Z"
+上次编辑时间: "2023-05-09T16:50:00.000Z"
 catalog: 进阶玩法
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-05-09 16:09:00"
+updated: "2023-05-09 16:50:00"
 ---
 
 # 持续集成
@@ -145,7 +145,7 @@ jobs:
           # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key
           # github_token: ${{ secrets.GITHUB_TOKEN }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh公钥
+          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
@@ -295,7 +295,7 @@ jobs:
           # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key
           # github_token: ${{ secrets.GITHUB_TOKEN }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh公钥
+          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
