@@ -202,17 +202,17 @@
       "id": "441944ff-f7f4-4901-a960-9eb12549cbbf",
       "doc_id": "441944ff-f7f4-4901-a960-9eb12549cbbf",
       "title": "441944ff-f7f4-4901-a960-9eb12549cbbf",
-      "updated": 1683211680000,
-      "body_original": "\n# 持续集成\n\n\n文档建设中…\n\n",
+      "updated": 1683641880000,
+      "body_original": "\n# 持续集成\n\n\n## 自动化流程\n\n\n![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2a66145f-0c73-4d81-a3bf-1276659cd446/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230509%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230509T144748Z&X-Amz-Expires=3600&X-Amz-Signature=4b5d06214c08f5851f05c5940ec900ea763467149ebe30b859910ef717ff2e07&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n## 语雀示例\n\n\n**语雀 + webhooks + serverless  api  + GitHub Actions + Github Pages 持续集成**\n\n\n### 语雀 webhooks\n\n\n在语雀知识库 - 更多设置 - 消息推送中可配置语雀webhooks，填写一个支持POST请求的APi链接即可（这里以serverless api为例）。当文档更新时，语雀会调用这个API进行推送\n\n\n> 令人遗憾的是，语雀将 webhooks 收费了  \n> 未开通会员的语雀小伙伴可直接手动调用API触发Github Actions进行自动化构建&部署\n\n\n![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/94f7fd4c-ee74-4b6d-a129-7969112dca25/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230509%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230509T144748Z&X-Amz-Expires=3600&X-Amz-Signature=6a255765e50ecb06eeb20eed175c6eb775097573f63079314553a764fd8beb0b&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n### **serverless  api**\n\n\n为了方便，这里提供一个免费的公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)\n\n\n## Notion示例\n\n\n**Notion + Slack + pipedream + serverless  api + GitHub actions + Github Pages 持续集成**\n\n\n## \n\n",
       "properties": {
         "status": "已发布",
         "sort": 16,
         "urlname": "vy55q9xwlqlsfrvk",
-        "上次编辑时间": "2023-05-04T14:48:00.000Z",
+        "上次编辑时间": "2023-05-09T14:18:00.000Z",
         "catalog": "进阶玩法",
         "title": "持续集成",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-05-04 14:48:00"
+        "updated": "2023-05-09 14:18:00"
       },
       "body": ""
     },
@@ -837,7 +837,7 @@
       "object": "page",
       "id": "441944ff-f7f4-4901-a960-9eb12549cbbf",
       "created_time": "2023-04-06T13:31:00.000Z",
-      "last_edited_time": "2023-05-04T14:48:00.000Z",
+      "last_edited_time": "2023-05-09T14:18:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -860,11 +860,11 @@
         "status": "已发布",
         "sort": 16,
         "urlname": "vy55q9xwlqlsfrvk",
-        "上次编辑时间": "2023-05-04T14:48:00.000Z",
+        "上次编辑时间": "2023-05-09T14:18:00.000Z",
         "catalog": "进阶玩法",
         "title": "持续集成",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-05-04 14:48:00"
+        "updated": "2023-05-09 14:18:00"
       },
       "url": "https://www.notion.so/441944fff7f44901a9609eb12549cbbf"
     },
