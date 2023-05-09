@@ -2,11 +2,11 @@
 status: 已发布
 sort: 1
 urlname: introduce
-上次编辑时间: "2023-04-22T05:47:00.000Z"
+上次编辑时间: "2023-05-09T07:04:00.000Z"
 catalog: 关于Elog
 title: Elog 能干什么
 date: "2023-04-06 13:31:00"
-updated: "2023-04-22 05:47:00"
+updated: "2023-05-09 07:04:00"
 ---
 
 # Elog 能干什么
