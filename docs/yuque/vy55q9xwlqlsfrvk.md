@@ -15,6 +15,7 @@
 
 > 令人遗憾的是，语雀将 webhooks 收费了
 > 未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署
+> ⚠️ 知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 
 ![image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fj2_bmbgJ_WLrxD1iB6585c30ike.png)
 

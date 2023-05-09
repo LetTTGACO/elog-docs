@@ -2,11 +2,11 @@
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-05-09T16:00:00.000Z"
+上次编辑时间: "2023-05-09T16:09:00.000Z"
 catalog: 进阶玩法
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-05-09 16:00:00"
+updated: "2023-05-09 16:09:00"
 ---
 
 # 持续集成
@@ -26,7 +26,8 @@ updated: "2023-05-09 16:00:00"
 在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写一个支持 POST 请求的 APi 链接即可（这里以 serverless api 为例）。当文档更新时，语雀会调用这个 API 进行推送
 
 > 令人遗憾的是，语雀将 webhooks 收费了  
-> 未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署
+> 未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署  
+> ⚠️ 知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fn0PyfH-NcFZDclUl63z5lYMNJKD.png)
 
