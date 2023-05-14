@@ -29,18 +29,11 @@
     "clean:notion": "elog clean -c elog.config.notion.js -a elog.cache.notion.json"
   },
   "dependencies": {
-    "@elog/cli": "0.4.2",
+    "@elog/cli": "0.4.3",
     "@types/node": "^18.11.9",
     "markdown-it-task-lists": "^2.1.1",
     "sitemap": "^7.1.1",
     "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.45"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
   }
 }
