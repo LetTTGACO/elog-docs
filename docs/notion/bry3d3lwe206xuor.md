@@ -2,11 +2,11 @@
 status: 已发布
 sort: 8
 urlname: bry3d3lwe206xuor
-上次编辑时间: "2023-04-23T16:46:00.000Z"
+上次编辑时间: "2023-05-17T14:51:00.000Z"
 catalog: 入门指引
 title: CLI 命令
 date: "2023-04-06 13:31:00"
-updated: "2023-04-23 16:46:00"
+updated: "2023-05-17 14:51:00"
 ---
 
 # CLI 命令
@@ -37,6 +37,7 @@ elog sync [option] [value]
 | --config | -c    | 指定配置文件 path | elog.config.js  |
 | --env    | -e    | 指定环境文件 path | -               |
 | --cache  | -a    | 指定缓存文件 path | elog.cache.json |
+| --debug  |       | 打印更多调试日志  |                 |
 
 ## clean
 

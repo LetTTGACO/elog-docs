@@ -239,12 +239,20 @@ catalog: {
 2.  处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法**
 
 ```javascript
-// 自定义文档处理器
-// doc的类型定义为 DocDetail，详情见下方 DocDetail 类型定义
+// 如果需要返回带有front-matter的md字符串，则需要安装并引入此库
+const { matterMarkdownAdapter } = require("@elog/plugin-adapter");
+
+/**
+ * 自定义文档处理器
+ * @param {DocDetail} doc doc的类型定义为 DocDetail
+ * @return {string} 返回处理后的文档内容字符串
+ */
 const format = (doc) => {
-  // ...对文档进行处理
-  const newPost = xxx;
-  return newPost;
+  doc.body = process(body);
+  // 直接返回md内容字符串
+  return doc.body;
+  // 返回带有front-matter的md字符串
+  // return matterMarkdownAdapter(doc);
 };
 
 module.exports = {

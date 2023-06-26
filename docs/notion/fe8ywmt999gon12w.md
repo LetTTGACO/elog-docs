@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-05-03T15:51:00.000Z"
+上次编辑时间: "2023-06-26T05:10:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-05-03 15:51:00"
+updated: "2023-06-26 05:10:00"
 ---
 
 # 配置详情
@@ -50,6 +50,12 @@ module.exports = {
       databaseId: process.env.NOTION_DATABASE_ID,
       filter: true, // {property: 'status', select: {equals: '已发布'}}
       sorts: true, // [{timestamp: 'created_time', direction: 'descending'}],
+      catalog: false,
+    },
+    flowus: {
+      tablePageId: process.env.NOTION_DATABASE_ID,
+      filter: true, // {property: 'status',value: '已发布'}
+      sorts: true, // { property: 'createdAt', direction: "descending" },
       catalog: false,
     },
   },
@@ -252,12 +258,20 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 2. 处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法**
 
    ```javascript
-   // 自定义文档处理器
-   // doc的类型定义为 DocDetail，详情见下方 DocDetail 类型定义
+   // 如果需要返回带有front-matter的md字符串，则需要安装并引入此库
+   const { matterMarkdownAdapter } = require("@elog/plugin-adapter");
+
+   /**
+    * 自定义文档处理器
+    * @param {DocDetail} doc doc的类型定义为 DocDetail
+    * @return {string} 返回处理后的文档内容字符串
+    */
    const format = (doc) => {
-     // ...对文档进行处理
-     const newPost = process(doc);
-     return newPost;
+     doc.body = process(body);
+     // 直接返回md内容字符串
+     return doc.body;
+     // 返回带有front-matter的md字符串
+     // return matterMarkdownAdapter(doc);
    };
 
    module.exports = {
