@@ -34,12 +34,13 @@
     "markdown-it-task-lists": "^2.1.1",
     "sitemap": "^7.1.1",
     "vitepress": "1.0.0-alpha.45",
-    "vue": "^3.2.45"
+    "vue": "3.2.45"
   },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "@algolia/client-search"
+        "@algolia/client-search",
+        "search-insights"
       ]
     }
   }
