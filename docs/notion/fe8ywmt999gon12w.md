@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-07-06T03:38:00.000Z"
+上次编辑时间: "2023-07-06T09:43:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-07-06 03:38:00"
+updated: "2023-07-06 09:43:00"
 ---
 
 # 配置详情
@@ -197,7 +197,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 详情见 [Elog Docs 文档源码](https://github.com/LetTTGACO/elog-docs)
 
-1. elog 提供了一些预设参数，如下。例如`sorts=sortDesc`即按照数据库的 sort 字段进行倒序排列
+1. Elog 提供了一些预设参数，如下。例如`sorts=sortDesc`即按照数据库的 sort 字段进行倒序排列
 
    ```typescript
    export const enum NotionSortPreset {
@@ -228,10 +228,112 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 3. 当需要自定义属性时，则可按照以下格式进行配置
 
    ```javascript
-   catalog: {
+   catalog = {
      enable: true,
-     property: "自定义属性"
+     property: "自定义属性",
+   };
+   ```
+
+4. 当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
+5. `catalog`字段为单选时，只能生成一层目录
+6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
+
+### FlowUs（息流）
+
+FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#flowus) 页面。
+
+| 字段        | 必填 | 类型                          | 说明                   | 默认值 |
+| ----------- | ---- | ----------------------------- | ---------------------- | ------ |
+| tablePageId | 是   | string                        | flowus 中的多维表格 ID | -      |
+| filter      | 否   | boolean ｜ object             | 过滤条件               | false  |
+| sort        | 否   | boolean ｜ string ｜ object[] | 排序条件               | false  |
+| catalog     | 否   | boolean ｜ object             | 目录信息配置           | false  |
+
+#### Filter 字段说明
+
+`filter`字段是为了筛选 FlowUs 多维表文档，表示哪些文章需要被 Elog 下载。
+
+1. 默认值为`false`，即不过滤文档，全部下载
+2. 如果设置为`true`，会按照以下规则进行过滤
+
+   ```javascript
+   // 表示将按照多维表中的【status】字段进行过滤，保留所有【已发布】的文档
+   filter = {
+     property: "status",
+     value: "已发布",
+   };
+   ```
+
+3. 如果想自定义过滤文档，可以指定多维表的属性名称和值进行过滤。目前只支持【**与】**逻辑，不支持【**或】**逻辑
+
+   ```javascript
+   // 表示将按照多维表中的【status】字段进行过滤，保留所有【已发布】的文档
+   filter = {
+     property: "status"
+     value: "已发布"
    }
+   // 表示将按照多维表中的【status】和【tag】字段进行过滤，保留所有status=已发布 且 tag=技术方案的文档
+   filter = [
+   	{
+   	  property: "status"
+   	  value: "已发布"
+   	}, {
+   	  property: "tag"
+   	  value: "技术方案"
+   	}
+   ]
+   ```
+
+#### sort 字段说明
+
+`sorts` 字段是为了对 FlowUs 多维表文档进行排序，以便生成一定顺序的目录信息，**对文档的同步不影响**。
+
+例如，使用 VitePress 部署文档时，需要对文档按照指定顺序和结构生成路由和 sidebar。
+
+1. 默认值为`false`，不进行排序
+2. 当`sort=true`，会按照文档的创建时间倒序排列
+3. Elog 提供了一些预设参数，如下。例如`sort=sortDesc`即按照多维表中的 sort 字段进行倒序排列
+
+   ```typescript
+   export enum FlowUsSortPresetEnum {
+     /** 按自定义日期排序 */
+     dateDesc = "dateDesc", // 倒序
+     dateAsc = "dateAsc", // 正序
+     /** 按创建时间排序 */
+     createTimeDesc = "createTimeDesc", // 倒序
+     createTimeAsc = "createTimeAsc", // 正序
+     /** 按更新时间排序 */
+     updateTimeDesc = "updateTimeDesc", // 倒序
+     updateTimeAsc = "updateTimeAsc", // 正序
+     /** 按sort字段排序 */
+     sortDesc = "sortDesc", // 倒序
+     sortAsc = "sortAsc", // 正序
+   }
+   ```
+
+4. 如果需要自定义排序时，可以指定多维表的属性名称和值进行自定义排序。暂不支持多个排序条件
+
+   ```typescript
+   // 表示将按照多维表中的【sort】字段进行【倒序】排列
+   sort = {
+     property: "sort"
+     direction: "desc" // desc：倒序， asc：正序
+   }
+   ```
+
+#### Catalog 字段说明
+
+`catalog`字段是为了配置文档的目录信息，如果需要按照指定目录分类下载时，则需要进行配置，**对文档的同步不影响**。
+
+1. 默认值为`false`，即不记录文档的目录信息
+2. 当`catalog=true`，则表示按照数据库的`catalog`字段进行记录
+3. 当需要自定义属性时，则可按照以下格式进行配置
+
+   ```typescript
+   catalog = {
+     enable: true,
+     property: "自定义属性",
+   };
    ```
 
 4. 当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
