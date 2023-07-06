@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-06-26T05:10:00.000Z"
+上次编辑时间: "2023-07-06T03:38:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-06-26 05:10:00"
+updated: "2023-07-06 03:38:00"
 ---
 
 # 配置详情
@@ -55,7 +55,7 @@ module.exports = {
     flowus: {
       tablePageId: process.env.NOTION_DATABASE_ID,
       filter: true, // {property: 'status',value: '已发布'}
-      sorts: true, // { property: 'createdAt', direction: "descending" },
+      sorts: true, // {property: 'createdAt', direction: "descending"},
       catalog: false,
     },
   },
@@ -235,6 +235,8 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
    ```
 
 4. 当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
+5. `catalog`字段为单选时，只能生成一层目录
+6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
 
 ## 部署平台
 
@@ -242,13 +244,13 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 适用于所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的博客平台
 
-| 字段      | 必填 | 说明                                                     | 默认值   |
-| --------- | ---- | -------------------------------------------------------- | -------- |
-| outputDir | 否   | 文档输出目录                                             | -        |
-| filename  | 否   | 生成文档的命名格式，取值 urlname ｜ title                | title    |
-| format    | 否   | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
-| catalog   | 否   | 是否按照目录生成文档                                     | false    |
-| formatExt | 否   | 自定义文档处理适配器路径                                 | -        |
+| 字段      | 必填 | 类型    | 说明                                                     | 默认值   |
+| --------- | ---- | ------- | -------------------------------------------------------- | -------- |
+| outputDir | 否   | string  | 文档输出目录                                             | -        |
+| filename  | 否   | string  | 生成文档的命名格式，取值 urlname ｜ title                | title    |
+| format    | 否   | string  | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
+| catalog   | 否   | boolean | 是否按照目录生成文档                                     | false    |
+| formatExt | 否   | string  | 自定义文档处理适配器路径                                 | -        |
 
 #### FormatExt 字段说明
 
@@ -256,6 +258,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 1. 目前只支持 Common Js 标准的处理器
 2. 处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法**
+3. 返回类型为**字符串**
 
    ```javascript
    // 如果需要返回带有front-matter的md字符串，则需要安装并引入此库
