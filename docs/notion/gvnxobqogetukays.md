@@ -2,11 +2,11 @@
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-04-24T11:16:00.000Z"
+上次编辑时间: "2023-07-06T10:06:00.000Z"
 catalog: 入门指引
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-04-24 11:16:00"
+updated: "2023-07-06 10:06:00"
 ---
 
 # 关键信息获取
@@ -51,6 +51,17 @@ updated: "2023-04-24 11:16:00"
 ### databaseId
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fvy6P1yIcoXOaX2BNItTVSaip1g0.png)
+
+## FlowUs
+
+### 配置流程
+
+1. 使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个多维表
+2. 获取多维表的 tablePageId
+
+### tablePageId
+
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FucfmoRqyUvKNL5pNMiFDxLncD0t.png)
 
 ## 图床
 
