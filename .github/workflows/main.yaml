@@ -1,4 +1,4 @@
-name: Deplo To Github Pages
+name: Deploy To Github Pages
 
 on:
   # 允许手动push触发
@@ -42,8 +42,9 @@ jobs:
         run: |
           pnpm clean:yuque
           pnpm clean:notion
+          pnpm clean:flowus
 
-      - name: 拉取语雀&Notion的文章
+      - name: 拉取语雀&Notion&FlowUs的文章
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
@@ -54,7 +55,9 @@ jobs:
           COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
+          FLOWUS_TABLE_PAGE_ID: ${{ secrets.FLOWUS_TABLE_PAGE_ID }}
         run: |
+          pnpm sync:flowus
           pnpm sync:yuque
           pnpm sync:notion
 

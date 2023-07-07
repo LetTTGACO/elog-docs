@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { genNotionSideBar, genYuqueSideBar } from "../../utils/route";
+import { genFlowUsSideBar, genNotionSideBar, genYuqueSideBar } from "../../utils/route";
 import { NotionSVG, YuQueSVG } from "../../utils/assists";
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
@@ -55,6 +55,7 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
+      { text: 'FlowUs示例', link: '/flowus/flowus-example', activeMatch: '/flowus/' },
       { text: '语雀版', link: '/yuque/start', activeMatch: '/yuque/' },
       { text: 'Notion版', link: '/notion/start', activeMatch: '/notion/' },
       { text: 'Elog 开发计划', link: 'https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c' },
@@ -71,7 +72,8 @@ export default defineConfig({
     siteTitle: 'Elog Docs', // 标题
     sidebar: {
       '/yuque/': genYuqueSideBar('/yuque'),
-      '/notion/': genNotionSideBar('/notion')
+      '/notion/': genNotionSideBar('/notion'),
+      '/flowus/': genFlowUsSideBar('/flowus')
     },
     docFooter: {
       prev: '上一篇',

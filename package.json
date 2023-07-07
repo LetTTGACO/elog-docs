@@ -23,13 +23,16 @@
     "elog:init": "elog init",
     "local:yuque": "elog sync -c elog.config.yuque.js -e .elog.env -a elog.cache.yuque.json",
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
+    "local:flowus": "elog sync -c elog.config.flowus.js -e .elog.env  -a elog.cache.flowus.json",
     "sync:yuque": "elog sync -c elog.config.yuque.js -a elog.cache.yuque.json",
     "sync:notion": "elog sync -c elog.config.notion.js -a elog.cache.notion.json",
+    "sync:flowus": "elog sync -c elog.config.flowus.js -a elog.cache.flowus.json",
     "clean:yuque": "elog clean -c elog.config.yuque.js -a elog.cache.yuque.json",
-    "clean:notion": "elog clean -c elog.config.notion.js -a elog.cache.notion.json"
+    "clean:notion": "elog clean -c elog.config.notion.js -a elog.cache.notion.json",
+    "clean:flowus": "elog clean -c elog.config.flowus.js  -a elog.cache.flowus.json"
   },
   "dependencies": {
-    "@elog/cli": "0.4.3",
+    "@elog/cli": "0.5.0-beta.9",
     "@types/node": "^18.11.9",
     "markdown-it-task-lists": "^2.1.1",
     "sitemap": "^7.1.1",

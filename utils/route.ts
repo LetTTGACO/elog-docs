@@ -51,6 +51,16 @@ export const genNotionSideBar = (pathname: string) => {
   return genNotionRoute(catalog, pathname)
 }
 
+/**
+ * 生成flowus导航
+ * @param pathname
+ */
+export const genFlowUsSideBar = (pathname: string) => {
+  const cache = require('../elog.cache.flowus.json')
+  const { catalog } = cache
+  return genNotionRoute(catalog, pathname)
+}
+
 
 const genNotionRoute = (catalog: any[], pathname: string) => {
   let route = []

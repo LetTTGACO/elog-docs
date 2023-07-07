@@ -2,11 +2,11 @@
 status: 已发布
 sort: 13
 urlname: notion-example
-上次编辑时间: "2023-04-26T13:48:00.000Z"
+上次编辑时间: "2023-07-07T07:38:00.000Z"
 catalog: 功能和API适配情况
 title: Notion示例文章
-date: "2023-04-26 12:37:00"
-updated: "2023-04-26 13:48:00"
+date: "2023-04-26 20:37:00"
+updated: "2023-07-07 15:38:00"
 ---
 
 # Notion-Markdown
@@ -37,7 +37,7 @@ _斜体_
 
 [Notion 示例文章的子页面](8d12c7de-ebc3-44a4-8af7-23319db01553)
 
-    Notion示例文章的子页面
+Notion 示例文章的子页面
 
 | 表格标题 | 备注            |
 | -------- | --------------- |
@@ -90,7 +90,7 @@ _斜体_
 
 [bookmark](https://elog.1874.cool)
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230427%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230427T152332Z&X-Amz-Expires=3600&X-Amz-Signature=0da3c9fdc294337fc18b233624c1c3081f333789a2df63403f5a684f426977f6&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230707T075601Z&X-Amz-Expires=3600&X-Amz-Signature=184c56f064100d8bb44381ad38c327f829415e114b86bed4f3be6883216073b5&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ```python
 pwd='123456'
@@ -100,7 +100,7 @@ print(f"password={pwd!r}")
 #password='123456'
 ```
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230427%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230427T152332Z&X-Amz-Expires=3600&X-Amz-Signature=4b9397b4b4f7b73ae6efa3d2bdbdc14f71490b7c0ff56dc5c117c7613ce4fce2&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230707T075601Z&X-Amz-Expires=3600&X-Amz-Signature=9c5393c07c35d0904b8a5885b1da67a8126b0d77ab0d3526e969bca2bd88359f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## DataBase（数据库）
 
@@ -112,9 +112,9 @@ API 不支持，会报错`Block type ai_block is not supported via the API.`
 
 ## Advanced block（高级块）
 
-```undefined
+$$
 f\left(\left[\frac{1+\{x, y\}}{\left(\frac{x}{y}+\frac{y}{x}\right)(u+1)}+a\right]^{3 / 2}\right)\tag{行标}
-```
+$$
 
 Notion 示例文章的同步块
 
