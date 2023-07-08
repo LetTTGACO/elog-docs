@@ -12,6 +12,7 @@ module.exports = {
     notion: {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
+      filter: true, // {property: 'status', select: {equals: '已发布'}}
       sorts: 'sortAsc'
     },
   },
