@@ -2,11 +2,11 @@
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-07-06T10:06:00.000Z"
+上次编辑时间: "2023-07-08T06:02:00.000Z"
 catalog: 入门指引
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-07-06 10:06:00"
+updated: "2023-07-08 06:02:00"
 ---
 
 # 关键信息获取
@@ -56,7 +56,7 @@ updated: "2023-07-06 10:06:00"
 
 ### 配置流程
 
-1. 使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个多维表
+1. 使用 [Database 模板](https://flowus.cn/1874/share/cc2a2086-9026-4f93-a8d7-e1fe365623c9) 创建一个多维表
 2. 获取多维表的 tablePageId
 
 ### tablePageId
