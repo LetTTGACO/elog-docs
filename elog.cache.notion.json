@@ -328,17 +328,17 @@
       "id": "f27ad5fc-ddf3-4d7c-abda-28b67bdd24a2",
       "doc_id": "f27ad5fc-ddf3-4d7c-abda-28b67bdd24a2",
       "title": "f27ad5fc-ddf3-4d7c-abda-28b67bdd24a2",
-      "updated": 1688716860000,
-      "body_original": "\n# FlowUs-Markdown\n\n\n## 基础块\n\n- [x] 正文\n- [x] 待办列表\n- [ ] 页面\n- [ ] 引用页面\n- [x] 标题\n- [x] 简单表格\n- [x] 项目列表\n- [x] 编号列表\n- [x] 折叠列表，返回为`<detail>` Html 标签，部分博客平台支持\n- [x] 分割线\n- [x] 引述文字\n- [x] 着重文字，同引述文字\n- [x] 代码片段\n- [ ] 数学公式，返回公式文字\n- [ ] 思维导图\n- [ ] 思维导图页面\n- [x] 折叠标题，同折叠列表\n\n## 媒体\n\n- [x] 图片\n- [x] 视频，返回超链接\n- [x] 音频，返回超链接\n- [ ] 文件\n- [ ] 文件夹\n- [x] 网页书签，返回超链接\n\n## 行内元素\n\n- [x] 行内日期\n- [ ] 行内引用页面\n- [ ] 行内页面\n- [ ] 行内公式，返回公式文字\n- [ ] 人员\n- [x] Emoji\n\n## 多维表\n\n\n不支持\n\n\n## 嵌入内容\n\n\n返回超链接\n\n\n## 高级块\n\n- [ ] 同步块，即将支持\n- [ ] 模版按钮\n\n## 布局\n\n\n不支持\n\n",
+      "updated": 1689226140000,
+      "body_original": "\n# FlowUs-Markdown\n\n\n## 基础块\n\n- [x] 正文\n- [x] 待办列表\n- [ ] 页面\n- [ ] 引用页面\n- [x] 标题\n- [x] 简单表格\n- [x] 项目列表\n- [x] 编号列表\n- [x] 折叠列表，返回为`<detail>` Html 标签，部分博客平台支持\n- [x] 分割线\n- [x] 引述文字\n- [x] 着重文字，同引述文字\n- [x] 代码片段\n- [ ] 数学公式，返回公式文字\n- [ ] 思维导图\n- [ ] 思维导图页面\n- [x] 折叠标题，同折叠列表\n\n## 媒体\n\n- [x] 图片\n- [x] 视频，返回超链接\n- [x] 音频，返回超链接\n- [ ] 文件\n- [ ] 文件夹\n- [x] 网页书签，返回超链接\n\n## 行内元素\n\n- [x] 行内日期\n- [ ] 行内引用页面\n- [ ] 行内页面\n- [ ] 行内公式，返回公式文字\n- [ ] 人员\n- [x] Emoji\n\n## 多维表\n\n\n不支持\n\n\n## 嵌入内容\n\n\n返回超链接\n\n\n## 高级块\n\n- [x] 同步块\n- [ ] 模版按钮\n\n## 布局\n\n\n不支持\n\n",
       "properties": {
         "status": "已发布",
         "sort": 14,
         "urlname": "flowus-markdown",
-        "上次编辑时间": "2023-07-07T08:01:00.000Z",
+        "上次编辑时间": "2023-07-13T05:29:00.000Z",
         "catalog": "功能和API适配情况",
         "title": "FlowUs-Markdown",
-        "date": "2023-07-07 15:38:00",
-        "updated": "2023-07-07 16:01:00"
+        "date": "2023-07-07 07:38:00",
+        "updated": "2023-07-13 05:29:00"
       },
       "body": ""
     }
@@ -816,7 +816,7 @@
       "object": "page",
       "id": "f27ad5fc-ddf3-4d7c-abda-28b67bdd24a2",
       "created_time": "2023-07-07T07:38:00.000Z",
-      "last_edited_time": "2023-07-07T08:01:00.000Z",
+      "last_edited_time": "2023-07-13T05:29:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -839,11 +839,11 @@
         "status": "已发布",
         "sort": 14,
         "urlname": "flowus-markdown",
-        "上次编辑时间": "2023-07-07T08:01:00.000Z",
+        "上次编辑时间": "2023-07-13T05:29:00.000Z",
         "catalog": "功能和API适配情况",
         "title": "FlowUs-Markdown",
         "date": "2023-07-07 07:38:00",
-        "updated": "2023-07-07 08:01:00"
+        "updated": "2023-07-13 05:29:00"
       },
       "url": "https://www.notion.so/FlowUs-Markdown-f27ad5fcddf34d7cabda28b67bdd24a2",
       "public_url": "https://1874.notion.site/FlowUs-Markdown-f27ad5fcddf34d7cabda28b67bdd24a2"
