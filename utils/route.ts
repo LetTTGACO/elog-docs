@@ -35,7 +35,7 @@ function genYuqueRoute(arr, pathname) {
  * @param pathname
  */
 export const genYuqueSideBar = (pathname: string) => {
-  const cache = require('../elog.cache.yuque.json')
+  const cache = require('../elog.cache.yuque-token.json')
   const { catalog } = cache
  return genYuqueRoute(catalog, pathname)
   // console.log('res', res)
