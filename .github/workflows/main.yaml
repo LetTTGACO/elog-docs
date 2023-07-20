@@ -13,8 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ENABLE_YUQUE: ${{ secrets.ENABLE_YUQUE }}
 
     steps:
       - name: 检查分支
@@ -40,13 +38,16 @@ jobs:
           CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
         if: ${{ env.CLEAN_CACHE == 'true' }}
         run: |
-          pnpm clean:yuque
+          pnpm clean:yuque-token
+          pnpm clean:yuque-pwd
           pnpm clean:notion
           pnpm clean:flowus
 
       - name: 拉取语雀&Notion&FlowUs的文章
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+          YUQUE_USERNAME: ${{ secrets.YUQUE_USERNAME }}
+          YUQUE_PWD: ${{ secrets.YUQUE_PWD }}
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
           YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
@@ -58,7 +59,8 @@ jobs:
           FLOWUS_TABLE_PAGE_ID: ${{ secrets.FLOWUS_TABLE_PAGE_ID }}
         run: |
           pnpm sync:flowus
-          pnpm sync:yuque
+          pnpm sync:yuque-token
+          pnpm sync:yuque-pwd
           pnpm sync:notion
 
       - name: 配置Git用户名邮箱
