@@ -13,9 +13,9 @@
 
 ### Notion
 
-1.  在 Notion 数据库新增`catalog`字段（单选/多选），设置每篇文档的所在目录信息标签。单选标签下，只能生成一层目录；多选标签下，可生成多级目录，但是需要保证标签的顺序
-2.  在 Notion 写作平台配置项中配置`write.notion.catalog=true`
-3.  在部署平台配置项中配置`deploy.local.catalog=true`
+1. 在 Notion 数据库新增`catalog`字段（单选/多选），设置每篇文档的所在目录信息标签。单选标签下，只能生成一层目录；多选标签下，可生成多级目录，但是需要保证标签的顺序
+2. 在 Notion 写作平台配置项中配置`write.notion.catalog=true`
+3. 在部署平台配置项中配置`deploy.local.catalog=true`
 
 如果想自定义字段，不使用默认的`catalog`字段，则需要设置`write.notion.catalog`为以下格式
 

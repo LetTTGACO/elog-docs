@@ -129,14 +129,14 @@ module.exports = {
 
 语雀关键信息获取及配置流程请移步 [关键信息获取](/yuque/gvnxobqogetukays#语雀) 页面
 
-| 字段          | 必填 | 说明                                 | 默认值                         |
-| ------------- | ---- | ------------------------------------ | ------------------------------ |
-| token         | 是   | 语雀 Token                           | -                              |
-| baseUrl       | 否   | 语雀 API 请求的 Base Url             | <https://www.yuque.com/api/v2> |
-| login         | 是   | 个人路径/空间 ID                     | -                              |
-| repo          | 是   | 语雀仓库短名称，也称为语雀知识库路径 | -                              |
-| onlyPublic    | 否   | 是否只获取公开文章                   | false                          |
-| onlyPublished | 否   | 是否只获取已发布文章                 | false                          |
+| 字段          | 必填 | 说明                                 | 默认值                       |
+| ------------- | ---- | ------------------------------------ | ---------------------------- |
+| token         | 是   | 语雀 Token                           | -                            |
+| baseUrl       | 否   | 语雀 API 请求的 Base Url             | https://www.yuque.com/api/v2 |
+| login         | 是   | 个人路径/空间 ID                     | -                            |
+| repo          | 是   | 语雀仓库短名称，也称为语雀知识库路径 | -                            |
+| onlyPublic    | 否   | 是否只获取公开文章                   | false                        |
+| onlyPublished | 否   | 是否只获取已发布文章                 | false                        |
 
 > `baseUrl` 为语雀 API 请求路径
 > 当知识库类型为个人知识库时，无需配置。
@@ -158,7 +158,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 `filter`字段是为了筛选 Notion 数据库文档，表示哪些文章需要被 Elog 下载。
 
-1.  默认值为 true ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
+1. 默认值为 true ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
 
 ```json
 {
@@ -169,8 +169,8 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 }
 ```
 
-2.  当`filter = false`时，不进行筛选，默认下载数据库所有文档
-3.  当需要自定义筛选时，需要按照 Notion 的筛选规则进行。具体请参考[Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
+2. 当`filter = false`时，不进行筛选，默认下载数据库所有文档
+3. 当需要自定义筛选时，需要按照 Notion 的筛选规则进行。具体请参考[Notion API 文档 - Filter database entries](https://developers.notion.com/reference/post-database-query-filter)
 
 #### Sorts 字段说明
 
@@ -178,7 +178,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 例如，使用 VitePress 部署文档时，需要对文档按照指定顺序和结构生成路由和 sidebar。
 详情见 [Elog Docs 文档源码](https://github.com/LetTTGACO/elog-docs)
 
-1.  elog 提供了一些预设参数，如下。例如`sorts=sortDesc`即按照数据库的 sort 字段进行倒序排列
+1. elog 提供了一些预设参数，如下。例如`sorts=sortDesc`即按照数据库的 sort 字段进行倒序排列
 
 ```typescript
 export const enum NotionSortPreset {
@@ -197,8 +197,8 @@ export const enum NotionSortPreset {
 }
 ```
 
-2.  当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序
-3.  当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
+2. 当`sorts=true`或者不填时，默认按照文档创建时间倒序进行排序
+3. 当需要自定义排序时，需要按照 Notion 的筛选规则进行。具体请参考 [Notion API 文档 - Sort database entries](https://developers.notion.com/reference/post-database-query-sort)
 
 #### Catalog 字段说明
 
@@ -235,8 +235,8 @@ catalog: {
 
 自定义文档处理适配器`.js`文件路径，当需要对文档进一步处理时，可配置此选项
 
-1.  目前只支持 Common Js 标准的处理器
-2.  处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法**
+1. 目前只支持 Common Js 标准的处理器
+2. 处理器需要暴露一个**同步**的 `format` 的方法，**不支持异步方法**
 
 ```javascript
 // 如果需要返回带有front-matter的md字符串，则需要安装并引入此库
@@ -335,8 +335,8 @@ export interface YuqueCatalog {
 
 #### PrefixKey 字段说明
 
-1.  本地部署平台一般会有资源根目录，会将某个文件夹视为根目录，而`prefixKey`就是配置资源目录的前缀
-2.  例如 Vitpress，如果`outputDir=./docs/asset/images`，则`prefixKey=/asset/images`
+1. 本地部署平台一般会有资源根目录，会将某个文件夹视为根目录，而`prefixKey`就是配置资源目录的前缀
+2. 例如 Vitpress，如果`outputDir=./docs/asset/images`，则`prefixKey=/asset/images`
 
 ### 腾讯云（cos）/阿里云（oss）/七牛云（qiniu）
 
@@ -352,14 +352,14 @@ export interface YuqueCatalog {
 
 ### 又拍云（upyun）
 
-| 字段         | 必填 | 说明                                                               | 默认值                               |
-| ------------ | ---- | ------------------------------------------------------------------ | ------------------------------------ |
-| user\*\*\*\* | 是   | 操作员账号                                                         | -                                    |
-| password     | 是   | 操作员密码                                                         | -                                    |
-| bucket       | 是   | 地区                                                               | -                                    |
-| host         | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：<http://xxx.est.upcdn.net> |
-| prefixKey    | 否   | 上传路径，默认上传到根路径                                         | -                                    |
-| secretExt    | 否   | 图床密钥拓展点                                                     | -                                    |
+| 字段         | 必填 | 说明                                                               | 默认值                             |
+| ------------ | ---- | ------------------------------------------------------------------ | ---------------------------------- |
+| user\*\*\*\* | 是   | 操作员账号                                                         | -                                  |
+| password     | 是   | 操作员密码                                                         | -                                  |
+| bucket       | 是   | 地区                                                               | -                                  |
+| host         | 否   | 指定域名，又拍云会默认提供 30 天的临时测试域名，建议配置自定义域名 | 临时域名：http://xxx.est.upcdn.net |
+| prefixKey    | 否   | 上传路径，默认上传到根路径                                         | -                                  |
+| secretExt    | 否   | 图床密钥拓展点                                                     | -                                  |
 
 ### Github 图床（github）
 
@@ -377,8 +377,8 @@ export interface YuqueCatalog {
 
 图床密钥拓展点路径，一般适用于不想直接配置 AK 到环境变量或者本地，而是通过异步接口获取
 
-1.  目前只支持 Common Js 标准拓展点
-2.  拓展点需要暴露一个**同步/异步**的 `getSecret` 的方法
+1. 目前只支持 Common Js 标准拓展点
+2. 拓展点需要暴露一个**同步/异步**的 `getSecret` 的方法
 
 ```typescript
 const axios = require("axios");
@@ -407,28 +407,27 @@ module.exports = {
 };
 ```
 
-3.  `getSecret` 返回的密钥信息需要符合图床实例 SDK 的字段要求，具体请参考对应图床 SDK/API
+3. `getSecret` 返回的密钥信息需要符合图床实例 SDK 的字段要求，具体请参考对应图床 SDK/API
 
 ### 环境变量配置
 
-1.  当 Elog 配置文件为 Js 类型时，可在配置文件中通过`process.env.xxx`自定义环境变量。
-2.  当 ELog 配置文件为 Json 类型时，Elog 会优先从配置文件中获取，如果获取不到，则会从环境变量中获取。Elog 默认只会读取以下环境变量值：
-
-| Key              | Value                          |
-| ---------------- | ------------------------------ |
-| YUQUE_TOKEN      | 语雀 Token                     |
-| NOTION_TOKEN     | Notion Token                   |
-| CONFLUENCE_USER  | Confluence 账号                |
-| CONFLUENCE_PWD   | Confluence 密码                |
-| GITHUB_TOKEN     | Github Token                   |
-| COS_SECRET_ID    | 腾讯云 COS 的 secretId         |
-| COS_SECRET_KEY   | 腾讯云 COS 的 secretKey        |
-| OSS_SECRET_ID    | 阿里云 OSS 的 AccessKey ID     |
-| OSS_SECRET_KEY   | 阿里云 OSS 的 AccessKey Secret |
-| QINIU_SECRET_ID  | 七牛云的 AccessKey             |
-| QINIU_SECRET_KEY | 七牛云的 SecretKey             |
-| UPYUN_SECRET_ID  | 又拍云的操作员账号             |
-| UPYUN_SECRET_KEY | 又拍云的操作员密码             |
+1. 当 Elog 配置文件为 Js 类型时，可在配置文件中通过`process.env.xxx`自定义环境变量。
+2. 当 ELog 配置文件为 Json 类型时，Elog 会优先从配置文件中获取，如果获取不到，则会从环境变量中获取。Elog 默认只会读取以下环境变量值：
+   | Key | Value |
+   | --- | --- |
+   | YUQUE_TOKEN | 语雀 Token |
+   | NOTION_TOKEN | Notion Token |
+   | CONFLUENCE_USER | Confluence 账号 |
+   | CONFLUENCE_PWD | Confluence 密码 |
+   | GITHUB_TOKEN | Github Token |
+   | COS_SECRET_ID | 腾讯云 COS 的 secretId |
+   | COS_SECRET_KEY | 腾讯云 COS 的 secretKey |
+   | OSS_SECRET_ID | 阿里云 OSS 的 AccessKey ID |
+   | OSS_SECRET_KEY | 阿里云 OSS 的 AccessKey Secret |
+   | QINIU_SECRET_ID | 七牛云的 AccessKey |
+   | QINIU_SECRET_KEY | 七牛云的 SecretKey |
+   | UPYUN_SECRET_ID | 又拍云的操作员账号 |
+   | UPYUN_SECRET_KEY | 又拍云的操作员密码 |
 
 ⚠️ 为了安全，在实际配置中请不要将敏感信息写在配置文件中，Elog 提供了更优雅的本地调试方式。
 

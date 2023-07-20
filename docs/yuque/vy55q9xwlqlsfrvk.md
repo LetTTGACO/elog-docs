@@ -48,8 +48,8 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 ### Github Actions
 
-1.  在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量
-2.  在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置
+1. 在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量
+2. 在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置
 
 ```yaml
 name: Deplo To Github Pages
@@ -194,8 +194,8 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 ### Github Actions
 
-1.  在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量
-2.  在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置
+1. 在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量
+2. 在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置
 
 ```yaml
 name: Deplo To Github Pages
