@@ -238,17 +238,17 @@
       "id": "b6184e5b-d962-4608-bc3d-7e7efbfc36c0",
       "doc_id": "b6184e5b-d962-4608-bc3d-7e7efbfc36c0",
       "title": "b6184e5b-d962-4608-bc3d-7e7efbfc36c0",
-      "updated": 1684335060000,
-      "body_original": "\n# CLI 命令\n\n\n## init\n\n\n初始化 Elog 配置\n\n\n```shell\nelog init [option] [value]\n```\n\n\n| option   | alias | 说明         | 默认值             |\n| -------- | ----- | ---------- | --------------- |\n| --config | -c    | 自定义配置文件的名称 | elog.config.js  |\n| --env    | -e    | 自定义缓存文件的名称 | elog.cache.json |\n\n\n## sync\n\n\n同步文章\n\n\n```shell\nelog sync [option] [value]\n```\n\n\n| option   | alias | 说明          | 默认值             |\n| -------- | ----- | ----------- | --------------- |\n| --config | -c    | 指定配置文件 path | elog.config.js  |\n| --env    | -e    | 指定环境文件 path | -               |\n| --cache  | -a    | 指定缓存文件 path | elog.cache.json |\n| --debug  |       | 打印更多调试日志    |                 |\n\n\n## clean\n\n\n清理文章、上次同步缓存、上次同步时间\n\n\n```shell\nelog clean [option] [value]\n```\n\n\n| option   | alias | 说明                     | 默认值             |\n| -------- | ----- | ---------------------- | --------------- |\n| --config | -c    | 指定配置文件 path，用于读取存储文章目录 | elog.config.js  |\n| --cache  | -a    | 指定缓存文件 path            | elog.cache.json |\n\n\n## upgrade\n\n\n更新全局 `elog` 版本到 `latest` 版本\n\n\n> v0.0.5 以上版本支持。\n\n\n```shell\nelog upgrade\n```\n\n",
+      "updated": 1689842220000,
+      "body_original": "\n# CLI 命令\n\n\n## init\n\n\n初始化 Elog 配置\n\n\n```shell\nelog init [option] [value]\n```\n\n\n| option   | alias | 说明         | 默认值             |\n| -------- | ----- | ---------- | --------------- |\n| --config | -c    | 自定义配置文件的名称 | elog.config.js  |\n| --env    | -e    | 自定义缓存文件的名称 | elog.cache.json |\n\n\n## sync\n\n\n同步文章\n\n\n```shell\nelog sync [option] [value]\n```\n\n\n| option       | alias | 说明          | 默认值             |\n| ------------ | ----- | ----------- | --------------- |\n| --config     | -c    | 指定配置文件 path | elog.config.js  |\n| --env        | -e    | 指定环境文件 path | -               |\n| --cache      | -a    | 指定缓存文件 path | elog.cache.json |\n| --debug      |       | 打印更多调试日志    |                 |\n| --force      |       | 强制同步        |                 |\n| --full-cache |       | 缓存文档全部信息    |                 |\n\n\n### --force 说明\n\n\n当需要写作平台的文档和本地文档保持一致时，可添加此命令行参数。例如在写作平台萨删除文档A后，可通过`--force`参数在本次同步文档时删除本地的文档A。\n\n\n使用前请注意以下事项：\n\n- 只支持文档删除时强制同步，不支持文档改名后删除改名前的文档\n- 你也可以通过`elog clean`直接清空本地文档后，重新同步文档\n\n### --full-cache 说明\n\n\n**请注意，使用此参数后，缓存文件的大小大约是原文档的2-10倍！**\n\n\n常用于本地调试，`elog.cache.json`缓存文件是实现Elog增量同步的关键，一般情况下只会保存文档的一部份原始信息。\n\n\n当需要对比原文档和Elog处理之后的文档时，可通过此命令行缓存文档处理过程中的所有信息。\n\n\n## clean\n\n\n清理文章、上次同步缓存、上次同步时间\n\n\n```shell\nelog clean [option] [value]\n```\n\n\n| option   | alias | 说明                     | 默认值             |\n| -------- | ----- | ---------------------- | --------------- |\n| --config | -c    | 指定配置文件 path，用于读取存储文章目录 | elog.config.js  |\n| --cache  | -a    | 指定缓存文件 path            | elog.cache.json |\n\n\n## upgrade\n\n\n更新全局 `elog` 版本到 `latest` 版本\n\n\n> v0.0.5 以上版本支持。\n\n\n```shell\nelog upgrade\n```\n\n",
       "properties": {
         "status": "已发布",
         "sort": 8,
         "urlname": "bry3d3lwe206xuor",
-        "上次编辑时间": "2023-05-17T14:51:00.000Z",
+        "上次编辑时间": "2023-07-20T08:37:00.000Z",
         "catalog": "入门指引",
         "title": "CLI 命令",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-05-17 14:51:00"
+        "updated": "2023-07-20 08:37:00"
       },
       "body": ""
     },
@@ -600,7 +600,7 @@
       "object": "page",
       "id": "b6184e5b-d962-4608-bc3d-7e7efbfc36c0",
       "created_time": "2023-04-06T13:31:00.000Z",
-      "last_edited_time": "2023-05-17T14:51:00.000Z",
+      "last_edited_time": "2023-07-20T08:37:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -623,11 +623,11 @@
         "status": "已发布",
         "sort": 8,
         "urlname": "bry3d3lwe206xuor",
-        "上次编辑时间": "2023-05-17T14:51:00.000Z",
+        "上次编辑时间": "2023-07-20T08:37:00.000Z",
         "catalog": "入门指引",
         "title": "CLI 命令",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-05-17 14:51:00"
+        "updated": "2023-07-20 08:37:00"
       },
       "url": "https://www.notion.so/CLI-b6184e5bd9624608bc3d7e7efbfc36c0",
       "public_url": "https://1874.notion.site/CLI-b6184e5bd9624608bc3d7e7efbfc36c0"
