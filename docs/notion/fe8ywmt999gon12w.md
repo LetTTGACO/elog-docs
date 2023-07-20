@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-07-06T12:20:00.000Z"
+上次编辑时间: "2023-07-20T14:55:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-07-06 12:20:00"
+updated: "2023-07-20 14:55:00"
 ---
 
 # 配置详情
@@ -44,6 +44,14 @@ module.exports = {
       repo: process.env.YUQUE_REPO,
       onlyPublic: false,
       onlyPublished: true,
+    },
+    "yuque-pwd": {
+      username: process.env.YUQUE_USERNAME,
+      password: process.env.YUQUE_PWD,
+      baseUrl: "",
+      login: process.env.YUQUE_LOGIN,
+      repo: process.env.YUQUE_REPO,
+      linebreak: true,
     },
     notion: {
       token: process.env.NOTION_TOKEN,
@@ -142,7 +150,7 @@ module.exports = {
 
 ## 写作平台
 
-### 语雀
+### 语雀（Token 方式）
 
 语雀关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#语雀) 页面。
 
@@ -158,6 +166,23 @@ module.exports = {
 > baseUrl 为语雀 API 请求路径  
 > 当知识库类型为个人知识库时，无需配置。  
 > 当知识库类型为团队知识库时，`baseUrl=https://空间id.yuque.com/api/v2`，`login=空间id`，`repo=空间中的语雀知识库路径`
+
+### 语雀（账号密码方式）
+
+语雀关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#语雀) 页面。
+
+| 字段      | 必填 | 说明                                      | 默认值                |
+| --------- | ---- | ----------------------------------------- | --------------------- |
+| username  | 是   | 语雀帐号，一般是手机号                    | -                     |
+| password  | 是   | 语雀密码，可在设置进行绑定                |                       |
+| host      | 否   | 语雀域名/团队域名                         | https://www.yuque.com |
+| login     | 是   | 个人路径/空间 ID                          | -                     |
+| repo      | 是   | 语雀仓库短名称，也称为语雀知识库路径      | -                     |
+| linebreak | 否   | 导出时是否保留语雀换行标签，即`<br/>`标签 | false                 |
+
+> host 为语雀域名  
+> 当知识库类型为个人知识库时，无需配置。  
+> 当知识库类型为团队知识库时，`host=https://空间id.yuque.com`
 
 ### Notion
 
