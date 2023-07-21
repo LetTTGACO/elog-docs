@@ -9,8 +9,8 @@
       "properties": {
         "title": "Notion示例文章",
         "urlname": "notion-example",
-        "date": "2023-04-24 05:08:29",
-        "updated": "2023-04-24 05:33:57",
+        "date": "2023-04-24 13:08:29",
+        "updated": "2023-04-24 13:33:57",
         "author": "1874"
       },
       "catalog": [
@@ -24,29 +24,6 @@
       "relativePath": "/notion-example.md"
     },
     {
-      "id": 123208837,
-      "doc_id": "notion-markdown",
-      "title": "notion-markdown",
-      "updated": 1682517236000,
-      "body_original": "<a name=\"Notion-Markdown\"></a>\n# Notion-Markdown\n<a name=\"de6c6643\"></a>\n## 行内样式\n\n- [x] Blod（加粗）\n- [x] Italicize（斜体）\n- [x] Underline（中划线）\n- [ ] Strike-Through（删除线）返回`<u>`包裹的文本\n- [x] Mark as code（行内代码块）\n- [ ] Inline equation（行内公式）直接返回公式文本，部分博客平台可能会报错，推荐使用块级公式\n- [ ] Text Color（文字颜色）\n- [ ] Background Color（背景颜色）\n<a name=\"818ac306\"></a>\n## Basic block（基本块）\n\n- [x] Text（文本）\n- [ ] Page （页面）返回超链接，但是地址不完整\n- [x] To-do list（TODO）部分博客平台需要安装插件支持，例如 Vitepress\n- [x] Heading（标题）Notion 写作时最多显示 3 级标题，但是可以直接用`####`语法支持在支持更多级别的博客平台展示\n- [x] Table（表格）\n- [x] Bulleted list（无序列表）\n- [x] Numbered list（有序列表）\n- [x] Toggle list（折叠块）返回为`<detail>` Html 标签，在部分博客平台受支持\n- [x] Quote（引用）\n- [x] Divider（分割线）\n- [ ] Link to page（链接到页面）返回完整超链接，但是地址不完整\n- [x] Callout（标注）同 Quote（引用）\n<a name=\"6620ca65\"></a>\n## Media（媒体）\n\n- [x] Image（图片）\n- [x] Web bookmark（网页书签）返回完整超链接\n- [ ] VIdeo（视频）返回完整超链接\n- [ ] Audio（音频）不返回\n- [x] Code（代码）\n- [ ] File（文件）返回完整超链接\n<a name=\"162e6eee\"></a>\n## DataBase（数据库）\n返回数据库的超链接地址，但不完整\n<a name=\"0ef2e2f9\"></a>\n## AI block\nAPI 报错`Block type ai_block is not supported via the API.`不支持\n\n- [ ] Summary（摘要）\n- [ ] Action items（待办事项）\n- [ ] Custom AI Block（内容块）\n<a name=\"a5e7bd3a\"></a>\n## Advanced block（高级块）\n\n- [ ] Table of contents（目录）不返回\n- [x] Block equation（公式）返回代码块，部分博客平台支持\n- [ ] Button（按钮）不返回\n- [ ] Breadcrumb（导航栏）不返回\n- [x] Synced block（同步块）\n- [ ] Toggle heading（折叠标题）返回标题样式\n- [ ] columns（分栏）\n- [x] Code（mermaid 代码，用于流程图等）部分博客平台需安装插件支持\n- [ ] Mention a person（提及人员）\n- [x] Mention a page（提及页面）返回 Notion 完整超链接\n- [x] Date or reminder（日期或提醒）返回日期值\n- [x] Emoji（表情）\n- [ ] Inline equation（行内公式）返回公式文本，部分博客平台可能会报错，谨慎使用\n<a name=\"c120b25e\"></a>\n## Embeds（嵌入）\n返回为超链接\n",
-      "properties": {
-        "title": "Notion-Markdown",
-        "urlname": "notion-markdown",
-        "date": "2023-04-26 13:51:50",
-        "updated": "2023-04-26 13:53:56",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "功能和API适配情况",
-          "doc_id": "notion-markdown"
-        }
-      ],
-      "body": "",
-      "realName": "notion-markdown",
-      "relativePath": "/notion-markdown.md"
-    },
-    {
       "id": 117967328,
       "doc_id": "yuque-markdown",
       "title": "yuque-markdown",
@@ -55,8 +32,8 @@
       "properties": {
         "title": "语雀-Markdown",
         "urlname": "yuque-markdown",
-        "date": "2023-03-14 13:10:45",
-        "updated": "2023-04-26 16:07:32",
+        "date": "2023-03-14 21:10:45",
+        "updated": "2023-04-27 00:07:32",
         "author": "1874"
       },
       "catalog": [
@@ -70,27 +47,27 @@
       "relativePath": "/yuque-markdown.md"
     },
     {
-      "id": 114442049,
-      "doc_id": "vy55q9xwlqlsfrvk",
-      "title": "vy55q9xwlqlsfrvk",
-      "updated": 1683651088000,
-      "body_original": "<a name=\"ba50ec6f\"></a>\n# 持续集成\n<a name=\"d36981ab\"></a>\n## 自动化流程\n![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817465-37b290af-ca3e-4806-af3b-73a57dc74d48.png#averageHue=%23fafafa&clientId=u208e01a6-ca64-4&id=clFpu&originHeight=310&originWidth=2382&originalType=binary&ratio=1&rotation=0&showTitle=false&size=68247&status=done&style=none&taskId=u19cd8417-2cfe-442d-b737-374cd838389&title=)\n<a name=\"e6c2d386\"></a>\n## 语雀示例\n**语雀 + webhooks + serverless api + GitHub Actions + Github Pages 持续集成**<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817364-a1b4b972-5db3-42c8-aaf3-c286743b3ccc.png#averageHue=%23f9f9f9&clientId=u208e01a6-ca64-4&id=DHJI8&originHeight=147&originWidth=1178&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26500&status=done&style=none&taskId=uc30876c3-c02e-4cb3-ad76-bf8336014d9&title=)\n<a name=\"69b2b169\"></a>\n### 语雀 webhooks\n在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写一个支持 POST 请求的 APi 链接即可（这里以 serverless api 为例）。当文档更新时，语雀会调用这个 API 进行推送\n> 令人遗憾的是，语雀将 webhooks 收费了<br />未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署\n> ⚠️  知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks\n\n![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817519-86b9ceaa-7cee-4386-bb25-6bc866f4d665.png#averageHue=%23fcfcfb&clientId=u208e01a6-ca64-4&id=EQMb1&originHeight=767&originWidth=1289&originalType=binary&ratio=1&rotation=0&showTitle=false&size=108166&status=done&style=none&taskId=ua9922ffd-f130-4f18-bd86-ed9cfda6549&title=)\n<a name=\"660815af\"></a>\n### **serverless api**\n为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)<br />将其填入语雀 Webhooks 中即可\n> 未开通会员的语雀小伙伴可直接手动调用此 API 触发 Github Actions 进行自动化构建&部署\n\n```javascript\nhttps://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx\n```\n<a name=\"47e3637e\"></a>\n### 配置 package.json\n```json\n{\n  \"scripts\": {\n    \"dev\": \"vitepress dev docs\",\n    \"build\": \"vitepress build docs\", // 构建文档\n    \"serve\": \"vitepress serve docs\",\n    \"elog:init\": \"elog init\",\n    \"sync:local\": \"elog sync -e .elog.env\", // 本地同步时需要从env中取值\n    \"sync:\": \"elog sync\", // 进行同步\n    \"clean\": \"elog clean\"\n  }\n}\n```\n<a name=\"e883c03e\"></a>\n### Github Actions\n\n1. 在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量\n2. 在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置\n```yaml\nname: Deplo To Github Pages\n\non:\n  # 允许手动push触发\n  push:\n    branches:\n      - master\n  # 允许外部仓库事件触发\n  repository_dispatch:\n    types:\n      - deploy # api中的event_type就是这个\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: 检查分支\n        uses: actions/checkout@master\n\n      - name: 安装node环境\n        uses: actions/setup-node@master\n        with:\n          node-version: \"16.x\"\n\n      - name: 安装pnpm\n        run: |\n          export TZ='Asia/Shanghai'\n          npm install pnpm@7.9.5 -g\n\n      - name: 安装依赖\n        run: |\n          export TZ='Asia/Shanghai'\n          pnpm install --prod\n\n      - name: 拉取语雀/Notion的文章\n        env:\n          # 语雀相关环境变量\n          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}\n          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}\n          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}\n          # Notion相关环境变量\n\t\t\t\t\tNOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}\n          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}\n          # 图床相关环境变量，以腾讯云COS为例\n          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}\n          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}\n          COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}\n          COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}\n        run: |\n          pnpm sync # 对应package.json中的script.sync\n\n      - name: 配置Git用户名邮箱\n        run: |\n          git config --global user.name \"xxxx\"\n          git config --global user.email \"xxxx\"\n\n      - name: 提交yuque拉取的文章到GitHub仓库\n        run: |\n          echo `date +\"%Y-%m-%d %H:%M:%S\"` begin > time.txt\n          git add .\n          git commit -m \"更新文档\" -a\n\n      - name: 推送文章到仓库\n        uses: ad-m/github-push-action@master\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}\n\n      - name: 生成静态文件\n        run: |\n          pnpm build # 对应package.json中的script.build\n\n      - name: 部署到Github Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          # github_token和personal_token适用于推送到当前仓库\n          # 也就是你的Github Pages仓库（xxxx/xxxx.github.io）\n          # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key\n          # github_token: ${{ secrets.GITHUB_TOKEN }}\n          # personal_token: ${{ secrets.PERSONAL_TOKEN }}\n          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥\n          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}\n          publish_dir: docs/.vitepress/dist\n          external_repository: xxxx/xxxx.github.io\n          publish_branch: master\n          commit_message: ${{ github.event.head_commit.message }}\n```\n<a name=\"0c6371ad\"></a>\n## Notion 示例\n**Notion + Slack + pipedream + serverless api + GitHub actions + Github Pages 持续集成**<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817468-f4a3b48d-0338-4650-ba49-31b4c0343621.png#averageHue=%23f9f9f9&clientId=u208e01a6-ca64-4&id=WurG8&originHeight=154&originWidth=1399&originalType=binary&ratio=1&rotation=0&showTitle=false&size=33122&status=done&style=none&taskId=u3797bf4d-af44-4fe3-9f54-502c5bb2c21&title=)\n<a name=\"540a28cc\"></a>\n### 配置数据表 **Slack notifications**\n设置数据表文档字段被扭转到某个状态时向 Slack 发送消息<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817834-8db0e258-3f15-4e01-b53e-d52677b600ae.png#averageHue=%23fafafa&clientId=u208e01a6-ca64-4&id=niUx9&originHeight=1200&originWidth=2262&originalType=binary&ratio=1&rotation=0&showTitle=false&size=231730&status=done&style=none&taskId=ua29f6c5b-ce70-40c6-af2a-4cd2a738b32&title=)\n<a name=\"09ea513a\"></a>\n### 注册 Slack 账号并授权给 Notion\n当 Notion 数据表的文档字段被扭转到某个状态时向 Slack 发送消息，此时 Slack 收到消息提醒<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647819227-086afac8-a295-49b0-8789-adda2c9ca914.png#averageHue=%23ecd292&clientId=u208e01a6-ca64-4&id=UDsU9&originHeight=1760&originWidth=2272&originalType=binary&ratio=1&rotation=0&showTitle=false&size=737552&status=done&style=none&taskId=u349605cc-31c5-4bed-968c-66a0f581cbd&title=)\n<a name=\"660815af-1\"></a>\n### **serverless api**\n为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)\n```javascript\nhttps://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx\n```\n<a name=\"d392ae13\"></a>\n### 注册**pipedream 并配置 WorkFlow**\n<a name=\"dc83a2fc\"></a>\n#### 第一步：选择 Channels 为 Notion 应用\n> 你也可以在 Notion 中配置发送消息到某个频道，然后在 pipedream 选择所选频道的 Channel。支持多选 Channels\n\n![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647818550-4e6115df-82c2-472f-b0fc-412b5a66d622.png#averageHue=%23f1cb77&clientId=u208e01a6-ca64-4&id=xJuXQ&originHeight=712&originWidth=893&originalType=binary&ratio=1&rotation=0&showTitle=false&size=69142&status=done&style=none&taskId=u7a325f0d-0933-4f83-9a7d-53b4785f552&title=)\n<a name=\"9cced7aa\"></a>\n#### 第二步：收到 Notion 消息后发送自定义 Http 请求\n将调用 Github Actions 的 serverless api 填入即可<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647818599-8da88e52-4c14-431a-b6ec-e28ab1c98990.png#averageHue=%23f3f5f8&clientId=u208e01a6-ca64-4&id=GFQXZ&originHeight=987&originWidth=973&originalType=binary&ratio=1&rotation=0&showTitle=false&size=98076&status=done&style=none&taskId=uec024d2a-0f2b-4f86-9df5-25d11dbb389&title=)\n<a name=\"47e3637e-1\"></a>\n### 配置 package.json\n```json\n{\n  \"scripts\": {\n    \"dev\": \"vitepress dev docs\",\n    \"build\": \"vitepress build docs\", // 构建文档\n    \"serve\": \"vitepress serve docs\",\n    \"elog:init\": \"elog init\",\n    \"sync:local\": \"elog sync -e .elog.env\", // 本地同步时需要从env中取值\n    \"sync:\": \"elog sync\", // 进行同步\n    \"clean\": \"elog clean\"\n  }\n}\n```\n<a name=\"e883c03e-1\"></a>\n### Github Actions\n\n1. 在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量\n2. 在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置\n```yaml\nname: Deplo To Github Pages\n\non:\n  # 允许手动push触发\n  push:\n    branches:\n      - master\n  # 允许外部仓库事件触发\n  repository_dispatch:\n    types:\n      - deploy # api中的event_type就是这个\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: 检查分支\n        uses: actions/checkout@master\n\n      - name: 安装node环境\n        uses: actions/setup-node@master\n        with:\n          node-version: \"16.x\"\n\n      - name: 安装pnpm\n        run: |\n          export TZ='Asia/Shanghai'\n          npm install pnpm@7.9.5 -g\n\n      - name: 安装依赖\n        run: |\n          export TZ='Asia/Shanghai'\n          pnpm install --prod\n\n      - name: 拉取语雀/Notion的文章\n        env:\n          # 语雀相关环境变量\n          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}\n          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}\n          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}\n          # Notion相关环境变量\n\t\t\t\t\tNOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}\n          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}\n          # 图床相关环境变量，以腾讯云COS为例\n          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}\n          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}\n          COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}\n          COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}\n        run: |\n          pnpm sync # 对应package.json中的script.sync\n\n      - name: 配置Git用户名邮箱\n        run: |\n          git config --global user.name \"xxxx\"\n          git config --global user.email \"xxxx\"\n\n      - name: 提交yuque拉取的文章到GitHub仓库\n        run: |\n          echo `date +\"%Y-%m-%d %H:%M:%S\"` begin > time.txt\n          git add .\n          git commit -m \"更新文档\" -a\n\n      - name: 推送文章到仓库\n        uses: ad-m/github-push-action@master\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}\n\n      - name: 生成静态文件\n        run: |\n          pnpm build # 对应package.json中的script.build\n\n      - name: 部署到Github Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          # github_token和personal_token适用于推送到当前仓库\n          # 也就是你的Github Pages仓库（xxxx/xxxx.github.io）\n          # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key\n          # github_token: ${{ secrets.GITHUB_TOKEN }}\n          # personal_token: ${{ secrets.PERSONAL_TOKEN }}\n          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥\n          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}\n          publish_dir: docs/.vitepress/dist\n          external_repository: xxxx/xxxx.github.io\n          publish_branch: master\n          commit_message: ${{ github.event.head_commit.message }}\n```\n",
+      "id": 123208837,
+      "doc_id": "notion-markdown",
+      "title": "notion-markdown",
+      "updated": 1682517236000,
+      "body_original": "<a name=\"Notion-Markdown\"></a>\n# Notion-Markdown\n<a name=\"de6c6643\"></a>\n## 行内样式\n\n- [x] Blod（加粗）\n- [x] Italicize（斜体）\n- [x] Underline（中划线）\n- [ ] Strike-Through（删除线）返回`<u>`包裹的文本\n- [x] Mark as code（行内代码块）\n- [ ] Inline equation（行内公式）直接返回公式文本，部分博客平台可能会报错，推荐使用块级公式\n- [ ] Text Color（文字颜色）\n- [ ] Background Color（背景颜色）\n<a name=\"818ac306\"></a>\n## Basic block（基本块）\n\n- [x] Text（文本）\n- [ ] Page （页面）返回超链接，但是地址不完整\n- [x] To-do list（TODO）部分博客平台需要安装插件支持，例如 Vitepress\n- [x] Heading（标题）Notion 写作时最多显示 3 级标题，但是可以直接用`####`语法支持在支持更多级别的博客平台展示\n- [x] Table（表格）\n- [x] Bulleted list（无序列表）\n- [x] Numbered list（有序列表）\n- [x] Toggle list（折叠块）返回为`<detail>` Html 标签，在部分博客平台受支持\n- [x] Quote（引用）\n- [x] Divider（分割线）\n- [ ] Link to page（链接到页面）返回完整超链接，但是地址不完整\n- [x] Callout（标注）同 Quote（引用）\n<a name=\"6620ca65\"></a>\n## Media（媒体）\n\n- [x] Image（图片）\n- [x] Web bookmark（网页书签）返回完整超链接\n- [ ] VIdeo（视频）返回完整超链接\n- [ ] Audio（音频）不返回\n- [x] Code（代码）\n- [ ] File（文件）返回完整超链接\n<a name=\"162e6eee\"></a>\n## DataBase（数据库）\n返回数据库的超链接地址，但不完整\n<a name=\"0ef2e2f9\"></a>\n## AI block\nAPI 报错`Block type ai_block is not supported via the API.`不支持\n\n- [ ] Summary（摘要）\n- [ ] Action items（待办事项）\n- [ ] Custom AI Block（内容块）\n<a name=\"a5e7bd3a\"></a>\n## Advanced block（高级块）\n\n- [ ] Table of contents（目录）不返回\n- [x] Block equation（公式）返回代码块，部分博客平台支持\n- [ ] Button（按钮）不返回\n- [ ] Breadcrumb（导航栏）不返回\n- [x] Synced block（同步块）\n- [ ] Toggle heading（折叠标题）返回标题样式\n- [ ] columns（分栏）\n- [x] Code（mermaid 代码，用于流程图等）部分博客平台需安装插件支持\n- [ ] Mention a person（提及人员）\n- [x] Mention a page（提及页面）返回 Notion 完整超链接\n- [x] Date or reminder（日期或提醒）返回日期值\n- [x] Emoji（表情）\n- [ ] Inline equation（行内公式）返回公式文本，部分博客平台可能会报错，谨慎使用\n<a name=\"c120b25e\"></a>\n## Embeds（嵌入）\n返回为超链接\n",
       "properties": {
-        "title": "持续集成",
-        "urlname": "vy55q9xwlqlsfrvk",
-        "date": "2023-02-14 05:06:31",
-        "updated": "2023-05-09 16:51:28",
+        "title": "Notion-Markdown",
+        "urlname": "notion-markdown",
+        "date": "2023-04-26 21:51:50",
+        "updated": "2023-04-26 21:53:56",
         "author": "1874"
       },
       "catalog": [
         {
-          "title": "进阶玩法",
-          "doc_id": "vy55q9xwlqlsfrvk"
+          "title": "功能和API适配情况",
+          "doc_id": "notion-markdown"
         }
       ],
       "body": "",
-      "realName": "vy55q9xwlqlsfrvk",
-      "relativePath": "/vy55q9xwlqlsfrvk.md"
+      "realName": "notion-markdown",
+      "relativePath": "/notion-markdown.md"
     },
     {
       "id": 122903263,
@@ -101,8 +78,8 @@
       "properties": {
         "title": "语雀示例文章",
         "urlname": "yuque-example",
-        "date": "2023-04-24 05:08:11",
-        "updated": "2023-05-03 15:10:54",
+        "date": "2023-04-24 13:08:11",
+        "updated": "2023-05-03 23:10:54",
         "author": "1874"
       },
       "catalog": [
@@ -116,27 +93,27 @@
       "relativePath": "/yuque-example.md"
     },
     {
-      "id": 113927217,
-      "doc_id": "te7ash7ybckgi60w",
-      "title": "te7ash7ybckgi60w",
-      "updated": 1682098399000,
-      "body_original": "<a name=\"SOzjj\"></a>\n# 示例配置\n[Elog Docs Github](https://github.com/LetTTGACO/elog-docs)\n",
+      "id": 114442049,
+      "doc_id": "vy55q9xwlqlsfrvk",
+      "title": "vy55q9xwlqlsfrvk",
+      "updated": 1683651088000,
+      "body_original": "<a name=\"ba50ec6f\"></a>\n# 持续集成\n<a name=\"d36981ab\"></a>\n## 自动化流程\n![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817465-37b290af-ca3e-4806-af3b-73a57dc74d48.png#averageHue=%23fafafa&clientId=u208e01a6-ca64-4&id=clFpu&originHeight=310&originWidth=2382&originalType=binary&ratio=1&rotation=0&showTitle=false&size=68247&status=done&style=none&taskId=u19cd8417-2cfe-442d-b737-374cd838389&title=)\n<a name=\"e6c2d386\"></a>\n## 语雀示例\n**语雀 + webhooks + serverless api + GitHub Actions + Github Pages 持续集成**<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817364-a1b4b972-5db3-42c8-aaf3-c286743b3ccc.png#averageHue=%23f9f9f9&clientId=u208e01a6-ca64-4&id=DHJI8&originHeight=147&originWidth=1178&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26500&status=done&style=none&taskId=uc30876c3-c02e-4cb3-ad76-bf8336014d9&title=)\n<a name=\"69b2b169\"></a>\n### 语雀 webhooks\n在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写一个支持 POST 请求的 APi 链接即可（这里以 serverless api 为例）。当文档更新时，语雀会调用这个 API 进行推送\n> 令人遗憾的是，语雀将 webhooks 收费了<br />未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署\n> ⚠️  知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks\n\n![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817519-86b9ceaa-7cee-4386-bb25-6bc866f4d665.png#averageHue=%23fcfcfb&clientId=u208e01a6-ca64-4&id=EQMb1&originHeight=767&originWidth=1289&originalType=binary&ratio=1&rotation=0&showTitle=false&size=108166&status=done&style=none&taskId=ua9922ffd-f130-4f18-bd86-ed9cfda6549&title=)\n<a name=\"660815af\"></a>\n### **serverless api**\n为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)<br />将其填入语雀 Webhooks 中即可\n> 未开通会员的语雀小伙伴可直接手动调用此 API 触发 Github Actions 进行自动化构建&部署\n\n```javascript\nhttps://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx\n```\n<a name=\"47e3637e\"></a>\n### 配置 package.json\n```json\n{\n  \"scripts\": {\n    \"dev\": \"vitepress dev docs\",\n    \"build\": \"vitepress build docs\", // 构建文档\n    \"serve\": \"vitepress serve docs\",\n    \"elog:init\": \"elog init\",\n    \"sync:local\": \"elog sync -e .elog.env\", // 本地同步时需要从env中取值\n    \"sync:\": \"elog sync\", // 进行同步\n    \"clean\": \"elog clean\"\n  }\n}\n```\n<a name=\"e883c03e\"></a>\n### Github Actions\n\n1. 在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量\n2. 在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置\n```yaml\nname: Deplo To Github Pages\n\non:\n  # 允许手动push触发\n  push:\n    branches:\n      - master\n  # 允许外部仓库事件触发\n  repository_dispatch:\n    types:\n      - deploy # api中的event_type就是这个\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: 检查分支\n        uses: actions/checkout@master\n\n      - name: 安装node环境\n        uses: actions/setup-node@master\n        with:\n          node-version: \"16.x\"\n\n      - name: 安装pnpm\n        run: |\n          export TZ='Asia/Shanghai'\n          npm install pnpm@7.9.5 -g\n\n      - name: 安装依赖\n        run: |\n          export TZ='Asia/Shanghai'\n          pnpm install --prod\n\n      - name: 拉取语雀/Notion的文章\n        env:\n          # 语雀相关环境变量\n          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}\n          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}\n          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}\n          # Notion相关环境变量\n\t\t\t\t\tNOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}\n          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}\n          # 图床相关环境变量，以腾讯云COS为例\n          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}\n          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}\n          COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}\n          COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}\n        run: |\n          pnpm sync # 对应package.json中的script.sync\n\n      - name: 配置Git用户名邮箱\n        run: |\n          git config --global user.name \"xxxx\"\n          git config --global user.email \"xxxx\"\n\n      - name: 提交yuque拉取的文章到GitHub仓库\n        run: |\n          echo `date +\"%Y-%m-%d %H:%M:%S\"` begin > time.txt\n          git add .\n          git commit -m \"更新文档\" -a\n\n      - name: 推送文章到仓库\n        uses: ad-m/github-push-action@master\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}\n\n      - name: 生成静态文件\n        run: |\n          pnpm build # 对应package.json中的script.build\n\n      - name: 部署到Github Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          # github_token和personal_token适用于推送到当前仓库\n          # 也就是你的Github Pages仓库（xxxx/xxxx.github.io）\n          # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key\n          # github_token: ${{ secrets.GITHUB_TOKEN }}\n          # personal_token: ${{ secrets.PERSONAL_TOKEN }}\n          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥\n          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}\n          publish_dir: docs/.vitepress/dist\n          external_repository: xxxx/xxxx.github.io\n          publish_branch: master\n          commit_message: ${{ github.event.head_commit.message }}\n```\n<a name=\"0c6371ad\"></a>\n## Notion 示例\n**Notion + Slack + pipedream + serverless api + GitHub actions + Github Pages 持续集成**<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817468-f4a3b48d-0338-4650-ba49-31b4c0343621.png#averageHue=%23f9f9f9&clientId=u208e01a6-ca64-4&id=WurG8&originHeight=154&originWidth=1399&originalType=binary&ratio=1&rotation=0&showTitle=false&size=33122&status=done&style=none&taskId=u3797bf4d-af44-4fe3-9f54-502c5bb2c21&title=)\n<a name=\"540a28cc\"></a>\n### 配置数据表 **Slack notifications**\n设置数据表文档字段被扭转到某个状态时向 Slack 发送消息<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647817834-8db0e258-3f15-4e01-b53e-d52677b600ae.png#averageHue=%23fafafa&clientId=u208e01a6-ca64-4&id=niUx9&originHeight=1200&originWidth=2262&originalType=binary&ratio=1&rotation=0&showTitle=false&size=231730&status=done&style=none&taskId=ua29f6c5b-ce70-40c6-af2a-4cd2a738b32&title=)\n<a name=\"09ea513a\"></a>\n### 注册 Slack 账号并授权给 Notion\n当 Notion 数据表的文档字段被扭转到某个状态时向 Slack 发送消息，此时 Slack 收到消息提醒<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647819227-086afac8-a295-49b0-8789-adda2c9ca914.png#averageHue=%23ecd292&clientId=u208e01a6-ca64-4&id=UDsU9&originHeight=1760&originWidth=2272&originalType=binary&ratio=1&rotation=0&showTitle=false&size=737552&status=done&style=none&taskId=u349605cc-31c5-4bed-968c-66a0f581cbd&title=)\n<a name=\"660815af-1\"></a>\n### **serverless api**\n为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)\n```javascript\nhttps://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx\n```\n<a name=\"d392ae13\"></a>\n### 注册**pipedream 并配置 WorkFlow**\n<a name=\"dc83a2fc\"></a>\n#### 第一步：选择 Channels 为 Notion 应用\n> 你也可以在 Notion 中配置发送消息到某个频道，然后在 pipedream 选择所选频道的 Channel。支持多选 Channels\n\n![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647818550-4e6115df-82c2-472f-b0fc-412b5a66d622.png#averageHue=%23f1cb77&clientId=u208e01a6-ca64-4&id=xJuXQ&originHeight=712&originWidth=893&originalType=binary&ratio=1&rotation=0&showTitle=false&size=69142&status=done&style=none&taskId=u7a325f0d-0933-4f83-9a7d-53b4785f552&title=)\n<a name=\"9cced7aa\"></a>\n#### 第二步：收到 Notion 消息后发送自定义 Http 请求\n将调用 Github Actions 的 serverless api 填入即可<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/417081/1683647818599-8da88e52-4c14-431a-b6ec-e28ab1c98990.png#averageHue=%23f3f5f8&clientId=u208e01a6-ca64-4&id=GFQXZ&originHeight=987&originWidth=973&originalType=binary&ratio=1&rotation=0&showTitle=false&size=98076&status=done&style=none&taskId=uec024d2a-0f2b-4f86-9df5-25d11dbb389&title=)\n<a name=\"47e3637e-1\"></a>\n### 配置 package.json\n```json\n{\n  \"scripts\": {\n    \"dev\": \"vitepress dev docs\",\n    \"build\": \"vitepress build docs\", // 构建文档\n    \"serve\": \"vitepress serve docs\",\n    \"elog:init\": \"elog init\",\n    \"sync:local\": \"elog sync -e .elog.env\", // 本地同步时需要从env中取值\n    \"sync:\": \"elog sync\", // 进行同步\n    \"clean\": \"elog clean\"\n  }\n}\n```\n<a name=\"e883c03e-1\"></a>\n### Github Actions\n\n1. 在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置需要用到的环境变量\n2. 在仓库根目录创建`.github/workflows/main.yaml`文件，并按照以下流程配置\n```yaml\nname: Deplo To Github Pages\n\non:\n  # 允许手动push触发\n  push:\n    branches:\n      - master\n  # 允许外部仓库事件触发\n  repository_dispatch:\n    types:\n      - deploy # api中的event_type就是这个\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: 检查分支\n        uses: actions/checkout@master\n\n      - name: 安装node环境\n        uses: actions/setup-node@master\n        with:\n          node-version: \"16.x\"\n\n      - name: 安装pnpm\n        run: |\n          export TZ='Asia/Shanghai'\n          npm install pnpm@7.9.5 -g\n\n      - name: 安装依赖\n        run: |\n          export TZ='Asia/Shanghai'\n          pnpm install --prod\n\n      - name: 拉取语雀/Notion的文章\n        env:\n          # 语雀相关环境变量\n          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}\n          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}\n          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}\n          # Notion相关环境变量\n\t\t\t\t\tNOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}\n          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}\n          # 图床相关环境变量，以腾讯云COS为例\n          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}\n          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}\n          COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}\n          COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}\n        run: |\n          pnpm sync # 对应package.json中的script.sync\n\n      - name: 配置Git用户名邮箱\n        run: |\n          git config --global user.name \"xxxx\"\n          git config --global user.email \"xxxx\"\n\n      - name: 提交yuque拉取的文章到GitHub仓库\n        run: |\n          echo `date +\"%Y-%m-%d %H:%M:%S\"` begin > time.txt\n          git add .\n          git commit -m \"更新文档\" -a\n\n      - name: 推送文章到仓库\n        uses: ad-m/github-push-action@master\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}\n\n      - name: 生成静态文件\n        run: |\n          pnpm build # 对应package.json中的script.build\n\n      - name: 部署到Github Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          # github_token和personal_token适用于推送到当前仓库\n          # 也就是你的Github Pages仓库（xxxx/xxxx.github.io）\n          # 一般都不直接在Github Pages仓库开发，所以推荐使用deploy_key\n          # github_token: ${{ secrets.GITHUB_TOKEN }}\n          # personal_token: ${{ secrets.PERSONAL_TOKEN }}\n          # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥\n          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}\n          publish_dir: docs/.vitepress/dist\n          external_repository: xxxx/xxxx.github.io\n          publish_branch: master\n          commit_message: ${{ github.event.head_commit.message }}\n```\n",
       "properties": {
-        "title": "示例配置",
-        "urlname": "te7ash7ybckgi60w",
-        "date": "2023-02-09 07:10:18",
-        "updated": "2023-04-21 17:33:19",
+        "title": "持续集成",
+        "urlname": "vy55q9xwlqlsfrvk",
+        "date": "2023-02-14 13:06:31",
+        "updated": "2023-05-10 00:51:28",
         "author": "1874"
       },
       "catalog": [
         {
-          "title": "入门指引",
-          "doc_id": "te7ash7ybckgi60w"
+          "title": "进阶玩法",
+          "doc_id": "vy55q9xwlqlsfrvk"
         }
       ],
       "body": "",
-      "realName": "te7ash7ybckgi60w",
-      "relativePath": "/te7ash7ybckgi60w.md"
+      "realName": "vy55q9xwlqlsfrvk",
+      "relativePath": "/vy55q9xwlqlsfrvk.md"
     },
     {
       "id": 113938704,
@@ -147,8 +124,8 @@
       "properties": {
         "title": "最佳实践",
         "urlname": "ubcut43kgf97fag6",
-        "date": "2023-02-09 07:56:35",
-        "updated": "2023-05-04 10:08:10",
+        "date": "2023-02-09 15:56:35",
+        "updated": "2023-05-04 18:08:10",
         "author": "1874"
       },
       "catalog": [
@@ -162,6 +139,29 @@
       "relativePath": "/ubcut43kgf97fag6.md"
     },
     {
+      "id": 113927217,
+      "doc_id": "te7ash7ybckgi60w",
+      "title": "te7ash7ybckgi60w",
+      "updated": 1682098399000,
+      "body_original": "<a name=\"SOzjj\"></a>\n# 示例配置\n[Elog Docs Github](https://github.com/LetTTGACO/elog-docs)\n",
+      "properties": {
+        "title": "示例配置",
+        "urlname": "te7ash7ybckgi60w",
+        "date": "2023-02-09 15:10:18",
+        "updated": "2023-04-22 01:33:19",
+        "author": "1874"
+      },
+      "catalog": [
+        {
+          "title": "入门指引",
+          "doc_id": "te7ash7ybckgi60w"
+        }
+      ],
+      "body": "",
+      "realName": "te7ash7ybckgi60w",
+      "relativePath": "/te7ash7ybckgi60w.md"
+    },
+    {
       "id": 113891385,
       "doc_id": "raqyleng501h23p1",
       "title": "raqyleng501h23p1",
@@ -170,8 +170,8 @@
       "properties": {
         "title": "Front Matter",
         "urlname": "raqyleng501h23p1",
-        "date": "2023-02-09 03:31:45",
-        "updated": "2023-04-21 18:01:23",
+        "date": "2023-02-09 11:31:45",
+        "updated": "2023-04-22 02:01:23",
         "author": "1874"
       },
       "catalog": [
@@ -185,29 +185,6 @@
       "relativePath": "/raqyleng501h23p1.md"
     },
     {
-      "id": 113693555,
-      "doc_id": "bry3d3lwe206xuor",
-      "title": "bry3d3lwe206xuor",
-      "updated": 1682268307000,
-      "body_original": "<a name=\"LF8JJ\"></a>\n# CLI命令\n<a name=\"S9WUA\"></a>\n## init\n初始化Elog配置\n```bash\nelog init [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --config | -c | 自定义配置文件的名称 | elog.config.js |\n| --env | -e | 自定义缓存文件的名称 | elog.cache.json |\n\n<a name=\"pVMaD\"></a>\n## sync\n同步文章\n```bash\nelog sync [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --env | -e | 指定环境文件path | - |\n| --config | -c | 指定配置文件path | elog.config.js |\n| --cache | -a | 指定缓存文件path | elog.cache.json |\n\n<a name=\"zq07D\"></a>\n## clean\n清理文章、上次同步缓存、上次同步时间\n```bash\nelog clean [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --config | -c | 指定配置文件path，用于读取存储文章目录 | elog.config.js |\n| --cache | -a | 指定缓存文件path | elog.cache.json |\n\n<a name=\"mHpZU\"></a>\n## upgrade\n更新全局 `elog` 版本到 `latest` 版本\n> v0.0.5 以上版本支持。\n\n```bash\nelog upgrade\n```\n",
-      "properties": {
-        "title": "CLI 命令",
-        "urlname": "bry3d3lwe206xuor",
-        "date": "2023-02-07 14:16:56",
-        "updated": "2023-04-23 16:45:07",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "入门指引",
-          "doc_id": "bry3d3lwe206xuor"
-        }
-      ],
-      "body": "",
-      "realName": "bry3d3lwe206xuor",
-      "relativePath": "/bry3d3lwe206xuor.md"
-    },
-    {
       "id": 113906683,
       "doc_id": "gvnxobqogetukays",
       "title": "gvnxobqogetukays",
@@ -216,8 +193,8 @@
       "properties": {
         "title": "关键信息获取",
         "urlname": "gvnxobqogetukays",
-        "date": "2023-02-09 05:32:10",
-        "updated": "2023-04-24 11:20:45",
+        "date": "2023-02-09 13:32:10",
+        "updated": "2023-04-24 19:20:45",
         "author": "1874"
       },
       "catalog": [
@@ -231,27 +208,27 @@
       "relativePath": "/gvnxobqogetukays.md"
     },
     {
-      "id": 113663948,
-      "doc_id": "la9toqncox96kfp8",
-      "title": "la9toqncox96kfp8",
-      "updated": 1680684696000,
-      "body_original": "<a name=\"NWmnw\"></a>\n# 沟通与反馈\n<a name=\"eFdJw\"></a>\n## 使用交流\n微信/企业微信扫码加入交流群<br />![IMG_1672.PNG](https://cdn.nlark.com/yuque/0/2023/png/417081/1675927304419-1b16dc80-b970-4f52-9d87-320ead9b7011.png#averageHue=%23fdc671&clientId=u846cd10d-517c-4&from=drop&height=325&id=u4f6757ee&originHeight=396&originWidth=396&originalType=binary&ratio=1&rotation=0&showTitle=false&size=68966&status=done&style=none&taskId=ue4537a18-530c-4606-b554-74e609332b3&title=&width=325)\n<a name=\"viUZW\"></a>\n## 问题反馈与建议\n可以前往 [Github Issues](https://github.com/LetTTGACO/elog/issues)\n\n",
+      "id": 113693555,
+      "doc_id": "bry3d3lwe206xuor",
+      "title": "bry3d3lwe206xuor",
+      "updated": 1682268307000,
+      "body_original": "<a name=\"LF8JJ\"></a>\n# CLI命令\n<a name=\"S9WUA\"></a>\n## init\n初始化Elog配置\n```bash\nelog init [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --config | -c | 自定义配置文件的名称 | elog.config.js |\n| --env | -e | 自定义缓存文件的名称 | elog.cache.json |\n\n<a name=\"pVMaD\"></a>\n## sync\n同步文章\n```bash\nelog sync [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --env | -e | 指定环境文件path | - |\n| --config | -c | 指定配置文件path | elog.config.js |\n| --cache | -a | 指定缓存文件path | elog.cache.json |\n\n<a name=\"zq07D\"></a>\n## clean\n清理文章、上次同步缓存、上次同步时间\n```bash\nelog clean [option] [value]\n```\n| option | alias | 说明 | 默认值 |\n| --- | --- | --- | --- |\n| --config | -c | 指定配置文件path，用于读取存储文章目录 | elog.config.js |\n| --cache | -a | 指定缓存文件path | elog.cache.json |\n\n<a name=\"mHpZU\"></a>\n## upgrade\n更新全局 `elog` 版本到 `latest` 版本\n> v0.0.5 以上版本支持。\n\n```bash\nelog upgrade\n```\n",
       "properties": {
-        "title": "沟通与反馈",
-        "urlname": "la9toqncox96kfp8",
-        "date": "2023-02-07 09:35:59",
-        "updated": "2023-04-05 08:51:36",
+        "title": "CLI 命令",
+        "urlname": "bry3d3lwe206xuor",
+        "date": "2023-02-07 22:16:56",
+        "updated": "2023-04-24 00:45:07",
         "author": "1874"
       },
       "catalog": [
         {
-          "title": "关于Elog",
-          "doc_id": "la9toqncox96kfp8"
+          "title": "入门指引",
+          "doc_id": "bry3d3lwe206xuor"
         }
       ],
       "body": "",
-      "realName": "la9toqncox96kfp8",
-      "relativePath": "/la9toqncox96kfp8.md"
+      "realName": "bry3d3lwe206xuor",
+      "relativePath": "/bry3d3lwe206xuor.md"
     },
     {
       "id": 113665139,
@@ -262,8 +239,8 @@
       "properties": {
         "title": "Features",
         "urlname": "zuzvbv2lqhvllgit",
-        "date": "2023-02-07 09:42:12",
-        "updated": "2023-05-03 16:05:45",
+        "date": "2023-02-07 17:42:12",
+        "updated": "2023-05-04 00:05:45",
         "author": "1874"
       },
       "catalog": [
@@ -277,6 +254,29 @@
       "relativePath": "/zuzvbv2lqhvllgit.md"
     },
     {
+      "id": 113663948,
+      "doc_id": "la9toqncox96kfp8",
+      "title": "la9toqncox96kfp8",
+      "updated": 1680684696000,
+      "body_original": "<a name=\"NWmnw\"></a>\n# 沟通与反馈\n<a name=\"eFdJw\"></a>\n## 使用交流\n微信/企业微信扫码加入交流群<br />![IMG_1672.PNG](https://cdn.nlark.com/yuque/0/2023/png/417081/1675927304419-1b16dc80-b970-4f52-9d87-320ead9b7011.png#averageHue=%23fdc671&clientId=u846cd10d-517c-4&from=drop&height=325&id=u4f6757ee&originHeight=396&originWidth=396&originalType=binary&ratio=1&rotation=0&showTitle=false&size=68966&status=done&style=none&taskId=ue4537a18-530c-4606-b554-74e609332b3&title=&width=325)\n<a name=\"viUZW\"></a>\n## 问题反馈与建议\n可以前往 [Github Issues](https://github.com/LetTTGACO/elog/issues)\n\n",
+      "properties": {
+        "title": "沟通与反馈",
+        "urlname": "la9toqncox96kfp8",
+        "date": "2023-02-07 17:35:59",
+        "updated": "2023-04-05 16:51:36",
+        "author": "1874"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "la9toqncox96kfp8"
+        }
+      ],
+      "body": "",
+      "realName": "la9toqncox96kfp8",
+      "relativePath": "/la9toqncox96kfp8.md"
+    },
+    {
       "id": 113663727,
       "doc_id": "cq6p8hxizn1ogwgm",
       "title": "cq6p8hxizn1ogwgm",
@@ -285,8 +285,8 @@
       "properties": {
         "title": "Elog 更新日志",
         "urlname": "cq6p8hxizn1ogwgm",
-        "date": "2023-02-07 09:35:09",
-        "updated": "2023-05-03 16:05:53",
+        "date": "2023-02-07 17:35:09",
+        "updated": "2023-05-04 00:05:53",
         "author": "1874"
       },
       "catalog": [
@@ -308,8 +308,8 @@
       "properties": {
         "title": "按目录存放文档",
         "urlname": "xe160pqsumi6bqnz",
-        "date": "2022-12-02 05:12:49",
-        "updated": "2023-05-03 15:23:05",
+        "date": "2022-12-02 13:12:49",
+        "updated": "2023-05-03 23:23:05",
         "author": "1874"
       },
       "catalog": [
@@ -331,8 +331,8 @@
       "properties": {
         "title": "快速开始",
         "urlname": "start",
-        "date": "2022-11-29 05:40:54",
-        "updated": "2023-04-25 18:11:07",
+        "date": "2022-11-29 13:40:54",
+        "updated": "2023-04-26 02:11:07",
         "author": "1874"
       },
       "catalog": [
@@ -346,29 +346,6 @@
       "relativePath": "/start.md"
     },
     {
-      "id": 107712840,
-      "doc_id": "introduce",
-      "title": "introduce",
-      "updated": 1682142528000,
-      "body_original": "<a name=\"eJ8LG\"></a>\n# Elog 能干什么\n<a name=\"nI2nj\"></a>\n## 介绍\n`Elog`名为 `Easy Blogging`，简单、轻松的书写&部署博客\n<a name=\"cUNb9\"></a>\n## 前言\n在遇到Elog之前，你的博客可能是\n\n- 本地编辑器书写 + Hexo/Hugo/Vitepress部署\n- 语雀记录\n- Notion记录和发布\n- WordPress在线书写和发布\n- Github记录\n- 掘金/知乎等在线平台记录\n\n可以发现，大部分博客平台要么自己提供在线编辑器，要么就让用户本地书写再进行进行部署。<br />可惜目前好用的编辑器大都都不是博客平台自己提供的，而是一些第三方编辑器，例如\n\n- Notion：出色的数据库设计，灵活度非常高\n- 语雀：阿里出品，笔者觉得很不错的一款在线编辑器，涵盖日常个人、工作所需要的各种场景，够用\n- Typora：一款出色的本地编辑器，支持实时预览和流程书写，可惜新版本收费了\n> 语雀最近限制了【互联网公开】的权限，需要会员才能使用，所以对于一些想直接把语雀当成博客站点的用户变得不太友好。好在API目前还不受限制，可以稳定使用。\n\n而博客平台一般分为两类，一种是轻量化的，只负责渲染文档不提供编辑器，代表产品：\n\n- Hexo\n- Vitepress\n- HuGo\n\n一种是内容管理系统软件，相对上面这些比较重，初期涉及到数据库和手动部署，拥有自己的编辑器，代表产品\n\n- WordPress\n- GHost\n<a name=\"SNlEi\"></a>\n## Elog\n如果我既想用最熟悉、最舒适的编辑器，又想用主流的博客平台，怎么办呢？<br />Elog就是为了解决这个问题而诞生的。<br />Elog将这些平台揉合在一起，你可以随意组合写作平台和部署平台，目前支持<br />**写作平台：**\n\n- [x] Notion\n- [x] 语雀\n\n**部署平台**\n\n- [x] Hexo\n- [x] Vitepress\n- [x] HuGo\n- [x] Docusaurus\n- [x] Docz\n- [x] Confluence\n> 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的方式\n\n<a name=\"bvu56\"></a>\n## 图床功能\n和很多在线平台一样，Notion和语雀也同样存在图片防盗链的问题，直接将写作平台的图片链接放到其他站点的话，会加载不出来。<br />为了解决这个问题，Elog支持了在生成MD文件之前，将扫描到的图片上传到图床上，并对文档中的图片链接进行替换。<br />当前支持的图床有\n\n- [x] 腾讯云COS\n- [x] 阿里云OSS\n- [x] Github图床\n- [x] 七牛云\n- [x] 又拍云\n\n\n\n",
-      "properties": {
-        "title": "Elog 能干什么",
-        "urlname": "introduce",
-        "date": "2022-11-29 05:40:18",
-        "updated": "2023-04-22 05:48:48",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "关于Elog",
-          "doc_id": "introduce"
-        }
-      ],
-      "body": "",
-      "realName": "introduce",
-      "relativePath": "/introduce.md"
-    },
-    {
       "id": 108093222,
       "doc_id": "fe8ywmt999gon12w",
       "title": "fe8ywmt999gon12w",
@@ -377,8 +354,8 @@
       "properties": {
         "title": "配置详情",
         "urlname": "fe8ywmt999gon12w",
-        "date": "2022-12-02 04:45:52",
-        "updated": "2023-06-26 08:27:11",
+        "date": "2022-12-02 12:45:52",
+        "updated": "2023-06-26 16:27:11",
         "author": "1874"
       },
       "catalog": [
@@ -390,7 +367,381 @@
       "body": "",
       "realName": "fe8ywmt999gon12w",
       "relativePath": "/fe8ywmt999gon12w.md"
+    },
+    {
+      "id": 107712840,
+      "doc_id": "introduce",
+      "title": "introduce",
+      "updated": 1682142528000,
+      "body_original": "<a name=\"eJ8LG\"></a>\n# Elog 能干什么\n<a name=\"nI2nj\"></a>\n## 介绍\n`Elog`名为 `Easy Blogging`，简单、轻松的书写&部署博客\n<a name=\"cUNb9\"></a>\n## 前言\n在遇到Elog之前，你的博客可能是\n\n- 本地编辑器书写 + Hexo/Hugo/Vitepress部署\n- 语雀记录\n- Notion记录和发布\n- WordPress在线书写和发布\n- Github记录\n- 掘金/知乎等在线平台记录\n\n可以发现，大部分博客平台要么自己提供在线编辑器，要么就让用户本地书写再进行进行部署。<br />可惜目前好用的编辑器大都都不是博客平台自己提供的，而是一些第三方编辑器，例如\n\n- Notion：出色的数据库设计，灵活度非常高\n- 语雀：阿里出品，笔者觉得很不错的一款在线编辑器，涵盖日常个人、工作所需要的各种场景，够用\n- Typora：一款出色的本地编辑器，支持实时预览和流程书写，可惜新版本收费了\n> 语雀最近限制了【互联网公开】的权限，需要会员才能使用，所以对于一些想直接把语雀当成博客站点的用户变得不太友好。好在API目前还不受限制，可以稳定使用。\n\n而博客平台一般分为两类，一种是轻量化的，只负责渲染文档不提供编辑器，代表产品：\n\n- Hexo\n- Vitepress\n- HuGo\n\n一种是内容管理系统软件，相对上面这些比较重，初期涉及到数据库和手动部署，拥有自己的编辑器，代表产品\n\n- WordPress\n- GHost\n<a name=\"SNlEi\"></a>\n## Elog\n如果我既想用最熟悉、最舒适的编辑器，又想用主流的博客平台，怎么办呢？<br />Elog就是为了解决这个问题而诞生的。<br />Elog将这些平台揉合在一起，你可以随意组合写作平台和部署平台，目前支持<br />**写作平台：**\n\n- [x] Notion\n- [x] 语雀\n\n**部署平台**\n\n- [x] Hexo\n- [x] Vitepress\n- [x] HuGo\n- [x] Docusaurus\n- [x] Docz\n- [x] Confluence\n> 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的方式\n\n<a name=\"bvu56\"></a>\n## 图床功能\n和很多在线平台一样，Notion和语雀也同样存在图片防盗链的问题，直接将写作平台的图片链接放到其他站点的话，会加载不出来。<br />为了解决这个问题，Elog支持了在生成MD文件之前，将扫描到的图片上传到图床上，并对文档中的图片链接进行替换。<br />当前支持的图床有\n\n- [x] 腾讯云COS\n- [x] 阿里云OSS\n- [x] Github图床\n- [x] 七牛云\n- [x] 又拍云\n\n\n\n",
+      "properties": {
+        "title": "Elog 能干什么",
+        "urlname": "introduce",
+        "date": "2022-11-29 13:40:18",
+        "updated": "2023-04-22 13:48:48",
+        "author": "1874"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "introduce"
+        }
+      ],
+      "body": "",
+      "realName": "introduce",
+      "relativePath": "/introduce.md"
     }
   ],
-  "catalog": []
+  "catalog": [
+    {
+      "type": "TITLE",
+      "title": "关于Elog",
+      "uuid": "5Z1oRyzOg4duQnlJ",
+      "url": "",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1,
+      "child_uuid": "jpTcZgfVyKy4YBBY",
+      "sibling_uuid": "mqnrHmVyj2SptIu-",
+      "depth": 1,
+      "slug": "#"
+    },
+    {
+      "type": "DOC",
+      "title": "Elog 能干什么",
+      "uuid": "jpTcZgfVyKy4YBBY",
+      "url": "introduce",
+      "parent_uuid": "5Z1oRyzOg4duQnlJ",
+      "doc_id": 107712840,
+      "level": 1,
+      "id": 107712840,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "5Z1oRyzOg4duQnlJ",
+      "sibling_uuid": "LRnmwXl8VY07hYnh",
+      "depth": 2,
+      "slug": "introduce"
+    },
+    {
+      "type": "DOC",
+      "title": "Features",
+      "uuid": "LRnmwXl8VY07hYnh",
+      "url": "zuzvbv2lqhvllgit",
+      "parent_uuid": "5Z1oRyzOg4duQnlJ",
+      "doc_id": 113665139,
+      "level": 1,
+      "id": 113665139,
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "jpTcZgfVyKy4YBBY",
+      "sibling_uuid": "8hOlOfsfjQYSIjjY",
+      "depth": 2,
+      "slug": "zuzvbv2lqhvllgit"
+    },
+    {
+      "type": "DOC",
+      "title": "Elog 更新日志",
+      "uuid": "8hOlOfsfjQYSIjjY",
+      "url": "cq6p8hxizn1ogwgm",
+      "parent_uuid": "5Z1oRyzOg4duQnlJ",
+      "doc_id": 113663727,
+      "level": 1,
+      "id": 113663727,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "LRnmwXl8VY07hYnh",
+      "sibling_uuid": "ZfN4i2eB_NsN102V",
+      "depth": 2,
+      "slug": "cq6p8hxizn1ogwgm"
+    },
+    {
+      "type": "DOC",
+      "title": "沟通与反馈",
+      "uuid": "ZfN4i2eB_NsN102V",
+      "url": "la9toqncox96kfp8",
+      "parent_uuid": "5Z1oRyzOg4duQnlJ",
+      "doc_id": 113663948,
+      "level": 1,
+      "id": 113663948,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "8hOlOfsfjQYSIjjY",
+      "depth": 2,
+      "slug": "la9toqncox96kfp8"
+    },
+    {
+      "type": "TITLE",
+      "title": "入门指引",
+      "uuid": "mqnrHmVyj2SptIu-",
+      "url": "",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "5Z1oRyzOg4duQnlJ",
+      "child_uuid": "bYYqP0FNnLjeZlYM",
+      "sibling_uuid": "IRlxU8BN3QGe27pc",
+      "depth": 1,
+      "slug": "#"
+    },
+    {
+      "type": "DOC",
+      "title": "快速开始",
+      "uuid": "bYYqP0FNnLjeZlYM",
+      "url": "start",
+      "parent_uuid": "mqnrHmVyj2SptIu-",
+      "doc_id": 107712908,
+      "level": 1,
+      "id": 107712908,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "mqnrHmVyj2SptIu-",
+      "sibling_uuid": "gOgF1H4SqpHzb7UO",
+      "depth": 2,
+      "slug": "start"
+    },
+    {
+      "type": "DOC",
+      "title": "配置详情",
+      "uuid": "gOgF1H4SqpHzb7UO",
+      "url": "fe8ywmt999gon12w",
+      "parent_uuid": "mqnrHmVyj2SptIu-",
+      "doc_id": 108093222,
+      "level": 1,
+      "id": 108093222,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "bYYqP0FNnLjeZlYM",
+      "sibling_uuid": "I8CjT1JSywVxa8X4",
+      "depth": 2,
+      "slug": "fe8ywmt999gon12w"
+    },
+    {
+      "type": "DOC",
+      "title": "关键信息获取",
+      "uuid": "I8CjT1JSywVxa8X4",
+      "url": "gvnxobqogetukays",
+      "parent_uuid": "mqnrHmVyj2SptIu-",
+      "doc_id": 113906683,
+      "level": 1,
+      "id": 113906683,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "gOgF1H4SqpHzb7UO",
+      "sibling_uuid": "iGeJmpy-GdWzUrB3",
+      "depth": 2,
+      "slug": "gvnxobqogetukays"
+    },
+    {
+      "type": "DOC",
+      "title": "CLI 命令",
+      "uuid": "iGeJmpy-GdWzUrB3",
+      "url": "bry3d3lwe206xuor",
+      "parent_uuid": "mqnrHmVyj2SptIu-",
+      "doc_id": 113693555,
+      "level": 1,
+      "id": 113693555,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "I8CjT1JSywVxa8X4",
+      "sibling_uuid": "z_0X6jh9moMe9yCN",
+      "depth": 2,
+      "slug": "bry3d3lwe206xuor"
+    },
+    {
+      "type": "DOC",
+      "title": "示例配置",
+      "uuid": "z_0X6jh9moMe9yCN",
+      "url": "te7ash7ybckgi60w",
+      "parent_uuid": "mqnrHmVyj2SptIu-",
+      "doc_id": 113927217,
+      "level": 1,
+      "id": 113927217,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "iGeJmpy-GdWzUrB3",
+      "depth": 2,
+      "slug": "te7ash7ybckgi60w"
+    },
+    {
+      "type": "TITLE",
+      "title": "功能和API适配情况",
+      "uuid": "IRlxU8BN3QGe27pc",
+      "url": "",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "mqnrHmVyj2SptIu-",
+      "child_uuid": "I27Jt1Utz-2VDG-o",
+      "sibling_uuid": "lyiqodb0OvCLERDP",
+      "depth": 1,
+      "slug": "#"
+    },
+    {
+      "type": "DOC",
+      "title": "语雀-Markdown",
+      "uuid": "I27Jt1Utz-2VDG-o",
+      "url": "yuque-markdown",
+      "parent_uuid": "IRlxU8BN3QGe27pc",
+      "doc_id": 117967328,
+      "level": 1,
+      "id": 117967328,
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "IRlxU8BN3QGe27pc",
+      "sibling_uuid": "3pB2syLXWB1aQXff",
+      "depth": 2,
+      "slug": "yuque-markdown"
+    },
+    {
+      "type": "DOC",
+      "title": "语雀示例文章",
+      "uuid": "3pB2syLXWB1aQXff",
+      "url": "yuque-example",
+      "parent_uuid": "IRlxU8BN3QGe27pc",
+      "doc_id": 122903263,
+      "level": 1,
+      "id": 122903263,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "I27Jt1Utz-2VDG-o",
+      "sibling_uuid": "QgRZrnNVasTxZNK4",
+      "depth": 2,
+      "slug": "yuque-example"
+    },
+    {
+      "type": "DOC",
+      "title": "Notion-Markdown",
+      "uuid": "QgRZrnNVasTxZNK4",
+      "url": "notion-markdown",
+      "parent_uuid": "IRlxU8BN3QGe27pc",
+      "doc_id": 123208837,
+      "level": 1,
+      "id": 123208837,
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "3pB2syLXWB1aQXff",
+      "sibling_uuid": "6kdipu5_TupYyiBv",
+      "depth": 2,
+      "slug": "notion-markdown"
+    },
+    {
+      "type": "DOC",
+      "title": "Notion示例文章",
+      "uuid": "6kdipu5_TupYyiBv",
+      "url": "notion-example",
+      "parent_uuid": "IRlxU8BN3QGe27pc",
+      "doc_id": 122903274,
+      "level": 1,
+      "id": 122903274,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "QgRZrnNVasTxZNK4",
+      "depth": 2,
+      "slug": "notion-example"
+    },
+    {
+      "type": "TITLE",
+      "title": "进阶玩法",
+      "uuid": "lyiqodb0OvCLERDP",
+      "url": "",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "IRlxU8BN3QGe27pc",
+      "child_uuid": "PodABt8fdN6YOzWq",
+      "sibling_uuid": "M8ZIXs2Fu5_wwl7x",
+      "depth": 1,
+      "slug": "#"
+    },
+    {
+      "type": "DOC",
+      "title": "Front Matter",
+      "uuid": "PodABt8fdN6YOzWq",
+      "url": "raqyleng501h23p1",
+      "parent_uuid": "lyiqodb0OvCLERDP",
+      "doc_id": 113891385,
+      "level": 1,
+      "id": 113891385,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "lyiqodb0OvCLERDP",
+      "sibling_uuid": "GFB9vN2HAvU5ypOT",
+      "depth": 2,
+      "slug": "raqyleng501h23p1"
+    },
+    {
+      "type": "DOC",
+      "title": "按目录存放文档",
+      "uuid": "GFB9vN2HAvU5ypOT",
+      "url": "xe160pqsumi6bqnz",
+      "parent_uuid": "lyiqodb0OvCLERDP",
+      "doc_id": 108094686,
+      "level": 1,
+      "id": 108094686,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "PodABt8fdN6YOzWq",
+      "sibling_uuid": "bril42Wm2oE7t9e2",
+      "depth": 2,
+      "slug": "xe160pqsumi6bqnz"
+    },
+    {
+      "type": "DOC",
+      "title": "持续集成",
+      "uuid": "bril42Wm2oE7t9e2",
+      "url": "vy55q9xwlqlsfrvk",
+      "parent_uuid": "lyiqodb0OvCLERDP",
+      "doc_id": 114442049,
+      "level": 1,
+      "id": 114442049,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "GFB9vN2HAvU5ypOT",
+      "depth": 2,
+      "slug": "vy55q9xwlqlsfrvk"
+    },
+    {
+      "type": "TITLE",
+      "title": "社区生态",
+      "uuid": "M8ZIXs2Fu5_wwl7x",
+      "url": "",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "lyiqodb0OvCLERDP",
+      "child_uuid": "AXqI0yA4DwjHEnMy",
+      "depth": 1,
+      "slug": "#"
+    },
+    {
+      "type": "DOC",
+      "title": "最佳实践",
+      "uuid": "AXqI0yA4DwjHEnMy",
+      "url": "ubcut43kgf97fag6",
+      "parent_uuid": "M8ZIXs2Fu5_wwl7x",
+      "doc_id": 113938704,
+      "level": 1,
+      "id": 113938704,
+      "open_window": 0,
+      "visible": 1,
+      "prev_uuid": "M8ZIXs2Fu5_wwl7x",
+      "depth": 2,
+      "slug": "ubcut43kgf97fag6"
+    }
+  ]
 }
