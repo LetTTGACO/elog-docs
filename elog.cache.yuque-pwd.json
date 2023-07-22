@@ -67,26 +67,26 @@
       "relativePath": "/fe8ywmt999gon12w.md"
     },
     {
-      "id": 113663727,
-      "doc_id": "cq6p8hxizn1ogwgm",
-      "title": "cq6p8hxizn1ogwgm",
-      "updated": 1683129953000,
-      "body_original": "# Elog 更新日志\n更新日志见 [Github Releases](https://github.com/LetTTGACO/elog/releases)\n\n更多详情见 [ELog 开发计划](https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c)\n",
+      "id": 108094686,
+      "doc_id": "xe160pqsumi6bqnz",
+      "title": "xe160pqsumi6bqnz",
+      "updated": 1683127385000,
+      "body_original": "# 按目录存放文档\n## 适用场景\n当在语雀/Notion上管理文章时，需要在生成文档时按目录将文档存放在不同目录，方便部署平台按照目录渲染。\n例如 Vitepress 一般是按照文件夹生成文档和目录。\n## 如何配置\n### 语雀\n在配置文件中配置`deploy.local.catalog=true`，即可按照语雀目录生成文档。\n### Notion\n\n1. 在 Notion 数据库新增`catalog`字段（单选/多选），设置每篇文档的所在目录信息标签。单选标签下，只能生成一层目录；多选标签下，可生成多级目录，但是需要保证标签的顺序\n2. 在 Notion 写作平台配置项中配置`write.notion.catalog=true`\n3. 在部署平台配置项中配置`deploy.local.catalog=true`\n\n如果想自定义字段，不使用默认的`catalog`字段，则需要设置`write.notion.catalog`为以下格式\n```javascript\nnotion: {\n  token: process.env.NOTION_TOKEN,\n  databaseId: process.env.NOTION_DATABASE_ID,\n  filter: true,\n  sorts: true,\n  catalog: {\n\t\tenable: true,\n\t\tproperty: \"自定义属性\"\n\t}\n}\n```\n> 你也可以不开启按目录存放文档的相关属性，但是依然在 Vitepress 中按目录生成路由，可参考 [Elog Docs 源码](https://github.com/LetTTGACO/elog-docs)。\n\n",
       "properties": {
-        "title": "Elog 更新日志",
-        "urlname": "cq6p8hxizn1ogwgm",
-        "date": "2023-02-07 17:35:09",
-        "updated": "2023-05-04 00:05:53"
+        "title": "按目录存放文档",
+        "urlname": "xe160pqsumi6bqnz",
+        "date": "2022-12-02 13:12:49",
+        "updated": "2023-05-03 23:23:05"
       },
       "catalog": [
         {
-          "title": "关于Elog",
-          "doc_id": "cq6p8hxizn1ogwgm"
+          "title": "进阶玩法",
+          "doc_id": "xe160pqsumi6bqnz"
         }
       ],
       "body": "",
-      "realName": "cq6p8hxizn1ogwgm",
-      "relativePath": "/cq6p8hxizn1ogwgm.md"
+      "realName": "xe160pqsumi6bqnz",
+      "relativePath": "/xe160pqsumi6bqnz.md"
     },
     {
       "id": 113665139,
@@ -109,28 +109,6 @@
       "body": "",
       "realName": "zuzvbv2lqhvllgit",
       "relativePath": "/zuzvbv2lqhvllgit.md"
-    },
-    {
-      "id": 108094686,
-      "doc_id": "xe160pqsumi6bqnz",
-      "title": "xe160pqsumi6bqnz",
-      "updated": 1683127385000,
-      "body_original": "# 按目录存放文档\n## 适用场景\n当在语雀/Notion上管理文章时，需要在生成文档时按目录将文档存放在不同目录，方便部署平台按照目录渲染。\n例如 Vitepress 一般是按照文件夹生成文档和目录。\n## 如何配置\n### 语雀\n在配置文件中配置`deploy.local.catalog=true`，即可按照语雀目录生成文档。\n### Notion\n\n1. 在 Notion 数据库新增`catalog`字段（单选/多选），设置每篇文档的所在目录信息标签。单选标签下，只能生成一层目录；多选标签下，可生成多级目录，但是需要保证标签的顺序\n2. 在 Notion 写作平台配置项中配置`write.notion.catalog=true`\n3. 在部署平台配置项中配置`deploy.local.catalog=true`\n\n如果想自定义字段，不使用默认的`catalog`字段，则需要设置`write.notion.catalog`为以下格式\n```javascript\nnotion: {\n  token: process.env.NOTION_TOKEN,\n  databaseId: process.env.NOTION_DATABASE_ID,\n  filter: true,\n  sorts: true,\n  catalog: {\n\t\tenable: true,\n\t\tproperty: \"自定义属性\"\n\t}\n}\n```\n> 你也可以不开启按目录存放文档的相关属性，但是依然在 Vitepress 中按目录生成路由，可参考 [Elog Docs 源码](https://github.com/LetTTGACO/elog-docs)。\n\n",
-      "properties": {
-        "title": "按目录存放文档",
-        "urlname": "xe160pqsumi6bqnz",
-        "date": "2022-12-02 13:12:49",
-        "updated": "2023-05-03 23:23:05"
-      },
-      "catalog": [
-        {
-          "title": "进阶玩法",
-          "doc_id": "xe160pqsumi6bqnz"
-        }
-      ],
-      "body": "",
-      "realName": "xe160pqsumi6bqnz",
-      "relativePath": "/xe160pqsumi6bqnz.md"
     },
     {
       "id": 122903263,
@@ -177,28 +155,6 @@
       "relativePath": "/yuque-markdown.md"
     },
     {
-      "id": 123208837,
-      "doc_id": "notion-markdown",
-      "title": "notion-markdown",
-      "updated": 1682517236000,
-      "body_original": "# Notion-Markdown\n## 行内样式\n\n- [x] Blod（加粗）\n- [x] Italicize（斜体）\n- [x] Underline（中划线）\n- [ ] Strike-Through（删除线）返回`<u>`包裹的文本\n- [x] Mark as code（行内代码块）\n- [ ] Inline equation（行内公式）直接返回公式文本，部分博客平台可能会报错，推荐使用块级公式\n- [ ] Text Color（文字颜色）\n- [ ] Background Color（背景颜色）\n## Basic block（基本块）\n\n- [x] Text（文本）\n- [ ] Page （页面）返回超链接，但是地址不完整\n- [x] To-do list（TODO）部分博客平台需要安装插件支持，例如 Vitepress\n- [x] Heading（标题）Notion 写作时最多显示 3 级标题，但是可以直接用`####`语法支持在支持更多级别的博客平台展示\n- [x] Table（表格）\n- [x] Bulleted list（无序列表）\n- [x] Numbered list（有序列表）\n- [x] Toggle list（折叠块）返回为`<detail>` Html 标签，在部分博客平台受支持\n- [x] Quote（引用）\n- [x] Divider（分割线）\n- [ ] Link to page（链接到页面）返回完整超链接，但是地址不完整\n- [x] Callout（标注）同 Quote（引用）\n## Media（媒体）\n\n- [x] Image（图片）\n- [x] Web bookmark（网页书签）返回完整超链接\n- [ ] VIdeo（视频）返回完整超链接\n- [ ] Audio（音频）不返回\n- [x] Code（代码）\n- [ ] File（文件）返回完整超链接\n## DataBase（数据库）\n返回数据库的超链接地址，但不完整\n## AI block\nAPI 报错`Block type ai_block is not supported via the API.`不支持\n\n- [ ] Summary（摘要）\n- [ ] Action items（待办事项）\n- [ ] Custom AI Block（内容块）\n## Advanced block（高级块）\n\n- [ ] Table of contents（目录）不返回\n- [x] Block equation（公式）返回代码块，部分博客平台支持\n- [ ] Button（按钮）不返回\n- [ ] Breadcrumb（导航栏）不返回\n- [x] Synced block（同步块）\n- [ ] Toggle heading（折叠标题）返回标题样式\n- [ ] columns（分栏）\n- [x] Code（mermaid 代码，用于流程图等）部分博客平台需安装插件支持\n- [ ] Mention a person（提及人员）\n- [x] Mention a page（提及页面）返回 Notion 完整超链接\n- [x] Date or reminder（日期或提醒）返回日期值\n- [x] Emoji（表情）\n- [ ] Inline equation（行内公式）返回公式文本，部分博客平台可能会报错，谨慎使用\n## Embeds（嵌入）\n返回为超链接\n",
-      "properties": {
-        "title": "Notion-Markdown",
-        "urlname": "notion-markdown",
-        "date": "2023-04-26 21:51:50",
-        "updated": "2023-04-26 21:53:56"
-      },
-      "catalog": [
-        {
-          "title": "功能和API适配情况",
-          "doc_id": "notion-markdown"
-        }
-      ],
-      "body": "",
-      "realName": "notion-markdown",
-      "relativePath": "/notion-markdown.md"
-    },
-    {
       "id": 107712908,
       "doc_id": "start",
       "title": "start",
@@ -219,6 +175,28 @@
       "body": "",
       "realName": "start",
       "relativePath": "/start.md"
+    },
+    {
+      "id": 123208837,
+      "doc_id": "notion-markdown",
+      "title": "notion-markdown",
+      "updated": 1682517236000,
+      "body_original": "# Notion-Markdown\n## 行内样式\n\n- [x] Blod（加粗）\n- [x] Italicize（斜体）\n- [x] Underline（中划线）\n- [ ] Strike-Through（删除线）返回`<u>`包裹的文本\n- [x] Mark as code（行内代码块）\n- [ ] Inline equation（行内公式）直接返回公式文本，部分博客平台可能会报错，推荐使用块级公式\n- [ ] Text Color（文字颜色）\n- [ ] Background Color（背景颜色）\n## Basic block（基本块）\n\n- [x] Text（文本）\n- [ ] Page （页面）返回超链接，但是地址不完整\n- [x] To-do list（TODO）部分博客平台需要安装插件支持，例如 Vitepress\n- [x] Heading（标题）Notion 写作时最多显示 3 级标题，但是可以直接用`####`语法支持在支持更多级别的博客平台展示\n- [x] Table（表格）\n- [x] Bulleted list（无序列表）\n- [x] Numbered list（有序列表）\n- [x] Toggle list（折叠块）返回为`<detail>` Html 标签，在部分博客平台受支持\n- [x] Quote（引用）\n- [x] Divider（分割线）\n- [ ] Link to page（链接到页面）返回完整超链接，但是地址不完整\n- [x] Callout（标注）同 Quote（引用）\n## Media（媒体）\n\n- [x] Image（图片）\n- [x] Web bookmark（网页书签）返回完整超链接\n- [ ] VIdeo（视频）返回完整超链接\n- [ ] Audio（音频）不返回\n- [x] Code（代码）\n- [ ] File（文件）返回完整超链接\n## DataBase（数据库）\n返回数据库的超链接地址，但不完整\n## AI block\nAPI 报错`Block type ai_block is not supported via the API.`不支持\n\n- [ ] Summary（摘要）\n- [ ] Action items（待办事项）\n- [ ] Custom AI Block（内容块）\n## Advanced block（高级块）\n\n- [ ] Table of contents（目录）不返回\n- [x] Block equation（公式）返回代码块，部分博客平台支持\n- [ ] Button（按钮）不返回\n- [ ] Breadcrumb（导航栏）不返回\n- [x] Synced block（同步块）\n- [ ] Toggle heading（折叠标题）返回标题样式\n- [ ] columns（分栏）\n- [x] Code（mermaid 代码，用于流程图等）部分博客平台需安装插件支持\n- [ ] Mention a person（提及人员）\n- [x] Mention a page（提及页面）返回 Notion 完整超链接\n- [x] Date or reminder（日期或提醒）返回日期值\n- [x] Emoji（表情）\n- [ ] Inline equation（行内公式）返回公式文本，部分博客平台可能会报错，谨慎使用\n## Embeds（嵌入）\n返回为超链接\n",
+      "properties": {
+        "title": "Notion-Markdown",
+        "urlname": "notion-markdown",
+        "date": "2023-04-26 21:51:50",
+        "updated": "2023-04-26 21:53:56"
+      },
+      "catalog": [
+        {
+          "title": "功能和API适配情况",
+          "doc_id": "notion-markdown"
+        }
+      ],
+      "body": "",
+      "realName": "notion-markdown",
+      "relativePath": "/notion-markdown.md"
     },
     {
       "id": 113906683,
@@ -287,26 +265,26 @@
       "relativePath": "/bry3d3lwe206xuor.md"
     },
     {
-      "id": 107712840,
-      "doc_id": "introduce",
-      "title": "introduce",
-      "updated": 1682142528000,
-      "body_original": "# Elog 能干什么\n## 介绍\n`Elog`名为 `Easy Blogging`，简单、轻松的书写&部署博客\n## 前言\n在遇到Elog之前，你的博客可能是\n\n- 本地编辑器书写 + Hexo/Hugo/Vitepress部署\n- 语雀记录\n- Notion记录和发布\n- WordPress在线书写和发布\n- Github记录\n- 掘金/知乎等在线平台记录\n\n可以发现，大部分博客平台要么自己提供在线编辑器，要么就让用户本地书写再进行进行部署。\n可惜目前好用的编辑器大都都不是博客平台自己提供的，而是一些第三方编辑器，例如\n\n- Notion：出色的数据库设计，灵活度非常高\n- 语雀：阿里出品，笔者觉得很不错的一款在线编辑器，涵盖日常个人、工作所需要的各种场景，够用\n- Typora：一款出色的本地编辑器，支持实时预览和流程书写，可惜新版本收费了\n> 语雀最近限制了【互联网公开】的权限，需要会员才能使用，所以对于一些想直接把语雀当成博客站点的用户变得不太友好。好在API目前还不受限制，可以稳定使用。\n\n而博客平台一般分为两类，一种是轻量化的，只负责渲染文档不提供编辑器，代表产品：\n\n- Hexo\n- Vitepress\n- HuGo\n\n一种是内容管理系统软件，相对上面这些比较重，初期涉及到数据库和手动部署，拥有自己的编辑器，代表产品\n\n- WordPress\n- GHost\n## Elog\n如果我既想用最熟悉、最舒适的编辑器，又想用主流的博客平台，怎么办呢？\nElog就是为了解决这个问题而诞生的。\nElog将这些平台揉合在一起，你可以随意组合写作平台和部署平台，目前支持\n**写作平台：**\n\n- [x] Notion\n- [x] 语雀\n\n**部署平台**\n\n- [x] Hexo\n- [x] Vitepress\n- [x] HuGo\n- [x] Docusaurus\n- [x] Docz\n- [x] Confluence\n> 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的方式\n\n## 图床功能\n和很多在线平台一样，Notion和语雀也同样存在图片防盗链的问题，直接将写作平台的图片链接放到其他站点的话，会加载不出来。\n为了解决这个问题，Elog支持了在生成MD文件之前，将扫描到的图片上传到图床上，并对文档中的图片链接进行替换。\n当前支持的图床有\n\n- [x] 腾讯云COS\n- [x] 阿里云OSS\n- [x] Github图床\n- [x] 七牛云\n- [x] 又拍云\n\n\n\n",
+      "id": 113663727,
+      "doc_id": "cq6p8hxizn1ogwgm",
+      "title": "cq6p8hxizn1ogwgm",
+      "updated": 1683129953000,
+      "body_original": "# Elog 更新日志\n更新日志见 [Github Releases](https://github.com/LetTTGACO/elog/releases)\n\n更多详情见 [ELog 开发计划](https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c)\n",
       "properties": {
-        "title": "Elog 能干什么",
-        "urlname": "introduce",
-        "date": "2022-11-29 13:40:18",
-        "updated": "2023-04-22 13:48:48"
+        "title": "Elog 更新日志",
+        "urlname": "cq6p8hxizn1ogwgm",
+        "date": "2023-02-07 17:35:09",
+        "updated": "2023-05-04 00:05:53"
       },
       "catalog": [
         {
           "title": "关于Elog",
-          "doc_id": "introduce"
+          "doc_id": "cq6p8hxizn1ogwgm"
         }
       ],
       "body": "",
-      "realName": "introduce",
-      "relativePath": "/introduce.md"
+      "realName": "cq6p8hxizn1ogwgm",
+      "relativePath": "/cq6p8hxizn1ogwgm.md"
     },
     {
       "id": 113891385,
@@ -373,6 +351,28 @@
       "body": "",
       "realName": "la9toqncox96kfp8",
       "relativePath": "/la9toqncox96kfp8.md"
+    },
+    {
+      "id": 107712840,
+      "doc_id": "introduce",
+      "title": "introduce",
+      "updated": 1682142528000,
+      "body_original": "# Elog 能干什么\n## 介绍\n`Elog`名为 `Easy Blogging`，简单、轻松的书写&部署博客\n## 前言\n在遇到Elog之前，你的博客可能是\n\n- 本地编辑器书写 + Hexo/Hugo/Vitepress部署\n- 语雀记录\n- Notion记录和发布\n- WordPress在线书写和发布\n- Github记录\n- 掘金/知乎等在线平台记录\n\n可以发现，大部分博客平台要么自己提供在线编辑器，要么就让用户本地书写再进行进行部署。\n可惜目前好用的编辑器大都都不是博客平台自己提供的，而是一些第三方编辑器，例如\n\n- Notion：出色的数据库设计，灵活度非常高\n- 语雀：阿里出品，笔者觉得很不错的一款在线编辑器，涵盖日常个人、工作所需要的各种场景，够用\n- Typora：一款出色的本地编辑器，支持实时预览和流程书写，可惜新版本收费了\n> 语雀最近限制了【互联网公开】的权限，需要会员才能使用，所以对于一些想直接把语雀当成博客站点的用户变得不太友好。好在API目前还不受限制，可以稳定使用。\n\n而博客平台一般分为两类，一种是轻量化的，只负责渲染文档不提供编辑器，代表产品：\n\n- Hexo\n- Vitepress\n- HuGo\n\n一种是内容管理系统软件，相对上面这些比较重，初期涉及到数据库和手动部署，拥有自己的编辑器，代表产品\n\n- WordPress\n- GHost\n## Elog\n如果我既想用最熟悉、最舒适的编辑器，又想用主流的博客平台，怎么办呢？\nElog就是为了解决这个问题而诞生的。\nElog将这些平台揉合在一起，你可以随意组合写作平台和部署平台，目前支持\n**写作平台：**\n\n- [x] Notion\n- [x] 语雀\n\n**部署平台**\n\n- [x] Hexo\n- [x] Vitepress\n- [x] HuGo\n- [x] Docusaurus\n- [x] Docz\n- [x] Confluence\n> 部署平台目前支持所有类似 Hexo 的框架：通过向指定目录存放 markdown 文档来进行渲染的方式\n\n## 图床功能\n和很多在线平台一样，Notion和语雀也同样存在图片防盗链的问题，直接将写作平台的图片链接放到其他站点的话，会加载不出来。\n为了解决这个问题，Elog支持了在生成MD文件之前，将扫描到的图片上传到图床上，并对文档中的图片链接进行替换。\n当前支持的图床有\n\n- [x] 腾讯云COS\n- [x] 阿里云OSS\n- [x] Github图床\n- [x] 七牛云\n- [x] 又拍云\n\n\n\n",
+      "properties": {
+        "title": "Elog 能干什么",
+        "urlname": "introduce",
+        "date": "2022-11-29 13:40:18",
+        "updated": "2023-04-22 13:48:48"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "introduce"
+        }
+      ],
+      "body": "",
+      "realName": "introduce",
+      "relativePath": "/introduce.md"
     }
   ],
   "catalog": [

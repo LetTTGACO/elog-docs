@@ -34,10 +34,11 @@
     "clean:yuque-token": "elog clean -c elog.config.yuque-token.js -a elog.cache.yuque-token.json",
     "clean:yuque-pwd": "elog clean -c elog.config.yuque-pwd.js -a elog.cache.yuque-pwd.json",
     "clean:notion": "elog clean -c elog.config.notion.js -a elog.cache.notion.json",
-    "clean:flowus": "elog clean -c elog.config.flowus.js  -a elog.cache.flowus.json"
+    "clean:flowus": "elog clean -c elog.config.flowus.js  -a elog.cache.flowus.json",
+    "clean:wordpress": "elog clean -c elog.config.wordpress.js  -a elog.cache.wordpress.json"
   },
   "dependencies": {
-    "@elog/cli": "^0.7.0-beta.0",
+    "@elog/cli": "^0.7.0-beta.2",
     "@types/node": "^18.11.9",
     "markdown-it-task-lists": "^2.1.1",
     "sitemap": "^7.1.1",

@@ -15,7 +15,7 @@ module.exports = {
       filename: 'urlname',
       format: 'matter-markdown',
       catalog: false,
-      formatExt: '',
+      formatExt: './elog.format.js',
     }
   },
   image: {

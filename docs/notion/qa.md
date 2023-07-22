@@ -1,5 +1,4 @@
 ---
-cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/caa4be72-4c64-46d9-a90b-4cda392157d0/297139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T200116Z&X-Amz-Expires=3600&X-Amz-Signature=f2ef8c4df56bde7b0bc6bcf947a0b1aa5716b4284dc096e5c451eb16813a5206&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 5
 urlname: qa
@@ -7,8 +6,8 @@ urlname: qa
 catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
-date: "2023-07-22 19:37:00"
-updated: "2023-07-22 20:00:00"
+date: "2023-07-23 03:37:00"
+updated: "2023-07-23 04:00:00"
 ---
 
 ## 同步时卡住不动

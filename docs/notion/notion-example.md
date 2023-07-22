@@ -1,5 +1,4 @@
 ---
-cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2771e19c-9b92-4ac2-938f-4d2235eb72a6/270022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T192144Z&X-Amz-Expires=3600&X-Amz-Signature=cf8def8eb3dd99714a1c2be97b57b00188511252a47e91e70a2950a3faf0a1ec&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 13
 urlname: notion-example
@@ -92,7 +91,7 @@ Notion 示例文章的子页面
 
 [bookmark](https://elog.1874.cool)
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T192157Z&X-Amz-Expires=3600&X-Amz-Signature=45880d117c5ea02cbb14ed5bd1b6a6db3adfc0487d78633dfeb333a872c0d124&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T211921Z&X-Amz-Expires=3600&X-Amz-Signature=52f85b75213341bc367d6c0ab1ad621aa8f1b3e0275017d43728d8685a129fd9&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ```python
 pwd='123456'
@@ -102,7 +101,7 @@ print(f"password={pwd!r}")
 #password='123456'
 ```
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T192157Z&X-Amz-Expires=3600&X-Amz-Signature=575717e4ea2aadc7f5e2116bfe27fbf0f69b18929e174a731489ea13b1e17521&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T211921Z&X-Amz-Expires=3600&X-Amz-Signature=2f7151ab6dab071285fcc6b62b5a0db8254816b74f9e84b0ddcb915d929a817a&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## DataBase（数据库）
 
