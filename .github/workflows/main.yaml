@@ -57,11 +57,15 @@ jobs:
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
           FLOWUS_TABLE_PAGE_ID: ${{ secrets.FLOWUS_TABLE_PAGE_ID }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
+          WORDPRESS_ENDPOINT: ${{ secrets.WORDPRESS_ENDPOINT }}
         run: |
           pnpm sync:flowus
           pnpm sync:yuque-token
           pnpm sync:yuque-pwd
           pnpm sync:notion
+          pnpm sync:wordpress
 
       - name: 配置Git用户名邮箱
         run: |
