@@ -55,13 +55,19 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'FlowUs 示例', link: '/flowus/flowus-example', activeMatch: '/flowus/' },
-      { text: '语雀版(Token方式)', link: '/yuque/start', activeMatch: '/yuque/' },
-      { text: '语雀版(帐号密码方式)', link: '/yuque-pwd/start', activeMatch: '/yuque-pwd/' },
       { text: 'Notion 版', link: '/notion/start', activeMatch: '/notion/' },
+      {
+        text: '其他版本',
+        items: [
+          { text: '语雀版(帐号密码方式)', link: '/yuque-pwd/start', activeMatch: '/yuque-pwd/' },
+          { text: '语雀版(Token方式)', link: '/yuque/start', activeMatch: '/yuque/' },
+          { text: 'FlowUs示例', link: '/flowus/flowus-example', activeMatch: '/flowus/' },
+          { text: 'WordPress示例', link: 'http://wordpress.1874.cool' },
+        ]
+      },
       { text: 'Elog 开发计划', link: 'https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c' },
       {
-        text: 'V0.6.0-beta.4',
+        text: 'V0.6.0-beta.5',
         items: [
           {
             text: 'Changelog',
