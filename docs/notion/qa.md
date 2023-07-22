@@ -1,14 +1,14 @@
 ---
-cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/caa4be72-4c64-46d9-a90b-4cda392157d0/297139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T195857Z&X-Amz-Expires=3600&X-Amz-Signature=26085ba45733a71186e103ef757893ed0b09d5cf053191b78331242e1225d023&X-Amz-SignedHeaders=host&x-id=GetObject"
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/caa4be72-4c64-46d9-a90b-4cda392157d0/297139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T200116Z&X-Amz-Expires=3600&X-Amz-Signature=f2ef8c4df56bde7b0bc6bcf947a0b1aa5716b4284dc096e5c451eb16813a5206&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 5
 urlname: qa
-上次编辑时间: "2023-07-22T19:58:00.000Z"
+上次编辑时间: "2023-07-22T20:00:00.000Z"
 catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: "2023-07-22 19:37:00"
-updated: "2023-07-22 19:58:00"
+updated: "2023-07-22 20:00:00"
 ---
 
 ## 同步时卡住不动
@@ -20,23 +20,11 @@ updated: "2023-07-22 19:58:00"
 
 ### 解决办法
 
-在全量同步时，因为语雀/FlowUs 为国内平台，有时会在 Github 等国外环境运行时由于网络问
+在全量同步时，因为语雀/FlowUs 为国内平台，有时会在 Github 等国外环境运行时由于网络问卡住。此时可以在本地先手动运行一遍，提交缓存文件到 Github，后续的增量同步会快很多。相反用 Notion 在本地进行同步时，也有同样的问题，放在 Github 同步就会快很多。
 
-卡住。此时可以在本地先手动运行一遍，提交缓存文件到 Github，后续的增量同步会快很多。
+还有一种可能是由于需要同步的文档中的新图片数量太多，所以每次都是新增上传图片到 CDN，会导致整体的流程变慢甚至失败。因为 Elog 会检测图片在 CDN 是否已经上传过，可以多试几次。
 
-相反用 Notion 在本地进行同步时，也有同样的问题，放在 Github 同步就会快很多。
-
-还有一种可能是由于需要同步的文档中的新图片数量太多，所以每次都是新增上传图片到
-
-CDN，会导致整体的流程变慢甚至失败。因为 Elog 会检测图片在 CDN 是否已经上传过，可以多
-
-试几次。
-
-由于 Notion 的 API 在大部分情况下都很慢，甚至会下载文档失败。这是官方的问题，可以选择降
-
-低 Notion 下载文档时的并发数（默认为 3）。
-
-在 Elog 配置文件中设置`write.notion.limit=1`，降低文档下载并发数，也可多试几次。
+由于 Notion 的 API 在大部分情况下都很慢，甚至会下载文档失败。这是官方的问题，可以选择降低 Notion 下载文档时的并发数（默认为 3）。在 Elog 配置文件中设置`write.notion.limit=1`，降低文档下载并发数，也可多试几次。
 
 ## 同步时报超时错误
 
@@ -45,9 +33,7 @@ CDN，会导致整体的流程变慢甚至失败。因为 Elog 会检测图片�
 
 ### 解决办法
 
-默认超时时间为 60s，如果经常超时，可配置环境变量`process.env.REQUEST_TIMEOUT`，增加
-
-请求超时时间。
+默认超时时间为 60s，如果经常超时，可配置环境变量`process.env.REQUEST_TIMEOUT`，增加请求超时时间。
 
 本地同步时，在.elog.env 文件新增`REQUEST_TIMEOUT=900000`，设置更大的超时时间
 
