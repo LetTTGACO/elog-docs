@@ -1,7 +1,7 @@
 ---
 urlname: flowus-example
 title: FlowUs示例页面
-updated: "2023-07-08 05:58:38"
+updated: "2023-07-08 13:58:38"
 date: "2023-07/07 00:00"
 sort: "1"
 category: 技术分享
@@ -58,7 +58,12 @@ catalog: 示例目录
 
 <details>
   <summary>折叠列表1</summary>
-  折叠列表1的内容
+  
+<details>
+  <summary>嵌套折叠列表1-1</summary>
+  嵌套折叠列表1-1的内容
+</details>
+折叠列表1的内容
 </details>
 
 ---
@@ -93,7 +98,7 @@ $$
 
 # 媒体
 
-![qwe.JPG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FlTCLIYRw4Ab58lqwyu7zfMM2JxY.JPG)
+![qwe.JPG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/03dec85efc202e3eda7fabd842120c56.JPG)
 [https://media.w3.org/2010/05/sintel/trailer.mp4](https://media.w3.org/2010/05/sintel/trailer.mp4)
 [http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3](http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3)
 
@@ -122,4 +127,9 @@ $$
 </details>
 
 [https://github.com](https://github.com)
+
+## 同步块标题
+
+文字
+
 /

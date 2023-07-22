@@ -1,12 +1,14 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/72c6cfba-4c0b-4028-9907-d87e0ed97139/134414.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T192144Z&X-Amz-Expires=3600&X-Amz-Signature=3dc2cb23efa07884a0fee54c6b769b98601c61a1ad2238b38fe7107016e1946e&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-07-22T11:03:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 入门指引
+tags: Elog-Docs
 title: 关键信息获取
-date: "2023-04-06 13:31:00"
-updated: "2023-07-22 11:03:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-07-23 01:46:00"
 ---
 
 # 关键信息获取
@@ -17,21 +19,21 @@ updated: "2023-07-22 11:03:00"
 
 语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FhMY9t92b1JTC5O6FwiAa06b8JJ4.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/277511285f7328c7c6dfc595e1a429c2.png)
 
 ### repo
 
 语雀仓库短名称，也称为语雀知识库路径。访问需要作为博客文章的知识库 => 更多设置 => 知识库信息，拿到语雀知识库路径。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FvluGqHQCYKfVpxy8knMs5ceEHBX.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/5cedeeb7cbcc5e8ed25f7efb8b510fb6.png)
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FjBYSP_Et4_TgKXEb5H9cEg2a6Q8.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/61dce475fb779c1e9aaa039e423ab2f1.png)
 
 ### token
 
 语雀 Token，访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => Token => 新建 token 并配置好只读权限。Access Token 即为语雀 Token。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FpsTzZbTlRETvTBg2Lti-we0uPav.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fa819f24b275c1a8598242c80082bbb1.png)
 
 ## Notion
 
@@ -46,11 +48,11 @@ updated: "2023-07-22 11:03:00"
 
 参考 [Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)。登录 [Niton 网页版](https://www.notion.so/) => 访问 [My integrations](https://www.notion.so/my-integrations) => 创建应用 => 生成 Internal Integration Token
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FnSP2i4-uBE3r7N_SNLy_GQEpQim.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/d12198b05c6aa36a19e45e619ba714c6.png)
 
 ### databaseId
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fvy6P1yIcoXOaX2BNItTVSaip1g0.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/9e9ccadd310997eb84cf399618d3140e.png)
 
 ## FlowUs
 
@@ -61,7 +63,7 @@ updated: "2023-07-22 11:03:00"
 
 ### tablePageId
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FucfmoRqyUvKNL5pNMiFDxLncD0t.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/a2bcededdafa813cd537d32d96c5ec7d.png)
 
 ## WordPres
 
@@ -97,7 +99,7 @@ Notion 平台可复制 Notion 模版库 [Elog-WordPress 模板](https://1874.not
 
 Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/tokens/) => Generate new token => 勾选必要的参数，生成 token。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FpUtRBRjJ-UO24Hdfjn8Vk-6Sx2F.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/67706173197658927288780acb5563e4.png)
 
 ### 腾讯云
 
@@ -105,7 +107,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 
 进入 [访问管理](https://console.cloud.tencent.com/cam/overview) => [密钥管理](https://console.cloud.tencent.com/cam/capi) =>【新增密钥】=> 获取 SecretId 和 SecretKey。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FjqwrLEV_PQmOJ9xK4wWuzATSrDs.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/c8868899f9eb3eeb15b6a2086f0d25a5.png)
 
 ### bucket/region
 
@@ -117,7 +119,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 
 访问 [阿里云密钥管理](https://ram.console.aliyun.com/manage/ak) => 【创建 AccessKey】 => 获取 AccessKey ID 和 AccessKey Secret。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FqWXD2-3ncS8UdShQl6VFjU-24Cx.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/46d99a53d4869761e94939638b44c8bf.png)
 
 ### bucket
 
@@ -129,7 +131,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 
 > 根据阿里云的开发文档，对象存储的 region 为 oss- 开头，所以需要给 region id 前面拼接上 oss- 才是完整的 region
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FuhcnG3agCL7EGTzYTIfNVkWQ_AG.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/f44f27683f0e2498456d53c3260c32f3.png)
 
 ### 七牛云
 
@@ -137,7 +139,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 
 访问 [七牛云密钥管理](https://portal.qiniu.com/user/key) => 【创建密钥】 => 获取 AccessKey/SecretKey。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FsSapULtlysBQrTkRV5OyI5Q7OH3.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/327edf7abb3387bfd2ede1568bbb6a07.png)
 
 ### bucket
 
@@ -153,7 +155,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 
 访问 [又拍云操作员管理](https://console.upyun.com/account/operators/) => 【添加操作员】 => 获取 `user/password`。
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fp7_BHrGD1CXi4sqmOycM8LAde6V.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/36f7c4f43f20f4c5b0ab35e1945ad34c.png)
 
 ### bucket/region
 

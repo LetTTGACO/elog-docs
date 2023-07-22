@@ -1,25 +1,27 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f57eee2b-6301-48c8-a8fc-4039d4d3d064/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T192144Z&X-Amz-Expires=3600&X-Amz-Signature=4212ab4bb3d36ec32e193b8bb6e9077e9cbdb392a8cc3733e116804d7386af34&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-05-09T16:50:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 进阶玩法
+tags: Elog-Docs
 title: 持续集成
-date: "2023-04-06 13:31:00"
-updated: "2023-05-09 16:50:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-07-23 01:46:00"
 ---
 
 # 持续集成
 
 ## 自动化流程
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fr3Yyq0BKjLO-ixEjBvFhrE7V3ry.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/971676708757a04fe90b87e734f36058.png)
 
 ## 语雀示例
 
 **语雀 + webhooks + serverless api + GitHub Actions + Github Pages 持续集成**
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FhWvcppjFPSPTfX6rGOhczSHU9cJ.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0c6e8ee33711ca5b9daf85f8c87691d8.png)
 
 ### 语雀 webhooks
 
@@ -29,7 +31,7 @@ updated: "2023-05-09 16:50:00"
 > 未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署  
 > ⚠️ 知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fn0PyfH-NcFZDclUl63z5lYMNJKD.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/73797e287c627bb5ff6ecebb760e0141.png)
 
 ### **serverless api**
 
@@ -157,19 +159,19 @@ jobs:
 
 **Notion + Slack + pipedream + serverless api + GitHub actions + Github Pages 持续集成**
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fjh8orXsFH-tgpHIcyiRIAmP6t_h.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/f7674456814fd4d24790ef513956ab63.png)
 
 ### 配置数据表 **Slack notifications**
 
 设置数据表文档字段被扭转到某个状态时向 Slack 发送消息
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fjx-s_wFjV1EfdKKRrol7Mjti3Yh.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/8260cf3b99c497f4dc8c96528d79c106.png)
 
 ### 注册 Slack 账号并授权给 Notion
 
 当 Notion 数据表的文档字段被扭转到某个状态时向 Slack 发送消息，此时 Slack 收到消息提醒
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FgRLDEEnYfZLhxgA88lUZ0v33YjY.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/95fe8061faab555526575c2872869c3e.png)
 
 ### **serverless api**
 
@@ -185,13 +187,13 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 > 你也可以在 Notion 中配置发送消息到某个频道，然后在 pipedream 选择所选频道的 Channel。支持多选 Channels
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FqivSlqszeK9ziYqLny3VpPnURIe.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fb3f5a8f440d9f140d7540df4076f1fb.png)
 
 #### 第二步：收到 Notion 消息后发送自定义 Http 请求
 
 将调用 Github Actions 的 serverless api 填入即可
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FgAq8cZuvrvg75u6uxnl5zpgn6NC.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2bcff6723a5b164bc22798599971ef2a.png)
 
 ### 配置 package.json
 
