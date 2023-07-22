@@ -1,12 +1,14 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/72c6cfba-4c0b-4028-9907-d87e0ed97139/134414.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175507Z&X-Amz-Expires=3600&X-Amz-Signature=8a989df4b79ba2db298003ebdff470e2ef7369fb990936d7d61bef5d21c9d9ca&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-07-22T11:03:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 入门指引
+tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-07-22 11:03:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # 关键信息获取

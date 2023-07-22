@@ -1,12 +1,14 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/67cdc770-fca6-49e9-a260-335c1413fb0b/95364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175507Z&X-Amz-Expires=3600&X-Amz-Signature=906235bef8593d7d614ea9909734efb32676c02eb9fc78a01a3227cf79b7c8c1&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 5
 urlname: start
-上次编辑时间: "2023-04-25T18:10:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 入门指引
+tags: Elog-Docs
 title: 快速开始
 date: "2023-04-06 13:31:00"
-updated: "2023-04-25 18:10:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # 快速开始

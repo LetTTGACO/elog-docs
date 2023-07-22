@@ -1,12 +1,14 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f57eee2b-6301-48c8-a8fc-4039d4d3d064/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175507Z&X-Amz-Expires=3600&X-Amz-Signature=151528246a816d19b049ba3af3a5be4ab4e5361bb718e2b1314c830dce6b0079&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-05-09T16:50:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 进阶玩法
+tags: Elog-Docs
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-05-09 16:50:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # 持续集成

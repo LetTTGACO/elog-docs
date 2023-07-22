@@ -1,12 +1,14 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2771e19c-9b92-4ac2-938f-4d2235eb72a6/270022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175507Z&X-Amz-Expires=3600&X-Amz-Signature=f4804df340ec1c053a990a714487375a0209e051caed7d7223e3a268ef47fe0f&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 13
 urlname: notion-example
-上次编辑时间: "2023-07-07T07:38:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 功能和API适配情况
+tags: Elog-Docs
 title: Notion示例文章
-date: "2023-04-26 20:37:00"
-updated: "2023-07-07 15:38:00"
+date: "2023-04-26 12:37:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # Notion-Markdown
@@ -90,7 +92,7 @@ Notion 示例文章的子页面
 
 [bookmark](https://elog.1874.cool)
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230707T075601Z&X-Amz-Expires=3600&X-Amz-Signature=184c56f064100d8bb44381ad38c327f829415e114b86bed4f3be6883216073b5&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175516Z&X-Amz-Expires=3600&X-Amz-Signature=34ac1a7e5e8de0ef3da583f6c356592f15c0a23e0319db1ec1b43e9371d9deee&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ```python
 pwd='123456'
@@ -100,7 +102,7 @@ print(f"password={pwd!r}")
 #password='123456'
 ```
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230707T075601Z&X-Amz-Expires=3600&X-Amz-Signature=9c5393c07c35d0904b8a5885b1da67a8126b0d77ab0d3526e969bca2bd88359f&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175516Z&X-Amz-Expires=3600&X-Amz-Signature=16282758f44c9a6189bba829f5f61c73d2598b3b88453f4b1eb5a0a74e3a1ae6&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## DataBase（数据库）
 

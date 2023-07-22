@@ -1,12 +1,14 @@
 ---
+cover: "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/64bd334e-a0ad-4773-ba49-c4a80fad12ba/251364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230722%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230722T175507Z&X-Amz-Expires=3600&X-Amz-Signature=d25a19e1296f485868b3d0a0694b40382a9ba8077ef5a9ec4891077185ca6cfa&X-Amz-SignedHeaders=host&x-id=GetObject"
 status: 已发布
 sort: 14
 urlname: flowus-markdown
-上次编辑时间: "2023-07-13T05:29:00.000Z"
+上次编辑时间: "2023-07-22T17:46:00.000Z"
 catalog: 功能和API适配情况
+tags: Elog-Docs
 title: FlowUs-Markdown
 date: "2023-07-07 07:38:00"
-updated: "2023-07-13 05:29:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # FlowUs-Markdown
