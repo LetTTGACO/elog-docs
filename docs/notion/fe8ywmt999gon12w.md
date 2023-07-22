@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-07-22T14:41:00.000Z"
+上次编辑时间: "2023-07-22T17:07:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-07-22 14:41:00"
+updated: "2023-07-22 17:07:00"
 ---
 
 # 配置详情
@@ -91,6 +91,7 @@ module.exports = {
       keyMap: {
         tags: "tags",
         categories: "categories",
+        urlname: "urlname",
         cover: "cover",
         description: "description",
       },
@@ -501,27 +502,17 @@ WordPress 模版获取、关键信息获取及配置流程请移步 [关键信�
 
 #### keyMap 字段说明
 
-一般不需要修改，只要保证文章属性`front-matter`中有以下字段，即可在上传到 WordPress 时正确携带，只有字段冲突或者想自定义为中文等情况下才需要进行映射。
+| 属性        | 必填 | 映射字段说明               | 字段值类型         | 默认值      |
+| ----------- | ---- | -------------------------- | ------------------ | ----------- |
+| tags        | 否   | 标签字段映射               | string ｜ string[] | tags        |
+| categories  | 否   | 分类字段映射               | string ｜ string[] | categories  |
+| urlname     | 否   | 页面路径字段映射           | string             | urlname     |
+| cover       | 否   | 特色图片（封面图）字段映射 | string，图片 url   | cover       |
+| description |      | 简介字段映射               | string             | description |
 
-语雀需要自行在文章头部添加`front-matter`，并填写以下值，Notion/FlowUs 可直接新增/修改为以下字段即可。
+一般不需要修改，只要保证文章属性`front-matter`中有以上字段，即可在上传到 WordPress 时正确携带，只有字段冲突或者想自定义为中文等情况下才需要进行映射。
 
-```typescript
-// 取值如下
-keyMap = {
-  /** 标签字段映射 */
-  tags: "tags",
-  /** 分类字段映射 */
-  categories: "categories",
-  /** 页面路径字段映射 */
-  urlname: "urlname",
-  /** 是否可见字段映射 */
-  visible: "visible",
-  /** 特色图片（封面图）字段映射 */
-  cover: "cover"
-  /** 简介字段映射 */
-  description: "description"
-}
-```
+语雀需要自行在文章头部添加`front-matter`，并填写以下值，Notion/FlowUs 可直接新增/修改为以上字段即可。
 
 ## 图床平台
 
@@ -648,8 +639,11 @@ elog sync -e .elog.env
 ```
 
 ```shell
-# 语雀
+# 语雀（Token方式）
 YUQUE_TOKEN=
+# 语雀（帐号密码方式）
+YUQUE_USERNAME=
+YUQUE_PWD=
 YUQUE_LOGIN=
 YUQUE_REPO=
 
@@ -657,12 +651,20 @@ YUQUE_REPO=
 NOTION_TOKEN=
 NOTION_DATABASE_ID=
 
+# FlowUs
+FLOWUS_TABLE_PAGE_ID=
+
 # Confluence
 CONFLUENCE_BASE_URL=
 CONFLUENCE_USER=
 CONFLUENCE_PASSWORD=
 CONFLUENCE_SPACE_KEY=
 CONFLUENCE_ROOT_PAGE_ID=
+
+#WordPress
+WORDPRESS_USERNAME=
+WORDPRESS_PASSWORD=
+WORDPRESS_ENDPOINT=
 
 # 腾讯云
 COS_SECRET_ID=
@@ -689,7 +691,7 @@ QINIU_HOST=
 UPYUN_USER=
 UPYUN_PASSWORD=
 UPYUN_BUCKET=
-UPYUN_HOST=xxx.xx.upaiyun.com
+UPYUN_HOST=
 
 # Github
 GITHUB_USER=
