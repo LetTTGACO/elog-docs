@@ -2,11 +2,11 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-07-21T04:46:00.000Z"
+上次编辑时间: "2023-07-22T14:41:00.000Z"
 catalog: 入门指引
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-07-21 04:46:00"
+updated: "2023-07-22 14:41:00"
 ---
 
 # 配置详情
@@ -82,6 +82,18 @@ module.exports = {
       baseUrl: process.env.CONFLUENCE_BASE_URL,
       spaceKey: process.env.CONFLUENCE_SPACE_KEY,
       rootPageId: process.env.CONFLUENCE_ROOT_PAGE_ID, // 可选
+      formatExt: "", // 可选
+    },
+    wordpress: {
+      username: process.env.WORDPRESS_USERNAME,
+      password: process.env.WORDPRESS_PASSWORD,
+      endpoint: process.env.WORDPRESS_ENDPOINT,
+      keyMap: {
+        tags: "tags",
+        categories: "categories",
+        cover: "cover",
+        description: "description",
+      },
       formatExt: "", // 可选
     },
   },
@@ -162,6 +174,7 @@ module.exports = {
 | repo          | 是   | 语雀仓库短名称，也称为语雀知识库路径 | -                            |
 | onlyPublic    | 否   | 是否只获取公开文章                   | false                        |
 | onlyPublished | 否   | 是否只获取已发布文章                 | false                        |
+| limit         | 否   | 文档下载并发数                       | 3                            |
 
 > baseUrl 为语雀 API 请求路径  
 > 当知识库类型为个人知识库时，无需配置。  
@@ -179,6 +192,7 @@ module.exports = {
 | login     | 是   | 个人路径/空间 ID                          | -                     |
 | repo      | 是   | 语雀仓库短名称，也称为语雀知识库路径      | -                     |
 | linebreak | 否   | 导出时是否保留语雀换行标签，即`<br/>`标签 | false                 |
+| limit     | 否   | 文档下载并发数                            | 3                     |
 
 > host 为语雀域名  
 > 当知识库类型为个人知识库时，无需配置。  
@@ -195,6 +209,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | filter     | 否   | boolean ｜ object             | 过滤条件             | true   |
 | sorts      | 否   | boolean ｜ string ｜ object[] | 排序条件             | true   |
 | catalog    | 否   | boolean ｜ object             | 目录信息配置         | false  |
+| limit      | 否   | number                        | 文档下载并发数       | 3      |
 
 #### Filter 字段说明
 
@@ -273,6 +288,7 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | filter      | 否   | boolean ｜ object             | 过滤条件               | false  |
 | sort        | 否   | boolean ｜ string ｜ object[] | 排序条件               | false  |
 | catalog     | 否   | boolean ｜ object             | 目录信息配置           | false  |
+| limit       | 否   | number                        | 文档下载并发数         | 3      |
 
 #### Filter 字段说明
 
@@ -470,6 +486,42 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | user       | 是   | Confluence 账号                                        | -      |
 | password   | 是   | Confluence 密码                                        | -      |
 | formatExt  | 否   | 自定义文档处理适配器路径，需要符合 Confluence 格式要求 | -      |
+
+### WordPress
+
+WordPress 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#wordpres) 页面。
+
+| 字段      | 必填 | 说明                                             | 默认值 |
+| --------- | ---- | ------------------------------------------------ | ------ |
+| username  | 是   | WordPress 用户名                                 | -      |
+| password  | 是   | WordPress 密码                                   | -      |
+| endpoint  | 是   | WordPress 站点，例如http://your.site.com/wp-json | -      |
+| keyMap    | 否   | 属性映射                                         | -      |
+| formatExt | 否   | 自定义文档处理适配器路径，需要符合 HTML 格式要求 | -      |
+
+#### keyMap 字段说明
+
+一般不需要修改，只要保证文章属性`front-matter`中有以下字段，即可在上传到 WordPress 时正确携带，只有字段冲突或者想自定义为中文等情况下才需要进行映射。
+
+语雀需要自行在文章头部添加`front-matter`，并填写以下值，Notion/FlowUs 可直接新增/修改为以下字段即可。
+
+```typescript
+// 取值如下
+keyMap = {
+  /** 标签字段映射 */
+  tags: "tags",
+  /** 分类字段映射 */
+  categories: "categories",
+  /** 页面路径字段映射 */
+  urlname: "urlname",
+  /** 是否可见字段映射 */
+  visible: "visible",
+  /** 特色图片（封面图）字段映射 */
+  cover: "cover"
+  /** 简介字段映射 */
+  description: "description"
+}
+```
 
 ## 图床平台
 

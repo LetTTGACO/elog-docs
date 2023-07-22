@@ -2,11 +2,11 @@
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-07-08T06:02:00.000Z"
+上次编辑时间: "2023-07-22T11:03:00.000Z"
 catalog: 入门指引
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-07-08 06:02:00"
+updated: "2023-07-22 11:03:00"
 ---
 
 # 关键信息获取
@@ -62,6 +62,32 @@ updated: "2023-07-08 06:02:00"
 ### tablePageId
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FucfmoRqyUvKNL5pNMiFDxLncD0t.png)
+
+## WordPres
+
+Notion 平台可复制 Notion 模版库 [Elog-WordPress 模板](https://1874.notion.site/3bd9c2da264f48bd88457bc9b9c68098)
+
+其他平台可参考以上数据库属性
+
+### endpoint
+
+一般情况下为`站点地址/wp-json`即可，例如`http://your.site.com/wp-json`，但是需要先开启自己站点的`REST API`才行。先访问以上连接，如果返回 JSON 格式的站点信息，即表示成功开启，如果出现 404，见下文。
+
+### 常见问题：
+
+#### 访问/wp-json 路由报错 404
+
+1. 修改 WordPress 的固定连接模式为【文章名】
+
+   即`http://your.site.com/some-post`这种模式进行访问
+
+2. 需要开启 WordPress 的伪静态模式
+
+   需要根据站点的服务器进行设置，[参考文章](https://cloud.tencent.com/developer/article/1135108)。例如我使用的是宝塔一键安装，所以直接修改 nginx 配置即可。
+
+3. 手动安装 Basic Authentication 插件
+
+   [插件地址](https://github.com/WP-API/Basic-Auth)，手动下载 ZIP 源码包后，无需解压，直接上传到 WordPress 插件即可
 
 ## 图床
 
