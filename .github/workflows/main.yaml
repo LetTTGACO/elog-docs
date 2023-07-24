@@ -65,7 +65,7 @@ jobs:
           pnpm sync:yuque-token
           pnpm sync:notion
           pnpm sync:wordpress
-#         在非国内CI/CD环境中使用此方式，例如Github Workflow
+#         在非国内CI/CD环境中使用语雀（账号密码）方式，例如Github Workflow
 #         会导致语雀后台登录设备中出现大量美国IP，
 #         目前尚不清楚语雀是否会有安全限制措施，请谨慎使用。
 #         推荐本地同步时使用。
