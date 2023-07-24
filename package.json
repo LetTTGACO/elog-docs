@@ -20,7 +20,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "elog:init": "elog init --env .elog1.env",
+    "elog:init": "elog init",
     "local:yuque-token": "elog sync -c elog.config.yuque-token.js -e .elog.env -a elog.cache.yuque-token.json",
     "local:yuque-pwd": "elog sync -c elog.config.yuque-pwd.js -e .elog.env -a elog.cache.yuque-pwd.json",
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
