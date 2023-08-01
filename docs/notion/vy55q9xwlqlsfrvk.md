@@ -2,12 +2,12 @@
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-08-01T14:48:00.000Z"
+上次编辑时间: "2023-08-01T15:04:00.000Z"
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-08-01 14:48:00"
+updated: "2023-08-01 15:04:00"
 ---
 
 # 持续集成
@@ -57,12 +57,10 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ```json
 {
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs", // 构建文档
-    "serve": "vitepress serve docs",
+    "build": "vitepress or hexo 或者其他自定义的命令，具体以自己的工具为准", // 构建文档
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env", // 本地同步时需要从env中取值
-    "sync:": "elog sync", // 进行同步
+    "sync": "elog sync", // 进行同步
     "clean": "elog clean"
   }
 }
@@ -159,6 +157,7 @@ jobs:
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
           # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # 具体目录以自己实际情况为准
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
           publish_branch: master
@@ -218,12 +217,10 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ```json
 {
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs", // 构建文档
-    "serve": "vitepress serve docs",
+    "build": "vitepress or hexo 或者其他自定义的命令，具体以自己的工具为准", // 构建文档
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env", // 本地同步时需要从env中取值
-    "sync:": "elog sync", // 进行同步
+    "sync": "elog sync", // 进行同步
     "clean": "elog clean"
   }
 }
@@ -320,6 +317,7 @@ jobs:
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
           # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # 具体目录以自己实际情况为准
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
           publish_branch: master

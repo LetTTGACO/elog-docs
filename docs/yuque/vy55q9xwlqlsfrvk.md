@@ -43,12 +43,10 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ```json
 {
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs", // 构建文档
-    "serve": "vitepress serve docs",
+    "build": "vitepress or hexo 或者其他自定义的命令，具体以自己的工具为准"
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env", // 本地同步时需要从env中取值
-    "sync:": "elog sync", // 进行同步
+    "sync": "elog sync", // 进行同步
     "clean": "elog clean"
   }
 }
@@ -144,6 +142,7 @@ jobs:
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
           # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # 具体目录以自己的工具为准
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
           publish_branch: master
@@ -199,12 +198,10 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ```json
 {
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs", // 构建文档
-    "serve": "vitepress serve docs",
+    "build": "vitepress or hexo 或者其他自定义的命令，具体以自己的工具为准"
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env", // 本地同步时需要从env中取值
-    "sync:": "elog sync", // 进行同步
+    "sync": "elog sync", // 进行同步
     "clean": "elog clean"
   }
 }
@@ -300,6 +297,7 @@ jobs:
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
           # deploy_key可以推送到别的仓库, SSH_PRIVATE_KEY 为自己电脑的ssh私钥
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # 具体目录以自己实际情况为准
           publish_dir: docs/.vitepress/dist
           external_repository: xxxx/xxxx.github.io
           publish_branch: master
