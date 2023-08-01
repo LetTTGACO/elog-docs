@@ -2,12 +2,12 @@
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-07-22T17:46:00.000Z"
+上次编辑时间: "2023-08-01T14:30:00.000Z"
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
-date: "2023-04-06 21:31:00"
-updated: "2023-07-23 01:46:00"
+date: "2023-04-06 13:31:00"
+updated: "2023-08-01 14:30:00"
 ---
 
 # 持续集成
@@ -76,7 +76,8 @@ on:
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
-      - deploy # api中的event_type就是这个
+			# api中的event_type就是这个
+      - deploy
 
 jobs:
   build:
@@ -116,7 +117,8 @@ jobs:
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
-          pnpm sync # 对应package.json中的script.sync
+          # 对应package.json中的script.sync
+          pnpm sync
 
       - name: 配置Git用户名邮箱
         run: |
@@ -136,7 +138,8 @@ jobs:
 
       - name: 生成静态文件
         run: |
-          pnpm build # 对应package.json中的script.build
+          # 对应package.json中的script.build
+          pnpm build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -226,7 +229,8 @@ on:
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
-      - deploy # api中的event_type就是这个
+			# api中的event_type就是这个
+      - deploy
 
 jobs:
   build:
@@ -266,7 +270,8 @@ jobs:
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
-          pnpm sync # 对应package.json中的script.sync
+          # 对应package.json中的script.sync
+          pnpm sync
 
       - name: 配置Git用户名邮箱
         run: |
@@ -286,7 +291,8 @@ jobs:
 
       - name: 生成静态文件
         run: |
-          pnpm build # 对应package.json中的script.build
+          # 对应package.json中的script.build
+          pnpm build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3

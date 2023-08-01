@@ -102,7 +102,8 @@ jobs:
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
-          pnpm sync # 对应package.json中的script.sync
+          # 对应package.json中的script.sync
+          pnpm sync
 
       - name: 配置Git用户名邮箱
         run: |
@@ -122,7 +123,8 @@ jobs:
 
       - name: 生成静态文件
         run: |
-          pnpm build # 对应package.json中的script.build
+          # 对应package.json中的script.build
+          pnpm build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -248,7 +250,8 @@ jobs:
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
-          pnpm sync # 对应package.json中的script.sync
+          # 对应package.json中的script.sync
+          pnpm sync
 
       - name: 配置Git用户名邮箱
         run: |
@@ -268,7 +271,8 @@ jobs:
 
       - name: 生成静态文件
         run: |
-          pnpm build # 对应package.json中的script.build
+          # 对应package.json中的script.build
+          pnpm build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
