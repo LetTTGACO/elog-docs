@@ -32,6 +32,14 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 ### 配置 package.json
 
+在自动化流程中不要忘记将`@elog/cli`安装到`package.json`
+
+> npm i @elog/cli
+> 或者
+> yarn add @elog/cli
+> 或者
+> pnpm i @elog/cli
+
 ```json
 {
   "scripts": {
@@ -179,6 +187,14 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ![image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/eb8bd89a65f89d20c8c091179ec5feca.png)
 
 ### 配置 package.json
+
+在自动化流程中不要忘记将`@elog/cli`安装到`package.json`
+
+> npm i @elog/cli
+> 或者
+> yarn add @elog/cli
+> 或者
+> pnpm i @elog/cli
 
 ```json
 {

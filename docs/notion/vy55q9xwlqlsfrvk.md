@@ -2,12 +2,12 @@
 status: 已发布
 sort: 16
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-08-01T14:30:00.000Z"
+上次编辑时间: "2023-08-01T14:48:00.000Z"
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-08-01 14:30:00"
+updated: "2023-08-01 14:48:00"
 ---
 
 # 持续集成
@@ -45,6 +45,14 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ```
 
 ### 配置 package.json
+
+在自动化流程中不要忘记将@elog/cli 安装到 package.json
+
+> npm i @elog/cli  
+> 或者  
+> yarn add @elog/cli  
+> 或者  
+> pnpm i @elog/cli
 
 ```json
 {
@@ -109,7 +117,7 @@ jobs:
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
           YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
           # Notion相关环境变量
-					NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           # 图床相关环境变量，以腾讯云COS为例
           COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
@@ -199,6 +207,14 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 ### 配置 package.json
 
+在自动化流程中不要忘记将@elog/cli 安装到 package.json
+
+> npm i @elog/cli  
+> 或者  
+> yarn add @elog/cli  
+> 或者  
+> pnpm i @elog/cli
+
 ```json
 {
   "scripts": {
@@ -262,7 +278,7 @@ jobs:
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
           YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
           # Notion相关环境变量
-					NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           # 图床相关环境变量，以腾讯云COS为例
           COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
