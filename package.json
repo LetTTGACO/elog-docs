@@ -38,7 +38,7 @@
     "clean:wordpress": "elog clean -c elog.config.wordpress.js  -a elog.cache.wordpress.json"
   },
   "dependencies": {
-    "@elog/cli": "^0.7.0",
+    "@elog/cli": "^0.7.1",
     "@types/node": "^18.11.9",
     "markdown-it-task-lists": "^2.1.1",
     "sitemap": "^7.1.1",
