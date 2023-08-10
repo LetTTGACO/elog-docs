@@ -89,7 +89,7 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: { svg: YuQueSVG }, link: "https://www.yuque.com/1874w/elog-docs" },
-      { icon: { svg: NotionSVG }, link: "https://www.notion.so/1874/0aa9217e5bcc46768bdae424fddcbc28?v=5d3ef173d4014115bb4c66601df8a8e5&pvs=4" },
+      { icon: { svg: NotionSVG }, link: "https://1874.notion.site/0aa9217e5bcc46768bdae424fddcbc28" },
       { icon: 'github', link: "https://github.com/LetTTGACO/elog" },
     ],
     footer: {
