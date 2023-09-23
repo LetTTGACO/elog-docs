@@ -2,12 +2,12 @@
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-07-22T17:46:00.000Z"
+上次编辑时间: "2023-09-23T07:56:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
-date: "2023-04-06 21:31:00"
-updated: "2023-07-23 01:46:00"
+date: "2023-04-06 13:31:00"
+updated: "2023-09-23 07:56:00"
 ---
 
 # 关键信息获取
@@ -147,6 +147,14 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 ### region
 
 存储地域。[存储区域 - 七牛开发者中心](https://developer.qiniu.com/kodo/1671/region-endpoint-fq)
+
+一般不需要填写，如需指定，目前只支持以下取值
+
+- Zone_z0
+- Zone_z1
+- Zone_z2
+- Zone_na0
+- Zone_as0
 
 ### 又拍云
 
