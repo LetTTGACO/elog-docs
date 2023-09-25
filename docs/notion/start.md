@@ -6,8 +6,8 @@ urlname: start
 catalog: 入门指引
 tags: Elog-Docs
 title: 快速开始
-date: "2023-04-06 21:31:00"
-updated: "2023-07-23 01:46:00"
+date: "2023-04-06 13:31:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # 快速开始

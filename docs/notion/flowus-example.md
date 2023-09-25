@@ -6,8 +6,8 @@ urlname: flowus-example
 catalog: 功能和API适配情况
 tags: Elog-Docs
 title: FlowUs示例文章
-date: "2023-07-07 15:36:00"
-updated: "2023-07-23 01:46:00"
+date: "2023-07-07 07:36:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # FlowUs 示例文章

@@ -6,8 +6,8 @@ urlname: bry3d3lwe206xuor
 catalog: 入门指引
 tags: Elog-Docs
 title: CLI 命令
-date: "2023-04-06 21:31:00"
-updated: "2023-07-23 01:46:00"
+date: "2023-04-06 13:31:00"
+updated: "2023-07-22 17:46:00"
 ---
 
 # CLI 命令
