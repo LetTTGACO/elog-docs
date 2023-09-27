@@ -88,18 +88,18 @@
       "id": "92b6ac53-b32e-41e8-afe6-dd44ef3215ec",
       "doc_id": "92b6ac53-b32e-41e8-afe6-dd44ef3215ec",
       "title": "92b6ac53-b32e-41e8-afe6-dd44ef3215ec",
-      "updated": 1690259880000,
-      "body_original": "\n# 常见问题\n\n\n## 同步时卡住不动\n\n- 在Github自动化流程中同步卡住\n- 本地同步运行时卡住\n- 图片下载时卡住\n- 文档下载时卡住\n\n### 解决办法\n\n\n在全量同步时，因为语雀/FlowUs为国内平台，有时会在Github等国外环境运行时由于网络问卡住。此时可以在本地先手动运行一遍，提交缓存文件到Github，后续的增量同步会快很多。相反用Notion在本地进行同步时，也有同样的问题，放在Github同步就会快很多。\n\n\n还有一种可能是由于需要同步的文档中的新图片数量太多，所以每次都是新增上传图片到CDN，会导致整体的流程变慢甚至失败。因为Elog会检测图片在CDN是否已经上传过，可以多试几次。\n\n\n由于Notion的API在大部分情况下都很慢，甚至会下载文档失败。这是官方的问题，可以选择降低Notion下载文档时的并发数（默认为3）。在Elog配置文件中设置`write.notion.limit=1`，降低文档下载并发数，也可多试几次。\n\n\n## 同步时报超时错误\n\n- 下载文档超时\n- 下载图片超时\n\n### 解决办法\n\n\n默认超时时间为60s，如果经常超时，可配置环境变量`process.env.REQUEST_TIMEOUT`，增加请求超时时间。\n\n\n本地同步时，在.elog.env文件新增`REQUEST_TIMEOUT=900000`，设置更大的超时时间\n\n\n在CI/CD中，可在自动化平台注入同样的环境变量即可\n\n\n或者多试几次，总有一次成功！\n\n",
+      "updated": 1695780180000,
+      "body_original": "\n# 常见问题\n\n\n## 同步时卡住不动\n\n- 在Github自动化流程中同步卡住\n- 本地同步运行时卡住\n- 图片下载时卡住\n- 文档下载时卡住\n\n### 解决办法\n\n\n在全量同步时，因为语雀/FlowUs为国内平台，有时会在Github等国外环境运行时由于网络问卡住。此时可以在本地先手动运行一遍，提交缓存文件到Github，后续的增量同步会快很多。相反用Notion在本地进行同步时，也有同样的问题，放在Github同步就会快很多。\n\n\n还有一种可能是由于需要同步的文档中的新图片数量太多，所以每次都是新增上传图片到CDN，会导致整体的流程变慢甚至失败。因为Elog会检测图片在CDN是否已经上传过，可以多试几次。\n\n\n由于Notion的API在大部分情况下都很慢，甚至会下载文档失败。这是官方的问题，可以选择降低Notion下载文档时的并发数（默认为3）。在Elog配置文件中设置`write.notion.limit=1`，降低文档下载并发数，也可多试几次。\n\n\n## 同步时报超时错误\n\n- 下载文档超时\n- 下载图片超时\n\n### 解决办法\n\n\n默认超时时间为60s，如果经常超时，可配置环境变量`process.env.REQUEST_TIMEOUT`，增加请求超时时间。\n\n\n本地同步时，在.elog.env文件新增`REQUEST_TIMEOUT=900000`，设置更大的超时时间\n\n\n在CI/CD中，可在自动化平台注入同样的环境变量即可\n\n\n如果遇到图片下载失败，可升级到Elog最新版`@elog/cli@0.7.2`及以上版本，Elog会在上次同步时某文章存在图片下载失败时，第二次同步会重新尝试同步该文章\n\n",
       "properties": {
         "status": "已发布",
         "sort": 5,
         "urlname": "qa",
-        "上次编辑时间": "2023-07-25T04:38:00.000Z",
+        "上次编辑时间": "2023-09-27T02:03:00.000Z",
         "catalog": "关于Elog",
         "tags": "Elog-Docs",
         "title": "常见问题",
         "date": "2023-07-22 19:37:00",
-        "updated": "2023-07-25 04:38:00"
+        "updated": "2023-09-27 02:03:00"
       },
       "body": "",
       "realName": "qa",
@@ -446,6 +446,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0c26a958-4e3c-4e0e-9a1c-69a2ba8d64dd/01.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=b2d68ddd143bf3223499313870e7c0fc1e075c0620fbbb02287a6bd491b7e528&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 1,
         "urlname": "introduce",
@@ -483,6 +484,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/912225d5-93aa-4fbe-b690-f604feab5f56/10.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=a63e1fd8bb23cf705bf78273fbe0d2f9921ae8579dc3a75950bf59b0c3ef23b2&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 2,
         "urlname": "zuzvbv2lqhvllgit",
@@ -520,6 +522,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/73a9ce0f-d75e-4da5-bcf9-0de2f15d1053/11.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=f885bb013a48adb24cdfd4ece626de0be3429035cc428537f1776b0eafc731da&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 3,
         "urlname": "cq6p8hxizn1ogwgm",
@@ -557,6 +560,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3500b09e-821c-444d-b0c5-d03213b6db59/12.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=8d9fdd7a80b6cbd0504acacb0ba993eaa2a80a6a2d1f90086fc3abc9c5014a77&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 4,
         "urlname": "la9toqncox96kfp8",
@@ -574,7 +578,7 @@
       "object": "page",
       "id": "92b6ac53-b32e-41e8-afe6-dd44ef3215ec",
       "created_time": "2023-07-22T19:37:00.000Z",
-      "last_edited_time": "2023-07-25T04:38:00.000Z",
+      "last_edited_time": "2023-09-27T02:03:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -597,12 +601,12 @@
         "status": "已发布",
         "sort": 5,
         "urlname": "qa",
-        "上次编辑时间": "2023-07-25T04:38:00.000Z",
+        "上次编辑时间": "2023-09-27T02:03:00.000Z",
         "catalog": "关于Elog",
         "tags": "Elog-Docs",
         "title": "常见问题",
         "date": "2023-07-22 19:37:00",
-        "updated": "2023-07-25 04:38:00"
+        "updated": "2023-09-27 02:03:00"
       },
       "url": "https://www.notion.so/92b6ac53b32e41e8afe6dd44ef3215ec",
       "public_url": "https://1874.notion.site/92b6ac53b32e41e8afe6dd44ef3215ec"
@@ -631,6 +635,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/67cdc770-fca6-49e9-a260-335c1413fb0b/95364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=c9f5d20918db0c91b2c3e55b50d6f7f1b4f9f92b680ad83b4c8b8bae76459e18&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 5,
         "urlname": "start",
@@ -668,6 +673,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b255ead8-9aa0-4de1-aeda-b51eaa7d0c07/96599.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=4a9befd29a11520ebe422bbaa9a4448ac7d55e9a45e31d0bbab9dde4fdc54365&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 6,
         "urlname": "fe8ywmt999gon12w",
@@ -705,6 +711,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/72c6cfba-4c0b-4028-9907-d87e0ed97139/134414.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=f76e389f8ca89c96a02dbfbb29637496fdda1f361f46e1c7a1d5ad4be58fdbf4&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 7,
         "urlname": "gvnxobqogetukays",
@@ -742,6 +749,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=d4c1d2ea44a3adc83823bcacb655395b01a4556b43252d56f504fd6249bf2c98&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 8,
         "urlname": "bry3d3lwe206xuor",
@@ -779,6 +787,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7753e877-827e-46af-b6c9-5f992593ee85/174820.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=f808e8acd5fe87329b3c49bafea7018582f7c299f652e939c5aa45d73ef18666&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 9,
         "urlname": "te7ash7ybckgi60w",
@@ -816,6 +825,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/783375c7-df86-4816-9784-e2ebe430b9d9/242118.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=99e27a03a9c01ca3aae82e08dc55a40d9558b1354885c924843a23d4de4820a8&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 10,
         "urlname": "yuque-markdown",
@@ -853,6 +863,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b3a82800-4114-4375-a986-484695184b8a/243089.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=136fb95448d90b5b4442763d782ee1e9082684f4f6172d5d5eb319a356271ae0&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 11,
         "urlname": "yuque-example",
@@ -890,6 +901,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b04853db-438b-475b-a847-000b7205efe4/248303.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=88dfca7673b4f27350cf4df0b9a83cafbb035ca5f067e4e28d2f47da2f540286&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 12,
         "urlname": "notion-markdown",
@@ -927,6 +939,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2771e19c-9b92-4ac2-938f-4d2235eb72a6/270022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=7a750c8e14d5b9a0f02c0281f80e75edbf8768116c39f0464df29dae47d3d6fb&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 13,
         "urlname": "notion-example",
@@ -964,6 +977,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/64bd334e-a0ad-4773-ba49-c4a80fad12ba/251364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=6047c631fe5ad032b563d1a389ac2d8af44cde5e434b84be79a949c6e1e25226&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 14,
         "urlname": "flowus-markdown",
@@ -1001,6 +1015,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27cfd5d8-b9d1-4268-946e-ee9cd1bea24f/283449.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=3cea31309a5ddcda32e77aa1e8c4a7655b847006facbb775735b3565c2b7400c&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 14,
         "urlname": "raqyleng501h23p1",
@@ -1038,6 +1053,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=41cad8d7b0dd9fc0d214c1eaf55f2f272f6e63e01cc346ba1a01ff6f0935aab7&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 15,
         "urlname": "flowus-example",
@@ -1075,6 +1091,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/44abb547-86fe-46f1-a163-e57dd17aa0fb/291637.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=d822ecbbf7675b4c33a9b2eeab5ee7530dd7c44f22a9292741a331e999dc1474&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 15,
         "urlname": "xe160pqsumi6bqnz",
@@ -1112,6 +1129,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f57eee2b-6301-48c8-a8fc-4039d4d3d064/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=e52a6eefb865e38e0dc7caf48c4e1bb9c8a7d32c2142d836b7c451c2de69c90e&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 16,
         "urlname": "vy55q9xwlqlsfrvk",
@@ -1149,6 +1167,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27870e62-3772-49dc-a818-c6ee4d9f3676/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230927%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230927T020649Z&X-Amz-Expires=3600&X-Amz-Signature=063caf3bbb68cabcf22c76761c7e9fc83cc68c876458b94de8be6fda970c8b7b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 17,
         "urlname": "ubcut43kgf97fag6",
