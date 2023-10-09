@@ -2,12 +2,12 @@
 status: 已发布
 sort: 5
 urlname: start
-上次编辑时间: "2023-07-22T17:46:00.000Z"
+上次编辑时间: "2023-10-09T12:06:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 快速开始
 date: "2023-04-06 13:31:00"
-updated: "2023-07-22 17:46:00"
+updated: "2023-10-09 12:06:00"
 ---
 
 # 快速开始
@@ -46,7 +46,7 @@ elog init
 在根目录下，执行同步命令：
 
 ```shell
-elog sync
+elog sync -e .elog.env
 ```
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0851e0076e8ab0aea9a403825dc37d7c.png)
