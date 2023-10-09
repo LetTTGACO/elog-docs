@@ -42,6 +42,16 @@ export const genYuqueSideBar = (pathname: string) => {
 }
 
 /**
+ * 生成飞书导航
+ * @param pathname
+ */
+export const genFeiShuSideBar = (pathname: string) => {
+  const cache = require('../elog.cache.feishu.json')
+  const { catalog } = cache
+  return genYuqueRoute(catalog, pathname)
+}
+
+/**
  * 生成notion导航
  * @param pathname
  */
