@@ -1,13 +1,13 @@
 ---
 status: 已发布
-sort: 16
+sort: 19
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-08-01T15:04:00.000Z"
+上次编辑时间: "2023-10-09T09:02:00.000Z"
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-08-01 15:04:00"
+updated: "2023-10-09 09:02:00"
 ---
 
 # 持续集成

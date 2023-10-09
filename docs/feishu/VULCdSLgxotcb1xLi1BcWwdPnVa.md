@@ -1,8 +1,8 @@
 ---
 title: 飞书示例文档
 urlname: VULCdSLgxotcb1xLi1BcWwdPnVa
-date: "2023-09-25 18:25:52"
-updated: "2023-10-09 16:55:51"
+date: "2023-09-25 10:25:52"
+updated: "2023-10-09 09:03:45"
 ---
 
 # 飞书示例文档
@@ -58,7 +58,7 @@ const a = 123;
 
 图片
 ![image](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/CTkKbqy2bomUlFxg7ouciBs1n7d.jpeg)
-视频
+视频不支持
 
 ## 表格
 
