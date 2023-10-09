@@ -68,7 +68,7 @@ export default defineConfig({
       },
       { text: 'Elog 开发计划', link: 'https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c' },
       {
-        text: 'V0.8.0-beta.0',
+        text: 'V0.8.0-beta.1',
         items: [
           {
             text: 'Changelog',
