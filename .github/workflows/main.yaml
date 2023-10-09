@@ -2,9 +2,9 @@ name: Deploy To Github Pages
 
 on:
   # 允许手动push触发
-  push:
-    branches:
-      - master
+#  push:
+#    branches:
+#      - master
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
