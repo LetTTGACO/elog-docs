@@ -23,25 +23,20 @@ jobs:
         with:
           node-version: "16.x"
 
-      - name: 安装pnpm
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install pnpm@7.9.5 -g
-
       - name: 安装依赖
         run: |
           export TZ='Asia/Shanghai'
-          pnpm install --prod
+          npm install --prod
 
       - name: 清除缓存
         env:
           CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
         if: ${{ env.CLEAN_CACHE == 'true' }}
         run: |
-          pnpm clean:yuque-token
-          pnpm clean:yuque-pwd
-          pnpm clean:notion
-          pnpm clean:flowus
+          npm run clean:yuque-token
+          npm run clean:yuque-pwd
+          npm run clean:notion
+          npm run clean:flowus
 
       - name: 拉取语雀&Notion&FlowUs的文章
         env:
@@ -64,16 +59,16 @@ jobs:
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_FOLDER_TOKEN: ${{ secrets.FEISHU_FOLDER_TOKEN }}
         run: |
-          pnpm sync:flowus
-          pnpm sync:yuque-token
-          pnpm sync:notion
-          pnpm sync:wordpress
-          pnpm sync:feishu
+          npm run sync:flowus
+          npm run sync:yuque-token
+          npm run sync:notion
+          npm run sync:wordpress
+          npm run sync:feishu
 #         在非国内CI/CD环境中使用语雀（账号密码）方式，例如Github Workflow
 #         会导致语雀后台登录设备中出现大量美国IP，
 #         目前尚不清楚语雀是否会有安全限制措施，请谨慎使用。
 #         推荐本地同步时使用。
-#         pnpm sync:yuque-pwd
+#         npm sync:yuque-pwd
 
       - name: 配置Git用户名邮箱
         run: |
@@ -95,7 +90,7 @@ jobs:
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
-          pnpm docs:build
+          npm run docs:build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
