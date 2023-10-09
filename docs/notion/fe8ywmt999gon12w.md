@@ -2,12 +2,12 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-10-09T09:21:00.000Z"
+上次编辑时间: "2023-10-09T12:47:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-10-09 09:21:00"
+updated: "2023-10-09 12:47:00"
 ---
 
 # 配置详情
@@ -53,6 +53,11 @@ module.exports = {
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
       linebreak: true,
+    },
+    feishu: {
+      folderToken: process.env.FEISHU_FOLDER_TOKEN,
+      appId: process.env.FEISHU_APP_ID,
+      appSecret: process.env.FEISHU_APP_SECRET,
     },
     notion: {
       token: process.env.NOTION_TOKEN,
