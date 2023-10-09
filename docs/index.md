@@ -7,7 +7,7 @@ titleTemplate: Elog 文档
 hero:
   name: Elog
   text: 开放式跨平台博客解决方案
-  tagline: 随意组合写作平台(语雀/Notion/FlowUs)和部署平台(Hexo/Vitepress/Confluence/WordPress等)
+  tagline: 随意组合写作平台(语雀/飞书/Notion/FlowUs)和部署平台(Hexo/Vitepress/Confluence/WordPress等)
   actions:
     - theme: brand
       text: 快速开始
@@ -18,7 +18,7 @@ hero:
 features:
   - icon: 📝
     title: 多写作平台
-    details: 写作平台支持语雀/Notion/FlowUs
+    details: 写作平台支持语雀/Notion/FlowUs/飞书
   - icon: 🚀
     title: 多部署平台
     details: 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台，以及Confluence/WordPress站点
