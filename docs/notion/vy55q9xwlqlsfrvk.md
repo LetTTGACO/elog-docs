@@ -2,12 +2,12 @@
 status: 已发布
 sort: 19
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-10-09T09:02:00.000Z"
+上次编辑时间: "2023-10-09T13:29:00.000Z"
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
 date: "2023-04-06 13:31:00"
-updated: "2023-10-09 09:02:00"
+updated: "2023-10-09 13:29:00"
 ---
 
 # 持续集成
@@ -98,15 +98,10 @@ jobs:
         with:
           node-version: "16.x"
 
-      - name: 安装pnpm
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install pnpm@7.9.5 -g
-
       - name: 安装依赖
         run: |
           export TZ='Asia/Shanghai'
-          pnpm install --prod
+          npm install --prod
 
       - name: 拉取语雀/Notion的文章
         env:
@@ -124,7 +119,7 @@ jobs:
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
           # 对应package.json中的script.sync
-          pnpm sync
+          npm run sync
 
       - name: 配置Git用户名邮箱
         run: |
@@ -145,7 +140,7 @@ jobs:
       - name: 生成静态文件
         run: |
           # 对应package.json中的script.build
-          pnpm build
+          npm run build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -258,15 +253,10 @@ jobs:
         with:
           node-version: "16.x"
 
-      - name: 安装pnpm
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install pnpm@7.9.5 -g
-
       - name: 安装依赖
         run: |
           export TZ='Asia/Shanghai'
-          pnpm install --prod
+          npm install --prod
 
       - name: 拉取语雀/Notion的文章
         env:
@@ -284,7 +274,7 @@ jobs:
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
         run: |
           # 对应package.json中的script.sync
-          pnpm sync
+          npm run sync
 
       - name: 配置Git用户名邮箱
         run: |
@@ -305,7 +295,7 @@ jobs:
       - name: 生成静态文件
         run: |
           # 对应package.json中的script.build
-          pnpm build
+          npm run build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -2,12 +2,12 @@
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-09T09:56:00.000Z"
+上次编辑时间: "2023-10-09T15:31:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-09 09:56:00"
+updated: "2023-10-09 15:31:00"
 ---
 
 # 关键信息获取
@@ -79,20 +79,20 @@ updated: "2023-10-09 09:56:00"
 7. 打开凭证与基础信息，获取 `App ID(appId)` 和 `App Secret(appSecret)`（区分测试/正式版本应用）
 8. 打开飞书聊天软件，选择/新建一个群聊，在群设置中添加机器人，搜索你的应用并将其添加到群聊中
 
-   ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//46ffd5ca3364cbbd4a13a6b8dad67826.png)
+   ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/46ffd5ca3364cbbd4a13a6b8dad67826.png)
 
 9. 打开飞书云文档，在【我的空间】下选择/新建一个目标文件夹用于 Elog 导出
 10. 在目标文件夹页面的右侧点击分享，邀请协作者，将刚才新建的群聊邀请为协作者。如此，自建应用就拥有了该文件夹的访问权限
 
-    ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//ac0754cbadd3e8c9b9f70b59eeccaac8.png)
+    ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/ac0754cbadd3e8c9b9f70b59eeccaac8.png)
 
 ### folderToken
 
 文件夹的 URL 路径结尾即为`folderToken`
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//0cc398bbfe9034f68ece280ea5fcde83.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0cc398bbfe9034f68ece280ea5fcde83.png)
 
-## WordPres
+## WordPress
 
 Notion 平台可复制 Notion 模版库 [Elog-WordPress 模板](https://1874.notion.site/3bd9c2da264f48bd88457bc9b9c68098)
 
