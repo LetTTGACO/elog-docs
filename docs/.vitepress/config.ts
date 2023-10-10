@@ -4,6 +4,8 @@ import { NotionSVG, YuQueSVG } from "../../utils/assists";
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
+import mathjax3 from 'markdown-it-mathjax3';
+const customElements = ['mjx-container'];
 
 const links = []
 
@@ -35,7 +37,15 @@ export default defineConfig({
     },
     config: (md) => {
       md.use(require('markdown-it-task-lists'))
+      md.use(mathjax3);
     }
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag),
+      },
+    },
   },
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))

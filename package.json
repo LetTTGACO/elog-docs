@@ -43,6 +43,7 @@
   "dependencies": {
     "@elog/cli": "^0.8.0-beta.1",
     "@types/node": "^18.11.9",
+    "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
     "sitemap": "^7.1.1",
     "vitepress": "1.0.0-alpha.45",
