@@ -2,12 +2,12 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-10-10T02:24:00.000Z"
+上次编辑时间: "2023-10-11T03:26:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-10-10 02:24:00"
+updated: "2023-10-11 03:26:00"
 ---
 
 # 配置详情
@@ -62,14 +62,14 @@ module.exports = {
     notion: {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
-      filter: true, // {property: 'status', select: {equals: '已发布'}}
-      sorts: true, // [{timestamp: 'created_time', direction: 'descending'}],
+      filter: false, // {property: 'status', select: {equals: '已发布'}}
+      sorts: false, // [{timestamp: 'created_time', direction: 'descending'}],
       catalog: false,
     },
     flowus: {
       tablePageId: process.env.NOTION_DATABASE_ID,
-      filter: true, // {property: 'status',value: '已发布'}
-      sorts: true, // {property: 'createdAt', direction: "descending"},
+      filter: false, // {property: 'status',value: '已发布'}
+      sorts: false, // {property: 'createdAt', direction: "descending"},
       catalog: false,
     },
   },
@@ -215,8 +215,8 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | ---------- | ---- | ----------------------------- | -------------------- | ------ |
 | token      | 是   | string                        | Notion Token         |        |
 | databaseId | 是   | string                        | notion 中的数据库 id | -      |
-| filter     | 否   | boolean ｜ object             | 过滤条件             | true   |
-| sorts      | 否   | boolean ｜ string ｜ object[] | 排序条件             | true   |
+| filter     | 否   | boolean ｜ object             | 过滤条件             | false  |
+| sorts      | 否   | boolean ｜ string ｜ object[] | 排序条件             | false  |
 | catalog    | 否   | boolean ｜ object             | 目录信息配置         | false  |
 | limit      | 否   | number                        | 文档下载并发数       | 3      |
 
@@ -224,7 +224,7 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 `filter`字段是为了筛选 Notion 数据库文档，表示哪些文章需要被 Elog 下载。
 
-1. 默认值为 `true` ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
+1. 当 `filter=true` ，即筛选数据库的`status`属性，且属性值为`已发布`，对应 Notion 的筛选规则为：
 
    ```json
    {
