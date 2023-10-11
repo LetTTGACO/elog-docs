@@ -2,12 +2,12 @@
 status: 已发布
 sort: 7
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-09T15:31:00.000Z"
+上次编辑时间: "2023-10-11T05:01:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-09 15:31:00"
+updated: "2023-10-11 05:01:00"
 ---
 
 # 关键信息获取
@@ -42,6 +42,8 @@ updated: "2023-10-09 15:31:00"
 2. 创建 Integration Token，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-1-create-an-integration)
 3. 将复制的数据库连接到刚创建的 Integration，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-2-share-a-database-with-your-integration)
 4. 获取数据库 DatabaseId
+
+> 如果使用的是 NotionNext，只需要备份文档，可忽略步骤 1
 
 ### token
 
