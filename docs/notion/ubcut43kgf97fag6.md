@@ -2,17 +2,21 @@
 status: 已发布
 sort: 20
 urlname: ubcut43kgf97fag6
-上次编辑时间: "2023-10-09T09:02:00.000Z"
+上次编辑时间: "2023-10-10T14:58:00.000Z"
 catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: "2023-04-06 13:31:00"
-updated: "2023-10-09 09:02:00"
+updated: "2023-10-10 14:58:00"
 ---
 
 # 最佳实践
 
-本篇收录了社区用户的实践项目。 **如何贡献** 欢迎各位使用者贡献搭建经验文档。可以通过以下步骤进行贡献、引流、讨论、共同成长：
+本篇收录了社区用户的实践项目。
+
+**如何贡献**
+
+欢迎各位使用者贡献搭建经验文档。可以通过以下步骤进行贡献、引流、讨论、共同成长：
 
 1. 使用 Elog 部署自己的博客，有公开的 Github 仓库地址，最好提供详细的部署记录文档
 2. [提交 Issues](https://github.com/LetTTGACO/elog/issues/2)或直接提交[Pull request](https://github.com/LetTTGACO/elog/pulls)
