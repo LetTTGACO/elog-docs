@@ -2,12 +2,12 @@
 status: 已发布
 sort: 6
 urlname: fe8ywmt999gon12w
-上次编辑时间: "2023-10-11T03:26:00.000Z"
+上次编辑时间: "2023-10-12T01:46:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 配置详情
 date: "2023-04-21 17:04:00"
-updated: "2023-10-11 03:26:00"
+updated: "2023-10-12 01:46:00"
 ---
 
 # 配置详情
@@ -287,6 +287,8 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 5. `catalog`字段为单选时，只能生成一层目录
 6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
 
+> 对于 Notion 和 FlowUs，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
+
 ### FlowUs（息流）
 
 FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#flowus) 页面。
@@ -389,6 +391,8 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 4. 当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
 5. `catalog`字段为单选时，只能生成一层目录
 6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
+
+> 对于 Notion 和 FlowUs，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
 
 ### 飞书
 
