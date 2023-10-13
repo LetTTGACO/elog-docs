@@ -2,12 +2,12 @@
 status: 已发布
 sort: 90
 urlname: config-catalog
-上次编辑时间: "2023-10-13T06:36:00.000Z"
+上次编辑时间: "2023-10-13T13:39:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
 date: "2023-10-13 05:12:00"
-updated: "2023-10-13 06:36:00"
+updated: "2023-10-13 13:39:00"
 ---
 
 # 目录结构
@@ -166,3 +166,45 @@ module.exports = {
 | write  | 写作平台详细配置 |
 | deploy | 部署平台详细配置 |
 | image  | 图床平台详情配置 |
+
+各个平台的`platform`字段和对应的平台配置字段都需要正确配置，例如使用语雀 + Hexo + 腾讯云 Cos 图床，则需要设置为
+
+```javascript
+module.exports = {
+  write: {
+    platform: "yuque",
+    // 字段要对应上
+    yuque: {
+      token: process.env.YUQUE_TOKEN,
+      baseUrl: "",
+      login: process.env.YUQUE_LOGIN,
+      repo: process.env.YUQUE_REPO,
+      onlyPublic: false,
+      onlyPublished: true,
+    },
+  },
+  deploy: {
+    platform: "local",
+    local: {
+      outputDir: "",
+      filename: "",
+      format: "",
+      catalog: false,
+      formatExt: "",
+    },
+  },
+  image: {
+    enable: true, // 是否启用图片替换
+    platform: "cos",
+    cos: {
+      secretId: process.env.COS_SECRET_ID,
+      secretKey: process.env.COS_SECRET_KEY,
+      bucket: process.env.COS_BUCKET,
+      region: process.env.COS_REGION,
+      host: process.env.COS_HOST,
+      prefixKey: "",
+      secretExt: "", // 可选
+    },
+  },
+};
+```
