@@ -2,12 +2,12 @@
 status: 已发布
 sort: 60
 urlname: start
-上次编辑时间: "2023-10-13T06:03:00.000Z"
+上次编辑时间: "2023-10-13T06:32:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 快速开始
 date: "2023-04-06 13:31:00"
-updated: "2023-10-13 06:03:00"
+updated: "2023-10-13 06:32:00"
 ---
 
 # 快速开始
@@ -33,7 +33,9 @@ pnpm install @elog/cli -g
 
 ## 初始化
 
-你需要拥有一个 Hexo/Vitepress/HuGo 的项目，进入部署平台根目录下，这里以 Hexo 举例，使用命令进行初始化：
+如果你的博客是 Hexo/Vitepress/HuGo 等，进入其根目录下，这里以 Hexo 举例，使用命令进行初始化：
+
+> 如果只是想用 Elog 进行写作平台备份的话，可以在任意文件夹中初始化使用。
 
 ```shell
 elog init
