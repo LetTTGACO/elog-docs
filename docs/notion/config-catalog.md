@@ -2,12 +2,12 @@
 status: 已发布
 sort: 90
 urlname: config-catalog
-上次编辑时间: "2023-10-13T15:13:00.000Z"
+上次编辑时间: "2023-10-13T15:59:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
 date: "2023-10-13 05:12:00"
-updated: "2023-10-13 15:13:00"
+updated: "2023-10-13 15:59:00"
 ---
 
 # 目录结构
@@ -208,5 +208,7 @@ module.exports = {
   },
 };
 ```
+
+## 下一步
 
 **点击** [下一篇](/notion/write-platform) **继续配置写作平台**
