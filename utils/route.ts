@@ -78,10 +78,13 @@ const genNotionRoute = (catalog: any[], pathname: string) => {
   catalog.forEach(item => {
     const dir = directory[item.properties.catalog]
     if (dir?.items?.length) {
-      dir.items.push({
-        text: item.properties.title,
-        link: `${pathname}/${item.properties.urlname}`
-      })
+      // 暂时忽略
+      if (item.properties.urlname !== 'fe8ywmt999gon12w') {
+        dir.items.push({
+          text: item.properties.title,
+          link: `${pathname}/${item.properties.urlname}`
+        })
+      }
     } else {
       directory[item.properties.catalog] = {
         text: item.properties.catalog,
