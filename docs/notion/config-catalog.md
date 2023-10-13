@@ -2,12 +2,12 @@
 status: 已发布
 sort: 90
 urlname: config-catalog
-上次编辑时间: "2023-10-13T06:11:00.000Z"
+上次编辑时间: "2023-10-13T06:36:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
 date: "2023-10-13 05:12:00"
-updated: "2023-10-13 06:11:00"
+updated: "2023-10-13 06:36:00"
 ---
 
 # 目录结构
