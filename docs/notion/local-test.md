@@ -2,12 +2,12 @@
 status: 已发布
 sort: 130
 urlname: local-test
-上次编辑时间: "2023-10-13T06:47:00.000Z"
+上次编辑时间: "2023-10-13T13:46:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 本地调试
 date: "2023-10-13 05:27:00"
-updated: "2023-10-13 06:47:00"
+updated: "2023-10-13 13:46:00"
 ---
 
 # 本地调试
@@ -228,3 +228,13 @@ GITHUB_REPO=
 > 记得在仓库的`设置-Action-Workflow permissions`中开启读写权限
 
 详细的自动化配置请移步 [持续集成](/notion/vy55q9xwlqlsfrvk) 页面。
+
+## 恭喜配置完成！
+
+配置完成后在根目录下，执行本地同步命令即可：
+
+```shell
+elog sync -e .elog.env
+```
+
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0851e0076e8ab0aea9a403825dc37d7c.png)
