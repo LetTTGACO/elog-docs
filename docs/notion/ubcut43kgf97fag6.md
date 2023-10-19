@@ -2,12 +2,12 @@
 status: 已发布
 sort: 240
 urlname: ubcut43kgf97fag6
-上次编辑时间: "2023-10-13T05:53:00.000Z"
+上次编辑时间: "2023-10-19T15:08:00.000Z"
 catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: "2023-04-06 13:31:00"
-updated: "2023-10-13 05:53:00"
+updated: "2023-10-19 15:08:00"
 ---
 
 # 最佳实践
@@ -67,6 +67,6 @@ Github: [https://github.com/happyzhangyyds/elog](https://github.com/happyzhangyy
 
 ### 【DC's Blog】 Notion + Elog 文档备份 + GitHub Action 持续集成
 
-网站: [https://amydc.com/a/24c2897b-78f3-4f6a-b8e6-292ea60edf7c](https://amydc.com/a/24c2897b-78f3-4f6a-b8e6-292ea60edf7c)
+网站: [https://aaqq.cc/article/24c2897b-78f3-4f6a-b8e6-292ea60edf7c](https://aaqq.cc/article/24c2897b-78f3-4f6a-b8e6-292ea60edf7c)
 
 Github: [https://github.com/cyolc932/elog](https://github.com/cyolc932/elog)
