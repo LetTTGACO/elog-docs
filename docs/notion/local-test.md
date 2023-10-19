@@ -2,12 +2,12 @@
 status: 已发布
 sort: 130
 urlname: local-test
-上次编辑时间: "2023-10-13T13:46:00.000Z"
+上次编辑时间: "2023-10-19T13:07:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 本地调试
 date: "2023-10-13 05:27:00"
-updated: "2023-10-13 13:46:00"
+updated: "2023-10-19 13:07:00"
 ---
 
 # 本地调试
@@ -221,14 +221,6 @@ GITHUB_TOKEN=
 GITHUB_REPO=
 ```
 
-## 自动化配置
-
-自动化时，需要提前将以上`.elog.env`中用到的变量信息配置到环境变量上。 以 Github 为例，可以在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置，然后在流水线中注入即可。
-
-> 记得在仓库的`设置-Action-Workflow permissions`中开启读写权限
-
-详细的自动化配置请移步 [持续集成](/notion/vy55q9xwlqlsfrvk) 页面。
-
 ## 恭喜配置完成！
 
 配置完成后在根目录下，执行本地同步命令即可：
@@ -238,3 +230,11 @@ elog sync -e .elog.env
 ```
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0851e0076e8ab0aea9a403825dc37d7c.png)
+
+## 自动化配置
+
+自动化时，需要提前将以上`.elog.env`中用到的变量信息配置到环境变量上。 以 Github 为例，可以在仓库的`设置-Secrets and variables-Actions-Secrets`中进行配置，然后在流水线中注入即可。
+
+> 记得在仓库的`设置-Action-Workflow permissions`中开启读写权限
+
+详细的自动化配置请移步 [持续集成](/notion/vy55q9xwlqlsfrvk) 页面。
