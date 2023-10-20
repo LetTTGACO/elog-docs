@@ -2,12 +2,12 @@
 status: 已发布
 sort: 110
 urlname: deploy-platform
-上次编辑时间: "2023-10-13T16:00:00.000Z"
+上次编辑时间: "2023-10-20T09:40:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 部署平台配置
 date: "2023-10-13 05:21:00"
-updated: "2023-10-13 16:00:00"
+updated: "2023-10-20 09:40:00"
 ---
 
 # 部署平台配置
@@ -23,6 +23,12 @@ updated: "2023-10-13 16:00:00"
 | format    | 否   | string  | 适配器，取值 markdown ｜ matter-markdown ｜ wiki ｜ html | markdown |
 | catalog   | 否   | boolean | 是否按照目录生成文档                                     | false    |
 | formatExt | 否   | string  | 自定义文档处理适配器路径                                 | -        |
+
+### Format 字段说明
+
+`format`字段表示该文档内容的格式，常用的例如`Markdown`或带有`Front-Matter`的`Markdown`，
+
+`matter-markdown`常用于博客平台为 Hexo 时启用，Hexo 渲染文章标题和其他属性依赖文档头部的`front-matter`
 
 ### FormatExt 字段说明
 
