@@ -18,15 +18,15 @@ module.exports = {
   },
   image: {
     enable: true,
-    platform: 'github',
-    github: {
-      user: process.env.GITHUB_USER,
-      token: process.env.GITHUB_TOKEN,
-      repo: process.env.GITHUB_REPO,
-      branch: "",
-      host: "",
-      prefixKey: "/feishu",
-      secretExt: "", // 可选
-    },
+    platform: 'cos',
+    cos: {
+      secretId: process.env.COS_SECRET_ID,
+      secretKey: process.env.COS_SECRET_KEY,
+      bucket: process.env.COS_IMAGE_BUCKET,
+      region: process.env.COS_IMAGE_REGION,
+      host: process.env.COS_HOST,
+      prefixKey: 'elog-docs-images',
+      secretExt: '', // 可选
+    }
   },
 }
