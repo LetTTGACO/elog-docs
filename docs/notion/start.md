@@ -2,12 +2,12 @@
 status: 已发布
 sort: 60
 urlname: start
-上次编辑时间: "2023-10-13T06:32:00.000Z"
+上次编辑时间: "2023-10-24T12:53:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 快速开始
 date: "2023-04-06 13:31:00"
-updated: "2023-10-13 06:32:00"
+updated: "2023-10-24 12:53:00"
 ---
 
 # 快速开始
@@ -29,6 +29,15 @@ yarn global add @elog/cli
 
 # 使用 pnpm 安装 CLI
 pnpm install @elog/cli -g
+
+# 也可使用 npx 运行 elog 的所有命令：将本文档使用 elog 命令的地方换成 npx @elog/cli
+# 例如
+# 初始化 elog 配置文件
+npx @elog/cli init
+# 本地同步命令
+npx @elog/cli sync -e .elog.env
+# 清除本地缓存
+npx @elog/cli clean
 ```
 
 ## 初始化
