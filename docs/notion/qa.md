@@ -2,15 +2,50 @@
 status: 已发布
 sort: 50
 urlname: qa
-上次编辑时间: "2023-10-13T16:22:00.000Z"
+上次编辑时间: "2023-10-24T12:44:00.000Z"
 catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: "2023-07-22 19:37:00"
-updated: "2023-10-13 16:22:00"
+updated: "2023-10-24 12:44:00"
 ---
 
 # 常见问题
+
+## 配置问题
+
+`elog.config.js`为 Elog 的配置文件，其中以 `process.env`开头的不需要改动，且为**必填信息。**
+
+例如 `process.env.YUQUE_TOKEN`为语雀账号相关敏感信息，用于本地同步时在`.elog.env`中指定`YUQUE_TOKEN=你的语雀 Token`，其他配置可根据实际需求改动。
+
+## 如何重新全量同步文档
+
+elog 默认为增量更新，只有该文档重新修改过，再次同步时，才会重新拉取该文档。如果想重新全量同步文档。有以下两种办法：
+
+1. 运行 `elog clean`，Elog 将会自动清除所有文档、本地图片、缓存文件`(elog.cache.json)`
+2. `elog.cache.json`为 Elog 增量同步的关键，可**手动删除**此文件，推荐同时手动删除所有文档、本地图片
+
+## 如何同步多个知识库/数据表
+
+在语雀中， Elog 是以知识库为维度进行同步，一次只能同步一个知识库。
+
+如果想要同时同步多个知识库：
+
+1. 复制`elog.config.js` 和`.elog.env`，并改名为`elog-xxx.config.js`和`.elog-xxx.env`；
+2. 在`elog-xxx.config.js`配置文件中指定另外一个知识库的导出目录(`deploy.local.outputDir`)；
+3. 在`.elog-xxx.env`指定另一个知识库的 `repo、login`等相关值。
+4. 并在运行同步命令时指定相关参数：
+
+   ```shell
+   # 此命令表示，将使用.elog-xxx.env中的账号信息，
+   # 指定读取elog-xxx.config.js中的配置，
+   # 并将缓存文件命名为elog-xxx.cache.json
+   elog sync -e .elog-xxx.env -a elog-xxx.cache.json -c elog-xxx.config.js
+   ```
+
+在 Notion 或其他写作平台也是如此，需要指定不同的配置文件`(elog.config.js)`、缓存文件`(elog.cache.json)`、本地环境变量文件`(.elog.env)`。
+
+> 如果有使用 github，请不要将`.elog.env`配置文件上传到 github，需要在`.gitignore`中忽略此文件
 
 ## 同步时卡住不动
 
