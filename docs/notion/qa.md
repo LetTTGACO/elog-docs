@@ -2,19 +2,19 @@
 status: 已发布
 sort: 50
 urlname: qa
-上次编辑时间: "2023-10-24T13:06:00.000Z"
+上次编辑时间: "2023-10-24T13:14:00.000Z"
 catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: "2023-07-22 19:37:00"
-updated: "2023-10-24 13:06:00"
+updated: "2023-10-24 13:14:00"
 ---
 
 # 常见问题
 
 **大部分问题都可以在文档中找到解决办法，请优先从** [快速开始](/notion/start) **阅读文档，再进行实际操作。**
 
-如果还是运行报错，请在 Github 中提交`issue`或加入 [elog 反馈交流群](/notion/la9toqncox96kfp8)
+如果还是运行报错，请在 Github 中提交 [Issues](https://github.com/LetTTGACO/elog/issues) 或加入 [elog 反馈交流群](/notion/la9toqncox96kfp8)
 
 ## 配置问题
 
@@ -24,7 +24,7 @@ updated: "2023-10-24 13:06:00"
 
 ## Elog 运行报缺少参数
 
-1. 检查 `elog.config.js`中所有 `platform` 属性的值是否是你对应平台的值。例如如果想用语雀 Token 的方式（需要语雀高级会员）同步语雀文档，则 `write.platform = yuque`；如果是使用语雀账号密码的方式（不需要会员），则`write.platform = yuque-pwd`
+1. 检查 `elog.config.js`中所有 `platform` 属性的值是否是你对应平台的值。例如如果想用语雀 Token 的方式同步语雀文档，则 `write.platform = yuque`；如果是使用语雀账号密码的方式，则`write.platform = yuque-pwd`
 2. 检查`.elog.env`中是否填写账号信息。无论用哪种方式同步语雀，`.elog.env`中的`YUQUE_LOGIN`和`YUQUE_REPO`都是必填参数。其他必填参数请看本文档相关配置表格中的是否必填字段
 
 ## 如何重新全量同步文档
@@ -60,7 +60,7 @@ elog 默认为增量更新，只有该文档重新修改过，再次同步时，
 
 ## elog 运行时找不到该命令
 
-1. 检查是否[全局安装过 elog](https://elog.1874.cool/notion/start#cli-%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85)
+1. 检查是否[全局安装过 elog](/notion/start#cli-%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85)
 2. 重启命令行工具，如果全局安装过也运行不了，大概率是命令行工具的配置的问题。可采用备用方案：将`elog`运行命令改为`npx @elog/cli`
 
 ```shell
