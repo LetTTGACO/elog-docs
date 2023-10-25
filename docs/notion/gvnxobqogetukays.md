@@ -2,12 +2,12 @@
 status: 已发布
 sort: 70
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-13T05:52:00.000Z"
+上次编辑时间: "2023-10-25T02:21:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-13 05:52:00"
+updated: "2023-10-25 02:21:00"
 ---
 
 # 关键信息获取
@@ -16,7 +16,7 @@ updated: "2023-10-13 05:52:00"
 
 ### login
 
-语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。
+语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。例如 `1874w` 才是 `login` 取值
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/277511285f7328c7c6dfc595e1a429c2.png)
 
