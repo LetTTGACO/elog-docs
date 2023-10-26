@@ -2,12 +2,12 @@
 status: 已发布
 sort: 70
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-25T02:21:00.000Z"
+上次编辑时间: "2023-10-26T04:59:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-25 02:21:00"
+updated: "2023-10-26 04:59:00"
 ---
 
 # 关键信息获取
@@ -90,9 +90,15 @@ updated: "2023-10-25 02:21:00"
 
 ### folderToken
 
-文件夹的 URL 路径结尾即为`folderToken`
+我的空间文件夹的 URL 路径结尾即为`folderToken`，在知识库中也是类似，文档 URL 路径结尾
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0cc398bbfe9034f68ece280ea5fcde83.png)
+
+### wikiId
+
+知识库 ID，进入知识库空间设置时 URL 路径结尾即为 `wikiId`
+
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//32db6b04a9bb2d9680d5fb1ef6ea9a18.png)
 
 ## WordPress
 
