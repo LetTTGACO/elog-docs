@@ -58,12 +58,14 @@ jobs:
           FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_FOLDER_TOKEN: ${{ secrets.FEISHU_FOLDER_TOKEN }}
+          FEISHU_WIKI_ID: ${{ secrets.FEISHU_WIKI_ID }}
         run: |
           npm run sync:flowus
           npm run sync:yuque-token
           npm run sync:notion
           npm run sync:wordpress
           npm run sync:feishu
+          npm run sync:feishu-wiki
 #         在非国内CI/CD环境中使用语雀（账号密码）方式，例如Github Workflow
 #         会导致语雀后台登录设备中出现大量美国IP，
 #         目前尚不清楚语雀是否会有安全限制措施，请谨慎使用。

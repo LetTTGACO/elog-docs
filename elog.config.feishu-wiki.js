@@ -2,8 +2,8 @@ module.exports = {
   write: {
     platform: 'feishu',
     feishu: {
-      type: 'space', // 不填默认为从我的空间下载
-      folderToken: process.env.FEISHU_FOLDER_TOKEN,
+      type: 'wiki',
+      wikiId: process.env.FEISHU_WIKI_ID,
       appId: process.env.FEISHU_APP_ID,
       appSecret: process.env.FEISHU_APP_SECRET,
     },
@@ -11,8 +11,8 @@ module.exports = {
   deploy: {
     platform: 'local',
     local: {
-      outputDir: './docs/feishu',
-      filename: 'urlname',
+      outputDir: './docs/feishu-wiki',
+      filename: 'title',
       format: 'matter-markdown',
       catalog: true,
     }
