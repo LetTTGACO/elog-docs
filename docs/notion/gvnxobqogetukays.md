@@ -2,12 +2,12 @@
 status: 已发布
 sort: 70
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-26T04:59:00.000Z"
+上次编辑时间: "2023-10-26T05:32:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-26 04:59:00"
+updated: "2023-10-26 05:32:00"
 ---
 
 # 关键信息获取
@@ -83,10 +83,13 @@ updated: "2023-10-26 04:59:00"
 
    ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/46ffd5ca3364cbbd4a13a6b8dad67826.png)
 
-9. 打开飞书云文档，在【我的空间】下选择/新建一个目标文件夹用于 Elog 导出
+9. 【可选一】打开飞书云文档，在【我的空间】下选择/新建一个目标文件夹用于 Elog 导出
 10. 在目标文件夹页面的右侧点击分享，邀请协作者，将刚才新建的群聊邀请为协作者。如此，自建应用就拥有了该文件夹的访问权限
 
     ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/ac0754cbadd3e8c9b9f70b59eeccaac8.png)
+
+11. 【可选二】打开飞书云文档，在【知识库】下选择/新建一个知识库用于 Elog 导出
+12. 在知识库空间设置-成员设置中将刚才新建的群聊添加为成员/管理员。如此，自建应用就拥有了该知识库的访问权限
 
 ### folderToken
 
@@ -98,7 +101,7 @@ updated: "2023-10-26 04:59:00"
 
 知识库 ID，进入知识库空间设置时 URL 路径结尾即为 `wikiId`
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//32db6b04a9bb2d9680d5fb1ef6ea9a18.png)
+![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/32db6b04a9bb2d9680d5fb1ef6ea9a18.png)
 
 ## WordPress
 
