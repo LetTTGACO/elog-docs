@@ -2,12 +2,12 @@
 status: 已发布
 sort: 70
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-26T05:46:00.000Z"
+上次编辑时间: "2023-10-26T09:20:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-26 05:46:00"
+updated: "2023-10-26 09:20:00"
 ---
 
 # 关键信息获取
@@ -17,6 +17,16 @@ updated: "2023-10-26 05:46:00"
 ### login
 
 语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。例如 `1874w` 才是 `login` 取值
+
+> 使用语雀团队知识库时，login 为团队路径，不是个人路径
+
+    假设这是你的语雀团队的知识库链接：https://aaaa.yuque.com/bbbb/cccc
+
+
+    `host = https://aaaa.yuque.com`（账号密码模式）
+    `baseUrl=https://aaaa.yuque.com/api/v2`（Token 模式）
+    `login=bbbb`，不是你个人的 login
+    `repo=cccc`
 
 ![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/277511285f7328c7c6dfc595e1a429c2.png)
 

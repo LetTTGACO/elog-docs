@@ -123,18 +123,18 @@
     {
       "id": "025616b4-d2d2-43d8-8ff3-22607882733e",
       "doc_id": "025616b4-d2d2-43d8-8ff3-22607882733e",
-      "updated": 1698299160000,
-      "body_original": "\n# 关键信息获取\n\n\n## 语雀\n\n\n### login\n\n\n语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。例如 `1874w` 才是 `login` 取值\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FhMY9t92b1JTC5O6FwiAa06b8JJ4.png#averageHue=%239e9d9d&clientId=u75734ed0-2c7f-4&from=paste&height=429&id=u168b9780&name=image.png&originHeight=857&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=107439&status=done&style=none&taskId=u331e7208-783d-4bbe-a832-380debd7348&title=&width=750)\n\n\n### repo\n\n\n语雀仓库短名称，也称为语雀知识库路径。访问需要作为博客文章的知识库 => 更多设置 => 知识库信息，拿到语雀知识库路径。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FvluGqHQCYKfVpxy8knMs5ceEHBX.png#averageHue=%23fbfafa&clientId=u75734ed0-2c7f-4&from=paste&height=280&id=uf65001e5&name=image.png&originHeight=559&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=100393&status=done&style=none&taskId=u71a3faa4-6cbd-436b-a277-451b1b5423e&title=&width=750)\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FjBYSP_Et4_TgKXEb5H9cEg2a6Q8.png#averageHue=%23fcfbfb&clientId=u75734ed0-2c7f-4&from=paste&height=492&id=ud53d8744&name=image.png&originHeight=984&originWidth=1700&originalType=binary&ratio=1&rotation=0&showTitle=false&size=93384&status=done&style=none&taskId=u53d916b1-0bda-4a4f-8552-501434c4cc4&title=&width=850)\n\n\n### token\n\n\n语雀 Token，访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => Token => 新建 token 并配置好只读权限。Access Token 即为语雀 Token。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FpsTzZbTlRETvTBg2Lti-we0uPav.png#averageHue=%23f6f6f6&clientId=u75734ed0-2c7f-4&from=paste&height=627&id=u2530f761&name=image.png&originHeight=1253&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=166802&status=done&style=none&taskId=u53224249-0282-4767-83ac-d28696d1b48&title=&width=750)\n\n\n## Notion\n\n\n### 配置流程\n\n1. 使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库\n2. 创建 Integration Token，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-1-create-an-integration)\n3. 将复制的数据库连接到刚创建的 Integration，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-2-share-a-database-with-your-integration)\n4. 获取数据库 DatabaseId\n\n> 如果使用的是NotionNext，只需要备份文档，可忽略步骤1\n\n\n### token\n\n\n参考 [Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)。登录 [Niton 网页版](https://www.notion.so/) => 访问 [My integrations](https://www.notion.so/my-integrations) => 创建应用 => 生成 Internal Integration Token\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FnSP2i4-uBE3r7N_SNLy_GQEpQim.png#averageHue=%23fbf9f7&clientId=u77e5771c-bb66-4&from=paste&height=603&id=u6683bd10&name=image.png&originHeight=1206&originWidth=2294&originalType=binary&ratio=1&rotation=0&showTitle=false&size=231034&status=done&style=none&taskId=u33b6f0f9-1170-43cb-96d8-37b4d5a5f5a&title=&width=1147)\n\n\n### databaseId\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fvy6P1yIcoXOaX2BNItTVSaip1g0.png#averageHue=%23dedbd7&clientId=ue1e2d7f1-d2ee-4&from=paste&height=64&id=ud499e74e&name=image.png&originHeight=128&originWidth=1502&originalType=binary&ratio=2&rotation=0&showTitle=false&size=27860&status=done&style=none&taskId=u46452ea1-0523-4dd1-bcae-e94a6b5f900&title=&width=751)\n\n\n## FlowUs\n\n\n### 配置流程\n\n1. 使用 [Database 模板](https://flowus.cn/1874/share/cc2a2086-9026-4f93-a8d7-e1fe365623c9) 创建一个多维表\n2. 获取多维表的 tablePageId\n\n### tablePageId\n\n\n![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6f50e0d8-a11e-4fbb-925e-d4439629daaa/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055646Z&X-Amz-Expires=3600&X-Amz-Signature=93e761dff2e2f9c7ff24f48efd89b82811ae5a7ee8f42ba8f77c921dc9f5cc89&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n## 飞书\n\n\n### 配置流程\n\n1. 申请飞书个人版\n2. 进入[飞书开发者后台](https://open.feishu.cn/app)\n3. 创建企业自建应用，信息随意填写\n4. 进入权限管理，云文档，至少开通以下权限\n\t1. 查看新版文档`docx:document:readonly`\n\t2. 查看、评论和下载云空间中所有文件`drive:drive:readonly`\n\t3. 查看、编辑和管理知识库`wiki:wiki`\n5. 添加应用能力，开通机器人能力\n6. 创建应用版本，并申请线上发布方可生效（或者创建测试版本）\n7. 打开凭证与基础信息，获取 `App ID(appId)` 和 `App Secret(appSecret)`（区分测试/正式版本应用）\n8. 打开飞书聊天软件，选择/新建一个群聊，在群设置中添加机器人，搜索你的应用并将其添加到群聊中\n\n\t![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/324b2f58-1c90-40fc-a7a5-3bb9772b34af/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055647Z&X-Amz-Expires=3600&X-Amz-Signature=04b088303bf283f432a07e65d827f9b232d599e882f6148809e45effaac79539&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n9. 【可选一】打开飞书云文档，在【我的空间】下选择/新建一个目标文件夹用于Elog导出\n10. 在目标文件夹页面的右侧点击分享，邀请协作者，将刚才新建的群聊邀请为协作者。如此，自建应用就拥有了该文件夹的访问权限\n\n\t![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/278a9887-76f8-41ed-b0af-fb8b96469fef/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055647Z&X-Amz-Expires=3600&X-Amz-Signature=536efda45fd332afd9198d8f8ee8674a65de01ee84e71c9c362b6248831334d7&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n11. 【可选二】打开飞书云文档，在【知识库】下选择/新建一个知识库用于Elog导出\n12. 在知识库空间设置-成员设置中将刚才新建的群聊添加为成员/管理员。如此，自建应用就拥有了该知识库的访问权限\n\n### folderToken\n\n\n我的空间文件夹的URL路径结尾即为`folderToken`，在知识库中也是类似，文档URL路径结尾\n\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/0e428322-e1e0-4024-ac2e-889c49f2676e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055646Z&X-Amz-Expires=3600&X-Amz-Signature=1bb3c3b7b197db770b96fd58846c749568813f936ca9ee85f33a00783c85a3cd&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n### wikiId\n\n\n知识库 ID，进入知识库空间设置时URL 路径结尾即为 `wikiId`\n\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/7673392f-e3d5-4d7b-b611-34294869191f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055646Z&X-Amz-Expires=3600&X-Amz-Signature=d9ba2e02830d56941e8117c452ab2adcd2b536e07a7f7dfa8a74afb3e59a2204&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n## WordPress\n\n\nNotion平台可复制Notion模版库 [Elog-WordPress 模板](https://1874.notion.site/3bd9c2da264f48bd88457bc9b9c68098) \n\n\n其他平台可参考以上数据库属性\n\n\n### endpoint\n\n\n一般情况下为`站点地址/wp-json`即可，例如`http://your.site.com/wp-json`，但是需要先开启自己站点的`REST API`才行。先访问以上连接，如果返回JSON格式的站点信息，即表示成功开启，如果出现404，见下文。\n\n\n### 常见问题：\n\n\n#### 访问/wp-json路由报错404\n\n1. 修改WordPress的固定连接模式为【文章名】\n\n\t即`http://your.site.com/some-post`这种模式进行访问\n\n2. 需要开启WordPress的伪静态模式\n\n\t需要根据站点的服务器进行设置，[参考文章](https://cloud.tencent.com/developer/article/1135108)。例如我使用的是宝塔一键安装，所以直接修改nginx配置即可。\n\n3. 手动安装Basic Authentication插件\n\n\t[插件地址](https://github.com/WP-API/Basic-Auth)，手动下载ZIP源码包后，无需解压，直接上传到WordPress插件即可\n\n\n## 图床\n\n\n### Github\n\n\n### token\n\n\nGithub 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/tokens/) => Generate new token => 勾选必要的参数，生成 token。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FpUtRBRjJ-UO24Hdfjn8Vk-6Sx2F.png#averageHue=%23fefefe&clientId=ue137f57e-d208-4&from=paste&height=671&id=u143a5e24&name=image.png&originHeight=1342&originWidth=2298&originalType=binary&ratio=1&rotation=0&showTitle=false&size=322752&status=done&style=none&taskId=udd647308-e1fe-483e-b81f-645abac0075&title=&width=1149)\n\n\n### 腾讯云\n\n\n### secretId/secretKey\n\n\n进入 [访问管理](https://console.cloud.tencent.com/cam/overview) => [密钥管理](https://console.cloud.tencent.com/cam/capi) =>【新增密钥】=> 获取 SecretId 和 SecretKey。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FjqwrLEV_PQmOJ9xK4wWuzATSrDs.png#averageHue=%234a965b&clientId=ue137f57e-d208-4&from=paste&height=378&id=u845abe08&name=image.png&originHeight=755&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=202973&status=done&style=none&taskId=ubff59a0c-fce3-4ae3-a916-58f97623802&title=&width=750)\n\n\n### bucket/region\n\n\n访问[腾讯云 COS 管理](https://console.cloud.tencent.com/cos/bucket)获取\n\n\n### 阿里云\n\n\n### secretId/secretKey\n\n\n访问 [阿里云密钥管理](https://ram.console.aliyun.com/manage/ak) => 【创建 AccessKey】 => 获取 AccessKey ID 和 AccessKey Secret。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FqWXD2-3ncS8UdShQl6VFjU-24Cx.png#averageHue=%23ed9c63&clientId=ue137f57e-d208-4&from=paste&height=503&id=uad50cbdb&name=image.png&originHeight=1006&originWidth=2636&originalType=binary&ratio=1&rotation=0&showTitle=false&size=200100&status=done&style=none&taskId=u73155de1-543f-4306-9187-a5dc08f76af&title=&width=1318)\n\n\n### bucket\n\n\n访问[阿里云 Bucket 管理](https://oss.console.aliyun.com/bucket) => 获取 bucket\n\n\n### region\n\n\n访问[阿里云 Bucket 管理](https://oss.console.aliyun.com/bucket) => 查看图床 Bucket 所在的地域 => 对照[常用 Region](https://help.aliyun.com/document_detail/140601.html) => 获取 Region Id\n\n\n> 根据阿里云的开发文档，对象存储的 region 为 oss- 开头，所以需要给 region id 前面拼接上 oss- 才是完整的 region\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FuhcnG3agCL7EGTzYTIfNVkWQ_AG.png#averageHue=%23f6f5f5&clientId=ue137f57e-d208-4&from=paste&height=214&id=u860703bd&name=image.png&originHeight=428&originWidth=1592&originalType=binary&ratio=1&rotation=0&showTitle=false&size=117256&status=done&style=none&taskId=u39a1070b-d69e-494a-9226-eda6fa8d97a&title=&width=796)\n\n\n### 七牛云\n\n\n### secretId/secretKey\n\n\n访问 [七牛云密钥管理](https://portal.qiniu.com/user/key) => 【创建密钥】 => 获取 AccessKey/SecretKey。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FsSapULtlysBQrTkRV5OyI5Q7OH3.png#averageHue=%23fcfcfb&clientId=ue137f57e-d208-4&from=paste&height=522&id=uc59e4b35&name=image.png&originHeight=1044&originWidth=2702&originalType=binary&ratio=1&rotation=0&showTitle=false&size=174604&status=done&style=none&taskId=ua942d762-bf0f-4d0a-ab8b-9add94388a1&title=&width=1351)\n\n\n### bucket\n\n\n存储空间名称。访问[七牛云空间管理](https://portal.qiniu.com/kodo/bucket)获取\n\n\n### region\n\n\n存储地域。[存储区域 - 七牛开发者中心](https://developer.qiniu.com/kodo/1671/region-endpoint-fq)\n\n\n一般不需要填写，如需指定，目前只支持以下取值\n\n- Zone_z0\n- Zone_z1\n- Zone_z2\n- Zone_na0\n- Zone_as0\n\n### 又拍云\n\n\n### user/password\n\n\n访问 [又拍云操作员管理](https://console.upyun.com/account/operators/) => 【添加操作员】 => 获取 `user/password`。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fp7_BHrGD1CXi4sqmOycM8LAde6V.png#averageHue=%23db6346&clientId=ue137f57e-d208-4&from=paste&height=556&id=uee1d4f2a&name=image.png&originHeight=1112&originWidth=2380&originalType=binary&ratio=1&rotation=0&showTitle=false&size=142047&status=done&style=none&taskId=uaf3a1da0-c11b-4fa4-9bcf-fbb9b078ba6&title=&width=1190)\n\n\n### bucket/region\n\n\n又拍云没有 bucket 和 region 的概念，只有服务名。bucket = 服务名，region 不需要填写。访问[又拍云云存储](https://console.upyun.com/services/file/)获取服务名。\n\n",
+      "updated": 1698312000000,
+      "body_original": "\n# 关键信息获取\n\n\n## 语雀\n\n\n### login\n\n\n语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。例如 `1874w` 才是 `login` 取值\n\n\n> 使用语雀团队知识库时，login 为团队路径，不是个人路径\n\n\n\t假设这是你的语雀团队的知识库链接：https://aaaa.yuque.com/bbbb/cccc\n\n\n\t`host = https://aaaa.yuque.com`（账号密码模式）\n\t`baseUrl=https://aaaa.yuque.com/api/v2`（Token 模式）\n\t`login=bbbb`，不是你个人的 login\n\t`repo=cccc`\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FhMY9t92b1JTC5O6FwiAa06b8JJ4.png#averageHue=%239e9d9d&clientId=u75734ed0-2c7f-4&from=paste&height=429&id=u168b9780&name=image.png&originHeight=857&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=107439&status=done&style=none&taskId=u331e7208-783d-4bbe-a832-380debd7348&title=&width=750)\n\n\n### repo\n\n\n语雀仓库短名称，也称为语雀知识库路径。访问需要作为博客文章的知识库 => 更多设置 => 知识库信息，拿到语雀知识库路径。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FvluGqHQCYKfVpxy8knMs5ceEHBX.png#averageHue=%23fbfafa&clientId=u75734ed0-2c7f-4&from=paste&height=280&id=uf65001e5&name=image.png&originHeight=559&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=100393&status=done&style=none&taskId=u71a3faa4-6cbd-436b-a277-451b1b5423e&title=&width=750)\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FjBYSP_Et4_TgKXEb5H9cEg2a6Q8.png#averageHue=%23fcfbfb&clientId=u75734ed0-2c7f-4&from=paste&height=492&id=ud53d8744&name=image.png&originHeight=984&originWidth=1700&originalType=binary&ratio=1&rotation=0&showTitle=false&size=93384&status=done&style=none&taskId=u53d916b1-0bda-4a4f-8552-501434c4cc4&title=&width=850)\n\n\n### token\n\n\n语雀 Token，访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => Token => 新建 token 并配置好只读权限。Access Token 即为语雀 Token。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FpsTzZbTlRETvTBg2Lti-we0uPav.png#averageHue=%23f6f6f6&clientId=u75734ed0-2c7f-4&from=paste&height=627&id=u2530f761&name=image.png&originHeight=1253&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=166802&status=done&style=none&taskId=u53224249-0282-4767-83ac-d28696d1b48&title=&width=750)\n\n\n## Notion\n\n\n### 配置流程\n\n1. 使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建一个数据库\n2. 创建 Integration Token，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-1-create-an-integration)\n3. 将复制的数据库连接到刚创建的 Integration，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#step-2-share-a-database-with-your-integration)\n4. 获取数据库 DatabaseId\n\n> 如果使用的是NotionNext，只需要备份文档，可忽略步骤1\n\n\n### token\n\n\n参考 [Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)。登录 [Niton 网页版](https://www.notion.so/) => 访问 [My integrations](https://www.notion.so/my-integrations) => 创建应用 => 生成 Internal Integration Token\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FnSP2i4-uBE3r7N_SNLy_GQEpQim.png#averageHue=%23fbf9f7&clientId=u77e5771c-bb66-4&from=paste&height=603&id=u6683bd10&name=image.png&originHeight=1206&originWidth=2294&originalType=binary&ratio=1&rotation=0&showTitle=false&size=231034&status=done&style=none&taskId=u33b6f0f9-1170-43cb-96d8-37b4d5a5f5a&title=&width=1147)\n\n\n### databaseId\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fvy6P1yIcoXOaX2BNItTVSaip1g0.png#averageHue=%23dedbd7&clientId=ue1e2d7f1-d2ee-4&from=paste&height=64&id=ud499e74e&name=image.png&originHeight=128&originWidth=1502&originalType=binary&ratio=2&rotation=0&showTitle=false&size=27860&status=done&style=none&taskId=u46452ea1-0523-4dd1-bcae-e94a6b5f900&title=&width=751)\n\n\n## FlowUs\n\n\n### 配置流程\n\n1. 使用 [Database 模板](https://flowus.cn/1874/share/cc2a2086-9026-4f93-a8d7-e1fe365623c9) 创建一个多维表\n2. 获取多维表的 tablePageId\n\n### tablePageId\n\n\n![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6f50e0d8-a11e-4fbb-925e-d4439629daaa/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092151Z&X-Amz-Expires=3600&X-Amz-Signature=92051e5b33e3e09e7edfb77f76b9b6f44d9492b83a6fd92f2dd46e9e8f0a8799&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n## 飞书\n\n\n### 配置流程\n\n1. 申请飞书个人版\n2. 进入[飞书开发者后台](https://open.feishu.cn/app)\n3. 创建企业自建应用，信息随意填写\n4. 进入权限管理，云文档，至少开通以下权限\n\t1. 查看新版文档`docx:document:readonly`\n\t2. 查看、评论和下载云空间中所有文件`drive:drive:readonly`\n\t3. 查看、编辑和管理知识库`wiki:wiki`\n5. 添加应用能力，开通机器人能力\n6. 创建应用版本，并申请线上发布方可生效（或者创建测试版本）\n7. 打开凭证与基础信息，获取 `App ID(appId)` 和 `App Secret(appSecret)`（区分测试/正式版本应用）\n8. 打开飞书聊天软件，选择/新建一个群聊，在群设置中添加机器人，搜索你的应用并将其添加到群聊中\n\n\t![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/324b2f58-1c90-40fc-a7a5-3bb9772b34af/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092152Z&X-Amz-Expires=3600&X-Amz-Signature=5083d1fff5661f805996b0ff7b2eb8303eef58f118a76d2e9f5aaac7e6af7cdd&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n9. 【可选一】打开飞书云文档，在【我的空间】下选择/新建一个目标文件夹用于Elog导出\n10. 在目标文件夹页面的右侧点击分享，邀请协作者，将刚才新建的群聊邀请为协作者。如此，自建应用就拥有了该文件夹的访问权限\n\n\t![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/278a9887-76f8-41ed-b0af-fb8b96469fef/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092152Z&X-Amz-Expires=3600&X-Amz-Signature=9de87e7f6a55e87c19520dde22c06cee3454e4ba01df35ff6deaa8ad199e2e29&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n11. 【可选二】打开飞书云文档，在【知识库】下选择/新建一个知识库用于Elog导出\n12. 在知识库空间设置-成员设置中将刚才新建的群聊添加为成员/管理员。如此，自建应用就拥有了该知识库的访问权限\n\n### folderToken\n\n\n我的空间文件夹的URL路径结尾即为`folderToken`，在知识库中也是类似，文档URL路径结尾\n\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/0e428322-e1e0-4024-ac2e-889c49f2676e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092151Z&X-Amz-Expires=3600&X-Amz-Signature=26af0d617300a20207e07210fa7e789ba7832af2fd9f6f13ef4998467553df34&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n### wikiId\n\n\n知识库 ID，进入知识库空间设置时URL 路径结尾即为 `wikiId`\n\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/7673392f-e3d5-4d7b-b611-34294869191f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092151Z&X-Amz-Expires=3600&X-Amz-Signature=c794dc68b7cc8576aad7ce45f638a0f7712585eb102f7ddf9c5ba0903b2c7c38&X-Amz-SignedHeaders=host&x-id=GetObject)\n\n\n## WordPress\n\n\nNotion平台可复制Notion模版库 [Elog-WordPress 模板](https://1874.notion.site/3bd9c2da264f48bd88457bc9b9c68098) \n\n\n其他平台可参考以上数据库属性\n\n\n### endpoint\n\n\n一般情况下为`站点地址/wp-json`即可，例如`http://your.site.com/wp-json`，但是需要先开启自己站点的`REST API`才行。先访问以上连接，如果返回JSON格式的站点信息，即表示成功开启，如果出现404，见下文。\n\n\n### 常见问题：\n\n\n#### 访问/wp-json路由报错404\n\n1. 修改WordPress的固定连接模式为【文章名】\n\n\t即`http://your.site.com/some-post`这种模式进行访问\n\n2. 需要开启WordPress的伪静态模式\n\n\t需要根据站点的服务器进行设置，[参考文章](https://cloud.tencent.com/developer/article/1135108)。例如我使用的是宝塔一键安装，所以直接修改nginx配置即可。\n\n3. 手动安装Basic Authentication插件\n\n\t[插件地址](https://github.com/WP-API/Basic-Auth)，手动下载ZIP源码包后，无需解压，直接上传到WordPress插件即可\n\n\n## 图床\n\n\n### Github\n\n\n### token\n\n\nGithub 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/tokens/) => Generate new token => 勾选必要的参数，生成 token。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FpUtRBRjJ-UO24Hdfjn8Vk-6Sx2F.png#averageHue=%23fefefe&clientId=ue137f57e-d208-4&from=paste&height=671&id=u143a5e24&name=image.png&originHeight=1342&originWidth=2298&originalType=binary&ratio=1&rotation=0&showTitle=false&size=322752&status=done&style=none&taskId=udd647308-e1fe-483e-b81f-645abac0075&title=&width=1149)\n\n\n### 腾讯云\n\n\n### secretId/secretKey\n\n\n进入 [访问管理](https://console.cloud.tencent.com/cam/overview) => [密钥管理](https://console.cloud.tencent.com/cam/capi) =>【新增密钥】=> 获取 SecretId 和 SecretKey。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FjqwrLEV_PQmOJ9xK4wWuzATSrDs.png#averageHue=%234a965b&clientId=ue137f57e-d208-4&from=paste&height=378&id=u845abe08&name=image.png&originHeight=755&originWidth=1500&originalType=binary&ratio=1&rotation=0&showTitle=false&size=202973&status=done&style=none&taskId=ubff59a0c-fce3-4ae3-a916-58f97623802&title=&width=750)\n\n\n### bucket/region\n\n\n访问[腾讯云 COS 管理](https://console.cloud.tencent.com/cos/bucket)获取\n\n\n### 阿里云\n\n\n### secretId/secretKey\n\n\n访问 [阿里云密钥管理](https://ram.console.aliyun.com/manage/ak) => 【创建 AccessKey】 => 获取 AccessKey ID 和 AccessKey Secret。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FqWXD2-3ncS8UdShQl6VFjU-24Cx.png#averageHue=%23ed9c63&clientId=ue137f57e-d208-4&from=paste&height=503&id=uad50cbdb&name=image.png&originHeight=1006&originWidth=2636&originalType=binary&ratio=1&rotation=0&showTitle=false&size=200100&status=done&style=none&taskId=u73155de1-543f-4306-9187-a5dc08f76af&title=&width=1318)\n\n\n### bucket\n\n\n访问[阿里云 Bucket 管理](https://oss.console.aliyun.com/bucket) => 获取 bucket\n\n\n### region\n\n\n访问[阿里云 Bucket 管理](https://oss.console.aliyun.com/bucket) => 查看图床 Bucket 所在的地域 => 对照[常用 Region](https://help.aliyun.com/document_detail/140601.html) => 获取 Region Id\n\n\n> 根据阿里云的开发文档，对象存储的 region 为 oss- 开头，所以需要给 region id 前面拼接上 oss- 才是完整的 region\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FuhcnG3agCL7EGTzYTIfNVkWQ_AG.png#averageHue=%23f6f5f5&clientId=ue137f57e-d208-4&from=paste&height=214&id=u860703bd&name=image.png&originHeight=428&originWidth=1592&originalType=binary&ratio=1&rotation=0&showTitle=false&size=117256&status=done&style=none&taskId=u39a1070b-d69e-494a-9226-eda6fa8d97a&title=&width=796)\n\n\n### 七牛云\n\n\n### secretId/secretKey\n\n\n访问 [七牛云密钥管理](https://portal.qiniu.com/user/key) => 【创建密钥】 => 获取 AccessKey/SecretKey。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/FsSapULtlysBQrTkRV5OyI5Q7OH3.png#averageHue=%23fcfcfb&clientId=ue137f57e-d208-4&from=paste&height=522&id=uc59e4b35&name=image.png&originHeight=1044&originWidth=2702&originalType=binary&ratio=1&rotation=0&showTitle=false&size=174604&status=done&style=none&taskId=ua942d762-bf0f-4d0a-ab8b-9add94388a1&title=&width=1351)\n\n\n### bucket\n\n\n存储空间名称。访问[七牛云空间管理](https://portal.qiniu.com/kodo/bucket)获取\n\n\n### region\n\n\n存储地域。[存储区域 - 七牛开发者中心](https://developer.qiniu.com/kodo/1671/region-endpoint-fq)\n\n\n一般不需要填写，如需指定，目前只支持以下取值\n\n- Zone_z0\n- Zone_z1\n- Zone_z2\n- Zone_na0\n- Zone_as0\n\n### 又拍云\n\n\n### user/password\n\n\n访问 [又拍云操作员管理](https://console.upyun.com/account/operators/) => 【添加操作员】 => 获取 `user/password`。\n\n\n![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/Fp7_BHrGD1CXi4sqmOycM8LAde6V.png#averageHue=%23db6346&clientId=ue137f57e-d208-4&from=paste&height=556&id=uee1d4f2a&name=image.png&originHeight=1112&originWidth=2380&originalType=binary&ratio=1&rotation=0&showTitle=false&size=142047&status=done&style=none&taskId=uaf3a1da0-c11b-4fa4-9bcf-fbb9b078ba6&title=&width=1190)\n\n\n### bucket/region\n\n\n又拍云没有 bucket 和 region 的概念，只有服务名。bucket = 服务名，region 不需要填写。访问[又拍云云存储](https://console.upyun.com/services/file/)获取服务名。\n\n",
       "properties": {
         "status": "已发布",
         "sort": 70,
         "urlname": "gvnxobqogetukays",
-        "上次编辑时间": "2023-10-26T05:46:00.000Z",
+        "上次编辑时间": "2023-10-26T09:20:00.000Z",
         "catalog": "入门指引",
         "tags": "Elog-Docs",
         "title": "关键信息获取",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-10-26 05:46:00"
+        "updated": "2023-10-26 09:20:00"
       },
       "body": "",
       "realName": "gvnxobqogetukays",
@@ -526,7 +526,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0c26a958-4e3c-4e0e-9a1c-69a2ba8d64dd/01.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=07309fef469bae6ab6b94f2532035cc83f4df35ad757eea23944fe51e7a07dcc&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0c26a958-4e3c-4e0e-9a1c-69a2ba8d64dd/01.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=1919cf8d480f831c0f750caad147b733dae0f2a4cf3db105b5eeffc72ae0f18f&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 10,
         "urlname": "introduce",
@@ -564,7 +564,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/912225d5-93aa-4fbe-b690-f604feab5f56/10.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=2dcd2054e29081ec001cc3097e3fddffd0621fca250a7c3667c2e6b2ea0a9cd6&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/912225d5-93aa-4fbe-b690-f604feab5f56/10.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=afc320a9aa6da5fb3ad005b7a6ddce2f922cfb6442e862d3f5f6dd7696835f9e&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 20,
         "urlname": "zuzvbv2lqhvllgit",
@@ -602,7 +602,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/73a9ce0f-d75e-4da5-bcf9-0de2f15d1053/11.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=cfa201eca75eec8060d49d3059a0a04a97ebbe94392ec6e10fa7b950e38aa8ce&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/73a9ce0f-d75e-4da5-bcf9-0de2f15d1053/11.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=af6d27e6409d310b152c4c6fc34149597f0d93cc0b091accc9e0fc87c53c0178&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 30,
         "urlname": "cq6p8hxizn1ogwgm",
@@ -640,7 +640,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3500b09e-821c-444d-b0c5-d03213b6db59/12.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=6537a0969770da52e7a2932bdcd12d488938c992d1d44624faa44df01f63af97&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3500b09e-821c-444d-b0c5-d03213b6db59/12.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=e8b14501156709af52c7a078b1014b73922437138fa8abc78d5defd9db442f60&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 40,
         "urlname": "la9toqncox96kfp8",
@@ -678,7 +678,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/caa4be72-4c64-46d9-a90b-4cda392157d0/297139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=94e58f27f7dcfe439373b90f8d02fe8816512451d1d10dc9026213ee05e9afa2&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/caa4be72-4c64-46d9-a90b-4cda392157d0/297139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=d7aa06cf653d9843e4c4127ec81a64eceec32035f1c0cb83a507e71d5d89f814&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 50,
         "urlname": "qa",
@@ -716,7 +716,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/67cdc770-fca6-49e9-a260-335c1413fb0b/95364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=6385d34ec9917a471650413a4b2dda3ce4a6a58e8f9e2bc192b8b068dd7ad2bd&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/67cdc770-fca6-49e9-a260-335c1413fb0b/95364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=d2691b4ca3013d0654741a3810989b9d05c1e80aa3ef8cc0042cecc2e53e82c5&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 60,
         "urlname": "start",
@@ -734,7 +734,7 @@
       "object": "page",
       "id": "025616b4-d2d2-43d8-8ff3-22607882733e",
       "created_time": "2023-04-06T13:31:00.000Z",
-      "last_edited_time": "2023-10-26T05:46:00.000Z",
+      "last_edited_time": "2023-10-26T09:20:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -757,12 +757,12 @@
         "status": "已发布",
         "sort": 70,
         "urlname": "gvnxobqogetukays",
-        "上次编辑时间": "2023-10-26T05:46:00.000Z",
+        "上次编辑时间": "2023-10-26T09:20:00.000Z",
         "catalog": "入门指引",
         "tags": "Elog-Docs",
         "title": "关键信息获取",
         "date": "2023-04-06 13:31:00",
-        "updated": "2023-10-26 05:46:00"
+        "updated": "2023-10-26 09:20:00"
       },
       "url": "https://www.notion.so/025616b4d2d243d88ff322607882733e",
       "public_url": "https://1874.notion.site/025616b4d2d243d88ff322607882733e"
@@ -791,7 +791,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=b677e50311b06ff7a94142a8085dc788ca5e6c2b6cfba60ebc3888979fe945f3&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=290b46038d144a763c6766e6095182fd318b9893bbe1dd055e21c6aecede3c2b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 80,
         "urlname": "bry3d3lwe206xuor",
@@ -829,7 +829,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=b677e50311b06ff7a94142a8085dc788ca5e6c2b6cfba60ebc3888979fe945f3&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=290b46038d144a763c6766e6095182fd318b9893bbe1dd055e21c6aecede3c2b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 90,
         "urlname": "config-catalog",
@@ -867,6 +867,7 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=290b46038d144a763c6766e6095182fd318b9893bbe1dd055e21c6aecede3c2b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 100,
         "urlname": "write-platform",
@@ -904,7 +905,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=b677e50311b06ff7a94142a8085dc788ca5e6c2b6cfba60ebc3888979fe945f3&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=290b46038d144a763c6766e6095182fd318b9893bbe1dd055e21c6aecede3c2b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 110,
         "urlname": "deploy-platform",
@@ -942,7 +943,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=b677e50311b06ff7a94142a8085dc788ca5e6c2b6cfba60ebc3888979fe945f3&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=290b46038d144a763c6766e6095182fd318b9893bbe1dd055e21c6aecede3c2b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 120,
         "urlname": "image-platform",
@@ -980,7 +981,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=b677e50311b06ff7a94142a8085dc788ca5e6c2b6cfba60ebc3888979fe945f3&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=290b46038d144a763c6766e6095182fd318b9893bbe1dd055e21c6aecede3c2b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 130,
         "urlname": "local-test",
@@ -1018,7 +1019,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/783375c7-df86-4816-9784-e2ebe430b9d9/242118.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=bc2726a527de0c5f4b481652f4df0508eb5515da8230586cf5e7b8165f8c8504&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/783375c7-df86-4816-9784-e2ebe430b9d9/242118.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=da6e416f7c14d860f249e8df40936413cd42bf810fd794f862a73fc4de886aee&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 140,
         "urlname": "yuque-markdown",
@@ -1056,7 +1057,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b3a82800-4114-4375-a986-484695184b8a/243089.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=73ff6691ee6a4a286756c0be655e15fa1216ba7e47a244cc7e6fbdfe9abf162d&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b3a82800-4114-4375-a986-484695184b8a/243089.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=725ba00905248f712dd0607ac75fdb69bddc723ecc255eb72d513fa0532b3194&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 150,
         "urlname": "yuque-example",
@@ -1094,7 +1095,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b04853db-438b-475b-a847-000b7205efe4/248303.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=9ed5ff9d9131ac33e05698c5305cacc1e7131555a86ede8b31038815c7ad5a15&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b04853db-438b-475b-a847-000b7205efe4/248303.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=2831f565e474b9a3b11e797755720936f9ee0d4223dedac45ed1e3fe9ee2f5e4&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 160,
         "urlname": "notion-markdown",
@@ -1132,7 +1133,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2771e19c-9b92-4ac2-938f-4d2235eb72a6/270022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=961b0dad5869c49db4150f16a224c929eb0e622c8e414ecd8d12245ad0989a83&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2771e19c-9b92-4ac2-938f-4d2235eb72a6/270022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=cd14e4b8c1db8c97f3e7d6dccabb89afd8c67491bd9c6712bc64c8da51cc616b&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 170,
         "urlname": "notion-example",
@@ -1170,7 +1171,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/64bd334e-a0ad-4773-ba49-c4a80fad12ba/251364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=95be85bea120bd11656bac2fd8d999b53f499c6883b4e70c1927347e73fafdd9&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/64bd334e-a0ad-4773-ba49-c4a80fad12ba/251364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=2c59822a1ab0b2e3f190be47fc4b55a4d6b530db17ed6201c3039f5c597c7ebc&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 180,
         "urlname": "flowus-markdown",
@@ -1208,7 +1209,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=cb4e66ee8571c945b4204416c250ffa15ff38978a61f18e105b5a20b2c24c755&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=bcc32b28238fe30bd306e631ddfb95b0a8da99ff7b0e6a104171251e62bc8937&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 190,
         "urlname": "flowus-example",
@@ -1246,7 +1247,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=cb4e66ee8571c945b4204416c250ffa15ff38978a61f18e105b5a20b2c24c755&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=bcc32b28238fe30bd306e631ddfb95b0a8da99ff7b0e6a104171251e62bc8937&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 200,
         "urlname": "feishu-example",
@@ -1284,7 +1285,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27cfd5d8-b9d1-4268-946e-ee9cd1bea24f/283449.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=8b86b5cb68c38556b8092f45238e858adbb0efa7291501e2845845792ad70646&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27cfd5d8-b9d1-4268-946e-ee9cd1bea24f/283449.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=345b45afe3c7a177dc9f92affbe53d5e4535f1f5b3bc6d8fb754dd673157499c&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 210,
         "urlname": "raqyleng501h23p1",
@@ -1322,7 +1323,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/44abb547-86fe-46f1-a163-e57dd17aa0fb/291637.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=7cf2ae2581d5cad498ed86edf83b57fd9871d4d3f22669a8eb66390ad17678b0&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/44abb547-86fe-46f1-a163-e57dd17aa0fb/291637.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=9018a979186f97c23d6f65f5e54128b8cd7476494136f0e518796c196f1169e1&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 220,
         "urlname": "xe160pqsumi6bqnz",
@@ -1360,7 +1361,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f57eee2b-6301-48c8-a8fc-4039d4d3d064/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=4ced36e4ac9e8b641e37e2d89703fabb52bbc1118d57ace02fe241f08c2a981c&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f57eee2b-6301-48c8-a8fc-4039d4d3d064/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=ebb9f698ef2af4d8e077d98e27d8af5d27b56b41a56608e034f516907cb17a2a&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 230,
         "urlname": "vy55q9xwlqlsfrvk",
@@ -1398,7 +1399,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27870e62-3772-49dc-a818-c6ee4d9f3676/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=ae051ab73e99a73c2b14c7b0bc72fec787809fc1d764792652522663c86a4dba&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27870e62-3772-49dc-a818-c6ee4d9f3676/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=62a96057def130a9fc5de9272ff055f7d1b75e92e6fbd5fca907e7c0dd515689&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 240,
         "urlname": "ubcut43kgf97fag6",
@@ -1436,7 +1437,7 @@
       },
       "archived": false,
       "properties": {
-        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b255ead8-9aa0-4de1-aeda-b51eaa7d0c07/96599.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T055644Z&X-Amz-Expires=3600&X-Amz-Signature=d42fbf8a2e84a1366371a134f5b73855242a5e9886b7ab0e167d8fb3916b0ec6&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "cover": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b255ead8-9aa0-4de1-aeda-b51eaa7d0c07/96599.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T092149Z&X-Amz-Expires=3600&X-Amz-Signature=814e813cc3280415ab72bae2c1bd2e087e5f147ed28f71d85b38cd9b4f10247d&X-Amz-SignedHeaders=host&x-id=GetObject",
         "status": "已发布",
         "sort": 260,
         "urlname": "fe8ywmt999gon12w",
