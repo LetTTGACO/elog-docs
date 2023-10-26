@@ -2,12 +2,12 @@
 status: 已发布
 sort: 100
 urlname: write-platform
-上次编辑时间: "2023-10-26T05:14:00.000Z"
+上次编辑时间: "2023-10-26T05:55:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
 date: "2023-10-13 05:14:00"
-updated: "2023-10-26 05:14:00"
+updated: "2023-10-26 05:55:00"
 ---
 
 # 写作平台配置
@@ -242,6 +242,8 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 > 注意：对于 Notion 和 FlowUs，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
 
 ## 飞书
+
+> `0.9.0-beta.1`及以上版本支持知识库导出
 
 飞书关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#飞书) 页面。
 

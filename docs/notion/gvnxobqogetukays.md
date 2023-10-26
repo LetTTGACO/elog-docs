@@ -2,12 +2,12 @@
 status: 已发布
 sort: 70
 urlname: gvnxobqogetukays
-上次编辑时间: "2023-10-26T05:32:00.000Z"
+上次编辑时间: "2023-10-26T05:46:00.000Z"
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: "2023-04-06 13:31:00"
-updated: "2023-10-26 05:32:00"
+updated: "2023-10-26 05:46:00"
 ---
 
 # 关键信息获取
@@ -76,6 +76,7 @@ updated: "2023-10-26 05:32:00"
 4. 进入权限管理，云文档，至少开通以下权限
    1. 查看新版文档`docx:document:readonly`
    2. 查看、评论和下载云空间中所有文件`drive:drive:readonly`
+   3. 查看、编辑和管理知识库`wiki:wiki`
 5. 添加应用能力，开通机器人能力
 6. 创建应用版本，并申请线上发布方可生效（或者创建测试版本）
 7. 打开凭证与基础信息，获取 `App ID(appId)` 和 `App Secret(appSecret)`（区分测试/正式版本应用）
