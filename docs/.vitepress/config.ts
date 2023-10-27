@@ -102,7 +102,7 @@ export default defineConfig({
     socialLinks: [
       { icon: { svg: YuQueSVG }, link: "https://www.yuque.com/1874w/elog-docs" },
       { icon: { svg: NotionSVG }, link: "https://1874.notion.site/0aa9217e5bcc46768bdae424fddcbc28" },
-      { icon: 'github', link: "https://github.com/LetTTGACO/elog" },
+      { icon: 'github', link: "https://github.com/LetTTGACO/elog-docs" },
     ],
     footer: {
       message: 'Powered by <a href="https://www.yuque.com/1874w/elog-docs" target="_blank">语雀</a> & <a href="https://1874.notion.site/0aa9217e5bcc46768bdae424fddcbc28?v=5d3ef173d4014115bb4c66601df8a8e5" target="_blank">Notion</a> & <a href="https://vitepress.dev" target="_blank">VitePress</a> with <a href="https://github.com/LetTTGACO/elog" target="_blank">Elog</a>',
