@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-10-13T16:00:00.000Z"
+上次编辑时间: "2023-10-28T15:48:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: "2023-10-13 05:24:00"
-updated: "2023-10-13 16:00:00"
+updated: "2023-10-28 15:48:00"
 ---
 
 # 图床平台配置
@@ -16,15 +16,77 @@ updated: "2023-10-13 16:00:00"
 
 ## 本地存储（local）
 
-| 字段      | 必填 | 说明             | 默认值 |
-| --------- | ---- | ---------------- | ------ |
-| outputDir | 是   | 图片输出目录     | -      |
-| prefixKey | 否   | 图片资源统一前缀 | -      |
+| 字段          | 必填 | 说明             | 默认值 |
+| ------------- | ---- | ---------------- | ------ |
+| outputDir     | 是   | 图片输出目录     | -      |
+| prefixKey     | 否   | 图片资源统一前缀 | -      |
+| pathFollowDoc | 否   | 路径根据文档计算 | false  |
+| imagePathExt  | 否   | 图片路径拓展点   | -      |
 
-### PrefixKey 字段说明
+### prefixKey 字段说明
+
+> 如果只是想把文档及图片下载到本地作为备份，应该优先考虑`pathFollowDoc`配置
 
 1. 本地部署平台一般会有资源根目录，会将某个文件夹视为根目录，而`prefixKey`就是配置资源目录的前缀
 2. 例如 Vitpress，如果`outputDir=./docs/asset/images`，则`prefixKey=/asset/images`
+
+### pathFollowDoc 字段说明
+
+> `@elog/cli@0.9.0-beta.4`及以上版本可用
+
+图片路径会相对文档位置自动变化，`prefixKey`字段会自动失效。适用于多层级文档时图片能正常访问。
+
+假如文档 A 的存放路径为 `./docs/首页/文档 A.md`
+
+图片**统一**输出目录(`outputDir`)为 `./docs/images`
+
+则图片在文档 A 中的路径应为`../../images/test.jpg`
+
+### imagePathExt 字段说明
+
+> `@elog/cli@0.9.0-beta.4`及以上版本可用
+
+图片路径拓展点路径。一般适用于按自定义规则存放图片。例如可以**让所有图片按照文档标题为文件夹**存放。
+
+1. 目前只支持 Common Js 标准拓展点
+2. 拓展点需要暴露一个**同步**的 `getImagePath` 的方法
+
+```javascript
+const path = require("path");
+
+/**
+ * 自定义图片路径处理器
+ * @param {DocDetail} doc doc的类型定义为 DocDetail
+ * @return {string} 返回处理后图片存放地址dirPath和文档中图片的前缀prefixKey
+ */
+const getImagePath = (doc) => {
+  // 当前文档文档的存在路径，例如：docs/yuque
+  const docPath = doc.docPath;
+  // 当前文档标题
+  const title = doc.properties.title;
+  // 当前文档其他属性
+  // 具体可查看elog.cache.json文件docs中的结构
+  const properties = doc.properties;
+  // 假设文档标题为【标题1】，文档存放路径docPath为：docs/yuque
+  // 那么图片存放位置dirPath为: docs/yuque/标题1/
+  // 文档图片前缀prefixKey为: ./标题1
+
+  // 假设文档标题为【标题2】，文档存放路径docPath为：docs/yuque/首页文件夹
+  // 那么图片存放位置dirPath为:docs/yuque/标题2/
+  // 文档图片前缀prefixKey为../标题2
+  const dirPath = path.join(docPath, title); // 图片存放位置
+  const prefixKey = path.relative(docPath, dirPath); // 图片前缀
+  // 必须返回这两个字段
+  return {
+    dirPath,
+    prefixKey,
+  };
+};
+
+module.exports = {
+  getImagePath,
+};
+```
 
 ## 腾讯云（cos）/阿里云（oss）/七牛云（qiniu）
 
