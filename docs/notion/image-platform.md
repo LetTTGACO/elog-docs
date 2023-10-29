@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-10-29T10:04:00.000Z"
+上次编辑时间: "2023-10-29T10:11:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: "2023-10-13 05:24:00"
-updated: "2023-10-29 10:04:00"
+updated: "2023-10-29 10:11:00"
 ---
 
 # 图床平台配置
@@ -69,13 +69,15 @@ const getImagePath = (doc, outputDir) => {
   // 当前文档其他属性
   // 具体可查看elog.cache.json文件docs中的结构
   const properties = doc.properties;
-  // 假设文档标题为【标题1】，文档存放路径docPath为：docs/yuque
-  // 那么图片存放位置dirPath为: docs/yuque/标题1/
-  // 文档图片前缀prefixKey为: ./标题1
+  // 根据自己的计算，返回该文档中图片的存放位置
+  // 图片存放根目录outputDir为：docs/images
+  // 假设文档标题为【标题1】，文档存放路径docPath为: docs/yuque
+  // 那么图片存放位置dirPath为: docs/images/标题1
+  // 文档图片前缀prefixKey为: ./images/标题1
 
-  // 假设文档标题为【标题2】，文档存放路径docPath为：docs/yuque/首页文件夹
-  // 那么图片存放位置dirPath为:docs/yuque/标题2/
-  // 文档图片前缀prefixKey为../标题2
+  // 假设文档标题为【标题2】，文档存放路径docPath为: docs/yuque/一级文件夹
+  // 那么图片存放位置dirPath为: docs/images/标题2/
+  // 文档图片前缀prefixKey为: ../images/标题2
   const dirPath = path.join(outputDir, title);
   const prefixKey = path.relative(docPath, dirPath);
   // 必须返回这两个字段
