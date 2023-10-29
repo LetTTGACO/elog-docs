@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-10-29T09:37:00.000Z"
+上次编辑时间: "2023-10-29T10:04:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: "2023-10-13 05:24:00"
-updated: "2023-10-29 09:37:00"
+updated: "2023-10-29 10:04:00"
 ---
 
 # 图床平台配置
@@ -40,7 +40,7 @@ updated: "2023-10-29 09:37:00"
 
 图片**统一**输出目录(`outputDir`)为 `./docs/images`
 
-则图片在文档 A 中的路径应为`../../images/test.jpg`
+则图片在文档 A 中的路径应为`../images/test.jpg`
 
 ### imagePathExt 字段说明
 
