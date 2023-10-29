@@ -6,8 +6,8 @@ urlname: deploy-platform
 catalog: 配置详情
 tags: Elog-Docs
 title: 部署平台配置
-date: "2023-10-13 05:21:00"
-updated: "2023-10-20 09:40:00"
+date: "2023-10-13 13:21:00"
+updated: "2023-10-20 17:40:00"
 ---
 
 # 部署平台配置

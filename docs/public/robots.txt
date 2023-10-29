@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://elog.1874.cool/sitemap.xml

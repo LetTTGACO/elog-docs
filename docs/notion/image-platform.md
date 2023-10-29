@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-10-29T10:11:00.000Z"
+上次编辑时间: "2023-10-29T10:33:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
-date: "2023-10-13 05:24:00"
-updated: "2023-10-29 10:11:00"
+date: "2023-10-13 13:24:00"
+updated: "2023-10-29 18:33:00"
 ---
 
 # 图床平台配置
@@ -62,7 +62,7 @@ const path = require("path");
  * @return {dirPath: string, prefixKey: string} 返回处理后图片存放地址dirPath和文档中图片的前缀prefixKey
  */
 const getImagePath = (doc, outputDir) => {
-  // 当前文档文档的存在路径，例如：docs/yuque
+  // 当前文档的存在路径，例如：docs/yuque
   const docPath = doc.docPath;
   // 当前文档标题
   const title = doc.properties.title;

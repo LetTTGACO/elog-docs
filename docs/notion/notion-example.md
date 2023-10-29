@@ -6,8 +6,8 @@ urlname: notion-example
 catalog: 功能和API适配情况
 tags: Elog-Docs
 title: Notion示例文章
-date: "2023-04-26 12:37:00"
-updated: "2023-10-13 05:53:00"
+date: "2023-04-26 20:37:00"
+updated: "2023-10-13 13:53:00"
 ---
 
 # Notion-Markdown
@@ -91,7 +91,7 @@ Notion 示例文章的子页面
 
 [bookmark](https://elog.1874.cool)
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231013%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231013T061938Z&X-Amz-Expires=3600&X-Amz-Signature=056cea036a814a1d5eba2a194d5c2ec8ddf1adb87b4a987d412026327191632d&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231029T103804Z&X-Amz-Expires=3600&X-Amz-Signature=80e287336d218b97babab958ad825e4095c698c555628ca43574a2ee94a8f910&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ```python
 pwd='123456'
@@ -101,7 +101,7 @@ print(f"password={pwd!r}")
 #password='123456'
 ```
 
-[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231013%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231013T061938Z&X-Amz-Expires=3600&X-Amz-Signature=2b414f63dd386aa8773276f3dee7f4d9219601af2c83b391a78608214fa324aa&X-Amz-SignedHeaders=host&x-id=GetObject)
+[image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231029T103804Z&X-Amz-Expires=3600&X-Amz-Signature=f8932eb468d9a2912770ba2c06296a636006cd155ce6c64e2e97686be27db14c&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## DataBase（数据库）
 

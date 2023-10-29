@@ -6,8 +6,8 @@ urlname: gvnxobqogetukays
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
-date: "2023-04-06 13:31:00"
-updated: "2023-10-26 09:30:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-10-26 17:30:00"
 ---
 
 # 关键信息获取

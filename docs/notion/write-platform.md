@@ -6,8 +6,8 @@ urlname: write-platform
 catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
-date: "2023-10-13 05:14:00"
-updated: "2023-10-29 09:22:00"
+date: "2023-10-13 13:14:00"
+updated: "2023-10-29 17:22:00"
 ---
 
 # 写作平台配置

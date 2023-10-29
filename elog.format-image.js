@@ -19,11 +19,11 @@ const getImagePath = (doc, outputDir) => {
   // 图片存放根目录为：docs/images
   // 假设文档标题为【标题1】，文档存放路径为docs/feishu-wiki
   // 那么图片存放位置为:docs/images/标题1/
-  // 文档图片前缀为./标题1
+  // 文档图片前缀为./images/标题1
 
   // 假设文档标题为【标题2】，文档存放路径为docs/feishu-wiki/首页文件夹
   // 那么图片存放位置为:docs/images/标题2/
-  // 文档图片前缀为../标题2
+  // 文档图片前缀为../images/标题2
 
   // const dirPath = path.join(docPath, title)
   const dirPath = path.join(outputDir, title)

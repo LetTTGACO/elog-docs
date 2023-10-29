@@ -1,342 +1,6 @@
 {
   "docs": [
     {
-      "id": 122903274,
-      "doc_id": "notion-example",
-      "updated": 1682314437000,
-      "properties": {
-        "title": "Notion示例文章",
-        "urlname": "notion-example",
-        "date": "2023-04-24 13:08:29",
-        "updated": "2023-04-24 13:33:57",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "功能和API适配情况",
-          "doc_id": "notion-example"
-        }
-      ],
-      "realName": "notion-example",
-      "relativePath": "/notion-example.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 122903263,
-      "doc_id": "yuque-example",
-      "updated": 1683126654000,
-      "properties": {
-        "title": "语雀示例文章",
-        "urlname": "yuque-example",
-        "date": "2023-04-24 13:08:11",
-        "updated": "2023-05-03 23:10:54",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "功能和API适配情况",
-          "doc_id": "yuque-example"
-        }
-      ],
-      "realName": "yuque-example",
-      "relativePath": "/yuque-example.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 117967328,
-      "doc_id": "yuque-markdown",
-      "updated": 1682525252000,
-      "properties": {
-        "title": "语雀-Markdown",
-        "urlname": "yuque-markdown",
-        "date": "2023-03-14 21:10:45",
-        "updated": "2023-04-27 00:07:32",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "功能和API适配情况",
-          "doc_id": "yuque-markdown"
-        }
-      ],
-      "realName": "yuque-markdown",
-      "relativePath": "/yuque-markdown.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 123208837,
-      "doc_id": "notion-markdown",
-      "updated": 1682517236000,
-      "properties": {
-        "title": "Notion-Markdown",
-        "urlname": "notion-markdown",
-        "date": "2023-04-26 21:51:50",
-        "updated": "2023-04-26 21:53:56",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "功能和API适配情况",
-          "doc_id": "notion-markdown"
-        }
-      ],
-      "realName": "notion-markdown",
-      "relativePath": "/notion-markdown.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 114442049,
-      "doc_id": "vy55q9xwlqlsfrvk",
-      "updated": 1690902254000,
-      "properties": {
-        "title": "持续集成",
-        "urlname": "vy55q9xwlqlsfrvk",
-        "date": "2023-02-14 13:06:31",
-        "updated": "2023-08-01 23:04:14",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "进阶玩法",
-          "doc_id": "vy55q9xwlqlsfrvk"
-        }
-      ],
-      "realName": "vy55q9xwlqlsfrvk",
-      "relativePath": "/vy55q9xwlqlsfrvk.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113938704,
-      "doc_id": "ubcut43kgf97fag6",
-      "updated": 1683194890000,
-      "properties": {
-        "title": "最佳实践",
-        "urlname": "ubcut43kgf97fag6",
-        "date": "2023-02-09 15:56:35",
-        "updated": "2023-05-04 18:08:10",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "社区生态",
-          "doc_id": "ubcut43kgf97fag6"
-        }
-      ],
-      "realName": "ubcut43kgf97fag6",
-      "relativePath": "/ubcut43kgf97fag6.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113927217,
-      "doc_id": "te7ash7ybckgi60w",
-      "updated": 1682098399000,
-      "properties": {
-        "title": "示例配置",
-        "urlname": "te7ash7ybckgi60w",
-        "date": "2023-02-09 15:10:18",
-        "updated": "2023-04-22 01:33:19",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "入门指引",
-          "doc_id": "te7ash7ybckgi60w"
-        }
-      ],
-      "realName": "te7ash7ybckgi60w",
-      "relativePath": "/te7ash7ybckgi60w.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113906683,
-      "doc_id": "gvnxobqogetukays",
-      "updated": 1698202022000,
-      "properties": {
-        "title": "关键信息获取",
-        "urlname": "gvnxobqogetukays",
-        "date": "2023-02-09 13:32:10",
-        "updated": "2023-10-25 10:47:02",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "入门指引",
-          "doc_id": "gvnxobqogetukays"
-        }
-      ],
-      "realName": "gvnxobqogetukays",
-      "relativePath": "/gvnxobqogetukays.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113693555,
-      "doc_id": "bry3d3lwe206xuor",
-      "updated": 1682268307000,
-      "properties": {
-        "title": "CLI 命令",
-        "urlname": "bry3d3lwe206xuor",
-        "date": "2023-02-07 22:16:56",
-        "updated": "2023-04-24 00:45:07",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "入门指引",
-          "doc_id": "bry3d3lwe206xuor"
-        }
-      ],
-      "realName": "bry3d3lwe206xuor",
-      "relativePath": "/bry3d3lwe206xuor.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113891385,
-      "doc_id": "raqyleng501h23p1",
-      "updated": 1682100083000,
-      "properties": {
-        "title": "Front Matter",
-        "urlname": "raqyleng501h23p1",
-        "date": "2023-02-09 11:31:45",
-        "updated": "2023-04-22 02:01:23",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "进阶玩法",
-          "doc_id": "raqyleng501h23p1"
-        }
-      ],
-      "realName": "raqyleng501h23p1",
-      "relativePath": "/raqyleng501h23p1.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113665139,
-      "doc_id": "zuzvbv2lqhvllgit",
-      "updated": 1683129945000,
-      "properties": {
-        "title": "Features",
-        "urlname": "zuzvbv2lqhvllgit",
-        "date": "2023-02-07 17:42:12",
-        "updated": "2023-05-04 00:05:45",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "关于Elog",
-          "doc_id": "zuzvbv2lqhvllgit"
-        }
-      ],
-      "realName": "zuzvbv2lqhvllgit",
-      "relativePath": "/zuzvbv2lqhvllgit.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113663727,
-      "doc_id": "cq6p8hxizn1ogwgm",
-      "updated": 1683129953000,
-      "properties": {
-        "title": "Elog 更新日志",
-        "urlname": "cq6p8hxizn1ogwgm",
-        "date": "2023-02-07 17:35:09",
-        "updated": "2023-05-04 00:05:53",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "关于Elog",
-          "doc_id": "cq6p8hxizn1ogwgm"
-        }
-      ],
-      "realName": "cq6p8hxizn1ogwgm",
-      "relativePath": "/cq6p8hxizn1ogwgm.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 113663948,
-      "doc_id": "la9toqncox96kfp8",
-      "updated": 1680684696000,
-      "properties": {
-        "title": "沟通与反馈",
-        "urlname": "la9toqncox96kfp8",
-        "date": "2023-02-07 17:35:59",
-        "updated": "2023-04-05 16:51:36",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "关于Elog",
-          "doc_id": "la9toqncox96kfp8"
-        }
-      ],
-      "realName": "la9toqncox96kfp8",
-      "relativePath": "/la9toqncox96kfp8.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 108094686,
-      "doc_id": "xe160pqsumi6bqnz",
-      "updated": 1683127385000,
-      "properties": {
-        "title": "按目录存放文档",
-        "urlname": "xe160pqsumi6bqnz",
-        "date": "2022-12-02 13:12:49",
-        "updated": "2023-05-03 23:23:05",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "进阶玩法",
-          "doc_id": "xe160pqsumi6bqnz"
-        }
-      ],
-      "realName": "xe160pqsumi6bqnz",
-      "relativePath": "/xe160pqsumi6bqnz.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 107712908,
-      "doc_id": "start",
-      "updated": 1698575639000,
-      "properties": {
-        "title": "快速开始",
-        "urlname": "start",
-        "date": "2022-11-29 13:40:54",
-        "updated": "2023-10-29 18:33:59",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "入门指引",
-          "doc_id": "start"
-        }
-      ],
-      "realName": "start",
-      "relativePath": "/start.md",
-      "docPath": "./docs/yuque"
-    },
-    {
-      "id": 107712840,
-      "doc_id": "introduce",
-      "updated": 1682142528000,
-      "properties": {
-        "title": "Elog 能干什么",
-        "urlname": "introduce",
-        "date": "2022-11-29 13:40:18",
-        "updated": "2023-04-22 13:48:48",
-        "author": "1874"
-      },
-      "catalog": [
-        {
-          "title": "关于Elog",
-          "doc_id": "introduce"
-        }
-      ],
-      "realName": "introduce",
-      "relativePath": "/introduce.md",
-      "docPath": "./docs/yuque"
-    },
-    {
       "id": 108093222,
       "doc_id": "fe8ywmt999gon12w",
       "updated": 1687768031000,
@@ -344,8 +8,7 @@
         "title": "配置详情",
         "urlname": "fe8ywmt999gon12w",
         "date": "2022-12-02 12:45:52",
-        "updated": "2023-06-26 16:27:11",
-        "author": "1874"
+        "updated": "2023-06-26 16:27:11"
       },
       "catalog": [
         {
@@ -355,7 +18,327 @@
       ],
       "realName": "fe8ywmt999gon12w",
       "relativePath": "/fe8ywmt999gon12w.md",
-      "docPath": "./docs/yuque"
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 114442049,
+      "doc_id": "vy55q9xwlqlsfrvk",
+      "updated": 1690902254000,
+      "properties": {
+        "title": "持续集成",
+        "urlname": "vy55q9xwlqlsfrvk",
+        "date": "2023-02-14 13:06:31",
+        "updated": "2023-08-01 23:04:14"
+      },
+      "catalog": [
+        {
+          "title": "进阶玩法",
+          "doc_id": "vy55q9xwlqlsfrvk"
+        }
+      ],
+      "realName": "vy55q9xwlqlsfrvk",
+      "relativePath": "/vy55q9xwlqlsfrvk.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 107712908,
+      "doc_id": "start",
+      "updated": 1698575639000,
+      "properties": {
+        "title": "快速开始",
+        "urlname": "start",
+        "date": "2022-11-29 13:40:54",
+        "updated": "2023-10-29 18:33:59"
+      },
+      "catalog": [
+        {
+          "title": "入门指引",
+          "doc_id": "start"
+        }
+      ],
+      "realName": "start",
+      "relativePath": "/start.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113938704,
+      "doc_id": "ubcut43kgf97fag6",
+      "updated": 1683194890000,
+      "properties": {
+        "title": "最佳实践",
+        "urlname": "ubcut43kgf97fag6",
+        "date": "2023-02-09 15:56:35",
+        "updated": "2023-05-04 18:08:10"
+      },
+      "catalog": [
+        {
+          "title": "社区生态",
+          "doc_id": "ubcut43kgf97fag6"
+        }
+      ],
+      "realName": "ubcut43kgf97fag6",
+      "relativePath": "/ubcut43kgf97fag6.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113663727,
+      "doc_id": "cq6p8hxizn1ogwgm",
+      "updated": 1683129953000,
+      "properties": {
+        "title": "Elog 更新日志",
+        "urlname": "cq6p8hxizn1ogwgm",
+        "date": "2023-02-07 17:35:09",
+        "updated": "2023-05-04 00:05:53"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "cq6p8hxizn1ogwgm"
+        }
+      ],
+      "realName": "cq6p8hxizn1ogwgm",
+      "relativePath": "/cq6p8hxizn1ogwgm.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113665139,
+      "doc_id": "zuzvbv2lqhvllgit",
+      "updated": 1683129945000,
+      "properties": {
+        "title": "Features",
+        "urlname": "zuzvbv2lqhvllgit",
+        "date": "2023-02-07 17:42:12",
+        "updated": "2023-05-04 00:05:45"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "zuzvbv2lqhvllgit"
+        }
+      ],
+      "realName": "zuzvbv2lqhvllgit",
+      "relativePath": "/zuzvbv2lqhvllgit.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 108094686,
+      "doc_id": "xe160pqsumi6bqnz",
+      "updated": 1683127385000,
+      "properties": {
+        "title": "按目录存放文档",
+        "urlname": "xe160pqsumi6bqnz",
+        "date": "2022-12-02 13:12:49",
+        "updated": "2023-05-03 23:23:05"
+      },
+      "catalog": [
+        {
+          "title": "进阶玩法",
+          "doc_id": "xe160pqsumi6bqnz"
+        }
+      ],
+      "realName": "xe160pqsumi6bqnz",
+      "relativePath": "/xe160pqsumi6bqnz.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 122903263,
+      "doc_id": "yuque-example",
+      "updated": 1683126654000,
+      "properties": {
+        "title": "语雀示例文章",
+        "urlname": "yuque-example",
+        "date": "2023-04-24 13:08:11",
+        "updated": "2023-05-03 23:10:54"
+      },
+      "catalog": [
+        {
+          "title": "功能和API适配情况",
+          "doc_id": "yuque-example"
+        }
+      ],
+      "realName": "yuque-example",
+      "relativePath": "/yuque-example.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 117967328,
+      "doc_id": "yuque-markdown",
+      "updated": 1682525252000,
+      "properties": {
+        "title": "语雀-Markdown",
+        "urlname": "yuque-markdown",
+        "date": "2023-03-14 21:10:45",
+        "updated": "2023-04-27 00:07:32"
+      },
+      "catalog": [
+        {
+          "title": "功能和API适配情况",
+          "doc_id": "yuque-markdown"
+        }
+      ],
+      "realName": "yuque-markdown",
+      "relativePath": "/yuque-markdown.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 123208837,
+      "doc_id": "notion-markdown",
+      "updated": 1682517236000,
+      "properties": {
+        "title": "Notion-Markdown",
+        "urlname": "notion-markdown",
+        "date": "2023-04-26 21:51:50",
+        "updated": "2023-04-26 21:53:56"
+      },
+      "catalog": [
+        {
+          "title": "功能和API适配情况",
+          "doc_id": "notion-markdown"
+        }
+      ],
+      "realName": "notion-markdown",
+      "relativePath": "/notion-markdown.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113906683,
+      "doc_id": "gvnxobqogetukays",
+      "updated": 1698202022000,
+      "properties": {
+        "title": "关键信息获取",
+        "urlname": "gvnxobqogetukays",
+        "date": "2023-02-09 13:32:10",
+        "updated": "2023-10-25 10:47:02"
+      },
+      "catalog": [
+        {
+          "title": "入门指引",
+          "doc_id": "gvnxobqogetukays"
+        }
+      ],
+      "realName": "gvnxobqogetukays",
+      "relativePath": "/gvnxobqogetukays.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 122903274,
+      "doc_id": "notion-example",
+      "updated": 1682314437000,
+      "properties": {
+        "title": "Notion示例文章",
+        "urlname": "notion-example",
+        "date": "2023-04-24 13:08:29",
+        "updated": "2023-04-24 13:33:57"
+      },
+      "catalog": [
+        {
+          "title": "功能和API适配情况",
+          "doc_id": "notion-example"
+        }
+      ],
+      "realName": "notion-example",
+      "relativePath": "/notion-example.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113693555,
+      "doc_id": "bry3d3lwe206xuor",
+      "updated": 1682268307000,
+      "properties": {
+        "title": "CLI 命令",
+        "urlname": "bry3d3lwe206xuor",
+        "date": "2023-02-07 22:16:56",
+        "updated": "2023-04-24 00:45:07"
+      },
+      "catalog": [
+        {
+          "title": "入门指引",
+          "doc_id": "bry3d3lwe206xuor"
+        }
+      ],
+      "realName": "bry3d3lwe206xuor",
+      "relativePath": "/bry3d3lwe206xuor.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 107712840,
+      "doc_id": "introduce",
+      "updated": 1682142528000,
+      "properties": {
+        "title": "Elog 能干什么",
+        "urlname": "introduce",
+        "date": "2022-11-29 13:40:18",
+        "updated": "2023-04-22 13:48:48"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "introduce"
+        }
+      ],
+      "realName": "introduce",
+      "relativePath": "/introduce.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113891385,
+      "doc_id": "raqyleng501h23p1",
+      "updated": 1682100083000,
+      "properties": {
+        "title": "Front Matter",
+        "urlname": "raqyleng501h23p1",
+        "date": "2023-02-09 11:31:45",
+        "updated": "2023-04-22 02:01:23"
+      },
+      "catalog": [
+        {
+          "title": "进阶玩法",
+          "doc_id": "raqyleng501h23p1"
+        }
+      ],
+      "realName": "raqyleng501h23p1",
+      "relativePath": "/raqyleng501h23p1.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113927217,
+      "doc_id": "te7ash7ybckgi60w",
+      "updated": 1682098399000,
+      "properties": {
+        "title": "示例配置",
+        "urlname": "te7ash7ybckgi60w",
+        "date": "2023-02-09 15:10:18",
+        "updated": "2023-04-22 01:33:19"
+      },
+      "catalog": [
+        {
+          "title": "入门指引",
+          "doc_id": "te7ash7ybckgi60w"
+        }
+      ],
+      "realName": "te7ash7ybckgi60w",
+      "relativePath": "/te7ash7ybckgi60w.md",
+      "docPath": "./docs/yuque-pwd"
+    },
+    {
+      "id": 113663948,
+      "doc_id": "la9toqncox96kfp8",
+      "updated": 1680684696000,
+      "properties": {
+        "title": "沟通与反馈",
+        "urlname": "la9toqncox96kfp8",
+        "date": "2023-02-07 17:35:59",
+        "updated": "2023-04-05 16:51:36"
+      },
+      "catalog": [
+        {
+          "title": "关于Elog",
+          "doc_id": "la9toqncox96kfp8"
+        }
+      ],
+      "realName": "la9toqncox96kfp8",
+      "relativePath": "/la9toqncox96kfp8.md",
+      "docPath": "./docs/yuque-pwd"
     }
   ],
   "catalog": [
@@ -371,9 +354,7 @@
       "open_window": 1,
       "visible": 1,
       "child_uuid": "jpTcZgfVyKy4YBBY",
-      "sibling_uuid": "mqnrHmVyj2SptIu-",
-      "depth": 1,
-      "slug": "#"
+      "sibling_uuid": "mqnrHmVyj2SptIu-"
     },
     {
       "type": "DOC",
@@ -387,9 +368,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "5Z1oRyzOg4duQnlJ",
-      "sibling_uuid": "LRnmwXl8VY07hYnh",
-      "depth": 2,
-      "slug": "introduce"
+      "sibling_uuid": "LRnmwXl8VY07hYnh"
     },
     {
       "type": "DOC",
@@ -403,9 +382,7 @@
       "open_window": 1,
       "visible": 1,
       "prev_uuid": "jpTcZgfVyKy4YBBY",
-      "sibling_uuid": "8hOlOfsfjQYSIjjY",
-      "depth": 2,
-      "slug": "zuzvbv2lqhvllgit"
+      "sibling_uuid": "8hOlOfsfjQYSIjjY"
     },
     {
       "type": "DOC",
@@ -419,9 +396,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "LRnmwXl8VY07hYnh",
-      "sibling_uuid": "ZfN4i2eB_NsN102V",
-      "depth": 2,
-      "slug": "cq6p8hxizn1ogwgm"
+      "sibling_uuid": "ZfN4i2eB_NsN102V"
     },
     {
       "type": "DOC",
@@ -434,9 +409,7 @@
       "id": 113663948,
       "open_window": 0,
       "visible": 1,
-      "prev_uuid": "8hOlOfsfjQYSIjjY",
-      "depth": 2,
-      "slug": "la9toqncox96kfp8"
+      "prev_uuid": "8hOlOfsfjQYSIjjY"
     },
     {
       "type": "TITLE",
@@ -451,9 +424,7 @@
       "visible": 1,
       "prev_uuid": "5Z1oRyzOg4duQnlJ",
       "child_uuid": "bYYqP0FNnLjeZlYM",
-      "sibling_uuid": "IRlxU8BN3QGe27pc",
-      "depth": 1,
-      "slug": "#"
+      "sibling_uuid": "IRlxU8BN3QGe27pc"
     },
     {
       "type": "DOC",
@@ -467,9 +438,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "mqnrHmVyj2SptIu-",
-      "sibling_uuid": "gOgF1H4SqpHzb7UO",
-      "depth": 2,
-      "slug": "start"
+      "sibling_uuid": "gOgF1H4SqpHzb7UO"
     },
     {
       "type": "DOC",
@@ -483,9 +452,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "bYYqP0FNnLjeZlYM",
-      "sibling_uuid": "I8CjT1JSywVxa8X4",
-      "depth": 2,
-      "slug": "fe8ywmt999gon12w"
+      "sibling_uuid": "I8CjT1JSywVxa8X4"
     },
     {
       "type": "DOC",
@@ -499,9 +466,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "gOgF1H4SqpHzb7UO",
-      "sibling_uuid": "iGeJmpy-GdWzUrB3",
-      "depth": 2,
-      "slug": "gvnxobqogetukays"
+      "sibling_uuid": "iGeJmpy-GdWzUrB3"
     },
     {
       "type": "DOC",
@@ -515,9 +480,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "I8CjT1JSywVxa8X4",
-      "sibling_uuid": "z_0X6jh9moMe9yCN",
-      "depth": 2,
-      "slug": "bry3d3lwe206xuor"
+      "sibling_uuid": "z_0X6jh9moMe9yCN"
     },
     {
       "type": "DOC",
@@ -530,9 +493,7 @@
       "id": 113927217,
       "open_window": 0,
       "visible": 1,
-      "prev_uuid": "iGeJmpy-GdWzUrB3",
-      "depth": 2,
-      "slug": "te7ash7ybckgi60w"
+      "prev_uuid": "iGeJmpy-GdWzUrB3"
     },
     {
       "type": "TITLE",
@@ -547,9 +508,7 @@
       "visible": 1,
       "prev_uuid": "mqnrHmVyj2SptIu-",
       "child_uuid": "I27Jt1Utz-2VDG-o",
-      "sibling_uuid": "lyiqodb0OvCLERDP",
-      "depth": 1,
-      "slug": "#"
+      "sibling_uuid": "lyiqodb0OvCLERDP"
     },
     {
       "type": "DOC",
@@ -563,9 +522,7 @@
       "open_window": 1,
       "visible": 1,
       "prev_uuid": "IRlxU8BN3QGe27pc",
-      "sibling_uuid": "3pB2syLXWB1aQXff",
-      "depth": 2,
-      "slug": "yuque-markdown"
+      "sibling_uuid": "3pB2syLXWB1aQXff"
     },
     {
       "type": "DOC",
@@ -579,9 +536,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "I27Jt1Utz-2VDG-o",
-      "sibling_uuid": "QgRZrnNVasTxZNK4",
-      "depth": 2,
-      "slug": "yuque-example"
+      "sibling_uuid": "QgRZrnNVasTxZNK4"
     },
     {
       "type": "DOC",
@@ -595,9 +550,7 @@
       "open_window": 1,
       "visible": 1,
       "prev_uuid": "3pB2syLXWB1aQXff",
-      "sibling_uuid": "6kdipu5_TupYyiBv",
-      "depth": 2,
-      "slug": "notion-markdown"
+      "sibling_uuid": "6kdipu5_TupYyiBv"
     },
     {
       "type": "DOC",
@@ -610,9 +563,7 @@
       "id": 122903274,
       "open_window": 0,
       "visible": 1,
-      "prev_uuid": "QgRZrnNVasTxZNK4",
-      "depth": 2,
-      "slug": "notion-example"
+      "prev_uuid": "QgRZrnNVasTxZNK4"
     },
     {
       "type": "TITLE",
@@ -627,9 +578,7 @@
       "visible": 1,
       "prev_uuid": "IRlxU8BN3QGe27pc",
       "child_uuid": "PodABt8fdN6YOzWq",
-      "sibling_uuid": "M8ZIXs2Fu5_wwl7x",
-      "depth": 1,
-      "slug": "#"
+      "sibling_uuid": "M8ZIXs2Fu5_wwl7x"
     },
     {
       "type": "DOC",
@@ -643,9 +592,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "lyiqodb0OvCLERDP",
-      "sibling_uuid": "GFB9vN2HAvU5ypOT",
-      "depth": 2,
-      "slug": "raqyleng501h23p1"
+      "sibling_uuid": "GFB9vN2HAvU5ypOT"
     },
     {
       "type": "DOC",
@@ -659,9 +606,7 @@
       "open_window": 0,
       "visible": 1,
       "prev_uuid": "PodABt8fdN6YOzWq",
-      "sibling_uuid": "bril42Wm2oE7t9e2",
-      "depth": 2,
-      "slug": "xe160pqsumi6bqnz"
+      "sibling_uuid": "bril42Wm2oE7t9e2"
     },
     {
       "type": "DOC",
@@ -674,9 +619,7 @@
       "id": 114442049,
       "open_window": 0,
       "visible": 1,
-      "prev_uuid": "GFB9vN2HAvU5ypOT",
-      "depth": 2,
-      "slug": "vy55q9xwlqlsfrvk"
+      "prev_uuid": "GFB9vN2HAvU5ypOT"
     },
     {
       "type": "TITLE",
@@ -690,9 +633,7 @@
       "open_window": 1,
       "visible": 1,
       "prev_uuid": "lyiqodb0OvCLERDP",
-      "child_uuid": "AXqI0yA4DwjHEnMy",
-      "depth": 1,
-      "slug": "#"
+      "child_uuid": "AXqI0yA4DwjHEnMy"
     },
     {
       "type": "DOC",
@@ -705,9 +646,7 @@
       "id": 113938704,
       "open_window": 0,
       "visible": 1,
-      "prev_uuid": "M8ZIXs2Fu5_wwl7x",
-      "depth": 2,
-      "slug": "ubcut43kgf97fag6"
+      "prev_uuid": "M8ZIXs2Fu5_wwl7x"
     }
   ]
 }

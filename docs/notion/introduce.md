@@ -6,8 +6,8 @@ urlname: introduce
 catalog: 关于Elog
 tags: Elog-Docs
 title: Elog 能干什么
-date: "2023-04-06 13:31:00"
-updated: "2023-10-13 16:47:00"
+date: "2023-04-06 21:31:00"
+updated: "2023-10-14 00:47:00"
 ---
 
 # Elog 能干什么
