@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-10-29T09:09:00.000Z"
+上次编辑时间: "2023-10-29T09:16:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: "2023-10-13 05:24:00"
-updated: "2023-10-29 09:09:00"
+updated: "2023-10-29 09:16:00"
 ---
 
 # 图床平台配置
@@ -16,12 +16,12 @@ updated: "2023-10-29 09:09:00"
 
 ## 本地存储（local）
 
-| 字段          | 必填 | 说明             | 默认值 |
-| ------------- | ---- | ---------------- | ------ |
-| outputDir     | 是   | 图片输出目录     | -      |
-| prefixKey     | 否   | 图片资源统一前缀 | -      |
-| pathFollowDoc | 否   | 路径根据文档计算 | false  |
-| imagePathExt  | 否   | 图片路径拓展点   | -      |
+| 字段          | 必填 | 类型    | 说明             | 默认值 |
+| ------------- | ---- | ------- | ---------------- | ------ |
+| outputDir     | 是   | string  | 图片输出目录     | -      |
+| prefixKey     | 否   | string  | 图片资源统一前缀 | -      |
+| pathFollowDoc | 否   | boolean | 路径根据文档计算 | false  |
+| imagePathExt  | 否   | string  | 图片路径拓展点   | -      |
 
 ### prefixKey 字段说明
 
