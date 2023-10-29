@@ -2,17 +2,17 @@
 status: 已发布
 sort: 210
 urlname: raqyleng501h23p1
-上次编辑时间: "2023-10-13T15:45:00.000Z"
+上次编辑时间: "2023-10-28T04:50:00.000Z"
 catalog: 进阶玩法
 tags: Elog-Docs
 title: Front Matter
 date: "2023-04-06 13:31:00"
-updated: "2023-10-13 15:45:00"
+updated: "2023-10-28 04:50:00"
 ---
 
 # Front Matter
 
-Elog 会将用户自定义的 `front matter` 和 预定义属性合并后，输出新的带有 `front matter` 的 Markdown 文档。 任何包含 `YAML front matter` 的 Markdown 文件都将由 [front-matter](https://www.npmjs.com/package/front-matter) 处理。`front matter` 必须是 Markdown 文件中的第一部分，Elog 只支持在三点划线之间书写的有效的 YAML。 这是一个基本的例子：
+Elog 会将用户自定义的 `front matter` 和 **预定义属性**合并后，输出新的带有 `front matter` 的 Markdown 文档。 任何包含 `YAML front matter` 的 Markdown 文件都将由 [front-matter](https://www.npmjs.com/package/front-matter) 处理。`front matter` 必须是 Markdown 文件中的第一部分，Elog 只支持在三点划线之间书写的有效的 YAML。 这是一个基本的例子：
 
 ```text
 ---
@@ -28,8 +28,7 @@ tags:
 
 如果需要生成的 markdown 文件具有 `front matter`，需要在配置文件中配置`deploy.local.format=matter-markdown`
 
-> 当写作平台为 Notion/FlowUs 时，同时需要在写作平台配置中设置`catalog=true`  
-> 手动在指定文档的 `YAML front matter` **适用于语雀和飞书**，Notion/FlowUs 可以直接添加数据库属性，不需要手动指定。
+> 手动在指定文档的 `YAML front matter` **适用于语雀和飞书**，Notion/FlowUs 可以直接添加数据库属性，不需要在文档中手动指定。
 
 ## 预定义属性
 
