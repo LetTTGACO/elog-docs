@@ -19,15 +19,10 @@ module.exports = {
   },
   image: {
     enable: true,
-    platform: 'cos',
-    cos: {
-      secretId: process.env.COS_SECRET_ID,
-      secretKey: process.env.COS_SECRET_KEY,
-      bucket: process.env.COS_IMAGE_BUCKET,
-      region: process.env.COS_IMAGE_REGION,
-      host: process.env.COS_HOST,
-      prefixKey: 'elog-docs-images',
-      secretExt: '', // 可选
+    platform: 'local',
+    local: {
+      outputDir: 'docs/feishu-wiki/images',
+      imagePathExt: './elog.format-image.js'
     }
   },
 }
