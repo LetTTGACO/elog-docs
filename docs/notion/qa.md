@@ -2,12 +2,12 @@
 status: 已发布
 sort: 50
 urlname: qa
-上次编辑时间: "2023-10-24T13:14:00.000Z"
+上次编辑时间: "2023-10-30T12:56:00.000Z"
 catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
-date: "2023-07-23 03:37:00"
-updated: "2023-10-24 21:14:00"
+date: "2023-07-22 19:37:00"
+updated: "2023-10-30 12:56:00"
 ---
 
 # 常见问题
@@ -33,6 +33,19 @@ elog 默认为增量更新，只有该文档重新修改过，再次同步时，
 
 1. 运行 `elog clean`，Elog 将会自动清除所有文档、本地图片、缓存文件`(elog.cache.json)`
 2. `elog.cache.json`为 Elog 增量同步的关键，可**手动删除**此文件，推荐同时手动删除所有文档、本地图片
+
+## 如何升级 Elog 到指定版本
+
+1. 直接运行`elog upgrade`更新全局 Elog 版本到最新正式版本
+2. 如果你是通过包管理工具（`npm/yarn/pnpm`）安装的 Elog，则直接重新安装并指定版本号
+
+```shell
+npm install @elog/cli@0.9.0
+# 也可以指定测试版本号
+npm install @elog/cli@0.9.0-beta.8
+```
+
+1. 如果你是将 Elog 安装在 `package.json` 中，则直接修改`package.json`中的`@elog/cli`版本号
 
 ## 如何同步多个知识库/数据表
 
