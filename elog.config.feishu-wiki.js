@@ -11,7 +11,7 @@ module.exports = {
   deploy: {
     platform: 'local',
     local: {
-      outputDir: './docs/feishu-wiki',
+      outputDir: './docs/feishu-wiki/docs',
       filename: 'title',
       format: 'matter-markdown',
       catalog: true,

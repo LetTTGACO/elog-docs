@@ -1,6 +1,41 @@
 {
   "docs": [
     {
+      "id": "LqyhdtszdoQ9zDxgJyGc1zvSnle",
+      "doc_id": "LqyhdtszdoQ9zDxgJyGc1zvSnle",
+      "updated": 1695867720000,
+      "properties": {
+        "title": "首页",
+        "urlname": "LqyhdtszdoQ9zDxgJyGc1zvSnle",
+        "date": "2023-09-28 10:22:00",
+        "updated": "2023-09-28 10:22:00"
+      },
+      "catalog": [],
+      "realName": "首页",
+      "relativePath": "/首页.md",
+      "docPath": "docs/feishu-wiki/docs"
+    },
+    {
+      "id": "NgbPdmXQCoWRyAxHcGzclw7Ynqb",
+      "doc_id": "NgbPdmXQCoWRyAxHcGzclw7Ynqb",
+      "updated": 1698429414000,
+      "properties": {
+        "title": "首页下的文档",
+        "urlname": "NgbPdmXQCoWRyAxHcGzclw7Ynqb",
+        "date": "2023-10-25 13:33:14",
+        "updated": "2023-10-28 01:56:54"
+      },
+      "catalog": [
+        {
+          "title": "首页",
+          "doc_id": "LqyhdtszdoQ9zDxgJyGc1zvSnle"
+        }
+      ],
+      "realName": "首页下的文档",
+      "relativePath": "/首页/首页下的文档.md",
+      "docPath": "docs/feishu-wiki/docs/首页"
+    },
+    {
       "id": "Hwzyd1g0QogX7gxt1NIcvVFGnUc",
       "doc_id": "Hwzyd1g0QogX7gxt1NIcvVFGnUc",
       "updated": 1698429411000,
@@ -22,42 +57,7 @@
       ],
       "realName": "二级文档",
       "relativePath": "/首页/首页下的文档/二级文档.md",
-      "docPath": "docs/feishu-wiki/首页/首页下的文档"
-    },
-    {
-      "id": "NgbPdmXQCoWRyAxHcGzclw7Ynqb",
-      "doc_id": "NgbPdmXQCoWRyAxHcGzclw7Ynqb",
-      "updated": 1698429414000,
-      "properties": {
-        "title": "首页下的文档",
-        "urlname": "NgbPdmXQCoWRyAxHcGzclw7Ynqb",
-        "date": "2023-10-25 13:33:14",
-        "updated": "2023-10-28 01:56:54"
-      },
-      "catalog": [
-        {
-          "title": "首页",
-          "doc_id": "LqyhdtszdoQ9zDxgJyGc1zvSnle"
-        }
-      ],
-      "realName": "首页下的文档",
-      "relativePath": "/首页/首页下的文档.md",
-      "docPath": "docs/feishu-wiki/首页"
-    },
-    {
-      "id": "LqyhdtszdoQ9zDxgJyGc1zvSnle",
-      "doc_id": "LqyhdtszdoQ9zDxgJyGc1zvSnle",
-      "updated": 1695867720000,
-      "properties": {
-        "title": "首页",
-        "urlname": "LqyhdtszdoQ9zDxgJyGc1zvSnle",
-        "date": "2023-09-28 10:22:00",
-        "updated": "2023-09-28 10:22:00"
-      },
-      "catalog": [],
-      "realName": "首页",
-      "relativePath": "/首页.md",
-      "docPath": "docs/feishu-wiki"
+      "docPath": "docs/feishu-wiki/docs/首页/首页下的文档"
     },
     {
       "id": "FMSHdqSD7opVSKxHnUhcKfZWnHg",
@@ -85,7 +85,7 @@
       ],
       "realName": "三级文档",
       "relativePath": "/首页/首页下的文档/二级文档/三级文档.md",
-      "docPath": "docs/feishu-wiki/首页/首页下的文档/二级文档"
+      "docPath": "docs/feishu-wiki/docs/首页/首页下的文档/二级文档"
     },
     {
       "id": "PnLOdsxGToOCwQxBAmzczP1Knzh",
@@ -117,7 +117,7 @@
       ],
       "realName": "四级文档",
       "relativePath": "/首页/首页下的文档/二级文档/三级文档/四级文档.md",
-      "docPath": "docs/feishu-wiki/首页/首页下的文档/二级文档/三级文档"
+      "docPath": "docs/feishu-wiki/docs/首页/首页下的文档/二级文档/三级文档"
     },
     {
       "id": "Vxwhd64pZocnbhxvb54c0iivnzb",
@@ -132,7 +132,7 @@
       "catalog": [],
       "realName": "测试",
       "relativePath": "/测试.md",
-      "docPath": "docs/feishu-wiki"
+      "docPath": "docs/feishu-wiki/docs"
     }
   ],
   "catalog": [
