@@ -2,12 +2,12 @@
 status: 已发布
 sort: 90
 urlname: config-catalog
-上次编辑时间: "2023-10-13T15:59:00.000Z"
+上次编辑时间: "2023-11-04T16:23:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
-date: "2023-10-13 13:12:00"
-updated: "2023-10-13 23:59:00"
+date: "2023-10-13 05:12:00"
+updated: "2023-11-04 16:23:00"
 ---
 
 # 目录结构
@@ -49,12 +49,14 @@ module.exports = {
     "yuque-pwd": {
       username: process.env.YUQUE_USERNAME,
       password: process.env.YUQUE_PWD,
-      baseUrl: "",
+      host: "",
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
       linebreak: true,
     },
     feishu: {
+      type: "space",
+      wikiId: process.env.FEISHU_WIKI_ID,
       folderToken: process.env.FEISHU_FOLDER_TOKEN,
       appId: process.env.FEISHU_APP_ID,
       appSecret: process.env.FEISHU_APP_SECRET,
