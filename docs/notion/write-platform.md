@@ -2,12 +2,12 @@
 status: 已发布
 sort: 100
 urlname: write-platform
-上次编辑时间: "2023-10-30T10:53:00.000Z"
+上次编辑时间: "2023-11-05T08:41:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
 date: "2023-10-13 05:14:00"
-updated: "2023-10-30 10:53:00"
+updated: "2023-11-05 08:41:00"
 ---
 
 # 写作平台配置
@@ -58,14 +58,15 @@ updated: "2023-10-30 10:53:00"
 
 Notion 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#notion) 页面。
 
-| 字段       | 必填 | 类型                          | 说明                 | 默认值 |
-| ---------- | ---- | ----------------------------- | -------------------- | ------ |
-| token      | 是   | string                        | Notion Token         |        |
-| databaseId | 是   | string                        | notion 中的数据库 id | -      |
-| filter     | 否   | boolean ｜ object             | 过滤条件             | false  |
-| sorts      | 否   | boolean ｜ string ｜ object[] | 排序条件             | false  |
-| catalog    | 否   | boolean ｜ object             | 目录信息配置         | false  |
-| limit      | 否   | number                        | 文档下载并发数       | 3      |
+| 字段        | 必填 | 类型                          | 说明                 | 默认值 |
+| ----------- | ---- | ----------------------------- | -------------------- | ------ |
+| token       | 是   | string                        | Notion Token         |        |
+| databaseId  | 是   | string                        | notion 中的数据库 id | -      |
+| filter      | 否   | boolean ｜ object             | 过滤条件             | false  |
+| sorts       | 否   | boolean ｜ string ｜ object[] | 排序条件             | false  |
+| imgToBase64 | 否   | boolean                       | 文档图片转 Base64    | false  |
+| catalog     | 否   | boolean ｜ object             | 目录信息配置         | false  |
+| limit       | 否   | number                        | 文档下载并发数       | 3      |
 
 ### Filter 字段说明
 
@@ -135,6 +136,16 @@ Notion 模版获取、关键信息获取及配置流程请移步 [关键信息�
 6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
 
 > 注意：对于 Notion 和 FlowUs，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
+
+### imgToBase64 字段说明
+
+> `0.10.0-beta.0`及以上版本可用
+
+**请谨慎开启。**开启后，Notion 文档的所有图片将以 Base64 格式输出到 markdown 文档中，但有以下问题值得注意：
+
+1. 本地/博客平台的 Markdown 渲染器并未广泛支持 Base64 格式，请自行确认
+2. markdown 文档将变大很多，文档可读性变差，特别是图片较多的情况下
+3. 一般适用于在博客平台的渲染，而不是本地备份时使用，本地备份请优先下载图片到本地或上传到图床
 
 ## FlowUs（息流）
 
