@@ -2,17 +2,131 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-10-30T10:53:00.000Z"
+上次编辑时间: "2023-11-07T16:27:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: "2023-10-13 05:24:00"
-updated: "2023-10-30 10:53:00"
+updated: "2023-11-07 16:27:00"
 ---
 
 # 图床平台配置
 
 图床关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#图床) 页面。
+
+## 参数说明
+
+| 字段     | 必填 | 类型    | 说明                                      | 默认值             |
+| -------- | ---- | ------- | ----------------------------------------- | ------------------ | --- |
+| enable   | 否   | boolean | 是否启用图床                              | false              |
+| platform | 否   | string  | 图床平台 local/cos/oss/github/qiniu/upyun | local              |
+| plugin   | 否   | string  | class(Function)                           | 自定义图床插件配置 | -   |
+
+### plugin 字段说明
+
+> `0.11.0-beta.0`及以上版本可用
+
+plugin 参数为配置自定义图床插件时可选配置，可自行实现相关代码逻辑，将文档中的图片上传到任意图床。但是需要遵循以下插件开发规范：
+
+1. 目前只支持 Common Js 标准，且不支持 TypeScript
+2. 插件暴露出的实例需为**支持 new 关键字调用的 class 对象或函数**
+3. 该实例需要实现两个方法`hasImage`和`uploadImg`，用于检测图床是否存在该图片和上传图片
+4. Elog 在实例化该插件时，会传入 `elog.config.js`中的 `image` 图床配置，可根据需要取值
+5. 使用`module.exports`导出
+
+```typescript
+// 上传图片到 COS 图床
+const COS = require("cos-nodejs-sdk-v5");
+
+/**
+ * 腾讯云COS
+ */
+class CosClient {
+  config;
+  imgClient;
+  constructor(config) {
+    // 可从 elog.config.js中的 image 中取到参数
+    // 也可自行构造相关参数
+    this.config = config.cos;
+    // 初始化COS实例
+    this.imgClient = new COS(this.config);
+  }
+
+  /**
+   * 检查图床是否已经存在图片，存在则返回url,不存在返回undefined
+   * @param fileName 图片文件名，包含拓展名
+   */
+  async hasImage(fileName) {
+    try {
+      await this.imgClient.headObject({
+        Bucket: this.config.bucket, // 存储桶名字（必须）
+        Region: this.config.region, // 存储桶所在地域，必须字段
+        Key: `${this.config.prefixKey}${fileName}`, //  文件名  必须
+      });
+      if (this.config.host) {
+        return `https://${this.config.host}/${this.config.prefixKey}${fileName}`;
+      }
+      return `https://${this.config.bucket}.cos.${this.config.region}.myqcloud.com/${this.config.prefixKey}${fileName}`;
+    } catch (e) {
+      // 图片不存在，可以不用处理，默认返回undefined即可
+    }
+  }
+
+  /**
+   * 上传图片到图床
+   * @param imgBuffer 图片的 Buffer 流
+   * @param fileName 图片文件名，包含拓展名
+   */
+  async uploadImg(imgBuffer, fileName) {
+    if (!this.imgClient) {
+      await this.initCos();
+    }
+    try {
+      const res = await this.imgClient.putObject({
+        Bucket: this.config.bucket, // 存储桶名字（必须）
+        Region: this.config.region, // 存储桶所在地域，必须字段
+        Key: `${this.config.prefixKey}/${fileName}`, //  文件名  必须
+        StorageClass: "STANDARD", // 上传模式（标准模式）
+        Body: imgBuffer, // 上传文件对象
+      });
+      if (this.config.host) {
+        return `https://${this.config.host}/${this.config.prefixKey}${fileName}`;
+      }
+      return `https://${res.Location}`;
+    } catch (e) {
+      // 上传失败时报错
+      console.log(e.message);
+    }
+  }
+}
+
+module.exports = CosClient;
+```
+
+```typescript
+// elog.config.js
+const cos = require('cos')
+
+module.exports = {
+  ... // 省略
+  image: {
+    enable: true,
+    // 支持2种模式，本地插件路径或引入 npm 插件
+    plugin: './cos.js', // 本地插件路径
+    // plugin: cos, // npm 插件
+    // plugin: require('cos'), // npm 插件
+    // 插件需要用到的参数，会传入插件实例，也可在插件内部自行实现，推荐统一在elog.config.js中配置
+    cos: {
+      secretId: process.env.COS_SECRET_ID,
+      secretKey: process.env.COS_SECRET_KEY,
+      bucket: process.env.COS_IMAGE_BUCKET,
+      region: process.env.COS_IMAGE_REGION,
+      host: process.env.COS_HOST,
+      prefixKey: 'elog-images-plugin',
+    }
+  },
+}
+```
 
 ## 本地存储（local）
 
