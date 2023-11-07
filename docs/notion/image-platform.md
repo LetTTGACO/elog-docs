@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: "2023-11-07T16:27:00.000Z"
+上次编辑时间: "2023-11-07T16:32:00.000Z"
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: "2023-10-13 05:24:00"
-updated: "2023-11-07 16:27:00"
+updated: "2023-11-07 16:32:00"
 ---
 
 # 图床平台配置
@@ -16,11 +16,11 @@ updated: "2023-11-07 16:27:00"
 
 ## 参数说明
 
-| 字段     | 必填 | 类型    | 说明                                      | 默认值             |
-| -------- | ---- | ------- | ----------------------------------------- | ------------------ | --- |
-| enable   | 否   | boolean | 是否启用图床                              | false              |
-| platform | 否   | string  | 图床平台 local/cos/oss/github/qiniu/upyun | local              |
-| plugin   | 否   | string  | class(Function)                           | 自定义图床插件配置 | -   |
+| 字段     | 必填 | 类型    | 说明                                      |
+| -------- | ---- | ------- | ----------------------------------------- | ------------------ |
+| enable   | 否   | boolean | 是否启用图床                              |
+| platform | 否   | string  | 图床平台 local/cos/oss/github/qiniu/upyun |
+| plugin   | 否   | string  | class(Function)                           | 自定义图床插件配置 |
 
 ### plugin 字段说明
 
