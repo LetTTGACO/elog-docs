@@ -2,12 +2,12 @@
 status: 已发布
 sort: 50
 urlname: qa
-上次编辑时间: '2023-11-08T07:57:00.000Z'
+上次编辑时间: '2023-11-08T08:00:00.000Z'
 catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: '2023-07-22 19:37:00'
-updated: '2023-11-08 07:57:00'
+updated: '2023-11-08 08:00:00'
 ---
 
 # 常见问题
@@ -124,7 +124,7 @@ elog sync -e .elog.env
 > 如果你两种方式都安装了，尽量保证全局 Elog 版本和`package.json`中的 Elog 版本保持一致
 
 
-局部安装 Elog 的好处在于，如果你使用的是`vitepress/hexo` 等基于 JavaScript 的博客平台，那么他们天然会有 `package.json`文件。你只需要`npm install @elog/cli`局部安装 Elog，然后配置相关命令脚本，`npm run`运行同步命令即可。而使用 Github Actions 也不用额外全局安装 `@elog/cli` 了，只需要在恰当和步骤中直接执行脚本命令即可
+局部安装 Elog 的好处在于，如果你使用的是`vitepress/hexo` 等基于 JavaScript 的博客平台，那么他们天然会有 `package.json`文件。你只需要`npm install @elog/cli`局部安装 Elog，然后配置相关命令脚本，`npm run`运行同步命令即可。而使用 Github Actions 也不用额外全局安装 `@elog/cli` 了
 
 
 总之，如果你不准备使用 Github Actions，则全局安装 Elog 即可。
