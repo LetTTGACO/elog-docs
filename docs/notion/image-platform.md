@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: '2023-11-08T03:11:00.000Z'
+上次编辑时间: '2023-11-08T04:57:00.000Z'
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 05:24:00'
-updated: '2023-11-08 03:11:00'
+updated: '2023-11-08 04:57:00'
 ---
 
 # 图床平台配置
@@ -40,99 +40,119 @@ plugin 参数为配置自定义图床插件时可选配置，可自行实现相�
 4. Elog 在实例化该插件时，会传入 `elog.config.js`中的 `image` 图床配置，可根据需要取值
 5. 使用`module.exports`导出
 
+示例：上传图片到 cloudflare 的 R2 图床
+
+
 ```typescript
-// 上传图片到 COS 图床
-const COS = require('cos-nodejs-sdk-v5')
+// package.json中 自行安装 @aws-sdk/client-s3 依赖
+const { S3Client, PutObjectCommand, HeadObjectCommand } = require("@aws-sdk/client-s3");
 
 /**
- * 腾讯云COS
+ * 处理前缀，结尾自动加上/
+ * @param prefix
+ * @return {*|string}
  */
-class CosClient {
-  config
-  imgClient
+const formattedPrefix = (prefix) => {
+  // 如果没传，则默认为空
+  if (!prefix) return ''
+  let _prefix = prefix
+  // 如果开头无需/
+  if (_prefix.startsWith('/')) {
+    _prefix = _prefix.slice(1)
+  }
+  // 如果结尾需要/
+  if (!_prefix.endsWith('/')) {
+    _prefix = `${_prefix}/`
+  }
+  return _prefix
+}
+
+/**
+ * 上传到cloudflare的 R2图床
+ */
+class R2Uploader {
   constructor(config) {
-    // 可从 elog.config.js中的 image 中取到参数
-    // 也可自行构造相关参数
-    this.config = config.cos
-    // 初始化COS实例
-    this.imgClient = new COS(this.config)
+    this.config = config.r2
+    this.config.prefixKey = formattedPrefix(this.config.prefixKey)
+    this.s3Client = new S3Client({
+      region: this.config.region || "auto",
+      endpoint: this.config.endpoint,
+      credentials: {
+        accessKeyId: this.config.accessKeyId,
+        secretAccessKey: this.config.secretAccessKey,
+      },
+    });
   }
 
-  /**
-   * 检查图床是否已经存在图片，存在则返回url,不存在返回undefined
-   * @param fileName 图片文件名，包含拓展名
-   */
   async hasImage(fileName) {
     try {
-      await this.imgClient.headObject({
-        Bucket: this.config.bucket, // 存储桶名字（必须）
-        Region: this.config.region, // 存储桶所在地域，必须字段
-        Key: `${this.config.prefixKey}${fileName}`, //  文件名  必须
-      })
-      if (this.config.host) {
-        return `https://${this.config.host}/${this.config.prefixKey}${fileName}`
+      await this.s3Client.send(new HeadObjectCommand({ Bucket: this.config.bucket, Key: this.config.prefixKey + fileName }));
+      return `https://${this.config.host}/${this.config.prefixKey + fileName}`;
+    } catch (err) {
+      if (err.name === "NotFound") {
+        return undefined;
       }
-      return `https://${this.config.bucket}.cos.${this.config.region}.myqcloud.com/${this.config.prefixKey}${fileName}`
-    } catch (e) {
-      // 图片不存在，可以不用处理，默认返回undefined即可
+      console.error('错误', err.message)
     }
   }
 
-  /**
-   * 上传图片到图床
-   * @param imgBuffer 图片的 Buffer 流
-   * @param fileName 图片文件名，包含拓展名
-   */
   async uploadImg(imgBuffer, fileName) {
-    if (!this.imgClient) {
-      await this.initCos()
-    }
     try {
-      const res = await this.imgClient.putObject({
-        Bucket: this.config.bucket, // 存储桶名字（必须）
-        Region: this.config.region, // 存储桶所在地域，必须字段
-        Key: `${this.config.prefixKey}/${fileName}`, //  文件名  必须
-        StorageClass: 'STANDARD', // 上传模式（标准模式）
-        Body: imgBuffer, // 上传文件对象
-      })
-      if (this.config.host) {
-        return `https://${this.config.host}/${this.config.prefixKey}${fileName}`
-      }
-      return `https://${res.Location}`
-    } catch (e) {
-      // 上传失败时报错
-      console.log(e.message)
+      const params = {
+        Bucket: this.config.bucket,
+        Key: this.config.prefixKey + fileName,
+        Body: imgBuffer,
+      };
+      await this.s3Client.send(new PutObjectCommand(params));
+      return `https://${this.config.host}/${this.config.prefixKey + fileName}`;
+    } catch (err) {
+      console.error('上传出错', err.message)
     }
   }
 }
 
-module.exports = CosClient
+module.exports = R2Uploader;
 ```
 
 
 ```typescript
 // elog.config.js
-const cos = require('cos')
+// const r2 = require('elog-image-plugin-r2') // 可以自行上传自己的 npm 图床插件包
 
 module.exports = {
   ... // 省略
   image: {
     enable: true,
     // 支持2种模式，本地插件路径或引入 npm 插件
-    plugin: './cos.js', // 本地插件路径
-    // plugin: cos, // npm 插件
-    // plugin: require('cos'), // npm 插件
-    // 插件需要用到的参数，会传入插件实例，也可在插件内部自行实现，推荐统一在elog.config.js中配置
+    plugin: './r2.js', // 本地插件路径，放置在和elog.config.js同级目录
+    // plugin: r2, // npm 插件
+    // plugin: require('r2'), // npm 插件
+    // 插件需要用到的参数，会传入插件实例
+    // 也可在插件内部自行实现，推荐统一在elog.config.js中配置
     cos: {
-      secretId: process.env.COS_SECRET_ID,
-      secretKey: process.env.COS_SECRET_KEY,
-      bucket: process.env.COS_IMAGE_BUCKET,
-      region: process.env.COS_IMAGE_REGION,
-      host: process.env.COS_HOST,
-      prefixKey: 'elog-images-plugin',
+      accessKeyId: process.env.R2_ACCESSKEYID,
+      secretAccessKey: process.env.R2_SECRET_ACCESSKEY,
+      bucket: process.env.R2_BUCKET,
+      endpoint: process.env.R2_ENDPOINT,
+      host: process.env.R2_HOST,
+      prefixKey: 'elog-image-plugin-test'
     }
   },
 }
+```
+
+
+```yaml
+# .elog.env 配置R2 相关账号参数
+#R2
+# 访问密钥 ID
+R2_ACCESSKEYID=
+# 机密访问密钥
+R2_SECRET_ACCESSKEY=
+R2_ENDPOINT=
+# R2 需要使r2.dev子域供网络访问或者绑定自己的域名
+R2_HOST=
+R2_BUCKET=
 ```
 
 
