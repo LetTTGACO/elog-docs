@@ -2,51 +2,68 @@
 status: 已发布
 sort: 230
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: "2023-10-13T05:53:00.000Z"
+上次编辑时间: '2023-11-08T16:26:00.000Z'
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
-date: "2023-04-06 21:31:00"
-updated: "2023-10-13 13:53:00"
+date: '2023-04-06 13:31:00'
+updated: '2023-11-08 16:26:00'
 ---
 
 # 持续集成
 
+
 ## 自动化流程
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/971676708757a04fe90b87e734f36058.png)
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/971676708757a04fe90b87e734f36058.png)
+
 
 ## 语雀示例
 
-**语雀 + webhooks + serverless api + GitHub Actions + Github Pages 持续集成**
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0c6e8ee33711ca5b9daf85f8c87691d8.png)
+**语雀 + webhooks + serverless  api  + GitHub Actions + Github Pages 持续集成**
+
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0c6e8ee33711ca5b9daf85f8c87691d8.png)
+
 
 ### 语雀 webhooks
 
-在语雀知识库 - 更多设置 - 消息推送中可配置语雀 webhooks，填写一个支持 POST 请求的 APi 链接即可（这里以 serverless api 为例）。当文档更新时，语雀会调用这个 API 进行推送
+
+在语雀知识库 - 更多设置 - 消息推送中可配置语雀webhooks，填写一个支持POST请求的APi链接即可（这里以serverless api为例）。当文档更新时，语雀会调用这个API进行推送
+
 
 > 令人遗憾的是，语雀将 webhooks 收费了  
-> 未开通会员的语雀小伙伴可直接手动调用 API 触发 Github Actions 进行自动化构建&部署  
-> ⚠️ 知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
+> 未开通会员的语雀小伙伴可直接手动调用API触发Github Actions进行自动化构建&部署  
+> ⚠️  知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/73797e287c627bb5ff6ecebb760e0141.png)
 
-### **serverless api**
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/73797e287c627bb5ff6ecebb760e0141.png)
 
-为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)
 
-将其填入语雀 Webhooks 中即可
+### **serverless  api**
 
-> 未开通会员的语雀小伙伴可直接手动调用此 API 触发 Github Actions 进行自动化构建&部署
+
+为了方便，这里提供一个部署在Vercel的免费公用的[ServerlessAPI](https://github.com/elog-x/serverless-api)
+
+
+将其填入语雀Webhooks中即可
+
+
+> 未开通会员的语雀小伙伴可直接手动调用此API触发Github Actions进行自动化构建&部署
+
 
 ```javascript
 https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx
 ```
 
-### 配置 package.json
 
-在自动化流程中不要忘记将@elog/cli 安装到 package.json
+### 配置package.json
+
+
+在自动化流程中不要忘记将@elog/cli安装到package.json
+
 
 > npm i @elog/cli  
 > 或者  
@@ -54,9 +71,10 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 > 或者  
 > pnpm i @elog/cli
 
+
 ```json
 {
-  "scripts": {
+	"scripts": {
     "build": "vitepress or hexo 或者其他自定义的命令，具体以自己的工具为准", // 构建文档
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env", // 本地同步时需要从env中取值
@@ -65,6 +83,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
   }
 }
 ```
+
 
 ### Github Actions
 
@@ -159,49 +178,71 @@ jobs:
           commit_message: ${{ github.event.head_commit.message }}
 ```
 
-## Notion 示例
 
-**Notion + Slack + pipedream + serverless api + GitHub actions + Github Pages 持续集成**
+## Notion示例
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/f7674456814fd4d24790ef513956ab63.png)
+
+**Notion + Slack + pipedream + serverless  api + GitHub actions + Github Pages 持续集成**
+
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/f7674456814fd4d24790ef513956ab63.png)
+
 
 ### 配置数据表 **Slack notifications**
 
-设置数据表文档字段被扭转到某个状态时向 Slack 发送消息
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/8260cf3b99c497f4dc8c96528d79c106.png)
+设置数据表文档字段被扭转到某个状态时向Slack发送消息
 
-### 注册 Slack 账号并授权给 Notion
 
-当 Notion 数据表的文档字段被扭转到某个状态时向 Slack 发送消息，此时 Slack 收到消息提醒
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/8260cf3b99c497f4dc8c96528d79c106.png)
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/95fe8061faab555526575c2872869c3e.png)
 
-### **serverless api**
+### 注册Slack账号并授权给Notion
 
-为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/LetTTGACO/serverless-api)
+
+当Notion数据表的文档字段被扭转到某个状态时向Slack发送消息，此时Slack收到消息提醒
+
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/95fe8061faab555526575c2872869c3e.png)
+
+
+### **serverless  api**
+
+
+为了方便，这里提供一个部署在Vercel的免费公用的[ServerlessAPI](https://github.com/elog-x/serverless-api)
+
 
 ```javascript
 https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx
 ```
 
-### 注册**pipedream 并配置 WorkFlow**
 
-#### 第一步：选择 Channels 为 Notion 应用
+### 注册**pipedream并配置WorkFlow**
 
-> 你也可以在 Notion 中配置发送消息到某个频道，然后在 pipedream 选择所选频道的 Channel。支持多选 Channels
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fb3f5a8f440d9f140d7540df4076f1fb.png)
+#### 第一步：选择Channels为Notion应用
 
-#### 第二步：收到 Notion 消息后发送自定义 Http 请求
 
-将调用 Github Actions 的 serverless api 填入即可
+> 你也可以在Notion中配置发送消息到某个频道，然后在pipedream选择所选频道的Channel。支持多选Channels
 
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2bcff6723a5b164bc22798599971ef2a.png)
 
-### 配置 package.json
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fb3f5a8f440d9f140d7540df4076f1fb.png)
 
-在自动化流程中不要忘记将@elog/cli 安装到 package.json
+
+#### 第二步：收到Notion消息后发送自定义Http请求
+
+
+将调用Github Actions的 serverless api 填入即可
+
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2bcff6723a5b164bc22798599971ef2a.png)
+
+
+### 配置package.json
+
+
+在自动化流程中不要忘记将@elog/cli安装到package.json
+
 
 > npm i @elog/cli  
 > 或者  
@@ -209,9 +250,10 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 > 或者  
 > pnpm i @elog/cli
 
+
 ```json
 {
-  "scripts": {
+	"scripts": {
     "build": "vitepress or hexo 或者其他自定义的命令，具体以自己的工具为准", // 构建文档
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env", // 本地同步时需要从env中取值
@@ -220,6 +262,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
   }
 }
 ```
+
 
 ### Github Actions
 
@@ -313,3 +356,4 @@ jobs:
           publish_branch: master
           commit_message: ${{ github.event.head_commit.message }}
 ```
+
