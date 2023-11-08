@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: '2023-11-08T04:57:00.000Z'
+上次编辑时间: '2023-11-08T05:02:00.000Z'
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 05:24:00'
-updated: '2023-11-08 04:57:00'
+updated: '2023-11-08 05:02:00'
 ---
 
 # 图床平台配置
@@ -129,7 +129,7 @@ module.exports = {
     // plugin: require('r2'), // npm 插件
     // 插件需要用到的参数，会传入插件实例
     // 也可在插件内部自行实现，推荐统一在elog.config.js中配置
-    cos: {
+    r2: {
       accessKeyId: process.env.R2_ACCESSKEYID,
       secretAccessKey: process.env.R2_SECRET_ACCESSKEY,
       bucket: process.env.R2_BUCKET,
