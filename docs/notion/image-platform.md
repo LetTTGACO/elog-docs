@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: '2023-11-08T05:02:00.000Z'
+上次编辑时间: '2023-11-08T05:05:00.000Z'
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 05:24:00'
-updated: '2023-11-08 05:02:00'
+updated: '2023-11-08 05:05:00'
 ---
 
 # 图床平台配置
@@ -72,6 +72,8 @@ const formattedPrefix = (prefix) => {
  */
 class R2Uploader {
   constructor(config) {
+    // 推荐从 elog.config.js中的 image.r2中获取 R2 相关账号参数
+    // 插件本地测试时，可在写死相关账号参数
     this.config = config.r2
     this.config.prefixKey = formattedPrefix(this.config.prefixKey)
     this.s3Client = new S3Client({
