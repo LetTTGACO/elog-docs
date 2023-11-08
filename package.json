@@ -44,7 +44,7 @@
     "clean:feishu-wiki": "elog clean -c elog.config.feishu-wiki.js  -a elog.cache.feishu-wiki.json"
   },
   "dependencies": {
-    "@elog/cli": "^0.11.0-beta.1",
+    "@elog/cli": "^0.11.0",
     "@types/node": "^18.11.9",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
