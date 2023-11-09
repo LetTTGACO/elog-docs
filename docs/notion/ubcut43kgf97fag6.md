@@ -2,12 +2,12 @@
 status: 已发布
 sort: 240
 urlname: ubcut43kgf97fag6
-上次编辑时间: '2023-11-08T16:28:00.000Z'
+上次编辑时间: '2023-11-09T01:48:00.000Z'
 catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 13:31:00'
-updated: '2023-11-08 16:28:00'
+updated: '2023-11-09 01:48:00'
 ---
 
 # 最佳实践
@@ -27,10 +27,7 @@ updated: '2023-11-08 16:28:00'
 ## 最佳实践
 
 
-### 【notion-hexo】十分钟部署一个属于自己的自动化博客
-
-
-Notion + Hexo + GitHub Actions + Vercel 博客解决方案
+### 【开箱即用】Notion + Hexo + GitHub Actions + Vercel 博客解决方案
 
 
 网站：[https://notion-hexo.vercel.app/](https://notion-hexo.vercel.app/)
