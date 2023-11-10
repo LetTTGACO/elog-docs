@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: '2023-11-09T13:21:00.000Z'
+上次编辑时间: '2023-11-10T07:26:00.000Z'
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 05:24:00'
-updated: '2023-11-09 13:21:00'
+updated: '2023-11-10 07:26:00'
 ---
 
 # 图床平台配置
@@ -29,7 +29,7 @@ updated: '2023-11-09 13:21:00'
 ### plugin 字段说明
 
 
-> `0.11.0-beta.1`及以上版本可用
+> `0.11.0`及以上版本可用
 
 
 plugin 参数为配置自定义图床插件时可选配置，可自行实现相关代码逻辑，将文档中的图片上传到任意图床。但是需要遵循以下插件开发规范：
@@ -37,8 +37,10 @@ plugin 参数为配置自定义图床插件时可选配置，可自行实现相�
 1. 目前只支持 Common Js 标准，且不支持 TypeScript
 2. 插件暴露出的实例需为**支持 new 关键字调用的 class 对象或函数**
 3. 该实例需要实现两个方法`hasImage`和`uploadImg`，用于检测图床是否存在该图片和上传图片
-4. Elog 在实例化该插件时，会传入 `elog.config.js`中的 `image` 图床配置，可根据需要取值
-5. 使用`module.exports`导出
+4. `hasImage` 方法的参数为图片完整文件名`fileName` ，不存在时返回 `undifined`，存在时返回资源完整 URL 路径
+5. `uploadImg` 方法的参数为 图片的 Buffer 流`imgBuffer` 和图片完整文件名`fileName`，上传成功返回资源完整 URL 路径
+6. Elog 在实例化该插件时，会传入 `elog.config.js`中的 `image` 图床配置，可根据需要取值
+7. 使用`module.exports`导出
 
 示例：上传图片到 cloudflare 的 R2 图床
 
