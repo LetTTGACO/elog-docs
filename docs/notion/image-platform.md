@@ -2,12 +2,12 @@
 status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: '2023-11-08T05:05:00.000Z'
+上次编辑时间: '2023-11-09T13:21:00.000Z'
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 05:24:00'
-updated: '2023-11-08 05:05:00'
+updated: '2023-11-09 13:21:00'
 ---
 
 # 图床平台配置
@@ -119,16 +119,18 @@ module.exports = R2Uploader;
 
 ```typescript
 // elog.config.js
-// const r2 = require('elog-image-plugin-r2') // 可以自行上传自己的 npm 图床插件包
+// 可以自行上传自己的 npm 图床插件包
+// 我已经将 以上 R2 图床插件制作为 npm 包，可直接引入使用
+const r2 = require('@elog/plugin-img-r2')
 
 module.exports = {
   ... // 省略
   image: {
     enable: true,
     // 支持2种模式，本地插件路径或引入 npm 插件
-    plugin: './r2.js', // 本地插件路径，放置在和elog.config.js同级目录
-    // plugin: r2, // npm 插件
-    // plugin: require('r2'), // npm 插件
+    plugin: './r2.js', // 使用自己的本地插件路径，放置在和elog.config.js同级目录
+    // plugin: r2, // 使用 npm 插件
+    // plugin: require('r2'), // 使用 npm 插件
     // 插件需要用到的参数，会传入插件实例
     // 也可在插件内部自行实现，推荐统一在elog.config.js中配置
     r2: {
