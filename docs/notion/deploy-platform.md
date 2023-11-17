@@ -1,11 +1,11 @@
 ---
-sort: '1970-01-01 08:00:00'
+sort: 110
 urlname: deploy-platform
 catalog: 配置详情
 tags: Elog-Docs
 title: 部署平台配置
 date: '2023-10-13 13:21:00'
-updated: '2023-11-17 22:35:00'
+updated: '2023-11-18 01:12:00'
 ---
 
 # 部署平台配置
@@ -46,6 +46,7 @@ updated: '2023-11-17 22:35:00'
 | exclude    | 否  | string[]       | 忽略数组中存在的字段，输出数据库的其他字段  | -             |
 | timezone   | 否  | string         | 时区                     | Asia/Shanghai |
 | timeFormat | 否  | boolean｜string | 是否启用所有时间字段格式化，默认输出时间戳  | false         |
+| timeKeys   | 否  | string[]       | 指定需要按照时间处理的字段，几乎用不到    | -             |
 
 
 > 在 `0.12.0` 版本之前启用 FrontMatter 可设置 `local.format=matter-markdown`
@@ -97,12 +98,13 @@ updated: '2023-11-17 22:35:00'
 	const format = async (doc, imageClient) => {
 	  const cover = doc.properties.cover
 	  // 将 cover 字段中的 notion 图片下载到本地
-	  const url = await imageClient.uploadImageFromUrl(cover, doc)
-	  // cover链接替换为本地图片
-	  doc.properties.cover = url
-	  // 将文档内容格式化为带有 Front Matter 的 markdown
+	  if (imageClient)  {
+	    // 只有启用图床平台image.enable=true时，imageClient才能用，否则请自行实现图片上传
+	    const url = await imageClient.uploadImageFromUrl(cover, doc)
+	    // cover链接替换为本地图片
+	    doc.properties.cover = url
+	  }
 	  doc.body = matterMarkdownAdapter(doc);
-	  // 返回整个文档对象
 	  return doc;
 	};
 	
@@ -128,8 +130,8 @@ updated: '2023-11-17 22:35:00'
 	  body_html?: string
 	  /** 文章属性 */
 	  properties: DocProperties
-	  /** 语雀文章目录路径， Notion暂不支持 */
-	  catalog?: YuqueCatalog[]
+	  /** 目录路径 */
+	  catalog?: any[]
 	}
 	
 	export interface BaseDoc {
@@ -149,20 +151,6 @@ updated: '2023-11-17 22:35:00'
 	  updated: string
 	  [key: string]: any
 	}
-	
-	/** 语雀知识库目录 */
-	export interface YuqueCatalog {
-	  /** 类型：文章/分组 */
-	  type: 'DOC' | 'TITLE'
-	  title: string
-	  uuid: string
-	  child_uuid: string
-	  parent_uuid: string
-	  slug: string
-	  depth: number
-	  level: number
-	}
-	
 	```
 
 

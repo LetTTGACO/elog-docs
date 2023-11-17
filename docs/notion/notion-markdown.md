@@ -1,16 +1,15 @@
 ---
-status: 已发布
 sort: 160
 urlname: notion-markdown
-上次编辑时间: "2023-10-13T05:53:00.000Z"
 catalog: 功能和API适配情况
 tags: Elog-Docs
 title: Notion-Markdown
-date: "2023-04-06 21:31:00"
-updated: "2023-10-13 13:53:00"
+date: '2023-04-06 21:31:00'
+updated: '2023-10-13 13:53:00'
 ---
 
 # Notion-Markdown
+
 
 ## 行内样式
 
@@ -27,8 +26,8 @@ updated: "2023-10-13 13:53:00"
 
 - [x] Text（文本）
 - [ ] Page （页面）返回超链接，但是地址不完整
-- [x] To-do list（TODO）部分博客平台需要安装插件支持，例如 Vitepress
-- [x] Heading（标题）Notion 写作时最多显示 3 级标题，但是可以直接用`####`语法支持在支持更多级别的博客平台展示
+- [x] To-do list（TODO）部分博客平台需要安装插件支持，例如Vitepress
+- [x] Heading（标题）Notion写作时最多显示3级标题，但是可以直接用`####`语法支持在支持更多级别的博客平台展示
 - [x] Table（表格）
 - [x] Bulleted list（无序列表）
 - [x] Numbered list（有序列表）
@@ -36,7 +35,7 @@ updated: "2023-10-13 13:53:00"
 - [x] Quote（引用）
 - [x] Divider（分割线）
 - [ ] Link to page（链接到页面）返回超链接，但是地址不完整
-- [x] Callout（标注）同 Quote（引用）
+- [x] Callout（标注）同Quote（引用）
 
 ## Media（媒体）
 
@@ -49,9 +48,12 @@ updated: "2023-10-13 13:53:00"
 
 ## DataBase（数据库）
 
+
 返回数据库的超链接地址，但不完整
 
+
 ## AI block
+
 
 Notion API 不支持，会报错`Block type ai_block is not supported via the API.`
 
@@ -68,13 +70,15 @@ Notion API 不支持，会报错`Block type ai_block is not supported via the AP
 - [x] Synced block（同步块）
 - [ ] Toggle heading（折叠标题）返回标题样式
 - [ ] columns（分栏）
-- [x] Code（mermaid 代码，用于流程图等）部分博客平台需安装插件来显示图示
+- [x] Code（mermaid代码，用于流程图等）部分博客平台需安装插件来显示图示
 - [ ] Mention a person（提及人员）接口返回文本
-- [x] Mention a page（提及页面）返回 Notion 完整超链接
+- [x] Mention a page（提及页面）返回Notion完整超链接
 - [x] Date or reminder（日期或提醒）返回日期值
 - [x] Emoji（表情）
 - [ ] Inline equation（行内公式）返回公式文本，部分博客平台可能会报错，谨慎使用
 
 ## Embeds（嵌入）
 
+
 返回为超链接
+

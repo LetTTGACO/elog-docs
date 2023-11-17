@@ -1,13 +1,11 @@
 ---
-status: 已发布
 sort: 120
 urlname: image-platform
-上次编辑时间: '2023-11-10T07:26:00.000Z'
 catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
-date: '2023-10-13 05:24:00'
-updated: '2023-11-10 07:26:00'
+date: '2023-10-13 13:24:00'
+updated: '2023-11-10 15:26:00'
 ---
 
 # 图床平台配置

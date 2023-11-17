@@ -16,7 +16,7 @@ module.exports = {
       format: 'markdown',
       frontMatter: {
         enable: true,
-        exclude: ['上次编辑时间', 'cover', 'status'],
+        exclude: ['cover', 'status'],
         timeFormat: true,
       }
     }

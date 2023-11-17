@@ -1,13 +1,11 @@
 ---
-status: 已发布
 sort: 70
 urlname: gvnxobqogetukays
-上次编辑时间: '2023-11-17T12:47:00.000Z'
 catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
-date: '2023-04-06 13:31:00'
-updated: '2023-11-17 12:47:00'
+date: '2023-04-06 21:31:00'
+updated: '2023-11-17 20:47:00'
 ---
 
 # 关键信息获取
@@ -96,7 +94,7 @@ updated: '2023-11-17 12:47:00'
 ### tablePageId
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//ebb6c1646a35ff433ca7a5978d583481.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/ebb6c1646a35ff433ca7a5978d583481.png)
 
 
 ## 飞书

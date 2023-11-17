@@ -1,13 +1,11 @@
 ---
-status: 已发布
 sort: 230
 urlname: vy55q9xwlqlsfrvk
-上次编辑时间: '2023-11-08T16:26:00.000Z'
 catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
-date: '2023-04-06 13:31:00'
-updated: '2023-11-08 16:26:00'
+date: '2023-04-06 21:31:00'
+updated: '2023-11-09 00:26:00'
 ---
 
 # 持续集成
@@ -16,7 +14,7 @@ updated: '2023-11-08 16:26:00'
 ## 自动化流程
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/971676708757a04fe90b87e734f36058.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/033cd7c598f97adac9b4d2a71f0d7835.png)
 
 
 ## 语雀示例
@@ -25,7 +23,7 @@ updated: '2023-11-08 16:26:00'
 **语雀 + webhooks + serverless  api  + GitHub Actions + Github Pages 持续集成**
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0c6e8ee33711ca5b9daf85f8c87691d8.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/93e5eae8d73452e3043e9845b627be8d.png)
 
 
 ### 语雀 webhooks
@@ -39,7 +37,7 @@ updated: '2023-11-08 16:26:00'
 > ⚠️  知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/73797e287c627bb5ff6ecebb760e0141.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/543de121db94bf2456b9973017219f3a.png)
 
 
 ### **serverless  api**
@@ -185,7 +183,7 @@ jobs:
 **Notion + Slack + pipedream + serverless  api + GitHub actions + Github Pages 持续集成**
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/f7674456814fd4d24790ef513956ab63.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/3a950872cf389482fb698f35ece602f1.png)
 
 
 ### 配置数据表 **Slack notifications**
@@ -194,7 +192,7 @@ jobs:
 设置数据表文档字段被扭转到某个状态时向Slack发送消息
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/8260cf3b99c497f4dc8c96528d79c106.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2e89d5df627c93e7ef093d3888852d33.png)
 
 
 ### 注册Slack账号并授权给Notion
@@ -203,7 +201,7 @@ jobs:
 当Notion数据表的文档字段被扭转到某个状态时向Slack发送消息，此时Slack收到消息提醒
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/95fe8061faab555526575c2872869c3e.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/58a8aa630704f280a5fe5ce72a5e00fb.png)
 
 
 ### **serverless  api**
@@ -226,7 +224,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 > 你也可以在Notion中配置发送消息到某个频道，然后在pipedream选择所选频道的Channel。支持多选Channels
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fb3f5a8f440d9f140d7540df4076f1fb.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/b0308ef0043abae5ca865e09f58608f7.png)
 
 
 #### 第二步：收到Notion消息后发送自定义Http请求
@@ -235,7 +233,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 将调用Github Actions的 serverless api 填入即可
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2bcff6723a5b164bc22798599971ef2a.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/707b235e4cbf7b781dd29e1ef559e5a3.png)
 
 
 ### 配置package.json

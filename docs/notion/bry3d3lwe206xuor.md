@@ -1,13 +1,11 @@
 ---
-status: 已发布
 sort: 80
 urlname: bry3d3lwe206xuor
-上次编辑时间: '2023-11-08T07:59:00.000Z'
 catalog: 入门指引
 tags: Elog-Docs
 title: CLI 命令
-date: '2023-04-06 13:31:00'
-updated: '2023-11-08 07:59:00'
+date: '2023-04-06 21:31:00'
+updated: '2023-11-08 15:59:00'
 ---
 
 # CLI 命令
