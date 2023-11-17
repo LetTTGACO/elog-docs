@@ -14,8 +14,12 @@ module.exports = {
       outputDir: './docs/flowus',
       filename: 'urlname',
       format: 'matter-markdown',
-      catalog: false,
       formatExt: '',
+      frontMatter: {
+        enable: true,
+        exclude: ['status'],
+        timeFormat: true,
+      }
     }
   },
   image: {

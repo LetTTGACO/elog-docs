@@ -13,8 +13,12 @@ module.exports = {
     local: {
       outputDir: './docs/feishu',
       filename: 'urlname',
-      format: 'matter-markdown',
+      format: 'markdown',
       catalog: true,
+      frontMatter: {
+        enable: true,
+        timeFormat: true,
+      }
     }
   },
   image: {

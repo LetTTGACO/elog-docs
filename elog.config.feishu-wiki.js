@@ -13,8 +13,12 @@ module.exports = {
     local: {
       outputDir: './docs/feishu-wiki/docs',
       filename: 'title',
-      format: 'matter-markdown',
+      format: 'markdown',
       catalog: true,
+      frontMatter: {
+        enable: true,
+        timeFormat: true,
+      }
     }
   },
   image: {

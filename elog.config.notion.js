@@ -13,9 +13,12 @@ module.exports = {
     local: {
       outputDir: './docs/notion',
       filename: 'urlname',
-      format: 'matter-markdown',
-      catalog: false,
-      formatExt: './elog.format.js',
+      format: 'markdown',
+      frontMatter: {
+        enable: true,
+        exclude: ['上次编辑时间', 'cover', 'status'],
+        timeFormat: true,
+      }
     }
   },
   image: {
