@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2023-11-17 20:47:00'
+updated: '2023-11-18 20:43:00'
 ---
 
 # 关键信息获取
@@ -21,7 +21,7 @@ updated: '2023-11-17 20:47:00'
 
 
 > 使用语雀团队知识库时，`login` 为团队路径，不是个人路径  
-> 假设这是你的语雀团队的某个知识库地址：https://aaaa.yuque.com/bbbb/cccc  
+> 假设这是你的语雀团队的某个知识库地址：`https://aaaa.yuque.com/bbbb/cccc`  
 > `host = https://aaaa.yuque.com`（账号密码模式）  
 > `baseUrl=https://aaaa.yuque.com/api/v2`（Token 模式）  
 > `login=bbbb`  
@@ -64,9 +64,6 @@ updated: '2023-11-17 20:47:00'
 2. 创建 Integration Token，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#create-your-integration-in-notion)
 3. 将复制的数据库连接到刚创建的 Integration，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions)
 4. 获取数据库 DatabaseId
-
-> 如果使用的是NotionNext或者已经有文档数据库，可忽略步骤1，根据配置文档保证必要的数据库字段即可
-
 
 ### token
 
