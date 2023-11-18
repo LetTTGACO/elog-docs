@@ -64,6 +64,7 @@ export default defineConfig({
     sitemap.end()
   },
   themeConfig: {
+    outline: [2,6],
     nav: [
       { text: 'Notion 版', link: '/notion/start', activeMatch: '/notion/' },
       {
