@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 部署平台配置
 date: '2023-10-13 13:21:00'
-updated: '2023-11-18 01:12:00'
+updated: '2023-11-18 15:07:00'
 ---
 
 # 部署平台配置
@@ -39,14 +39,11 @@ updated: '2023-11-18 01:12:00'
 > `0.12.0`及以上版本支持
 
 
-| 字段         | 必填 | 类型             | 说明                     | 默认值           |
-| ---------- | -- | -------------- | ---------------------- | ------------- |
-| enable     | 否  | boolean        | 是否启用 FrontMatter       | false         |
-| include    | 否  | string[]       | 只输出数组中存在的字段，数据库的其他字段忽略 | -             |
-| exclude    | 否  | string[]       | 忽略数组中存在的字段，输出数据库的其他字段  | -             |
-| timezone   | 否  | string         | 时区                     | Asia/Shanghai |
-| timeFormat | 否  | boolean｜string | 是否启用所有时间字段格式化，默认输出时间戳  | false         |
-| timeKeys   | 否  | string[]       | 指定需要按照时间处理的字段，几乎用不到    | -             |
+| 字段      | 必填 | 类型       | 说明                     | 默认值   |
+| ------- | -- | -------- | ---------------------- | ----- |
+| enable  | 否  | boolean  | 是否启用 FrontMatter       | false |
+| include | 否  | string[] | 只输出数组中存在的字段，数据库的其他字段忽略 | -     |
+| exclude | 否  | string[] | 忽略数组中存在的字段，输出数据库的其他字段  | -     |
 
 
 > 在 `0.12.0` 版本之前启用 FrontMatter 可设置 `local.format=matter-markdown`
