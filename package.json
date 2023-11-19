@@ -22,7 +22,6 @@
     "docs:serve": "vitepress serve docs",
     "elog:init": "elog init",
     "local:yuque-token": "elog sync -c elog.config.yuque-token.js -e .elog.env -a elog.cache.yuque-token.json",
-    "local:yuque-pwd": "elog sync -c elog.config.yuque-pwd.js -e .elog.env -a elog.cache.yuque-pwd.json",
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
     "local:flowus": "elog sync -c elog.config.flowus.js -e .elog.env  -a elog.cache.flowus.json",
     "local:wordpress": "elog sync -c elog.config.wordpress.js -e .elog.env  -a elog.cache.wordpress.json",
@@ -41,10 +40,12 @@
     "clean:flowus": "elog clean -c elog.config.flowus.js  -a elog.cache.flowus.json",
     "clean:wordpress": "elog clean -c elog.config.wordpress.js  -a elog.cache.wordpress.json",
     "clean:feishu": "elog clean -c elog.config.feishu.js  -a elog.cache.feishu.json",
-    "clean:feishu-wiki": "elog clean -c elog.config.feishu-wiki.js  -a elog.cache.feishu-wiki.json"
+    "clean:feishu-wiki": "elog clean -c elog.config.feishu-wiki.js  -a elog.cache.feishu-wiki.json",
+    "clean-all": "npm run clean:yuque-token && npm run clean:notion && npm run clean:flowus && npm run clean:wordpress && npm run clean:feishu && npm run clean:feishu-wiki",
+    "sync-all": "npm run local:yuque-token && npm run local:notion && npm run local:flowus && npm run local:wordpress && npm run local:feishu && npm run local:feishu-wiki"
   },
   "dependencies": {
-    "@elog/cli": "^0.12.0-beta.4",
+    "@elog/cli": "^0.12.0",
     "@types/node": "^18.11.9",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
