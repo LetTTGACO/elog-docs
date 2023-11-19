@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2023-11-09 09:48:00'
+updated: '2023-11-19 01:19:00'
 ---
 
 # 最佳实践
@@ -32,6 +32,15 @@ updated: '2023-11-09 09:48:00'
 
 
 Github：[https://github.com/elog-x/notion-hexo](https://github.com/elog-x/notion-hexo)
+
+
+### 【开箱即用】语雀 + VitePress + GitHub Actions + Vercel 文档站点解决方案
+
+
+网站：[https://yuque-vitepress.vercel.app/](https://yuque-vitepress.vercel.app/)
+
+
+Github：[https://github.com/elog-x/yuque-vitepress](https://github.com/elog-x/yuque-vitepress)
 
 
 ### 【Elog Docs】多写作平台云端写作 + vitepress + GitHub Action + GitHub Pages 持续集成
