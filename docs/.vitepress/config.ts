@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import { genFeiShuSideBar, genFlowUsSideBar, genNotionSideBar, genYuqueSideBar } from "../../utils/route";
-import { NotionSVG, YuQueSVG } from "../../utils/assists";
+import { FeiShuSVG, FlowUsSVG, NotionSVG, YuQueSVG } from "../../utils/assists";
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
@@ -103,6 +103,8 @@ export default defineConfig({
     socialLinks: [
       { icon: { svg: YuQueSVG }, link: "https://www.yuque.com/1874w/elog-docs" },
       { icon: { svg: NotionSVG }, link: "https://1874.notion.site/0aa9217e5bcc46768bdae424fddcbc28" },
+      { icon: { svg: FeiShuSVG }, link: "https://yi0dk0huz70.feishu.cn/drive/folder/Z4AZfkm29l5KWSdsHbncmbbmnvc" },
+      { icon: { svg: FlowUsSVG }, link: "https://flowus.cn/1874/share/90398607-98f1-4ff0-873c-7c3ed526a55c" },
       { icon: 'github', link: "https://github.com/LetTTGACO/elog" },
     ],
     footer: {
