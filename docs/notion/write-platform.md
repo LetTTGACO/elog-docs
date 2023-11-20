@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
 date: '2023-10-13 13:14:00'
-updated: '2023-11-20 22:37:00'
+updated: '2023-11-20 22:43:00'
 ---
 
 # 写作平台配置
@@ -300,7 +300,7 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 | appId            | 是  | 飞书自建应用appId                                                         | -                                |
 | appSecret        | 是  | 飞书自建应用appSecret                                                     | -                                |
 | baseUrl          | 否  |  飞书 api 请求地址，国内飞书无须配置，国际版飞书可配置为https://open.larksuite.com/open-apis | https://open.feishu.cn/open-apis |
-| disableParentDoc | 否  |                                                                     |                                  |
+| disableParentDoc | 否  | 是否忽略存在子文档的父文档，将其视作文件夹。`0.12.1` 及以上版本可用                              | false                            |
 | limit            | 否  | 文档下载并发数                                                             | 3                                |
 
 
@@ -324,6 +324,18 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 
 当开启[**按目录存放文档**](/notion/xe160pqsumi6bqnz) 时，因为知识库中不存在文件夹概念，如果父文档下有子文档，会在本地生成父文档的同时，创建和父文档同名的文件夹，子文档会放在该文件夹之下。
+
+
+> `0.12.1`及以上版本可设置 `disableParentDoc` 属性，用来控制：当父文档下存在文档时，父文档是否作为文件夹使用  
+
+
+	![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//56a52870c6d2bcfaa9381129dff0ad98.png)
+
+
+	例如：当`disableParentDoc=false`或不设置时，默认是将以上 6 个文档全部下载，会在本地生成父文档的同时，创建和父文档同名的文件夹，子文档会放在该文件夹之下。
+
+
+	当`disableParentDoc=true`时，则只会下载「测试」和「四级文档」两篇文档。其他文档因为其`children`存在文档，会将其作为文件夹，下载到本地的「四级文档」会被放置在文件夹之中。
 
 
 ## 下一步
