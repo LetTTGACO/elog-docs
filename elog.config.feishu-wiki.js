@@ -6,6 +6,7 @@ module.exports = {
       wikiId: process.env.FEISHU_WIKI_ID,
       appId: process.env.FEISHU_APP_ID,
       appSecret: process.env.FEISHU_APP_SECRET,
+      disableParentDoc: true
     },
   },
   deploy: {
