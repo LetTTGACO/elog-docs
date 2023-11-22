@@ -22,6 +22,7 @@
     "docs:serve": "vitepress serve docs",
     "elog:init": "elog init",
     "local:yuque-token": "elog sync -c elog.config.yuque-token.js -e .elog.env -a elog.cache.yuque-token.json",
+    "local:yuque-pwd": "elog sync -c elog.config.yuque-pwd.js -e .elog.env -a elog.cache.yuque-pwd.json",
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
     "local:flowus": "elog sync -c elog.config.flowus.js -e .elog.env  -a elog.cache.flowus.json",
     "local:wordpress": "elog sync -c elog.config.wordpress.js -e .elog.env  -a elog.cache.wordpress.json",

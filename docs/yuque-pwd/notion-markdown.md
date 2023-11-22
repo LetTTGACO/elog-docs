@@ -1,5 +1,4 @@
 # Notion-Markdown
-
 ## 行内样式
 
 - [x] Blod（加粗）
@@ -10,7 +9,6 @@
 - [ ] Inline equation（行内公式）直接返回公式文本，部分博客平台可能会报错，推荐使用块级公式
 - [ ] Text Color（文字颜色）
 - [ ] Background Color（背景颜色）
-
 ## Basic block（基本块）
 
 - [x] Text（文本）
@@ -25,7 +23,6 @@
 - [x] Divider（分割线）
 - [ ] Link to page（链接到页面）返回完整超链接，但是地址不完整
 - [x] Callout（标注）同 Quote（引用）
-
 ## Media（媒体）
 
 - [x] Image（图片）
@@ -34,19 +31,14 @@
 - [ ] Audio（音频）不返回
 - [x] Code（代码）
 - [ ] File（文件）返回完整超链接
-
 ## DataBase（数据库）
-
 返回数据库的超链接地址，但不完整
-
 ## AI block
-
 API 报错`Block type ai_block is not supported via the API.`不支持
 
 - [ ] Summary（摘要）
 - [ ] Action items（待办事项）
 - [ ] Custom AI Block（内容块）
-
 ## Advanced block（高级块）
 
 - [ ] Table of contents（目录）不返回
@@ -62,7 +54,5 @@ API 报错`Block type ai_block is not supported via the API.`不支持
 - [x] Date or reminder（日期或提醒）返回日期值
 - [x] Emoji（表情）
 - [ ] Inline equation（行内公式）返回公式文本，部分博客平台可能会报错，谨慎使用
-
 ## Embeds（嵌入）
-
 返回为超链接
