@@ -1,4 +1,4 @@
-name: Deploy To Github Pages
+name: Sync Docs And Deploy To Github Pages
 
 on:
   # 允许手动push触发
@@ -8,7 +8,7 @@ on:
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
-      - deploy
+      - sync-deploy
 
 jobs:
   build:

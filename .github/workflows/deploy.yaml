@@ -1,0 +1,44 @@
+name: Deploy To Github Pages
+
+on:
+   #允许手动push触发
+  push:
+    branches:
+      - master
+  # 允许外部仓库事件触发
+  repository_dispatch:
+    types:
+      - deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@master
+
+      - name: 安装node环境
+        uses: actions/setup-node@master
+        with:
+          node-version: "16.x"
+
+      - name: 安装依赖
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install --prod
+
+      - name: 生成静态文件
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+        run: |
+          npm run docs:build
+
+      - name: 部署到Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          publish_dir: docs/.vitepress/dist
+          external_repository: LetTTGACO/LetTTGACO.github.io
+          publish_branch: master
+          commit_message: ${{ github.event.head_commit.message }}
