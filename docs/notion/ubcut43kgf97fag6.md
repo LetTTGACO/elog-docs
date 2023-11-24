@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2023-11-19 01:19:00'
+updated: '2023-11-24 12:31:00'
 ---
 
 # 最佳实践
@@ -100,7 +100,7 @@ Github: [https://github.com/ql-isaac/www](https://github.com/ql-isaac/www)
 ### 【MatrixCore】 Notion + Elog 文档备份 + GitHub Action 持续集成
 
 
- 网站: [https://matrixcore.top/article/elog](https://matrixcore.top/article/elog)
+网站: [https://matrixcore.top/article/elog](https://matrixcore.top/article/elog)
 
 
 Github: [https://github.com/happyzhangyyds/elog](https://github.com/happyzhangyyds/elog)
@@ -109,8 +109,17 @@ Github: [https://github.com/happyzhangyyds/elog](https://github.com/happyzhangyy
 ### 【DC's Blog】 Notion + Elog 文档备份 + GitHub Action 持续集成
 
 
- 网站: [https://aaqq.cc/article/24c2897b-78f3-4f6a-b8e6-292ea60edf7c](https://aaqq.cc/article/24c2897b-78f3-4f6a-b8e6-292ea60edf7c)
+网站: [https://aaqq.cc/article/24c2897b-78f3-4f6a-b8e6-292ea60edf7c](https://aaqq.cc/article/24c2897b-78f3-4f6a-b8e6-292ea60edf7c)
 
 
 Github: [https://github.com/cyolc932/elog](https://github.com/cyolc932/elog)
+
+
+### 语雀写作，Kubernetes部署——Elog+Hexo博客持续集成
+
+
+实践教程：[https://juejin.cn/post/7304540675668181003](https://juejin.cn/post/7304540675668181003)
+
+
+作者Github：[https://github.com/MiiW](https://github.com/MiiW)
 
