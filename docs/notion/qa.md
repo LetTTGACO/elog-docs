@@ -5,7 +5,7 @@ catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: '2023-07-23 03:37:00'
-updated: '2023-11-08 16:00:00'
+updated: '2023-11-24 14:22:00'
 ---
 
 # 常见问题
@@ -14,7 +14,7 @@ updated: '2023-11-08 16:00:00'
 **大部分问题都可以在文档中找到解决办法，请优先从** [快速开始](/notion/start) **阅读文档，再进行实际操作。**
 
 
-如果还是运行报错，请在 Github 中提交 [Issues](https://github.com/LetTTGACO/elog/issues) 或加入 [elog 反馈交流群](/notion/la9toqncox96kfp8)
+如果还是运行报错，请 [提交 issue](https://github.com/LetTTGACO/elog/issues/new) 或在 [discussions 中留言](https://github.com/LetTTGACO/elog/discussions/categories/q-a)
 
 
 ## 配置问题
@@ -227,5 +227,5 @@ Elog在大部分场景下都只是一个批量导出`markdown`工具，不涉及
 不可否认，配置Elog，特别是一定的复杂场景，确实需要一定的代码基础知识，但Elog的其中一个目标也是尽可能地提供开箱即用的配置支持，降低配置的复杂度。
 
 
-在Elog还没进化到这种程度之前，还是需要大家尽量熟悉Elog使用文档。如果有解决不了的问题，也可以加交流群讨论。
+在Elog还没进化到这种程度之前，还是需要大家尽量熟悉Elog使用文档。
 
