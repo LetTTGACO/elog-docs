@@ -18,7 +18,6 @@ module.exports = {
       frontMatter: {
         enable: true,
         exclude: ['status'],
-        timeFormat: true,
       }
     }
   },

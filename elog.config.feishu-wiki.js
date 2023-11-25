@@ -18,7 +18,6 @@ module.exports = {
       catalog: true,
       frontMatter: {
         enable: true,
-        timeFormat: true,
       }
     }
   },
