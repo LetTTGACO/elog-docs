@@ -5,7 +5,7 @@ catalog: 进阶玩法
 tags: Elog-Docs
 title: Front Matter
 date: '2023-04-06 21:31:00'
-updated: '2023-11-25 20:42:00'
+updated: '2023-11-25 20:47:00'
 ---
 
 # Front Matter
@@ -53,7 +53,7 @@ deploy: {
 ## 预定义属性
 
 
-Elog 预设置了一些常用的属性，会在`matter-markdown`模式默认下生成包含这些属性的 markdown 文档。
+Elog 预设置了一些常用的属性，会在启用`front matter` 时默认下生成包含这些属性的 `markdown` 文档。
 
 
 | 属性      | 类型                  | 说明        |
