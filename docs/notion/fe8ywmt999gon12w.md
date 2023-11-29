@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 配置详情
 date: '2023-04-22 01:04:00'
-updated: '2023-10-13 14:07:00'
+updated: '2023-11-30 00:12:00'
 ---
 
 # 配置详情
@@ -44,76 +44,70 @@ module.exports = {
     platform: 'yuque',
     yuque: {
       token: process.env.YUQUE_TOKEN,
-      baseUrl: '',
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
       onlyPublic: false,
       onlyPublished: true,
     },
-    "yuque-pwd": {
+    'yuque-pwd': {
       username: process.env.YUQUE_USERNAME,
-      password: process.env.YUQUE_PWD,
-      baseUrl: '',
+      password: process.env.YUQUE_PASSWORD,
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
-      linebreak: true
-    },
-    feishu: {
-      folderToken: process.env.FEISHU_FOLDER_TOKEN,
-      appId: process.env.FEISHU_APP_ID,
-      appSecret: process.env.FEISHU_APP_SECRET,
+      onlyPublic: false,
+      onlyPublished: true,
     },
     notion: {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
       filter: false, // {property: 'status', select: {equals: '已发布'}}
-      sorts: false, // [{timestamp: 'created_time', direction: 'descending'}],
-      catalog: false
+    },
+    feishu: {
+      type: 'space',
+      wikiId: process.env.FEISHU_WIKI_ID,
+      folderToken: process.env.FEISHU_FOLDER_TOKEN,
+      appId: process.env.FEISHU_APP_ID,
+      appSecret: process.env.FEISHU_APP_SECRET,
     },
     flowus: {
-      tablePageId: process.env.NOTION_DATABASE_ID,
+      tablePageId: process.env.FLOWUS_TABLE_PAGE_ID,
       filter: false, // {property: 'status',value: '已发布'}
-      sorts: false, // {property: 'createdAt', direction: "descending"},
-      catalog: false
-    },
+    }
   },
   deploy: {
     platform: 'local',
     local: {
-      outputDir: '',
-      filename: '',
-      format: '',
-      catalog: false,
-      formatExt: '',
+      outputDir: './docs',
+      filename: 'title',
+      format: 'markdown',
+    },
+    halo: {
+      endpoint: process.env.HALO_ENDPOINT,
+      token: process.env.HALO_TOKEN,
+      policyName: process.env.HALO_POLICY_NAME,
+      rowType: 'html',
+      needUploadImage: true,
     },
     confluence: {
       user: process.env.CONFLUENCE_USER,
-      password: process.env.CONFLUENCE_PASSWORD,
-      baseUrl: process.env.CONFLUENCE_BASE_URL,
+      password: process.env.WORDPRESS_PASSWORD,
+      endpoint: process.env.WORDPRESS_ENDPOINT,
       spaceKey: process.env.CONFLUENCE_SPACE_KEY,
       rootPageId: process.env.CONFLUENCE_ROOT_PAGE_ID, // 可选
-      formatExt: '', // 可选
     },
     wordpress: {
       username: process.env.WORDPRESS_USERNAME,
       password: process.env.WORDPRESS_PASSWORD,
       endpoint: process.env.WORDPRESS_ENDPOINT,
-      keyMap: {
-        tags: 'tags',
-        categories: 'categories',
-        urlname: 'urlname',
-        cover: 'cover',
-        description: 'description',
-      },
-      formatExt: '' // 可选
-    },
+    }
   },
   image: {
     enable: false,
     platform: 'local',
     local: {
-      outputDir: '',
-      prefixKey: '',
+      outputDir: './docs/images',
+      prefixKey: '/images',
+      pathFollowDoc: false,
     },
     oss: {
       secretId: process.env.OSS_SECRET_ID,
@@ -122,7 +116,6 @@ module.exports = {
       region: process.env.OSS_REGION,
       host: process.env.OSS_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     cos: {
       secretId: process.env.COS_SECRET_ID,
@@ -131,7 +124,6 @@ module.exports = {
       region: process.env.COS_REGION,
       host: process.env.COS_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     qiniu: {
       secretId: process.env.QINIU_SECRET_ID,
@@ -140,7 +132,6 @@ module.exports = {
       region: process.env.QINIU_REGION,
       host: process.env.QINIU_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     upyun: {
       user: process.env.UPYUN_USER,
@@ -148,18 +139,14 @@ module.exports = {
       bucket: process.env.UPYUN_BUCKET,
       host: process.env.UPYUN_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     github: {
       user: process.env.GITHUB_USER,
       token: process.env.GITHUB_TOKEN,
       repo: process.env.GITHUB_REPO,
-      branch: '',
-      host: '',
       prefixKey: '',
-      secretExt: '', // 可选
-    },
-  },
+    }
+  }
 }
 ```
 
@@ -531,20 +518,6 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 	  updated: string
 	  [key: string]: any
 	}
-	
-	/** 语雀知识库目录 */
-	export interface YuqueCatalog {
-	  /** 类型：文章/分组 */
-	  type: 'DOC' | 'TITLE'
-	  title: string
-	  uuid: string
-	  child_uuid: string
-	  parent_uuid: string
-	  slug: string
-	  depth: number
-	  level: number
-	}
-	
 	```
 
 
@@ -727,12 +700,15 @@ elog sync -e .elog.env
 ```
 
 
-```shell
+```yaml
+# .elog.env
+
 # 语雀（Token方式）
 YUQUE_TOKEN=
 # 语雀（帐号密码方式）
 YUQUE_USERNAME=
-YUQUE_PWD=
+YUQUE_PASSWORD=
+# 语雀公共参数，使用语雀必填
 YUQUE_LOGIN=
 YUQUE_REPO=
 
@@ -740,8 +716,19 @@ YUQUE_REPO=
 NOTION_TOKEN=
 NOTION_DATABASE_ID=
 
-# FlowUs
+#FlowUs
 FLOWUS_TABLE_PAGE_ID=
+
+#飞书云文档
+FEISHU_APP_ID=
+FEISHU_APP_SECRET=
+FEISHU_FOLDER_TOKEN=
+FEISHU_WIKI_ID=
+
+# Halo
+HALO_ENDPOINT=
+HALO_TOKEN=
+HALO_POLICY_NAME=
 
 # Confluence
 CONFLUENCE_BASE_URL=
@@ -750,7 +737,7 @@ CONFLUENCE_PASSWORD=
 CONFLUENCE_SPACE_KEY=
 CONFLUENCE_ROOT_PAGE_ID=
 
-#WordPress
+# WordPress
 WORDPRESS_USERNAME=
 WORDPRESS_PASSWORD=
 WORDPRESS_ENDPOINT=
@@ -767,7 +754,7 @@ OSS_SECRET_ID=
 OSS_SECRET_KEY=
 OSS_BUCKET=
 OSS_REGION=
-OSS_HOST=
+OSS_HOST=xxx.oss-cn-xxx.aliyuncs.com
 
 # 七牛云
 QINIU_SECRET_ID=
@@ -780,7 +767,7 @@ QINIU_HOST=
 UPYUN_USER=
 UPYUN_PASSWORD=
 UPYUN_BUCKET=
-UPYUN_HOST=
+UPYUN_HOST=xxx.xx.upaiyun.com
 
 # Github
 GITHUB_USER=

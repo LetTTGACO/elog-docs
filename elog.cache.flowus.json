@@ -3,14 +3,13 @@
     {
       "id": "7ad97e50-9e7a-4422-bb97-a557e9acb841",
       "doc_id": "7ad97e50-9e7a-4422-bb97-a557e9acb841",
-      "updated": 1698577262395,
+      "updated": 1701178784156,
       "properties": {
         "urlname": "flowus-example",
         "title": "FlowUs示例页面",
-        "updated": "2023-10-29 19:01:02",
+        "updated": "2023-11-28 21:39:44",
         "date": "2023-07-07 08:00:00",
-        "sort": "1",
-        "category": "技术分享",
+        "categories": "技术分享",
         "tags": [
           "FlowUs",
           "Elog"
@@ -21,6 +20,27 @@
       "realName": "flowus-example",
       "relativePath": "/flowus-example.md",
       "docPath": "./docs/flowus"
+    },
+    {
+      "id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
+      "doc_id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
+      "updated": 1701177017225,
+      "properties": {
+        "urlname": "flowus-example-2",
+        "title": "第二篇文档",
+        "updated": "2023-11-28 21:10:17",
+        "date": "2023-11-28 08:00:00",
+        "categories": "踩坑记录",
+        "tags": [
+          "Elog",
+          "Blog"
+        ],
+        "summary": "第二篇",
+        "catalog": "示例目录"
+      },
+      "realName": "flowus-example-2",
+      "relativePath": "/flowus-example-2.md",
+      "docPath": "./docs/flowus"
     }
   ],
   "catalog": [
@@ -28,21 +48,41 @@
       "id": "7ad97e50-9e7a-4422-bb97-a557e9acb841",
       "doc_id": "7ad97e50-9e7a-4422-bb97-a557e9acb841",
       "title": "FlowUs示例页面",
-      "updated": 1698577262395,
+      "updated": 1701178784156,
       "createdAt": 1688715057979,
-      "updatedAt": 1698577262395,
+      "updatedAt": 1701178784156,
       "properties": {
         "urlname": "flowus-example",
         "title": "FlowUs示例页面",
-        "updated": "2023-10-29 19:01:02",
+        "updated": "2023-11-28 21:39:44",
         "date": "2023-07-07 08:00:00",
-        "sort": "1",
-        "category": "技术分享",
+        "categories": "技术分享",
         "tags": [
           "FlowUs",
           "Elog"
         ],
         "summary": "FlowUs示例页面",
+        "catalog": "示例目录"
+      }
+    },
+    {
+      "id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
+      "doc_id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
+      "title": "第二篇文档",
+      "updated": 1701177017225,
+      "createdAt": 1701176902961,
+      "updatedAt": 1701177017225,
+      "properties": {
+        "urlname": "flowus-example-2",
+        "title": "第二篇文档",
+        "updated": "2023-11-28 21:10:17",
+        "date": "2023-11-28 08:00:00",
+        "categories": "踩坑记录",
+        "tags": [
+          "Elog",
+          "Blog"
+        ],
+        "summary": "第二篇",
         "catalog": "示例目录"
       }
     }

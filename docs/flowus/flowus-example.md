@@ -1,10 +1,9 @@
 ---
 urlname: flowus-example
 title: FlowUs示例页面
-updated: '2023-10-29 19:01:02'
+updated: '2023-11-28 21:39:44'
 date: '2023-07-07 08:00:00'
-sort: '1'
-category: 技术分享
+categories: 技术分享
 tags:
   - FlowUs
   - Elog

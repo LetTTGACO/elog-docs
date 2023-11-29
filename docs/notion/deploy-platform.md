@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 部署平台配置
 date: '2023-10-13 13:21:00'
-updated: '2023-11-18 15:07:00'
+updated: '2023-11-30 00:42:00'
 ---
 
 # 部署平台配置
@@ -149,6 +149,92 @@ updated: '2023-11-18 15:07:00'
 	  [key: string]: any
 	}
 	```
+
+
+## Halo
+
+
+Halo 关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#halo) 页面。
+
+
+> `0.13.0`及以上版本支持
+
+
+| 字段              | 必填 | 说明                        | 默认值            |
+| --------------- | -- | ------------------------- | -------------- |
+| endpoint        | 是  | 站点地址，区分 http/https        | -              |
+| token           | 是  | Halo 个人令牌                 | -              |
+| policyName      | 否  | 存储策略                      | default-policy |
+| rowType         | 否  | 源文档格式，取值 html/markdown    | html           |
+| needUploadImage | 否  | 是否将文档图片上传到 Halo           | false          |
+| formatExt       | 否  | 自定义文档处理适配器路径，需要符合HTML格式要求 | -              |
+
+
+### rowType 字段说明
+
+
+**如果使用 Elog 进行同步，建议不要在 Halo 后台编辑文档，文档的编辑应该交给写作平台来处理**
+
+
+[根据 Halo 社区说明](https://github.com/halo-dev/halo/issues/4936#issuecomment-1830199955)：
+
+
+Halo 的默认编辑器是富文本编辑器，`rawType` 为 `html`，`rawType` 的意义在于让 Halo 知道文章应该用什么源格式的编辑器进行编辑。
+
+
+Halo 本身没有自带 Markdown 编辑器，需要用户自行安装，所有的编辑器插件可以在 [Halo插件市场](https://www.halo.run/store/apps?type=PLUGIN) 中找到。
+
+
+此外，在 `rawType` 设置为 `markdown` 且系统中并没有 `markdown` 类型的编辑器时，进入文章编辑会给出提示：
+
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//41c42ad20e6a991276ff2cdb6786c521.png)
+
+
+### needUploadImage 字段说明
+
+
+是否将文档图片上传到 Halo中存储。此外，建议该设置与图床设置，二选一即可。如果你开启了图床，将文档图片上传到 oss 之类的图床上，就没必要开启 Halo 图片上传，再从 oss 上传图片到 Halo。
+
+
+### FormatExt 字段说明
+
+
+> **目前还不支持在部署平台为 Halo 中使用，将在后续版本中支持**
+
+
+自定义文档处理适配器`.js`文件路径，当需要对文档进一步处理时，可配置此选项
+
+1. 目前只支持 Common Js 标准的处理器
+2. 处理器需要暴露一个**同步/异步**的 `format` 的方法或 npm 库
+3. 需要返回**传入的** **doc 文档对象**
+
+```javascript
+const { htmlAdapter } = require('@elog/cli')
+
+/**
+ * 自定义文档插件
+ * @param {DocDetail} doc doc的类型定义为 DocDetail
+ * @param {ImageClient} imageClient 图床下载器，可用于图片上传
+ * @return {Promise<DocDetail>} 返回处理后的文档对象
+ */
+const format = async (doc, imageClient) => {
+  const cover = doc.properties.cover
+  // 将 cover 字段中的 notion 图片下载到本地
+  if (imageClient)  {
+    // 只有启用图床平台image.enable=true时，imageClient才能用，否则请自行实现图片上传
+    const url = await imageClient.uploadImageFromUrl(cover, doc)
+    // cover链接替换为本地图片
+    doc.properties.cover = url
+  }
+  doc.body = htmlAdapter(doc);
+  return doc;
+};
+
+module.exports = {
+  format,
+};
+```
 
 
 ## Confluence

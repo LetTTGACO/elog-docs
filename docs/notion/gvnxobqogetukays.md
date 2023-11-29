@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2023-11-18 20:43:00'
+updated: '2023-11-30 00:22:00'
 ---
 
 # 关键信息获取
@@ -137,6 +137,35 @@ updated: '2023-11-18 20:43:00'
 
 
 ![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/32db6b04a9bb2d9680d5fb1ef6ea9a18.png)
+
+
+## Halo
+
+
+FlowUs平台可复制FlowUs模版库 [elog-halo 模板](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1) 
+
+
+### endpoint
+
+
+Halo 站点地址，例如 `http://halo.1874.orb.local`，区分 `http/https`
+
+
+### token
+
+
+Halo 个人令牌，可前往个人中心中创建，需要以下权限
+
+- 附件管理
+- 文章管理
+
+### policyName
+
+
+Halo 的存储策略，可前往附件管理中，F12 打开浏览器开发者控制台，刷新后查看`/apis/storage.halo.run/v1alpha1/policies`接口，找到返回的`metadata.name`字段值，默认请设置`default-policy`
+
+
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//557709eaba58629f4fc6f23924b996c4.png)
 
 
 ## WordPress

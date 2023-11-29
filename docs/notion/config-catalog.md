@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
 date: '2023-10-13 13:12:00'
-updated: '2023-11-18 15:07:00'
+updated: '2023-11-30 00:10:00'
 ---
 
 # 目录结构
@@ -44,19 +44,23 @@ module.exports = {
     platform: 'yuque',
     yuque: {
       token: process.env.YUQUE_TOKEN,
-      baseUrl: '',
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
       onlyPublic: false,
       onlyPublished: true,
     },
-    "yuque-pwd": {
+    'yuque-pwd': {
       username: process.env.YUQUE_USERNAME,
-      password: process.env.YUQUE_PWD,
-      host: '',
+      password: process.env.YUQUE_PASSWORD,
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
-      linebreak: true
+      onlyPublic: false,
+      onlyPublished: true,
+    },
+    notion: {
+      token: process.env.NOTION_TOKEN,
+      databaseId: process.env.NOTION_DATABASE_ID,
+      filter: false, // {property: 'status', select: {equals: '已发布'}}
     },
     feishu: {
       type: 'space',
@@ -65,57 +69,45 @@ module.exports = {
       appId: process.env.FEISHU_APP_ID,
       appSecret: process.env.FEISHU_APP_SECRET,
     },
-    notion: {
-      token: process.env.NOTION_TOKEN,
-      databaseId: process.env.NOTION_DATABASE_ID,
-      filter: false, // {property: 'status', select: {equals: '已发布'}}
-      sorts: false, // [{timestamp: 'created_time', direction: 'descending'}],
-      catalog: false
-    },
     flowus: {
-      tablePageId: process.env.NOTION_DATABASE_ID,
+      tablePageId: process.env.FLOWUS_TABLE_PAGE_ID,
       filter: false, // {property: 'status',value: '已发布'}
-      sorts: false, // {property: 'createdAt', direction: "descending"},
-      catalog: false
-    },
+    }
   },
   deploy: {
     platform: 'local',
     local: {
-      outputDir: '',
-      filename: '',
-      format: '',
-      catalog: false,
-      formatExt: '',
+      outputDir: './docs',
+      filename: 'title',
+      format: 'markdown',
+    },
+    halo: {
+      endpoint: process.env.HALO_ENDPOINT,
+      token: process.env.HALO_TOKEN,
+      policyName: process.env.HALO_POLICY_NAME,
+      rowType: 'html',
+      needUploadImage: true,
     },
     confluence: {
       user: process.env.CONFLUENCE_USER,
-      password: process.env.CONFLUENCE_PASSWORD,
-      baseUrl: process.env.CONFLUENCE_BASE_URL,
+      password: process.env.WORDPRESS_PASSWORD,
+      endpoint: process.env.WORDPRESS_ENDPOINT,
       spaceKey: process.env.CONFLUENCE_SPACE_KEY,
       rootPageId: process.env.CONFLUENCE_ROOT_PAGE_ID, // 可选
-      formatExt: '', // 可选
     },
     wordpress: {
       username: process.env.WORDPRESS_USERNAME,
       password: process.env.WORDPRESS_PASSWORD,
       endpoint: process.env.WORDPRESS_ENDPOINT,
-      keyMap: {
-        tags: 'tags',
-        categories: 'categories',
-        urlname: 'urlname',
-        cover: 'cover',
-        description: 'description',
-      },
-      formatExt: '' // 可选
-    },
+    }
   },
   image: {
     enable: false,
     platform: 'local',
     local: {
-      outputDir: '',
-      prefixKey: '',
+      outputDir: './docs/images',
+      prefixKey: '/images',
+      pathFollowDoc: false,
     },
     oss: {
       secretId: process.env.OSS_SECRET_ID,
@@ -124,7 +116,6 @@ module.exports = {
       region: process.env.OSS_REGION,
       host: process.env.OSS_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     cos: {
       secretId: process.env.COS_SECRET_ID,
@@ -133,7 +124,6 @@ module.exports = {
       region: process.env.COS_REGION,
       host: process.env.COS_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     qiniu: {
       secretId: process.env.QINIU_SECRET_ID,
@@ -142,7 +132,6 @@ module.exports = {
       region: process.env.QINIU_REGION,
       host: process.env.QINIU_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     upyun: {
       user: process.env.UPYUN_USER,
@@ -150,18 +139,14 @@ module.exports = {
       bucket: process.env.UPYUN_BUCKET,
       host: process.env.UPYUN_HOST,
       prefixKey: '',
-      secretExt: '', // 可选
     },
     github: {
       user: process.env.GITHUB_USER,
       token: process.env.GITHUB_TOKEN,
       repo: process.env.GITHUB_REPO,
-      branch: '',
-      host: '',
       prefixKey: '',
-      secretExt: '', // 可选
-    },
-  },
+    }
+  }
 }
 ```
 
