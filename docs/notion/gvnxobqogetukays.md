@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2023-11-30 00:22:00'
+updated: '2023-11-30 00:52:00'
 ---
 
 # 关键信息获取
@@ -142,7 +142,7 @@ updated: '2023-11-30 00:22:00'
 ## Halo
 
 
-FlowUs平台可复制FlowUs模版库 [elog-halo 模板](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1) 
+FlowUs平台可复制FlowUs模版库 [elog-halo 模板](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1) ，其他写作平台请参考此模版库进行配置。语雀/飞书可手动在文档头部指定 Front Matter 进行文档字段配置
 
 
 ### endpoint
@@ -165,7 +165,7 @@ Halo 个人令牌，可前往个人中心中创建，需要以下权限
 Halo 的存储策略，可前往附件管理中，F12 打开浏览器开发者控制台，刷新后查看`/apis/storage.halo.run/v1alpha1/policies`接口，找到返回的`metadata.name`字段值，默认请设置`default-policy`
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//557709eaba58629f4fc6f23924b996c4.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/557709eaba58629f4fc6f23924b996c4.png)
 
 
 ## WordPress
