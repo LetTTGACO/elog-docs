@@ -5,7 +5,7 @@ catalog: 关于Elog
 tags: Elog-Docs
 title: Elog 能干什么
 date: '2023-04-06 21:31:00'
-updated: '2023-10-14 00:47:00'
+updated: '2023-11-30 01:13:00'
 ---
 
 # Elog 能干什么
@@ -68,6 +68,7 @@ updated: '2023-10-14 00:47:00'
 - [x] HuGo
 - [x] Docusaurus
 - [x] Docz
+- [x] Halo
 - [x] Confluence
 - [x] WordPress
 
