@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2023-11-30 00:52:00'
+updated: '2023-11-30 18:21:00'
 ---
 
 # 关键信息获取
@@ -60,7 +60,8 @@ updated: '2023-11-30 00:52:00'
 1. 使用 [Database 模板](https://1874.notion.site/09ff9e1e141744c6af0a1f69d2a3d834?v=a09065f9266446afa745b475044daca6) 创建数据库副本或增加必要属性到已有 Notion 数据库
 	1. 博客平台为Hexo时，可参考[elog-hexo-template](https://1874.notion.site/867486af567f4a8897427b15ffd10b3c?v=a25aec8e27d5415e8605e43034f822bd&pvs=4) 创建数据库副本或增加必要属性到已有 Notion 数据库
 	2. 博客平台为 VitePress 时，可参考[elog-vitepress-template](https://1874.notion.site/260f012f7223416b82088d3e061dae9f?v=2385a58a18cd45d6b2e8abb3aa3d82a2&pvs=4) 创建数据库副本或增加必要属性到已有 Notion 数据库
-	3. 如果使用的是 NotionNext ，可根据配置文档保证必要的数据库字段即可
+	3. 博客平台为 Halo 时，可参考[notion-halo](https://1874.notion.site/b061632fc7d644eaa12f3e0f095938fb?v=7491fbb2415c43cf9752a7e4ad9f41a5) 创建数据库副本或增加必要属性到已有 Notion 数据库
+	4. 如果使用的是 NotionNext ，可根据配置文档保证必要的数据库字段即可
 2. 创建 Integration Token，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#create-your-integration-in-notion)
 3. 将复制的数据库连接到刚创建的 Integration，具体请参考 [Notion 官方教程](https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions)
 4. 获取数据库 DatabaseId
