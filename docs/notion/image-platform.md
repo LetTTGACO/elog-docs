@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 13:24:00'
-updated: '2023-11-10 15:26:00'
+updated: '2023-11-30 17:00:00'
 ---
 
 # 图床平台配置
@@ -22,6 +22,7 @@ updated: '2023-11-10 15:26:00'
 | enable   | 否  | boolean      | 是否启用图床                                 | false |
 | platform | 否  | string       | 图床平台`local/cos/oss/github/qiniu/upyun` | local |
 | plugin   | 否  | string｜class | 自定义图床插件配置                              | -     |
+|          |    |              |                                        |       |
 
 
 ### plugin 字段说明
