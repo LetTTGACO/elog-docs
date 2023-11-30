@@ -13,7 +13,7 @@ module.exports = {
     local: {
       outputDir: './docs/flowus',
       filename: 'urlname',
-      format: 'matter-markdown',
+      format: 'markdown',
       formatExt: '',
       frontMatter: {
         enable: true,

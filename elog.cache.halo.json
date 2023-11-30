@@ -2,11 +2,15 @@
   "docs": [
     {
       "id": "d64acea7-5119-4591-954a-ef928afafd1c",
+      "doc_id": "d64acea7-5119-4591-954a-ef928afafd1c",
+      "updated": 1701340210018,
       "properties": {
         "urlname": "flowus-halo",
         "title": "FlowUs + Halo + GitHub Actions 博客解决方案",
-        "updated": "2023-11-30 01:40:01",
+        "updated": "2023-11-30 18:30:10",
         "date": "2023-11-29 17:28:00",
+        "cover": "/upload/860ece9b8e8d6f9097e9c9b74f61.JPG",
+        "autoExcerpt": "true",
         "categories": [
           "快速开始"
         ],
@@ -15,21 +19,42 @@
         ],
         "public": "true",
         "pinned": "true",
+        "excerpt": "开启自动生成",
         "publish": "true"
-      },
-      "body": "# 快速开始\n## 前言\n## 文档站点工具汇总\n- 写作平台：FlowUs\n\n- 文档平台：[Halo](https://www.halo.run/)\n\n- 文档同步：[Elog](https://github.com/LetTTGACO/elog)\n\n## 文档站点搭建指南\n### Fork模板仓库\n[点击 Fork](https://github.com/elog-x/flowus-halo/fork) 该模板仓库到个人 Github 账号仓库下并 clone 到本地。\n### 安装依赖\n在项目根目录下运行命令安装依赖：\n```Shell\nnpm install\n```\n### 新建本地调试文件\n在项目根目录中复制`.elog.example.env`文件并改名为`.elog.env`，此文件将用于本地同步文档时使用。\n### 配置FlowUs\n参考[示例数据表](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1)[格](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1)，选择或新建 FlowUs 数据表格，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)配置 Halo 并获取`tablePageId endpoint token policyName`。并在本地`.elog.env`中写入。\n```Plain Text\n# FlowUs\nFLOWUS_TABLE_PAGE_ID=获取的数据表格页面ID\n\n# Halo 站点信息\nHALO_ENDPOINT=Halo 站点地址\nHALO_TOKEN=获取的 Halo 个人令牌\nHALO_POLICY_NAME=获取的存储策略\n```\n### 本地调试\n在项目根目录运行同步命令：\n```Shell\nnpm run elog:sync-local\n```\n### 访问 Halo 站点\n### 提交代码到 github\n本地访问没问题直接提交所有文件到 Github 仓库即可\n## 自动化同步&部署\n### 检查 Github Actions 权限\n![1700326915607-691643c8-d52c-4913-9464-cb96b6b1b854.png#averageHue=%23fefdfd&clientId=u0b0d2576-ef2a-4&from=paste&height=361&id=ue7d36a55&originHeight=1192&originWidth=1404&originalType=binary&ratio=2&rotation=0&showTitle=false&size=245762&status=done&style=none&taskId=ua488e237-33d1-4210-b26a-01ec5614d6d&title=&width=425](/upload/ea903f5672495500ba7966b34845.png)\n### 配置环境变量\n![1700329642998-9006a455-211b-49f8-a89b-c6774c3e0931.png#averageHue=%23fefcfb&clientId=u0b0d2576-ef2a-4&from=paste&height=400&id=u205bf5e5&originHeight=799&originWidth=1178&originalType=binary&ratio=2&rotation=0&showTitle=false&size=149338&status=done&style=none&taskId=ua1dc9507-f7c4-43da-b17d-077223bd25a&title=&width=589](/upload/e9c14f115e7d8239d0126515b71c.png)\n### 自动化部署\n当在 FlowUs 中改动文档后，手动/自动触发 Github Actions流水线，会重新从 FlowUs 增量拉取文档，并自动部署到 Halo 站点，如此就实现了自动化部署博客。  \n整个流程的关键点就在于：如何手动/自动触发 Github Actions。  \n在项目.`github/workflows/sync.yaml`中已经配置了外部 API 触发 Github Actions 事件，所以只需要调用 API 触发流水线即可。\n#### 手动触发\n为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/elog-x/serverless-api)，按照文档配置好 URL 参数并浏览器访问即可触发流水线\n```Shell\nhttps://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=deploy&token=xxx\n```\n#### 自动触发\n## 参考示例\n示例 Github 仓库：[https://github.com/LetTTGACO/flowus-halo](https://github.com/LetTTGACO/flowus-halo)\n示例 FlowUs 数据表格：[elog-halo](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1)\n示例 Halo 站点：[https://halo.1874.cool](https://halo.1874.cool)\n",
-      "body_original": "# 快速开始\n## 前言\n## 文档站点工具汇总\n- 写作平台：FlowUs\n\n- 文档平台：[Halo](https://www.halo.run/)\n\n- 文档同步：[Elog](https://github.com/LetTTGACO/elog)\n\n## 文档站点搭建指南\n### Fork模板仓库\n[点击 Fork](https://github.com/elog-x/flowus-halo/fork) 该模板仓库到个人 Github 账号仓库下并 clone 到本地。\n### 安装依赖\n在项目根目录下运行命令安装依赖：\n```Shell\nnpm install\n```\n### 新建本地调试文件\n在项目根目录中复制`.elog.example.env`文件并改名为`.elog.env`，此文件将用于本地同步文档时使用。\n### 配置FlowUs\n参考[示例数据表](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1)[格](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1)，选择或新建 FlowUs 数据表格，并按照[文档提示](https://elog.1874.cool/notion/gvnxobqogetukays#login)配置 Halo 并获取`tablePageId endpoint token policyName`。并在本地`.elog.env`中写入。\n```Plain Text\n# FlowUs\nFLOWUS_TABLE_PAGE_ID=获取的数据表格页面ID\n\n# Halo 站点信息\nHALO_ENDPOINT=Halo 站点地址\nHALO_TOKEN=获取的 Halo 个人令牌\nHALO_POLICY_NAME=获取的存储策略\n```\n### 本地调试\n在项目根目录运行同步命令：\n```Shell\nnpm run elog:sync-local\n```\n### 访问 Halo 站点\n### 提交代码到 github\n本地访问没问题直接提交所有文件到 Github 仓库即可\n## 自动化同步&部署\n### 检查 Github Actions 权限\n![1700326915607-691643c8-d52c-4913-9464-cb96b6b1b854.png#averageHue=%23fefdfd&clientId=u0b0d2576-ef2a-4&from=paste&height=361&id=ue7d36a55&originHeight=1192&originWidth=1404&originalType=binary&ratio=2&rotation=0&showTitle=false&size=245762&status=done&style=none&taskId=ua488e237-33d1-4210-b26a-01ec5614d6d&title=&width=425](https://cdn.nlark.com/yuque/0/2023/png/417081/1700326915607-691643c8-d52c-4913-9464-cb96b6b1b854.png#averageHue=%23fefdfd&clientId=u0b0d2576-ef2a-4&from=paste&height=361&id=ue7d36a55&originHeight=1192&originWidth=1404&originalType=binary&ratio=2&rotation=0&showTitle=false&size=245762&status=done&style=none&taskId=ua488e237-33d1-4210-b26a-01ec5614d6d&title=&width=425)\n### 配置环境变量\n![1700329642998-9006a455-211b-49f8-a89b-c6774c3e0931.png#averageHue=%23fefcfb&clientId=u0b0d2576-ef2a-4&from=paste&height=400&id=u205bf5e5&originHeight=799&originWidth=1178&originalType=binary&ratio=2&rotation=0&showTitle=false&size=149338&status=done&style=none&taskId=ua1dc9507-f7c4-43da-b17d-077223bd25a&title=&width=589](https://cdn.nlark.com/yuque/0/2023/png/417081/1700329642998-9006a455-211b-49f8-a89b-c6774c3e0931.png#averageHue=%23fefcfb&clientId=u0b0d2576-ef2a-4&from=paste&height=400&id=u205bf5e5&originHeight=799&originWidth=1178&originalType=binary&ratio=2&rotation=0&showTitle=false&size=149338&status=done&style=none&taskId=ua1dc9507-f7c4-43da-b17d-077223bd25a&title=&width=589)\n### 自动化部署\n当在 FlowUs 中改动文档后，手动/自动触发 Github Actions流水线，会重新从 FlowUs 增量拉取文档，并自动部署到 Halo 站点，如此就实现了自动化部署博客。  \n整个流程的关键点就在于：如何手动/自动触发 Github Actions。  \n在项目.`github/workflows/sync.yaml`中已经配置了外部 API 触发 Github Actions 事件，所以只需要调用 API 触发流水线即可。\n#### 手动触发\n为了方便，这里提供一个部署在 Vercel 的免费公用的[ServerlessAPI](https://github.com/elog-x/serverless-api)，按照文档配置好 URL 参数并浏览器访问即可触发流水线\n```Shell\nhttps://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=deploy&token=xxx\n```\n#### 自动触发\n## 参考示例\n示例 Github 仓库：[https://github.com/LetTTGACO/flowus-halo](https://github.com/LetTTGACO/flowus-halo)\n示例 FlowUs 数据表格：[elog-halo](https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1)\n示例 Halo 站点：[https://halo.1874.cool](https://halo.1874.cool)\n",
-      "doc_id": "d64acea7-5119-4591-954a-ef928afafd1c",
-      "updated": 1701279601169,
-      "body_html": "<h1>快速开始</h1>\n<h2>前言</h2>\n<h2>文档站点工具汇总</h2>\n<ul>\n<li><p>写作平台：FlowUs</p>\n</li>\n<li><p>文档平台：<a href=\"https://www.halo.run/\">Halo</a></p>\n</li>\n<li><p>文档同步：<a href=\"https://github.com/LetTTGACO/elog\">Elog</a></p>\n</li>\n</ul>\n<h2>文档站点搭建指南</h2>\n<h3>Fork模板仓库</h3>\n<p><a href=\"https://github.com/elog-x/flowus-halo/fork\">点击 Fork</a> 该模板仓库到个人 Github 账号仓库下并 clone 到本地。</p>\n<h3>安装依赖</h3>\n<p>在项目根目录下运行命令安装依赖：</p>\n<pre><code class=\"hljs language-Shell\">npm install\n</code></pre><h3>新建本地调试文件</h3>\n<p>在项目根目录中复制<code>.elog.example.env</code>文件并改名为<code>.elog.env</code>，此文件将用于本地同步文档时使用。</p>\n<h3>配置FlowUs</h3>\n<p>参考<a href=\"https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1\">示例数据表</a><a href=\"https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1\">格</a>，选择或新建 FlowUs 数据表格，并按照<a href=\"https://elog.1874.cool/notion/gvnxobqogetukays#login\">文档提示</a>配置 Halo 并获取<code>tablePageId endpoint token policyName</code>。并在本地<code>.elog.env</code>中写入。</p>\n<pre><code class=\"hljs language-Plain\"># FlowUs\nFLOWUS_TABLE_PAGE_ID=获取的数据表格页面ID\n\n# Halo 站点信息\nHALO_ENDPOINT=Halo 站点地址\nHALO_TOKEN=获取的 Halo 个人令牌\nHALO_POLICY_NAME=获取的存储策略\n</code></pre><h3>本地调试</h3>\n<p>在项目根目录运行同步命令：</p>\n<pre><code class=\"hljs language-Shell\">npm run elog:sync-local\n</code></pre><h3>访问 Halo 站点</h3>\n<h3>提交代码到 github</h3>\n<p>本地访问没问题直接提交所有文件到 Github 仓库即可</p>\n<h2>自动化同步&amp;部署</h2>\n<h3>检查 Github Actions 权限</h3>\n<p><img src=\"/upload/ea903f5672495500ba7966b34845.png\" alt=\"1700326915607-691643c8-d52c-4913-9464-cb96b6b1b854.png#averageHue=%23fefdfd&amp;clientId=u0b0d2576-ef2a-4&amp;from=paste&amp;height=361&amp;id=ue7d36a55&amp;originHeight=1192&amp;originWidth=1404&amp;originalType=binary&amp;ratio=2&amp;rotation=0&amp;showTitle=false&amp;size=245762&amp;status=done&amp;style=none&amp;taskId=ua488e237-33d1-4210-b26a-01ec5614d6d&amp;title=&amp;width=425\"></p>\n<h3>配置环境变量</h3>\n<p><img src=\"/upload/e9c14f115e7d8239d0126515b71c.png\" alt=\"1700329642998-9006a455-211b-49f8-a89b-c6774c3e0931.png#averageHue=%23fefcfb&amp;clientId=u0b0d2576-ef2a-4&amp;from=paste&amp;height=400&amp;id=u205bf5e5&amp;originHeight=799&amp;originWidth=1178&amp;originalType=binary&amp;ratio=2&amp;rotation=0&amp;showTitle=false&amp;size=149338&amp;status=done&amp;style=none&amp;taskId=ua1dc9507-f7c4-43da-b17d-077223bd25a&amp;title=&amp;width=589\"></p>\n<h3>自动化部署</h3>\n<p>当在 FlowUs 中改动文档后，手动/自动触发 Github Actions流水线，会重新从 FlowUs 增量拉取文档，并自动部署到 Halo 站点，如此就实现了自动化部署博客。<br>整个流程的关键点就在于：如何手动/自动触发 Github Actions。<br>在项目.<code>github/workflows/sync.yaml</code>中已经配置了外部 API 触发 Github Actions 事件，所以只需要调用 API 触发流水线即可。</p>\n<h4>手动触发</h4>\n<p>为了方便，这里提供一个部署在 Vercel 的免费公用的<a href=\"https://github.com/elog-x/serverless-api\">ServerlessAPI</a>，按照文档配置好 URL 参数并浏览器访问即可触发流水线</p>\n<pre><code class=\"hljs language-Shell\">https://serverless-api-elog.vercel.app/api/github?user=xxx&amp;repo=xxx&amp;event_type=deploy&amp;token=xxx\n</code></pre><h4>自动触发</h4>\n<h2>参考示例</h2>\n<p>示例 Github 仓库：<a href=\"https://github.com/LetTTGACO/flowus-halo\">https://github.com/LetTTGACO/flowus-halo</a><br>示例 FlowUs 数据表格：<a href=\"https://flowus.cn/1874/share/e4e1e6dc-403b-45e6-b4cd-b3d8e6ae79b1\">elog-halo</a><br>示例 Halo 站点：<a href=\"https://halo.1874.cool\">https://halo.1874.cool</a></p>\n"
+      }
+    },
+    {
+      "id": "53b5591c-62b5-4ef5-a299-d0a7728982c9",
+      "doc_id": "53b5591c-62b5-4ef5-a299-d0a7728982c9",
+      "updated": 1701337821955,
+      "properties": {
+        "urlname": "flowus-notice",
+        "title": "FlowUs 写作注意事项",
+        "updated": "2023-11-30 17:50:21",
+        "date": "2023-11-29 17:29:19",
+        "cover": "/upload/cff31c47ed235d6aa8ad27d8cc02.jpg",
+        "autoExcerpt": "true",
+        "categories": [
+          "配置详情",
+          "快速开始"
+        ],
+        "tags": [
+          "FlowUs"
+        ],
+        "public": "true",
+        "publish": "true"
+      }
     },
     {
       "id": "4eb441bb-d1d2-4dcd-8c73-b94e006fbe8b",
+      "doc_id": "4eb441bb-d1d2-4dcd-8c73-b94e006fbe8b",
+      "updated": 1701337829401,
       "properties": {
         "urlname": "elog-config",
         "title": "Elog配置详解",
-        "updated": "2023-11-29 22:38:08",
+        "updated": "2023-11-30 17:50:29",
         "date": "2023-11-29 17:28:56",
+        "cover": "/upload/48963f4d81077a7b01e64fb1f216.svg",
         "categories": [
           "配置详情",
           "快速开始"
@@ -38,333 +63,20 @@
           "Elog"
         ],
         "public": "true",
+        "excerpt": "未开启自动生成",
         "publish": "true"
-      },
-      "body": "# Elog配置详解\n参考 [Elog 文档](https://elog.1874.cool/)，本博客的 Elog 的配置如下：\n```JavaScript\nmodule.exports = {\n  write: {\n    platform: 'flowus',\n    flowus: {\n      tablePageId: process.env.FLOWUS_TABLE_PAGE_ID,\n    }\n  },\n  deploy: {\n    platform: 'halo',\n    halo: {\n      endpoint: process.env.HALO_ENDPOINT,\n      token: process.env.HALO_TOKEN,\n      policyName: process.env.HALO_POLICY_NAME,\n      rowType: 'markdown',\n      needUploadImage: true\n    }\n  },\n  image: {\n    enable: false\n  },\n}\n\n```\n## FlowUs 配置\n```JavaScript\nwrite: {\n  platform: 'flowus',\n  flowus: {\n    tablePageId: process.env.FLOWUS_TABLE_PAGE_ID,\n  }\n}\n```\n- `tablePageId`为FlowUs 数据表格页面 ID，可从[此处](https://elog.1874.cool/notion/gvnxobqogetukays#tablepageid)获取\n\n## Halo 配置\n```JavaScript\ndeploy: {\n  platform: 'halo',\n  halo: {\n    endpoint: process.env.HALO_ENDPOINT,\n    token: process.env.HALO_TOKEN,\n    policyName: process.env.HALO_POLICY_NAME,\n    rowType: 'markdown',\n    needUploadImage: true\n  }\n}\n```\n- `endpoint`表示 Halo 站点地址\n\n- `token`表示 Halo 个人令牌\n\n- `policyName`表示附件的存储策略\n\n- `needUploadImage`表示文档将会把扫描到的图片上传到 Halo中去\n\n## 图床配置\n```JavaScript\nimage: {\n  enable: false\n},\n```\n不使用图床。不推荐图床和`needUploadImage`一起打开，要么用图床图片，要么上传到 Halo 数据库中\n## 更多 Elog 配置详情，请阅读 [Elog 文档](https://elog.1874.cool/)\n",
-      "body_original": "# Elog配置详解\n参考 [Elog 文档](https://elog.1874.cool/)，本博客的 Elog 的配置如下：\n```JavaScript\nmodule.exports = {\n  write: {\n    platform: 'flowus',\n    flowus: {\n      tablePageId: process.env.FLOWUS_TABLE_PAGE_ID,\n    }\n  },\n  deploy: {\n    platform: 'halo',\n    halo: {\n      endpoint: process.env.HALO_ENDPOINT,\n      token: process.env.HALO_TOKEN,\n      policyName: process.env.HALO_POLICY_NAME,\n      rowType: 'markdown',\n      needUploadImage: true\n    }\n  },\n  image: {\n    enable: false\n  },\n}\n\n```\n## FlowUs 配置\n```JavaScript\nwrite: {\n  platform: 'flowus',\n  flowus: {\n    tablePageId: process.env.FLOWUS_TABLE_PAGE_ID,\n  }\n}\n```\n- `tablePageId`为FlowUs 数据表格页面 ID，可从[此处](https://elog.1874.cool/notion/gvnxobqogetukays#tablepageid)获取\n\n## Halo 配置\n```JavaScript\ndeploy: {\n  platform: 'halo',\n  halo: {\n    endpoint: process.env.HALO_ENDPOINT,\n    token: process.env.HALO_TOKEN,\n    policyName: process.env.HALO_POLICY_NAME,\n    rowType: 'markdown',\n    needUploadImage: true\n  }\n}\n```\n- `endpoint`表示 Halo 站点地址\n\n- `token`表示 Halo 个人令牌\n\n- `policyName`表示附件的存储策略\n\n- `needUploadImage`表示文档将会把扫描到的图片上传到 Halo中去\n\n## 图床配置\n```JavaScript\nimage: {\n  enable: false\n},\n```\n不使用图床。不推荐图床和`needUploadImage`一起打开，要么用图床图片，要么上传到 Halo 数据库中\n## 更多 Elog 配置详情，请阅读 [Elog 文档](https://elog.1874.cool/)\n",
-      "doc_id": "4eb441bb-d1d2-4dcd-8c73-b94e006fbe8b",
-      "updated": 1701268688667,
-      "body_html": "<h1>Elog配置详解</h1>\n<p>参考 <a href=\"https://elog.1874.cool/\">Elog 文档</a>，本博客的 Elog 的配置如下：</p>\n<pre><code class=\"hljs language-JavaScript\"><span class=\"hljs-variable language_\">module</span>.<span class=\"hljs-property\">exports</span> = {\n  <span class=\"hljs-attr\">write</span>: {\n    <span class=\"hljs-attr\">platform</span>: <span class=\"hljs-string\">&#x27;flowus&#x27;</span>,\n    <span class=\"hljs-attr\">flowus</span>: {\n      <span class=\"hljs-attr\">tablePageId</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">FLOWUS_TABLE_PAGE_ID</span>,\n    }\n  },\n  <span class=\"hljs-attr\">deploy</span>: {\n    <span class=\"hljs-attr\">platform</span>: <span class=\"hljs-string\">&#x27;halo&#x27;</span>,\n    <span class=\"hljs-attr\">halo</span>: {\n      <span class=\"hljs-attr\">endpoint</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">HALO_ENDPOINT</span>,\n      <span class=\"hljs-attr\">token</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">HALO_TOKEN</span>,\n      <span class=\"hljs-attr\">policyName</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">HALO_POLICY_NAME</span>,\n      <span class=\"hljs-attr\">rowType</span>: <span class=\"hljs-string\">&#x27;markdown&#x27;</span>,\n      <span class=\"hljs-attr\">needUploadImage</span>: <span class=\"hljs-literal\">true</span>\n    }\n  },\n  <span class=\"hljs-attr\">image</span>: {\n    <span class=\"hljs-attr\">enable</span>: <span class=\"hljs-literal\">false</span>\n  },\n}\n</code></pre><h2>FlowUs 配置</h2>\n<pre><code class=\"hljs language-JavaScript\"><span class=\"hljs-attr\">write</span>: {\n  <span class=\"hljs-attr\">platform</span>: <span class=\"hljs-string\">&#x27;flowus&#x27;</span>,\n  <span class=\"hljs-attr\">flowus</span>: {\n    <span class=\"hljs-attr\">tablePageId</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">FLOWUS_TABLE_PAGE_ID</span>,\n  }\n}\n</code></pre><ul>\n<li><code>tablePageId</code>为FlowUs 数据表格页面 ID，可从<a href=\"https://elog.1874.cool/notion/gvnxobqogetukays#tablepageid\">此处</a>获取</li>\n</ul>\n<h2>Halo 配置</h2>\n<pre><code class=\"hljs language-JavaScript\"><span class=\"hljs-attr\">deploy</span>: {\n  <span class=\"hljs-attr\">platform</span>: <span class=\"hljs-string\">&#x27;halo&#x27;</span>,\n  <span class=\"hljs-attr\">halo</span>: {\n    <span class=\"hljs-attr\">endpoint</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">HALO_ENDPOINT</span>,\n    <span class=\"hljs-attr\">token</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">HALO_TOKEN</span>,\n    <span class=\"hljs-attr\">policyName</span>: process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">HALO_POLICY_NAME</span>,\n    <span class=\"hljs-attr\">rowType</span>: <span class=\"hljs-string\">&#x27;markdown&#x27;</span>,\n    <span class=\"hljs-attr\">needUploadImage</span>: <span class=\"hljs-literal\">true</span>\n  }\n}\n</code></pre><ul>\n<li><p><code>endpoint</code>表示 Halo 站点地址</p>\n</li>\n<li><p><code>token</code>表示 Halo 个人令牌</p>\n</li>\n<li><p><code>policyName</code>表示附件的存储策略</p>\n</li>\n<li><p><code>needUploadImage</code>表示文档将会把扫描到的图片上传到 Halo中去</p>\n</li>\n</ul>\n<h2>图床配置</h2>\n<pre><code class=\"hljs language-JavaScript\"><span class=\"hljs-attr\">image</span>: {\n  <span class=\"hljs-attr\">enable</span>: <span class=\"hljs-literal\">false</span>\n},\n</code></pre><p>不使用图床。不推荐图床和<code>needUploadImage</code>一起打开，要么用图床图片，要么上传到 Halo 数据库中</p>\n<h2>更多 Elog 配置详情，请阅读 <a href=\"https://elog.1874.cool/\">Elog 文档</a></h2>\n"
-    },
-    {
-      "id": "53b5591c-62b5-4ef5-a299-d0a7728982c9",
-      "properties": {
-        "urlname": "flowus-notice",
-        "title": "FlowUs 写作注意事项",
-        "updated": "2023-11-29 22:38:13",
-        "date": "2023-11-29 17:29:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "53b5591c-62b5-4ef5-a299-d0a7728982c9",
-      "updated": 1701268693316,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "5b7e308c-dadd-49f8-a357-9d37e6b55534",
-      "properties": {
-        "urlname": "flowus-notice1",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:08",
-        "date": "2023-11-29 22:57:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "5b7e308c-dadd-49f8-a357-9d37e6b55534",
-      "updated": 1701270008906,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "97e90ab8-8bc8-41fe-8fe0-4b2eb08f67bb",
-      "properties": {
-        "urlname": "flowus-notice2",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:03",
-        "date": "2023-11-29 22:57:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "97e90ab8-8bc8-41fe-8fe0-4b2eb08f67bb",
-      "updated": 1701270003062,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "38a92e92-f48e-48a8-9c62-418dc5642ae4",
-      "properties": {
-        "urlname": "flowus-notice3",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:03",
-        "date": "2023-11-29 22:57:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "38a92e92-f48e-48a8-9c62-418dc5642ae4",
-      "updated": 1701270003159,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "3ccdc283-83b3-478c-8f85-c078f72ec42d",
-      "properties": {
-        "urlname": "flowus-notice4",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:03",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "3ccdc283-83b3-478c-8f85-c078f72ec42d",
-      "updated": 1701270003110,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "de9bfbb7-53d1-4dbc-b159-d20856ef2e19",
-      "properties": {
-        "urlname": "flowus-notice5",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:05",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "de9bfbb7-53d1-4dbc-b159-d20856ef2e19",
-      "updated": 1701270005253,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "ba0682fe-9218-4264-8ebb-ab07e59bb998",
-      "properties": {
-        "urlname": "flowus-notice7",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:08",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "ba0682fe-9218-4264-8ebb-ab07e59bb998",
-      "updated": 1701270008916,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "f8c60dfa-a18f-4194-9494-166ab61e5225",
-      "properties": {
-        "urlname": "flowus-notice6",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:05",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "f8c60dfa-a18f-4194-9494-166ab61e5225",
-      "updated": 1701270005309,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "d11ad5cc-97bd-4caa-b805-1f3c128af552",
-      "properties": {
-        "urlname": "flowus-notice9",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:01",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "d11ad5cc-97bd-4caa-b805-1f3c128af552",
-      "updated": 1701270001335,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "4052d558-737d-44e6-aac9-cfe1c54570de",
-      "properties": {
-        "urlname": "flowus-notice8",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:01",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "4052d558-737d-44e6-aac9-cfe1c54570de",
-      "updated": 1701270001311,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "3a6fdb53-b382-4d4a-8cd8-d0e5760b2cb3",
-      "properties": {
-        "urlname": "flowus-notice10",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:08",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "3a6fdb53-b382-4d4a-8cd8-d0e5760b2cb3",
-      "updated": 1701270008461,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "d211789d-8aca-460a-91b4-777701e6b8d9",
-      "properties": {
-        "urlname": "flowus-notice11",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:04",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "d211789d-8aca-460a-91b4-777701e6b8d9",
-      "updated": 1701270004615,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
-    },
-    {
-      "id": "d3d382fe-71ac-4f78-a3f5-a114edca2dfd",
-      "properties": {
-        "urlname": "flowus-notice12",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:02",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      },
-      "body": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "body_original": "# 写作注意事项\n## 前言\n在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。\n\n> 可以在[这里](/archives/flowus-example)看到 FlowUs 文档被导出为 markdown 时的样式损失程度\n\n如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 [NotionNext](https://github.com/tangly1024/NotionNext) 可能更适合你搭建文档站点。\n## FlowUs 格式注意点\n### 不要使用 markdown 不支持的样式/语法\n例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。\n",
-      "doc_id": "d3d382fe-71ac-4f78-a3f5-a114edca2dfd",
-      "updated": 1701270002018,
-      "body_html": "<h1>写作注意事项</h1>\n<h2>前言</h2>\n<p>在使用 Elog 同步 FlowUs 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ FlowUs 样式集合。所以在 FlowUs 上书写时，得按照 markdown 支持的样式进行写作。</p>\n<blockquote>\n<p>可以在<a href=\"/archives/flowus-example\">这里</a>看到 FlowUs 文档被导出为 markdown 时的样式损失程度</p>\n</blockquote>\n<p>如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 <a href=\"https://github.com/tangly1024/NotionNext\">NotionNext</a> 可能更适合你搭建文档站点。</p>\n<h2>FlowUs 格式注意点</h2>\n<h3>不要使用 markdown 不支持的样式/语法</h3>\n<p>例如字体颜色、多级折叠块、分栏、数据表、嵌入等。导出为 markdown 都不能正常展示。</p>\n"
+      }
     },
     {
       "id": "c57983b7-c0b5-4d61-a14c-d1f30fb3cea5",
+      "doc_id": "c57983b7-c0b5-4d61-a14c-d1f30fb3cea5",
+      "updated": 1701329013731,
       "properties": {
         "urlname": "flowus-example",
         "title": "FlowUs示例页面",
-        "updated": "2023-11-29 22:54:54",
+        "updated": "2023-11-30 15:23:33",
         "date": "2023-11-29 17:34:52",
+        "cover": "/upload/9c4b744130760203634aa484c774.png",
         "categories": [
           "关于"
         ],
@@ -372,14 +84,8 @@
           "FlowUs"
         ],
         "public": "true",
-        "description": "FlowUs示例页面",
         "publish": "true"
-      },
-      "body": "# FlowUs-Markdown\n[FlowUs示例文章源地址](https://flowus.cn/1874/share/7ad97e50-9e7a-4422-bb97-a557e9acb841)\n# 基础块\n不换行正文第一行\n**不换行正文第二行**\n\n换行正文1\n\n换行正文2\n\n`adawd`\n\n[https://boardgamearena.com/sponsorship](https://boardgamearena.com/sponsorship)\n# 一级标题\n## 二级标题\n### 三级标题\n#### 四级标题\n##### 五级标题\n- [ ] 待办事项1\n- [ ] 待办事项2\n- 项目列表1\n\n- 项目列表2不换行1\n项目列表2不换行2\n\n- 项目列表2\n\t- 项目列表缩进2-1\n\t\t- 项目列表缩进2-1-1\n\t\t\t- 项目列表缩进2-2\n\t\t项目列表下的缩进文本\n1. 编号列表1\n\t1. 编号列表缩进1-1\n\t\t1. 编号列表缩进1-2\n\t\t1. 编号列表缩进1-2-1\n\t\t\t编号列表下的缩进文本\n\n<details>\n  <summary>折叠列表1</summary>\n  \n<details>\n  <summary>嵌套折叠列表1-1</summary>\n  嵌套折叠列表1-1的内容\n</details>\n折叠列表1的内容\n</details>\n\n---\n> 着重文字着重文字着重文字着重文字  \n> 着重文字着重文字着重文字  \n>   \n> 着重文字着重文字着重文字\n\n> 引用文字引用文字引用文字  \n> 引用文字引用文字引用文字  \n> 引用文字引用文字引用文字\n```TypeScript\nconst a = 1\n```\n\n| 列表标题-名称   | 123 | 列表标题-说明 |\n| --------- | --- | ------- |\n| 列表        | 123 | 列表内容说明1 |\n| 列表内容名称2   | 12  | 列表内容说明2 |\n| \\sqrt{ab} | 123 | 阿大我的我   |\n\n$$\n\\sqrt{ab}\n$$\n\n\n\n\n\n<details>\n  <summary>折叠标题</summary>\n  折叠标题内容\n</details>\n\n# 媒体\n![qwe.JPG](/upload/03dec85efc202e3eda7fabd84212.JPG)\n[https://media.w3.org/2010/05/sintel/trailer.mp4](https://media.w3.org/2010/05/sintel/trailer.mp4)\n[http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3](http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3)\n\n[https://elog.1874.cool](https://elog.1874.cool)\n\n# 行内块\n2023/05/0721:31$\\log_{a}{b}a_{b}c_a^b$/😁\n**加粗**不加粗<u>下划线</u>不下划线~~删除线~~不删除_斜体_不斜体`行内代码`正常文字$\\log_{a}{b}$正常文字\n# 多维表格\n\n# 内嵌页面\n[https://elog.1874.cool](https://elog.1874.cool)\n\n\n\n思维导图页面\n#### dawd \n##### dad \n\n<details>\n  <summary>123</summary>\n  \n</details>\n\n\n[https://github.com](https://github.com)\n/\n",
-      "body_original": "# FlowUs-Markdown\n[FlowUs示例文章源地址](https://flowus.cn/1874/share/7ad97e50-9e7a-4422-bb97-a557e9acb841)\n# 基础块\n不换行正文第一行\n**不换行正文第二行**\n\n换行正文1\n\n换行正文2\n\n`adawd`\n\n[https://boardgamearena.com/sponsorship](https://boardgamearena.com/sponsorship)\n# 一级标题\n## 二级标题\n### 三级标题\n#### 四级标题\n##### 五级标题\n- [ ] 待办事项1\n- [ ] 待办事项2\n- 项目列表1\n\n- 项目列表2不换行1\n项目列表2不换行2\n\n- 项目列表2\n\t- 项目列表缩进2-1\n\t\t- 项目列表缩进2-1-1\n\t\t\t- 项目列表缩进2-2\n\t\t项目列表下的缩进文本\n1. 编号列表1\n\t1. 编号列表缩进1-1\n\t\t1. 编号列表缩进1-2\n\t\t1. 编号列表缩进1-2-1\n\t\t\t编号列表下的缩进文本\n\n<details>\n  <summary>折叠列表1</summary>\n  \n<details>\n  <summary>嵌套折叠列表1-1</summary>\n  嵌套折叠列表1-1的内容\n</details>\n折叠列表1的内容\n</details>\n\n---\n> 着重文字着重文字着重文字着重文字  \n> 着重文字着重文字着重文字  \n>   \n> 着重文字着重文字着重文字\n\n> 引用文字引用文字引用文字  \n> 引用文字引用文字引用文字  \n> 引用文字引用文字引用文字\n```TypeScript\nconst a = 1\n```\n\n| 列表标题-名称   | 123 | 列表标题-说明 |\n| --------- | --- | ------- |\n| 列表        | 123 | 列表内容说明1 |\n| 列表内容名称2   | 12  | 列表内容说明2 |\n| \\sqrt{ab} | 123 | 阿大我的我   |\n\n$$\n\\sqrt{ab}\n$$\n\n\n\n\n\n<details>\n  <summary>折叠标题</summary>\n  折叠标题内容\n</details>\n\n# 媒体\n![qwe.JPG](https://cdn.flowus.cn/oss/47e4b6a9-86f6-43f4-b039-ee7f123a2a9a/01.JPG?time=1701279900&token=c8f78b582cc152a6d8e1a3f30fbb29c6&role=free)\n[https://media.w3.org/2010/05/sintel/trailer.mp4](https://media.w3.org/2010/05/sintel/trailer.mp4)\n[http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3](http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3)\n\n[https://elog.1874.cool](https://elog.1874.cool)\n\n# 行内块\n2023/05/0721:31$\\log_{a}{b}a_{b}c_a^b$/😁\n**加粗**不加粗<u>下划线</u>不下划线~~删除线~~不删除_斜体_不斜体`行内代码`正常文字$\\log_{a}{b}$正常文字\n# 多维表格\n\n# 内嵌页面\n[https://elog.1874.cool](https://elog.1874.cool)\n\n\n\n思维导图页面\n#### dawd \n##### dad \n\n<details>\n  <summary>123</summary>\n  \n</details>\n\n\n[https://github.com](https://github.com)\n/\n",
-      "doc_id": "c57983b7-c0b5-4d61-a14c-d1f30fb3cea5",
-      "updated": 1701269694097,
-      "body_html": "<h1>FlowUs-Markdown</h1>\n<p><a href=\"https://flowus.cn/1874/share/7ad97e50-9e7a-4422-bb97-a557e9acb841\">FlowUs示例文章源地址</a></p>\n<h1>基础块</h1>\n<p>不换行正文第一行<br><strong>不换行正文第二行</strong></p>\n<p>换行正文1</p>\n<p>换行正文2</p>\n<p><code>adawd</code></p>\n<p><a href=\"https://boardgamearena.com/sponsorship\">https://boardgamearena.com/sponsorship</a></p>\n<h1>一级标题</h1>\n<h2>二级标题</h2>\n<h3>三级标题</h3>\n<h4>四级标题</h4>\n<h5>五级标题</h5>\n<ul>\n<li><p><input disabled=\"\" type=\"checkbox\"> \n待办事项1</p>\n</li>\n<li><p><input disabled=\"\" type=\"checkbox\"> \n待办事项2</p>\n</li>\n<li><p>项目列表1</p>\n</li>\n<li><p>项目列表2不换行1<br>项目列表2不换行2</p>\n</li>\n<li><p>项目列表2</p>\n<ul>\n<li>项目列表缩进2-1<ul>\n<li>项目列表缩进2-1-1<ul>\n<li>项目列表缩进2-2<br>  项目列表下的缩进文本</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<ol>\n<li>编号列表1<ol>\n<li>编号列表缩进1-1<ol>\n<li>编号列表缩进1-2</li>\n<li>编号列表缩进1-2-1<br> 编号列表下的缩进文本</li>\n</ol>\n</li>\n</ol>\n</li>\n</ol>\n<details>\n  <summary>折叠列表1</summary>\n  \n<details>\n  <summary>嵌套折叠列表1-1</summary>\n  嵌套折叠列表1-1的内容\n</details>\n折叠列表1的内容\n</details>\n\n<hr>\n<blockquote>\n<p>着重文字着重文字着重文字着重文字<br>着重文字着重文字着重文字  </p>\n<p>着重文字着重文字着重文字</p>\n</blockquote>\n<blockquote>\n<p>引用文字引用文字引用文字<br>引用文字引用文字引用文字<br>引用文字引用文字引用文字</p>\n</blockquote>\n<pre><code class=\"hljs language-TypeScript\"><span class=\"hljs-keyword\">const</span> a = <span class=\"hljs-number\">1</span>\n</code></pre><table>\n<thead>\n<tr>\n<th>列表标题-名称</th>\n<th>123</th>\n<th>列表标题-说明</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>列表</td>\n<td>123</td>\n<td>列表内容说明1</td>\n</tr>\n<tr>\n<td>列表内容名称2</td>\n<td>12</td>\n<td>列表内容说明2</td>\n</tr>\n<tr>\n<td>\\sqrt{ab}</td>\n<td>123</td>\n<td>阿大我的我</td>\n</tr>\n</tbody></table>\n<p>$$<br>\\sqrt{ab}<br>$$</p>\n<details>\n  <summary>折叠标题</summary>\n  折叠标题内容\n</details>\n\n<h1>媒体</h1>\n<p><img src=\"/upload/03dec85efc202e3eda7fabd84212.JPG\" alt=\"qwe.JPG\"><br><a href=\"https://media.w3.org/2010/05/sintel/trailer.mp4\">https://media.w3.org/2010/05/sintel/trailer.mp4</a><br><a href=\"http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3\">http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3</a></p>\n<p><a href=\"https://elog.1874.cool\">https://elog.1874.cool</a></p>\n<h1>行内块</h1>\n<p>2023/05/0721:31$\\log_{a}{b}a_{b}c_a^b$/😁<br><strong>加粗</strong>不加粗<u>下划线</u>不下划线<del>删除线</del>不删除_斜体_不斜体<code>行内代码</code>正常文字$\\log_{a}{b}$正常文字</p>\n<h1>多维表格</h1>\n<h1>内嵌页面</h1>\n<p><a href=\"https://elog.1874.cool\">https://elog.1874.cool</a></p>\n<p>思维导图页面</p>\n<h4>dawd</h4>\n<h5>dad</h5>\n<details>\n  <summary>123</summary>\n  \n</details>\n\n\n<p><a href=\"https://github.com\">https://github.com</a><br>/</p>\n"
+      }
     }
   ],
   "catalog": [
@@ -387,14 +93,16 @@
       "id": "d64acea7-5119-4591-954a-ef928afafd1c",
       "doc_id": "d64acea7-5119-4591-954a-ef928afafd1c",
       "title": "FlowUs + Halo + GitHub Actions 博客解决方案",
-      "updated": 1701279601169,
+      "updated": 1701340210018,
       "createdAt": 1701250080665,
-      "updatedAt": 1701279601169,
+      "updatedAt": 1701340210018,
       "properties": {
         "urlname": "flowus-halo",
         "title": "FlowUs + Halo + GitHub Actions 博客解决方案",
-        "updated": "2023-11-30 01:40:01",
+        "updated": "2023-11-30 18:30:10",
         "date": "2023-11-29 17:28:00",
+        "cover": "/upload/860ece9b8e8d6f9097e9c9b74f61.JPG",
+        "autoExcerpt": "true",
         "categories": [
           "快速开始"
         ],
@@ -403,6 +111,7 @@
         ],
         "public": "true",
         "pinned": "true",
+        "excerpt": "开启自动生成",
         "publish": "true"
       }
     },
@@ -410,14 +119,15 @@
       "id": "4eb441bb-d1d2-4dcd-8c73-b94e006fbe8b",
       "doc_id": "4eb441bb-d1d2-4dcd-8c73-b94e006fbe8b",
       "title": "Elog配置详解",
-      "updated": 1701268688667,
+      "updated": 1701337829401,
       "createdAt": 1701250136406,
-      "updatedAt": 1701268688667,
+      "updatedAt": 1701337829401,
       "properties": {
         "urlname": "elog-config",
         "title": "Elog配置详解",
-        "updated": "2023-11-29 22:38:08",
+        "updated": "2023-11-30 17:50:29",
         "date": "2023-11-29 17:28:56",
+        "cover": "/upload/48963f4d81077a7b01e64fb1f216.svg",
         "categories": [
           "配置详情",
           "快速开始"
@@ -426,6 +136,7 @@
           "Elog"
         ],
         "public": "true",
+        "excerpt": "未开启自动生成",
         "publish": "true"
       }
     },
@@ -433,14 +144,16 @@
       "id": "53b5591c-62b5-4ef5-a299-d0a7728982c9",
       "doc_id": "53b5591c-62b5-4ef5-a299-d0a7728982c9",
       "title": "FlowUs 写作注意事项",
-      "updated": 1701268693316,
+      "updated": 1701337821955,
       "createdAt": 1701250159040,
-      "updatedAt": 1701268693316,
+      "updatedAt": 1701337821955,
       "properties": {
         "urlname": "flowus-notice",
         "title": "FlowUs 写作注意事项",
-        "updated": "2023-11-29 22:38:13",
+        "updated": "2023-11-30 17:50:21",
         "date": "2023-11-29 17:29:19",
+        "cover": "/upload/cff31c47ed235d6aa8ad27d8cc02.jpg",
+        "autoExcerpt": "true",
         "categories": [
           "配置详情",
           "快速开始"
@@ -449,295 +162,6 @@
           "FlowUs"
         ],
         "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "5b7e308c-dadd-49f8-a357-9d37e6b55534",
-      "doc_id": "5b7e308c-dadd-49f8-a357-9d37e6b55534",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270008906,
-      "createdAt": 1701269839194,
-      "updatedAt": 1701270008906,
-      "properties": {
-        "urlname": "flowus-notice1",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:08",
-        "date": "2023-11-29 22:57:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "97e90ab8-8bc8-41fe-8fe0-4b2eb08f67bb",
-      "doc_id": "97e90ab8-8bc8-41fe-8fe0-4b2eb08f67bb",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270003062,
-      "createdAt": 1701269839697,
-      "updatedAt": 1701270003062,
-      "properties": {
-        "urlname": "flowus-notice2",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:03",
-        "date": "2023-11-29 22:57:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "38a92e92-f48e-48a8-9c62-418dc5642ae4",
-      "doc_id": "38a92e92-f48e-48a8-9c62-418dc5642ae4",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270003159,
-      "createdAt": 1701269839946,
-      "updatedAt": 1701270003159,
-      "properties": {
-        "urlname": "flowus-notice3",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:03",
-        "date": "2023-11-29 22:57:19",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "3ccdc283-83b3-478c-8f85-c078f72ec42d",
-      "doc_id": "3ccdc283-83b3-478c-8f85-c078f72ec42d",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270003110,
-      "createdAt": 1701269840146,
-      "updatedAt": 1701270003110,
-      "properties": {
-        "urlname": "flowus-notice4",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:03",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "de9bfbb7-53d1-4dbc-b159-d20856ef2e19",
-      "doc_id": "de9bfbb7-53d1-4dbc-b159-d20856ef2e19",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270005253,
-      "createdAt": 1701269840362,
-      "updatedAt": 1701270005253,
-      "properties": {
-        "urlname": "flowus-notice5",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:05",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "f8c60dfa-a18f-4194-9494-166ab61e5225",
-      "doc_id": "f8c60dfa-a18f-4194-9494-166ab61e5225",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270005309,
-      "createdAt": 1701269840564,
-      "updatedAt": 1701270005309,
-      "properties": {
-        "urlname": "flowus-notice6",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:05",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "ba0682fe-9218-4264-8ebb-ab07e59bb998",
-      "doc_id": "ba0682fe-9218-4264-8ebb-ab07e59bb998",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270008916,
-      "createdAt": 1701269840760,
-      "updatedAt": 1701270008916,
-      "properties": {
-        "urlname": "flowus-notice7",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:08",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "4052d558-737d-44e6-aac9-cfe1c54570de",
-      "doc_id": "4052d558-737d-44e6-aac9-cfe1c54570de",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270001311,
-      "createdAt": 1701269840969,
-      "updatedAt": 1701270001311,
-      "properties": {
-        "urlname": "flowus-notice8",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:01",
-        "date": "2023-11-29 22:57:20",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "d11ad5cc-97bd-4caa-b805-1f3c128af552",
-      "doc_id": "d11ad5cc-97bd-4caa-b805-1f3c128af552",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270001335,
-      "createdAt": 1701269841157,
-      "updatedAt": 1701270001335,
-      "properties": {
-        "urlname": "flowus-notice9",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:01",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "3a6fdb53-b382-4d4a-8cd8-d0e5760b2cb3",
-      "doc_id": "3a6fdb53-b382-4d4a-8cd8-d0e5760b2cb3",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270008461,
-      "createdAt": 1701269841368,
-      "updatedAt": 1701270008461,
-      "properties": {
-        "urlname": "flowus-notice10",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:08",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "d211789d-8aca-460a-91b4-777701e6b8d9",
-      "doc_id": "d211789d-8aca-460a-91b4-777701e6b8d9",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270004615,
-      "createdAt": 1701269841582,
-      "updatedAt": 1701270004615,
-      "properties": {
-        "urlname": "flowus-notice11",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:04",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
-        "publish": "true"
-      }
-    },
-    {
-      "id": "d3d382fe-71ac-4f78-a3f5-a114edca2dfd",
-      "doc_id": "d3d382fe-71ac-4f78-a3f5-a114edca2dfd",
-      "title": "副本FlowUs 写作注意事项",
-      "updated": 1701270002018,
-      "createdAt": 1701269841778,
-      "updatedAt": 1701270002018,
-      "properties": {
-        "urlname": "flowus-notice12",
-        "title": "副本FlowUs 写作注意事项",
-        "updated": "2023-11-29 23:00:02",
-        "date": "2023-11-29 22:57:21",
-        "categories": [
-          "配置详情",
-          "快速开始"
-        ],
-        "tags": [
-          "FlowUs"
-        ],
-        "public": "true",
-        "description": "使用FlowUs + Halo部署博客时，在 FlowUs 上写作的注意事项",
         "publish": "true"
       }
     },
@@ -745,14 +169,15 @@
       "id": "c57983b7-c0b5-4d61-a14c-d1f30fb3cea5",
       "doc_id": "c57983b7-c0b5-4d61-a14c-d1f30fb3cea5",
       "title": "FlowUs示例页面",
-      "updated": 1701269694097,
+      "updated": 1701329013731,
       "createdAt": 1701250492186,
-      "updatedAt": 1701269694097,
+      "updatedAt": 1701329013731,
       "properties": {
         "urlname": "flowus-example",
         "title": "FlowUs示例页面",
-        "updated": "2023-11-29 22:54:54",
+        "updated": "2023-11-30 15:23:33",
         "date": "2023-11-29 17:34:52",
+        "cover": "https://cdn.flowus.cn/cover/flowus2?time=1701344700&token=fdb1629d7e8a69fbc84c1ec2046d5521&role=free",
         "categories": [
           "关于"
         ],
@@ -760,7 +185,6 @@
           "FlowUs"
         ],
         "public": "true",
-        "description": "FlowUs示例页面",
         "publish": "true"
       }
     }
