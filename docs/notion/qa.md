@@ -5,7 +5,7 @@ catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: '2023-07-23 03:37:00'
-updated: '2023-11-24 14:22:00'
+updated: '2023-12-01 13:31:00'
 ---
 
 # 常见问题
@@ -14,7 +14,7 @@ updated: '2023-11-24 14:22:00'
 **大部分问题都可以在文档中找到解决办法，请优先从** [快速开始](/notion/start) **阅读文档，再进行实际操作。**
 
 
-如果还是运行报错，请 [提交 issue](https://github.com/LetTTGACO/elog/issues/new) 或在 [discussions 中留言](https://github.com/LetTTGACO/elog/discussions/categories/q-a)
+如果还是运行报错，请 [提交 issue](https://github.com/LetTTGACO/elog/issues/new/choose) 或在 [discussions 中留言](https://github.com/LetTTGACO/elog/discussions/categories/q-a)
 
 
 ## 配置问题

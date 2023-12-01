@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2023-11-30 19:48:00'
+updated: '2023-12-01 13:31:00'
 ---
 
 # 最佳实践
@@ -20,7 +20,7 @@ updated: '2023-11-30 19:48:00'
 欢迎各位使用者贡献搭建经验文档。可以通过以下步骤进行贡献、引流、讨论、共同成长：
 
 1. 使用 Elog 部署自己的博客，有公开的Github仓库地址，最好提供详细的部署记录文档
-2. [提交 Issues](https://github.com/LetTTGACO/elog/issues/2)或直接提交[Pull request](https://github.com/LetTTGACO/elog/pulls)
+2. [提交 Issues 到最佳实践](https://github.com/LetTTGACO/elog/issues/2) 或直接提交[Pull request](https://github.com/LetTTGACO/elog/pulls)
 
 ## 最佳实践
 
