@@ -125,7 +125,7 @@ public void test11() {
 ### 2.本地音频
 
 ### 3.本地视频
-[![46_1677164223.mp4 (139.39KB)](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//7f2f55e32159afeaa752aaa4983cc03b.png)](https://www.yuque.com/1874w/elog-docs/yuque-example?_lake_card=%7B%22status%22%3A%22done%22%2C%22name%22%3A%2246_1677164223.mp4%22%2C%22size%22%3A142733%2C%22taskId%22%3A%22ucf50b322-2e8f-4f86-9c03-a6fbc24de1f%22%2C%22taskType%22%3A%22upload%22%2C%22url%22%3Anull%2C%22cover%22%3Anull%2C%22videoId%22%3A%22inputs%2Fprod%2Fyuque%2F2023%2F417081%2Fmp4%2F1677164249140-0d3664bb-e160-4855-a991-c3f63ced0d66.mp4%22%2C%22download%22%3Afalse%2C%22__spacing%22%3A%22both%22%2C%22id%22%3A%22zSBKg%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%2C%22card%22%3A%22video%22%7D#zSBKg)
+
 ## 第三方服务
 
 ### 1.优酷
