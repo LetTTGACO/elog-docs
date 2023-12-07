@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/LetTTGACO/elog
+    - theme: alt
+      text: 喂猫 ❤️
+      link: https://1874.cool/cats
 features:
   - icon: 📝
     title: 多写作平台
