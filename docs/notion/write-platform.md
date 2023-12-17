@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
 date: '2023-10-13 13:14:00'
-updated: '2023-11-22 11:14:00'
+updated: '2023-12-18 00:11:00'
 ---
 
 # 写作平台配置
@@ -53,6 +53,7 @@ updated: '2023-11-22 11:14:00'
 | host          | 否  | 语雀域名/团队域名          | https://www.yuque.com |
 | login         | 是  | 个人路径/空间ID          | -                     |
 | repo          | 是  | 语雀仓库短名称，也称为语雀知识库路径 | -                     |
+| linebreak     | 否  | 是否保持语雀的换行          | 是                     |
 | onlyPublic    | 否  | 是否只获取公开文章          | false                 |
 | onlyPublished | 否  | 是否只获取已发布文章         | false                 |
 | limit         | 否  | 文档下载并发数            | 3                     |
