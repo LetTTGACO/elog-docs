@@ -5,7 +5,7 @@ catalog: 进阶玩法
 tags: Elog-Docs
 title: Front Matter
 date: '2023-04-06 21:31:00'
-updated: '2023-11-30 17:00:00'
+updated: '2023-12-18 00:59:00'
 ---
 
 # Front Matter
@@ -66,7 +66,6 @@ Elog 预设置了一些常用的属性，会在启用`front matter` 时默认下
 | ----------- | ------------------- | ------------------------------------- |
 | title       | string              | 文章标题                                  |
 | urlname     | string              | 语雀 slug                               |
-| author      | string              | 作者（仅限语雀）                              |
 | date        | YYYY-MM-DD HH:mm:ss | 创建时间                                  |
 | updated     | YYYY-MM-DD HH:mm:ss | 更新时间                                  |
 | cover       | string              | 封面图，可在语雀文档设置中配置。**但由于语雀防盗链，不一定能正常访问** |
