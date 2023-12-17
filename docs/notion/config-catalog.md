@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
 date: '2023-10-13 13:12:00'
-updated: '2023-11-30 00:10:00'
+updated: '2023-12-18 00:14:00'
 ---
 
 # 目录结构
@@ -54,6 +54,7 @@ module.exports = {
       password: process.env.YUQUE_PASSWORD,
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
+      linebreak: false,
       onlyPublic: false,
       onlyPublished: true,
     },
