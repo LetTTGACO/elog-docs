@@ -36,6 +36,7 @@ module.exports = {
       password: process.env.YUQUE_PASSWORD,
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
+      linebreak: false,
       onlyPublic: false,
       onlyPublished: true,
     },

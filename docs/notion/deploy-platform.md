@@ -188,7 +188,7 @@ Halo 本身没有自带 Markdown 编辑器，需要用户自行安装，所有�
 此外，在 `rawType` 设置为 `markdown` 且系统中并没有 `markdown` 类型的编辑器时，进入文章编辑会给出提示：
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images//41c42ad20e6a991276ff2cdb6786c521.png)
+![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/41c42ad20e6a991276ff2cdb6786c521.png)
 
 
 ### needUploadImage 字段说明

@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2023-12-01 13:31:00'
+updated: '2024-01-13 12:26:00'
 ---
 
 # 最佳实践
@@ -128,4 +128,13 @@ Github: [https://github.com/cyolc932/elog](https://github.com/cyolc932/elog)
 
 
 作者Github：[https://github.com/MiiW](https://github.com/MiiW)
+
+
+### 【delong's Blog】语雀写作 + Elog同步 + NextJs 渲染 + Vercel 部署
+
+
+网站: [https://lidelong.xyz/](https://lidelong.xyz/)
+
+
+Github: [https://github.com/lidelong-0201/next-yuque-elog](https://github.com/lidelong-0201/next-yuque-elog)
 

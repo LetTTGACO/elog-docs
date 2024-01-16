@@ -1,7 +1,3 @@
 # 沟通与反馈
-## 使用交流
-微信/企业微信扫码加入交流群
-![IMG_1672.PNG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0bb7e42956ffaa6fcc2772490443eedf.png)
-## 问题反馈与建议
-可以前往 [Github Issues](https://github.com/LetTTGACO/elog/issues)
+如果遇到问题，请 [提交 issue](https://github.com/LetTTGACO/elog/issues/new/choose) 或 [在 discussions 中留言](https://github.com/LetTTGACO/elog/discussions/categories/q-a)
 

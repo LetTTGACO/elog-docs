@@ -91,7 +91,7 @@ public void test11() {
 [测试文本1.docx](https://www.yuque.com/attachments/yuque/0/2023/docx/417081/1682314054798-ed371f99-e207-4386-a763-c3f9926f2511.docx)
 ### 2.本地音频
 ### 3.本地视频
-[![46_1677164223.mp4 (139.39KB)](https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*NNs6TKOR3isAAAAAAAAAAABkARQnAQ)]()## 第三方服务
+## 第三方服务
 ### 1.优酷
 [点击查看【youku】](https://player.youku.com/embed/XNDc1NDU1MTQwOA==)
 ### 2.B站
