@@ -1,7 +1,7 @@
 ---
 urlname: flowus-example
 title: FlowUs示例页面
-updated: '2023-11-28 21:39:44'
+updated: '2024-01-16 15:22:34'
 date: '2023-07-07 08:00:00'
 categories: 技术分享
 tags:
@@ -22,7 +22,7 @@ catalog: 示例目录
 
 `adawd`
 
-
+[https://boardgamearena.com/sponsorship](https://boardgamearena.com/sponsorship)
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -65,7 +65,7 @@ catalog: 示例目录
 > 引用文字引用文字引用文字  
 > 引用文字引用文字引用文字  
 > 引用文字引用文字引用文字
-```TypeScript
+```typescript
 const a = 1
 ```
 
@@ -89,7 +89,7 @@ $$
 </details>
 
 # 媒体
-![qwe.JPG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/03dec85efc202e3eda7fabd842120c56.JPG)
+![qwe.JPG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/7e93fad1c696fc7d31c53bc9aabcd4d0.JPG)
 [https://media.w3.org/2010/05/sintel/trailer.mp4](https://media.w3.org/2010/05/sintel/trailer.mp4)
 [http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3](http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3)
 
