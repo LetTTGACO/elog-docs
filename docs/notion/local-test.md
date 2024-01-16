@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 本地调试
 date: '2023-10-13 13:27:00'
-updated: '2023-11-30 00:11:00'
+updated: '2024-01-16 17:45:00'
 ---
 
 # 本地调试
@@ -124,9 +124,9 @@ module.exports = {
       prefixKey: '',
     },
     github: {
-      user: process.env.GITHUB_USER,
       token: process.env.GITHUB_TOKEN,
-      repo: process.env.GITHUB_REPO,
+      user: process.env.ELOG_GITHUB_USER,
+      repo: process.env.ELOG_GITHUB_REPO,
       prefixKey: '',
     }
   }
@@ -218,9 +218,11 @@ UPYUN_BUCKET=
 UPYUN_HOST=xxx.xx.upaiyun.com
 
 # Github
-GITHUB_USER=
+# 在 Github 流水线中，Github不允许以GITHUB开头的自定义变量
+# GITHUB_TOKEN 为内置变量，无需改名也无需配置，流水线中可直接获取
 GITHUB_TOKEN=
-GITHUB_REPO=
+ELOG_GITHUB_USER=
+ELOG_GITHUB_REPO=
 ```
 
 

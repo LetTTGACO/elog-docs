@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 目录结构
 date: '2023-10-13 13:12:00'
-updated: '2023-12-18 00:14:00'
+updated: '2024-01-16 17:40:00'
 ---
 
 # 目录结构
@@ -142,9 +142,9 @@ module.exports = {
       prefixKey: '',
     },
     github: {
-      user: process.env.GITHUB_USER,
       token: process.env.GITHUB_TOKEN,
-      repo: process.env.GITHUB_REPO,
+      user: process.env.ELOG_GITHUB_USER,
+      repo: process.env.ELOG_GITHUB_REPO,
       prefixKey: '',
     }
   }

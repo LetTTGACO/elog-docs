@@ -105,7 +105,7 @@
     {
       "id": "266c330a-0376-4362-9f65-bb103fe18929",
       "doc_id": "266c330a-0376-4362-9f65-bb103fe18929",
-      "updated": 1702829640000,
+      "updated": 1705398000000,
       "properties": {
         "sort": 90,
         "urlname": "config-catalog",
@@ -113,7 +113,7 @@
         "tags": "Elog-Docs",
         "title": "目录结构",
         "date": "2023-10-13 13:12:00",
-        "updated": "2023-12-18 00:14:00"
+        "updated": "2024-01-16 17:40:00"
       },
       "realName": "config-catalog",
       "relativePath": "/config-catalog.md",
@@ -207,7 +207,7 @@
     {
       "id": "683d142c-447b-4da3-84f3-714b47520322",
       "doc_id": "683d142c-447b-4da3-84f3-714b47520322",
-      "updated": 1701274260000,
+      "updated": 1705398300000,
       "properties": {
         "sort": 130,
         "urlname": "local-test",
@@ -215,7 +215,7 @@
         "tags": "Elog-Docs",
         "title": "本地调试",
         "date": "2023-10-13 13:27:00",
-        "updated": "2023-11-30 00:11:00"
+        "updated": "2024-01-16 17:45:00"
       },
       "realName": "local-test",
       "relativePath": "/local-test.md",
@@ -451,6 +451,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/0c26a958-4e3c-4e0e-9a1c-69a2ba8d64dd/01.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=232beace091eb70a2aaadf6dcb5684404f128e17736fe87d49499b67fd674f08&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 10,
         "urlname": "introduce",
         "catalog": "关于Elog",
@@ -486,6 +488,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/912225d5-93aa-4fbe-b690-f604feab5f56/10.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=6dda4f4b9a13edfeef0b1be7e78d3cc22855e071f8fb6cb03cbd274d40385163&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 20,
         "urlname": "zuzvbv2lqhvllgit",
         "catalog": "关于Elog",
@@ -521,6 +525,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/73a9ce0f-d75e-4da5-bcf9-0de2f15d1053/11.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=89ad9d1b8a07ad421a607da3167d98396a815c5aba51cc5a2d1267638ad064b0&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 30,
         "urlname": "cq6p8hxizn1ogwgm",
         "catalog": "关于Elog",
@@ -556,6 +562,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/3500b09e-821c-444d-b0c5-d03213b6db59/12.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=7bd9cb9337582b9858de5193b1ede1d089f972433314306253224bcda38c1ea9&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 40,
         "urlname": "la9toqncox96kfp8",
         "catalog": "关于Elog",
@@ -591,6 +599,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/caa4be72-4c64-46d9-a90b-4cda392157d0/297139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=a80df4be26888e605a16c6840447a5d75c5a8e18a7e59709b6ead53ebae39745&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 50,
         "urlname": "qa",
         "catalog": "关于Elog",
@@ -626,6 +636,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/67cdc770-fca6-49e9-a260-335c1413fb0b/95364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=25c6e5cfa5b8d2fec253ff1325133dd01acf5433ebb3131f000b033a2a836e0e&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 60,
         "urlname": "start",
         "catalog": "入门指引",
@@ -661,6 +673,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/72c6cfba-4c0b-4028-9907-d87e0ed97139/134414.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=65d918fc926e229262daa46bb42928deea89cf8598feaf25edb38c443ead7d13&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 70,
         "urlname": "gvnxobqogetukays",
         "catalog": "入门指引",
@@ -696,6 +710,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=c4255cacae28d63190b60ac5f8850dc20b6981b63dd0abfa29debfa5e01151cb&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 80,
         "urlname": "bry3d3lwe206xuor",
         "catalog": "入门指引",
@@ -711,7 +727,7 @@
       "object": "page",
       "id": "266c330a-0376-4362-9f65-bb103fe18929",
       "created_time": "2023-10-13T05:12:00.000Z",
-      "last_edited_time": "2023-12-17T16:14:00.000Z",
+      "last_edited_time": "2024-01-16T09:40:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -737,7 +753,7 @@
         "tags": "Elog-Docs",
         "title": "目录结构",
         "date": "2023-10-13 13:12:00",
-        "updated": "2023-12-18 00:14:00"
+        "updated": "2024-01-16 17:40:00"
       },
       "url": "https://www.notion.so/266c330a037643629f65bb103fe18929",
       "public_url": "https://1874.notion.site/266c330a037643629f65bb103fe18929"
@@ -766,6 +782,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=c4255cacae28d63190b60ac5f8850dc20b6981b63dd0abfa29debfa5e01151cb&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 100,
         "urlname": "write-platform",
         "catalog": "配置详情",
@@ -801,6 +819,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=c4255cacae28d63190b60ac5f8850dc20b6981b63dd0abfa29debfa5e01151cb&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 110,
         "urlname": "deploy-platform",
         "catalog": "配置详情",
@@ -836,6 +856,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/2d2c4510-c8d2-46e4-9ee5-412cc10b6712/166673.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=c4255cacae28d63190b60ac5f8850dc20b6981b63dd0abfa29debfa5e01151cb&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 120,
         "urlname": "image-platform",
         "catalog": "配置详情",
@@ -851,7 +873,7 @@
       "object": "page",
       "id": "683d142c-447b-4da3-84f3-714b47520322",
       "created_time": "2023-10-13T05:27:00.000Z",
-      "last_edited_time": "2023-11-29T16:11:00.000Z",
+      "last_edited_time": "2024-01-16T09:45:00.000Z",
       "created_by": {
         "object": "user",
         "id": "b82f6c4e-be35-49b9-b539-7f72b6e7e246"
@@ -877,7 +899,7 @@
         "tags": "Elog-Docs",
         "title": "本地调试",
         "date": "2023-10-13 13:27:00",
-        "updated": "2023-11-30 00:11:00"
+        "updated": "2024-01-16 17:45:00"
       },
       "url": "https://www.notion.so/683d142c447b4da384f3714b47520322",
       "public_url": "https://1874.notion.site/683d142c447b4da384f3714b47520322"
@@ -906,6 +928,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/783375c7-df86-4816-9784-e2ebe430b9d9/242118.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=7a12ec108f89c8ca2f92b7a5358c2375b28c468886e4f426874c9eb824f0885d&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 140,
         "urlname": "yuque-markdown",
         "catalog": "功能和API适配情况",
@@ -941,6 +965,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/b3a82800-4114-4375-a986-484695184b8a/243089.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=a881993cf10b9ea07edd2f8dffbc08eac0967438ed72d8ffcfe6c4fac8951d86&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 150,
         "urlname": "yuque-example",
         "catalog": "功能和API适配情况",
@@ -976,6 +1002,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/b04853db-438b-475b-a847-000b7205efe4/248303.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=1e2c5617261e36b134c19ce0cc54765fa080fad36785472dbb454f1ecb179399&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 160,
         "urlname": "notion-markdown",
         "catalog": "功能和API适配情况",
@@ -1011,6 +1039,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/2771e19c-9b92-4ac2-938f-4d2235eb72a6/270022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=ee8d302861a48b1e439b22f2ec54324e4cde93b6231c7740e166e2843f2bf795&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 170,
         "urlname": "notion-example",
         "catalog": "功能和API适配情况",
@@ -1046,6 +1076,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/64bd334e-a0ad-4773-ba49-c4a80fad12ba/251364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=dbb130d312c3e17d7ed5fafcd67a86c683f4f1e603a3d6c81ca0448769a68bef&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 180,
         "urlname": "flowus-markdown",
         "catalog": "功能和API适配情况",
@@ -1081,6 +1113,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=18f9002cda592d5b06227f2fd02c5fb810b8fb6fa14369286b0f91c533845b09&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 190,
         "urlname": "flowus-example",
         "catalog": "功能和API适配情况",
@@ -1116,6 +1150,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/fc18d824-4765-46a6-92c3-6508f3f41168/280841.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=18f9002cda592d5b06227f2fd02c5fb810b8fb6fa14369286b0f91c533845b09&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 200,
         "urlname": "feishu-example",
         "catalog": "功能和API适配情况",
@@ -1151,6 +1187,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/27cfd5d8-b9d1-4268-946e-ee9cd1bea24f/283449.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=9f2af27f8907761d4d038a05f2613ea2eb0e2d3f757ec959eee161eed7a68029&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 210,
         "urlname": "raqyleng501h23p1",
         "catalog": "进阶玩法",
@@ -1186,6 +1224,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/44abb547-86fe-46f1-a163-e57dd17aa0fb/291637.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=8167c8788446b398b1bdcf3e14160d216febd50a217694f5d92f13c228a53af4&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 220,
         "urlname": "xe160pqsumi6bqnz",
         "catalog": "进阶玩法",
@@ -1221,6 +1261,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/f57eee2b-6301-48c8-a8fc-4039d4d3d064/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=1b0a95cd5eacea35bbf5f3d9f960d7bca7da7f004074ed08ccfb6fd69825baac&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 230,
         "urlname": "vy55q9xwlqlsfrvk",
         "catalog": "进阶玩法",
@@ -1256,6 +1298,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/27870e62-3772-49dc-a818-c6ee4d9f3676/%E5%B9%BD%E7%81%B5%E5%85%AC%E4%B8%BB.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=377997676d1e54bcc9058b2314bfde2e70b00adfb1f6f5e193420936dd03c951&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 240,
         "urlname": "ubcut43kgf97fag6",
         "catalog": "社区生态",
@@ -1291,6 +1335,8 @@
       },
       "archived": false,
       "properties": {
+        "cover": "https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/b255ead8-9aa0-4de1-aeda-b51eaa7d0c07/96599.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T125301Z&X-Amz-Expires=3600&X-Amz-Signature=2122d0106aeceb55e5ceb1d6629943acce9252cc84045c97ff9accc189b6b7c1&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "status": "已发布",
         "sort": 260,
         "urlname": "fe8ywmt999gon12w",
         "catalog": "配置详情",
