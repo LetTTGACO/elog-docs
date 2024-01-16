@@ -5,7 +5,7 @@ catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
 date: '2023-04-06 21:31:00'
-updated: '2023-11-09 00:26:00'
+updated: '2024-01-16 23:02:00'
 ---
 
 # 持续集成
@@ -152,6 +152,7 @@ jobs:
       - name: 推送文章到仓库
         uses: ad-m/github-push-action@master
         with:
+          # GITHUB_TOKEN为流水线内置变量，无需配置，可直接使用
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 生成静态文件
@@ -331,6 +332,7 @@ jobs:
       - name: 推送文章到仓库
         uses: ad-m/github-push-action@master
         with:
+          # GITHUB_TOKEN为流水线内置变量，无需配置，可直接使用
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 生成静态文件
