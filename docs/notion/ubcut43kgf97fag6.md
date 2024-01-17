@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2024-01-13 12:26:00'
+updated: '2024-01-17 09:48:00'
 ---
 
 # 最佳实践
@@ -137,4 +137,13 @@ Github: [https://github.com/cyolc932/elog](https://github.com/cyolc932/elog)
 
 
 Github: [https://github.com/lidelong-0201/next-yuque-elog](https://github.com/lidelong-0201/next-yuque-elog)
+
+
+### 【Ymri's Haven】语雀 + VitePress + GitHub Actions + Vercel部署
+
+
+网站: [https://blog.ym94.cn/](https://blog.ym94.cn/)
+
+
+Github: [https://github.com/Ymriri/Haven](https://github.com/Ymriri/Haven)
 
