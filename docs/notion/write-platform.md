@@ -329,7 +329,7 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 `0.12.1`及以上版本可设置 `disableParentDoc` 属性，用来控制：当父文档下存在文档时，父文档是否作为文件夹使用  
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/56a52870c6d2bcfaa9381129dff0ad98.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/56a52870c6d2bcfaa9381129dff0ad98.png)
 
 
 例如：当`disableParentDoc=false`或不设置时，默认是将以上 6 个文档全部下载，会在本地生成父文档的同时，创建和父文档同名的文件夹，子文档会放在该文件夹之下。  

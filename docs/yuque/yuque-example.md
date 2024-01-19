@@ -5,7 +5,7 @@
 ## 基础
 
 ### 1.图片
-![image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/c6a235cd116809970cb63b45902b56b7.png)
+![image.png](https://image.1874.cool/elog-docs-images/c6a235cd116809970cb63b45902b56b7.png)
 
 ### 2.表格
 | 字段 | 备注 |
@@ -34,7 +34,7 @@
 
 ### 3.分栏卡片
 两列分栏——左
-![头像1.PNG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/42a95a0deca5135cabd143204811221c.png)
+![头像1.PNG](https://image.1874.cool/elog-docs-images/42a95a0deca5135cabd143204811221c.png)
 两列分栏——右
 ```typescript
 const a = 1
@@ -95,12 +95,12 @@ public void test11() {
 ```
 
 ### 2.公式
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2e1043ff9c7ac77ffa261d6241417f1e.svg)
+![](https://image.1874.cool/elog-docs-images/2e1043ff9c7ac77ffa261d6241417f1e.svg)
 
 ### 3.UML图
 
 ### 4.文本绘图
-![](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/5d3a6a548d3cbb37ad0a31ca7fc3d1d6.svg)
+![](https://image.1874.cool/elog-docs-images/5d3a6a548d3cbb37ad0a31ca7fc3d1d6.svg)
 ## 小工具
 
 ### 1.提及

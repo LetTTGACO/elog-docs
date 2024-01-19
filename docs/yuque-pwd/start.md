@@ -24,4 +24,4 @@ elog init
 ```bash
 elog sync
 ```
-![image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/becbb0ace18f9fb279a1a9b88c1d8a9f.png)
+![image.png](https://image.1874.cool/elog-docs-images/becbb0ace18f9fb279a1a9b88c1d8a9f.png)

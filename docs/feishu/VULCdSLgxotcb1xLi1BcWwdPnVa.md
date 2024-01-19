@@ -43,7 +43,7 @@ const a = 123
 - [x] 任务列表已完成
 ## 媒体
 图片
-![image](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/CTkKbqy2bomUlFxg7ouciBs1n7d.jpeg)
+![image](https://image.1874.cool/elog-docs-images/CTkKbqy2bomUlFxg7ouciBs1n7d.jpeg)
 视频不支持
 
 ## 表格

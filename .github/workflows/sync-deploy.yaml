@@ -51,6 +51,7 @@ jobs:
           COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
           COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
           COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
+          COS_HOST: ${{ secrets.COS_HOST }}
           FLOWUS_TABLE_PAGE_ID: ${{ secrets.FLOWUS_TABLE_PAGE_ID }}
           WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
           WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}

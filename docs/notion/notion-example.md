@@ -104,13 +104,13 @@ Notion示例文章的子页面
 ## Media（媒体）
 
 
-![cover.JPG](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/10a91945736a3027f2854218fa71c659.JPG)
+![cover.JPG](https://image.1874.cool/elog-docs-images/10a91945736a3027f2854218fa71c659.JPG)
 
 
 [bookmark](https://elog.1874.cool)
 
 
-[46_1677164223.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T072109Z&X-Amz-Expires=3600&X-Amz-Signature=72f7e4ab0865beab98e88318854fa699b01d4080f88c2c3d1a259ac081ff74de&X-Amz-SignedHeaders=host&x-id=GetObject)
+[46_1677164223.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T031016Z&X-Amz-Expires=3600&X-Amz-Signature=5befa580c928bcaf217c1cdee4c5b1291dbb0c2c16aaf010ba037179a03e683d&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ```python
@@ -122,7 +122,7 @@ print(f"password={pwd!r}")
 ```
 
 
-[example.txt](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240116T072109Z&X-Amz-Expires=3600&X-Amz-Signature=4d409e5b02f1a6fa7be5a6684c7c91f856e2678ae172f6bfd56fca49e805523e&X-Amz-SignedHeaders=host&x-id=GetObject)
+[example.txt](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T031016Z&X-Amz-Expires=3600&X-Amz-Signature=b46a0c2ed911507e0110c10896d675bab160b3097829353d4e36a0f7ddaefc26&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## DataBase（数据库）

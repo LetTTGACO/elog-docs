@@ -142,9 +142,9 @@ module.exports = {
       prefixKey: '',
     },
     github: {
-      user: process.env.GITHUB_USER,
       token: process.env.GITHUB_TOKEN,
-      repo: process.env.GITHUB_REPO,
+      user: process.env.ELOG_GITHUB_USER,
+      repo: process.env.ELOG_GITHUB_REPO,
       prefixKey: '',
     }
   }
@@ -771,9 +771,11 @@ UPYUN_BUCKET=
 UPYUN_HOST=xxx.xx.upaiyun.com
 
 # Github
-GITHUB_USER=
+# 在 Github 流水线中，Github不允许以GITHUB开头的自定义变量
+# GITHUB_TOKEN 为内置变量，无需改名也无需配置，流水线中可直接获取
 GITHUB_TOKEN=
-GITHUB_REPO=
+ELOG_GITHUB_USER=
+ELOG_GITHUB_REPO=
 ```
 
 

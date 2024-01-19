@@ -28,7 +28,7 @@ updated: '2023-11-30 18:21:00'
 > `repo=cccc`
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/277511285f7328c7c6dfc595e1a429c2.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/277511285f7328c7c6dfc595e1a429c2.png)
 
 
 ### repo
@@ -37,10 +37,10 @@ updated: '2023-11-30 18:21:00'
 语雀仓库短名称，也称为语雀知识库路径。访问需要作为博客文章的知识库 => 更多设置 => 知识库信息，拿到语雀知识库路径。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/5cedeeb7cbcc5e8ed25f7efb8b510fb6.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/5cedeeb7cbcc5e8ed25f7efb8b510fb6.png)
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/61dce475fb779c1e9aaa039e423ab2f1.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/61dce475fb779c1e9aaa039e423ab2f1.png)
 
 
 ### token
@@ -49,7 +49,7 @@ updated: '2023-11-30 18:21:00'
 语雀 Token，访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => Token => 新建 token 并配置好只读权限。Access Token 即为语雀 Token。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fa819f24b275c1a8598242c80082bbb1.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/fa819f24b275c1a8598242c80082bbb1.png)
 
 
 ## Notion
@@ -72,13 +72,13 @@ updated: '2023-11-30 18:21:00'
 参考 [Notion 官方教程](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)。登录 [Niton 网页版](https://www.notion.so/) => 访问 [My integrations](https://www.notion.so/my-integrations) => 创建应用 => 生成 Internal Integration Token
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/d12198b05c6aa36a19e45e619ba714c6.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/d12198b05c6aa36a19e45e619ba714c6.png)
 
 
 ### databaseId
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/9e9ccadd310997eb84cf399618d3140e.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/9e9ccadd310997eb84cf399618d3140e.png)
 
 
 ## FlowUs
@@ -92,7 +92,7 @@ updated: '2023-11-30 18:21:00'
 ### tablePageId
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/ebb6c1646a35ff433ca7a5978d583481.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/ebb6c1646a35ff433ca7a5978d583481.png)
 
 
 ## 飞书
@@ -112,12 +112,12 @@ updated: '2023-11-30 18:21:00'
 7. 打开凭证与基础信息，获取 `App ID(appId)` 和 `App Secret(appSecret)`（区分测试/正式版本应用）
 8. 打开飞书聊天软件，选择/新建一个群聊，在群设置中添加机器人，搜索你的应用并将其添加到群聊中
 
-	![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/46ffd5ca3364cbbd4a13a6b8dad67826.png)
+	![Untitled.png](https://image.1874.cool/elog-docs-images/46ffd5ca3364cbbd4a13a6b8dad67826.png)
 
 9. 【可选一】打开飞书云文档，在【我的空间】下选择/新建一个目标文件夹用于Elog导出
 10. 在目标文件夹页面的右侧点击分享，邀请协作者，将刚才新建的群聊邀请为协作者。如此，自建应用就拥有了该文件夹的访问权限
 
-	![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/ac0754cbadd3e8c9b9f70b59eeccaac8.png)
+	![Untitled.png](https://image.1874.cool/elog-docs-images/ac0754cbadd3e8c9b9f70b59eeccaac8.png)
 
 11. 【可选二】打开飞书云文档，在【知识库】下选择/新建一个知识库用于Elog导出
 12. 在知识库空间设置-成员设置中将刚才新建的群聊添加为成员/管理员。如此，自建应用就拥有了该知识库的访问权限
@@ -128,7 +128,7 @@ updated: '2023-11-30 18:21:00'
 我的空间文件夹的URL路径结尾即为`folderToken`，在知识库中也是类似，文档URL路径结尾
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/0cc398bbfe9034f68ece280ea5fcde83.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/0cc398bbfe9034f68ece280ea5fcde83.png)
 
 
 ### wikiId
@@ -137,7 +137,7 @@ updated: '2023-11-30 18:21:00'
 知识库 ID，进入知识库空间设置时URL 路径结尾即为 `wikiId`
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/32db6b04a9bb2d9680d5fb1ef6ea9a18.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/32db6b04a9bb2d9680d5fb1ef6ea9a18.png)
 
 
 ## Halo
@@ -166,7 +166,7 @@ Halo 个人令牌，可前往个人中心中创建，需要以下权限
 Halo 的存储策略，可前往附件管理中，F12 打开浏览器开发者控制台，刷新后查看`/apis/storage.halo.run/v1alpha1/policies`接口，找到返回的`metadata.name`字段值，默认请设置`default-policy`
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/557709eaba58629f4fc6f23924b996c4.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/557709eaba58629f4fc6f23924b996c4.png)
 
 
 ## WordPress
@@ -214,7 +214,7 @@ Notion平台可复制Notion模版库 [Elog-WordPress 模板](https://1874.notion
 Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/tokens/) => Generate new token => 勾选必要的参数，生成 token。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/67706173197658927288780acb5563e4.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/67706173197658927288780acb5563e4.png)
 
 
 ### 腾讯云
@@ -226,7 +226,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 进入 [访问管理](https://console.cloud.tencent.com/cam/overview) => [密钥管理](https://console.cloud.tencent.com/cam/capi) =>【新增密钥】=> 获取 SecretId 和 SecretKey。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/c8868899f9eb3eeb15b6a2086f0d25a5.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/c8868899f9eb3eeb15b6a2086f0d25a5.png)
 
 
 ### bucket/region
@@ -244,7 +244,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 访问 [阿里云密钥管理](https://ram.console.aliyun.com/manage/ak) => 【创建 AccessKey】 => 获取 AccessKey ID 和 AccessKey Secret。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/46d99a53d4869761e94939638b44c8bf.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/46d99a53d4869761e94939638b44c8bf.png)
 
 
 ### bucket
@@ -262,7 +262,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 > 根据阿里云的开发文档，对象存储的 region 为 oss- 开头，所以需要给 region id 前面拼接上 oss- 才是完整的 region
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/f44f27683f0e2498456d53c3260c32f3.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/f44f27683f0e2498456d53c3260c32f3.png)
 
 
 ### 七牛云
@@ -274,7 +274,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 访问 [七牛云密钥管理](https://portal.qiniu.com/user/key) => 【创建密钥】 => 获取 AccessKey/SecretKey。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/327edf7abb3387bfd2ede1568bbb6a07.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/327edf7abb3387bfd2ede1568bbb6a07.png)
 
 
 ### bucket
@@ -306,7 +306,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 访问 [又拍云操作员管理](https://console.upyun.com/account/operators/) => 【添加操作员】 => 获取 `user/password`。
 
 
-![name=image.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/36f7c4f43f20f4c5b0ab35e1945ad34c.png)
+![name=image.png](https://image.1874.cool/elog-docs-images/36f7c4f43f20f4c5b0ab35e1945ad34c.png)
 
 
 ### bucket/region

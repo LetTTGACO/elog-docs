@@ -81,5 +81,5 @@ elog sync -e .elog.env
 ```
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/fe4c43e0f09a7751297205a26c2e07c3.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/fe4c43e0f09a7751297205a26c2e07c3.png)
 

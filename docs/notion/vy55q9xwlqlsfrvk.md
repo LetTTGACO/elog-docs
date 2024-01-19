@@ -14,7 +14,7 @@ updated: '2024-01-16 23:02:00'
 ## 自动化流程
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/033cd7c598f97adac9b4d2a71f0d7835.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/033cd7c598f97adac9b4d2a71f0d7835.png)
 
 
 ## 语雀示例
@@ -23,7 +23,7 @@ updated: '2024-01-16 23:02:00'
 **语雀 + webhooks + serverless  api  + GitHub Actions + Github Pages 持续集成**
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/93e5eae8d73452e3043e9845b627be8d.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/93e5eae8d73452e3043e9845b627be8d.png)
 
 
 ### 语雀 webhooks
@@ -37,7 +37,7 @@ updated: '2024-01-16 23:02:00'
 > ⚠️  知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/543de121db94bf2456b9973017219f3a.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/543de121db94bf2456b9973017219f3a.png)
 
 
 ### **serverless  api**
@@ -184,7 +184,7 @@ jobs:
 **Notion + Slack + pipedream + serverless  api + GitHub actions + Github Pages 持续集成**
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/3a950872cf389482fb698f35ece602f1.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/3a950872cf389482fb698f35ece602f1.png)
 
 
 ### 配置数据表 **Slack notifications**
@@ -193,7 +193,7 @@ jobs:
 设置数据表文档字段被扭转到某个状态时向Slack发送消息
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/2e89d5df627c93e7ef093d3888852d33.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/2e89d5df627c93e7ef093d3888852d33.png)
 
 
 ### 注册Slack账号并授权给Notion
@@ -202,7 +202,7 @@ jobs:
 当Notion数据表的文档字段被扭转到某个状态时向Slack发送消息，此时Slack收到消息提醒
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/58a8aa630704f280a5fe5ce72a5e00fb.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/58a8aa630704f280a5fe5ce72a5e00fb.png)
 
 
 ### **serverless  api**
@@ -225,7 +225,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 > 你也可以在Notion中配置发送消息到某个频道，然后在pipedream选择所选频道的Channel。支持多选Channels
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/b0308ef0043abae5ca865e09f58608f7.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/b0308ef0043abae5ca865e09f58608f7.png)
 
 
 #### 第二步：收到Notion消息后发送自定义Http请求
@@ -234,7 +234,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 将调用Github Actions的 serverless api 填入即可
 
 
-![Untitled.png](https://blogimagesrep-1257180516.cos.ap-guangzhou.myqcloud.com/elog-docs-images/707b235e4cbf7b781dd29e1ef559e5a3.png)
+![Untitled.png](https://image.1874.cool/elog-docs-images/707b235e4cbf7b781dd29e1ef559e5a3.png)
 
 
 ### 配置package.json
