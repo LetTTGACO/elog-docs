@@ -26,7 +26,7 @@
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
     "local:flowus": "elog sync -c elog.config.flowus.js -e .elog.env  -a elog.cache.flowus.json",
     "local:wordpress": "elog sync -c elog.config.wordpress.js -e .elog.env  -a elog.cache.wordpress.json",
-    "local:halo": "elog sync -c elog.config.halo.js -e .elog.env  -a elog.cache.halo.json",
+    "local:halo": "elog sync -c elog.config.halo.js -e .elog.env  -a elog.cache.halo.json --disable-cache",
     "local:feishu": "elog sync -c elog.config.feishu.js -e .elog.env  -a elog.cache.feishu.json",
     "local:feishu-wiki": "elog sync -c elog.config.feishu-wiki.js -e .elog.env  -a elog.cache.feishu-wiki.json",
     "sync:yuque-token": "elog sync -c elog.config.yuque-token.js -a elog.cache.yuque-token.json",

@@ -60,11 +60,15 @@ jobs:
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_FOLDER_TOKEN: ${{ secrets.FEISHU_FOLDER_TOKEN }}
           FEISHU_WIKI_ID: ${{ secrets.FEISHU_WIKI_ID }}
+          HALO_ENDPOINT: ${{ secrets.HALO_ENDPOINT }}
+          HALO_POLICY_NAME: ${{ secrets.HALO_POLICY_NAME }}
+          HALO_TOKEN: ${{ secrets.HALO_TOKEN }}
         run: |
           npm run sync:flowus
           npm run sync:yuque-token
           npm run sync:notion
           npm run sync:wordpress
+          npm run sync:halo
           npm run sync:feishu
           npm run sync:feishu-wiki
 
