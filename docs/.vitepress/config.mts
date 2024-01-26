@@ -6,8 +6,10 @@ import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
 import mathjax3 from 'markdown-it-mathjax3';
 const customElements = ['mjx-container'];
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-const links = []
+const links: any[] = []
 
 export default defineConfig({
   lang: "zh-CN",
@@ -64,6 +66,9 @@ export default defineConfig({
     sitemap.end()
   },
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     outline: [2,6],
     nav: [
       { text: 'Notion 版', link: '/notion/start', activeMatch: '/notion/' },
