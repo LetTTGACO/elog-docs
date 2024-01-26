@@ -19,7 +19,7 @@ export default defineConfig({
   cleanUrls: true,
   ignoreDeadLinks: true,
   head: [
-    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['meta', { name: 'theme-color', content: '#2a9d8f' }],
     [
       'script',
       {
