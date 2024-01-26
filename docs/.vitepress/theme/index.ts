@@ -19,7 +19,7 @@ export default {
         repoId: 'R_kgDOIh13_Q',
         category: 'General', // 默认: `General`
         categoryId: 'DIC_kwDOIh13_c4CbnHJ',
-        mapping: 'pathname', // 默认: `pathname`
+        mapping: 'title', // 默认: `pathname`
         inputPosition: 'top', // 默认: `top`
         lang: 'zh-CN', // 默认: `zh-CN`
         lightTheme: 'light', // 默认: `light`
