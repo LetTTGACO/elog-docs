@@ -7,7 +7,7 @@
     "declaration": true,
     "sourceMap": true,
     "rootDir": "./",
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "moduleResolution": "node",
