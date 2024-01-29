@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 13:24:00'
-updated: '2024-01-29 01:18:00'
+updated: '2024-01-29 18:23:00'
 ---
 
 # 图床平台配置
@@ -17,22 +17,22 @@ updated: '2024-01-29 01:18:00'
 ## 参数说明
 
 
-| 字段            | 必填 | 类型           | 说明                                     | 默认值   |
-| ------------- | -- | ------------ | -------------------------------------- | ----- |
-| enable        | 否  | boolean      | 是否启用图床                                 | false |
-| platform      | 否  | string       | 图床平台`local/cos/oss/github/qiniu/upyun` | local |
-| enableHtmlImg | 否  | boolean      | 是否启用替换 HTML 标签中的 img 图片                | 否     |
-| enableForExt  | 否  | boolean      | 是否为插件/自定义配置启用图床                        | false |
-| plugin        | 否  | string｜class | 自定义图床插件配置                              | -     |
+| 字段                     | 必填 | 类型           | 说明                                     | 默认值   |
+| ---------------------- | -- | ------------ | -------------------------------------- | ----- |
+| enable                 | 否  | boolean      | 是否启用图床                                 | false |
+| platform               | 否  | string       | 图床平台`local/cos/oss/github/qiniu/upyun` | local |
+| enableReplaceImgInHtml | 否  | boolean      | 是否启用替换 HTML 标签中的 img 图片                | 否     |
+| enableForExt           | 否  | boolean      | 是否为插件/自定义配置启用图床                        | false |
+| plugin                 | 否  | string｜class | 自定义图床插件配置                              | -     |
 
 
-### enableHtmlImg 字段说明
+### enableReplaceImgInHtml 字段说明
 
 
 > `0.13.2`及以上版本可用，`0.13.2`以下版本会默认下载和替换 HTML 标签中的图片路径，如果不需要请升级到`0.13.2`及以上版本
 
 
-Elog 默认不会下载和替换 HTML 标签中的图片路径，如果需要替换可以在此配置中全局启用。如果只需要对某篇文章启用，语雀/飞书可以在文章顶部的 Front Matter手动指定，Notion/FlowUs 可以增加对应的数据库属性。
+Elog 默认不会下载和替换 HTML 标签中的图片路径，如果需要替换可以在此配置中全局启用。如果只需要对某篇文章启用，语雀/飞书可以在文章顶部的 Front Matter手动指定`enableReplaceImgInHtml: true`，Notion/FlowUs 可以增加对应的数据库属性。
 
 
 ### enableForExt 字段说明

@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 部署平台配置
 date: '2023-10-13 13:21:00'
-updated: '2023-11-30 00:42:00'
+updated: '2024-01-29 18:23:00'
 ---
 
 # 部署平台配置
@@ -160,14 +160,24 @@ Halo 关键信息获取及配置流程请移步 [关键信息获取](/notion/gvn
 > `0.13.0`及以上版本支持
 
 
-| 字段              | 必填 | 说明                        | 默认值            |
-| --------------- | -- | ------------------------- | -------------- |
-| endpoint        | 是  | 站点地址，区分 http/https        | -              |
-| token           | 是  | Halo 个人令牌                 | -              |
-| policyName      | 否  | 存储策略                      | default-policy |
-| rowType         | 否  | 源文档格式，取值 html/markdown    | html           |
-| needUploadImage | 否  | 是否将文档图片上传到 Halo           | false          |
-| formatExt       | 否  | 自定义文档处理适配器路径，需要符合HTML格式要求 | -              |
+| 字段                     | 必填 | 说明                        | 默认值            |
+| ---------------------- | -- | ------------------------- | -------------- |
+| endpoint               | 是  | 站点地址，区分 http/https        | -              |
+| token                  | 是  | Halo 个人令牌                 | -              |
+| policyName             | 否  | 存储策略                      | default-policy |
+| rowType                | 否  | 源文档格式，取值 html/markdown    | html           |
+| needUploadImage        | 否  | 是否将文档图片上传到 Halo           | false          |
+| enableReplaceImgInHtml | 否  | 是否启用替换 HTML 中的图片          | false          |
+| formatExt              | 否  | 自定义文档处理适配器路径，需要符合HTML格式要求 | -              |
+
+
+### enableReplaceImgInHtml 字段说明
+
+
+> `0.13.2`及以上版本可用，`0.13.2`以下版本会默认下载和替换 HTML 标签中的图片路径，如果不需要请升级到`0.13.2`及以上版本
+
+
+Elog 默认不会下载和替换 HTML 标签中的图片路径，如果需要替换可以在此配置中全局启用。如果只需要对某篇文章启用，语雀/飞书可以在文章顶部的 Front Matter手动指定`enableReplaceImgInHtml: true`，Notion/FlowUs 可以增加对应的数据库属性。
 
 
 ### rowType 字段说明
