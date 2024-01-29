@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2024-01-17 09:48:00'
+updated: '2024-01-29 23:33:00'
 ---
 
 # 最佳实践
@@ -47,6 +47,12 @@ Github：[https://github.com/elog-x/yuque-vitepress](https://github.com/elog-x/y
 
 
 Github：[https://github.com/elog-x/flowus-halo](https://github.com/elog-x/flowus-halo)
+
+
+### 【开箱即用】Notion + Elog + Halo + GitHub Actions 博客解决方案
+
+
+Github：[https://github.com/elog-x/notion-halo](https://github.com/elog-x/notion-halo)
 
 
 ### 【Elog Docs】多写作平台云端写作 + vitepress + GitHub Action + GitHub Pages 持续集成
