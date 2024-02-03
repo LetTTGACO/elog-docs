@@ -5,3 +5,7 @@
     --vp-c-brand-2: #2a9d8f;
     --vp-button-brand-hover-bg: #21867a;
 }
+
+.medium-zoom-image--opened {
+    z-index: 9999;
+}

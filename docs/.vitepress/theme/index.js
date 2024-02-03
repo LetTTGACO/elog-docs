@@ -1,9 +1,9 @@
 import DefaultTheme from 'vitepress/theme';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import { useData, useRoute } from 'vitepress';
+import { inBrowser, useData, useRoute } from 'vitepress';
 import './index.css'
 import mediumZoom from 'medium-zoom';
-import { onMounted } from 'vue';
+import { nextTick, watch } from 'vue';
 export default {
   ...DefaultTheme,
   enhanceApp(ctx) {
@@ -11,21 +11,23 @@ export default {
     // ...
   },
   setup() {
-    onMounted(() => {
-      let images = document.body.querySelectorAll("img");
-      console.log('images', images)
-      images.forEach((image) => {
-        if (image.alt !== "VitePress") {
-          // 图片添加点击放大功能
-          image.classList.add("zoom-image");
-        }
-      });
-      mediumZoom(".zoom-image");
-    });
     // 获取前言和路由
     const { frontmatter } = useData();
     const route = useRoute();
-
+    watch(
+      () => route.path,
+      () => nextTick(() => {
+        if (inBrowser) {
+          const content = document.querySelector("#VPContent")
+          let images = content.querySelectorAll("img");
+          images.forEach((image) => {
+            image.classList.add("zoom-image");
+          });
+          mediumZoom(".zoom-image");
+        }
+      }),
+      { immediate: true },
+    )
     // 评论组件 - https://giscus.app/
     giscusTalk({
         repo: 'LetTTGACO/elog-docs',
