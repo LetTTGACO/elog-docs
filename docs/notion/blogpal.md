@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: Blogpal 浏览器插件
 date: '2024-01-23 20:25:00'
-updated: '2024-01-23 22:11:00'
+updated: '2024-02-05 22:29:00'
 ---
 
 # Blogpal 浏览器插件
@@ -68,8 +68,8 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 ## 如何下载
 
 
-当前 Blogpal 还未发布到浏览器商店（没有银行卡注册不了账号，得等一阵子QAQ）
+当前 Blogpal 已经发布到谷歌浏览器商店，[点击安装](https://chromewebstore.google.com/detail/blogpal/oafbfnbjohlejdhpljbgedpkdklcclmp)
 
 
-目前临时放在 Elog 仓库 [Release](https://github.com/LetTTGACO/elog/releases/tag/v0.13.1) 中，可自行选择对应浏览器压缩包下载后使用。
+其他浏览器暂未发布，可前往Elog 仓库 [Release](https://github.com/LetTTGACO/elog/releases/tag/v0.13.1) 中，自行选择对应浏览器压缩包下载后使用。
 
