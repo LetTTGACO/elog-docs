@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2024-01-29 23:33:00'
+updated: '2024-02-19 09:57:00'
 ---
 
 # 最佳实践
@@ -152,4 +152,13 @@ Github: [https://github.com/lidelong-0201/next-yuque-elog](https://github.com/li
 
 
 Github: [https://github.com/Ymriri/Haven](https://github.com/Ymriri/Haven)
+
+
+### 【Xlenco's Blog】hexo + elog + 语雀，部署在vercel和 azure web
+
+
+网站: [https://blog.xlenco.top/p/1420.html](https://blog.xlenco.top/p/1420.html)
+
+
+Github: [https://github.com/xlenco/blog](https://github.com/xlenco/blog)
 
