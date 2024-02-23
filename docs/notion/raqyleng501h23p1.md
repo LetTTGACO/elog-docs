@@ -5,7 +5,7 @@ catalog: 进阶玩法
 tags: Elog-Docs
 title: Front Matter
 date: '2023-04-06 21:31:00'
-updated: '2023-12-18 00:59:00'
+updated: '2024-02-23 11:09:00'
 ---
 
 # Front Matter
@@ -62,15 +62,15 @@ Elog 预设置了一些常用的属性，会在启用`front matter` 时默认下
 > 可通过在文档顶部指定`YAML front matter`来覆盖原有属性或增加你想要的属性
 
 
-| 属性          | 类型                  | 说明                                    |
-| ----------- | ------------------- | ------------------------------------- |
-| title       | string              | 文章标题                                  |
-| urlname     | string              | 语雀 slug                               |
-| date        | YYYY-MM-DD HH:mm:ss | 创建时间                                  |
-| updated     | YYYY-MM-DD HH:mm:ss | 更新时间                                  |
-| cover       | string              | 封面图，可在语雀文档设置中配置。**但由于语雀防盗链，不一定能正常访问** |
-| tags        | string[]            | 标签，可在语雀文档设置中配置                        |
-| description | string              | 文章摘要，可在语雀文档设置中配置                      |
+| 属性          | 类型                  | 说明                                                  |
+| ----------- | ------------------- | --------------------------------------------------- |
+| title       | string              | 文章标题                                                |
+| urlname     | string              | 语雀 slug                                             |
+| date        | YYYY-MM-DD HH:mm:ss | 创建时间                                                |
+| updated     | YYYY-MM-DD HH:mm:ss | 更新时间                                                |
+| cover       | string              | 封面图，可在语雀文档设置中配置。**但由于语雀防盗链，不一定能正常访问，可通过自定义文档处理器解决** |
+| tags        | string[]            | 标签，可在语雀文档设置中配置                                      |
+| description | string              | 文章摘要，可在语雀文档设置中配置                                    |
 
 
 ### 飞书预设
@@ -93,13 +93,13 @@ Elog 预设置了一些常用的属性，会在启用`front matter` 时默认下
 > 可通过在数据库新增字段来覆盖原有属性或增加你想要的属性
 
 
-| 属性      | 类型                  | 说明                                      |
-| ------- | ------------------- | --------------------------------------- |
-| title   | string              | 文章标题                                    |
-| urlname | string              | url 名称                                  |
-| date    | YYYY-MM-DD HH:mm:ss | 创建时间                                    |
-| updated | YYYY-MM-DD HH:mm:ss | 更新时间                                    |
-| cover   | string              | 文档头部封面图，**但由于Notion 图片存在有效期，过期后不能正常展示** |
+| 属性      | 类型                  | 说明                                                    |
+| ------- | ------------------- | ----------------------------------------------------- |
+| title   | string              | 文章标题                                                  |
+| urlname | string              | url 名称                                                |
+| date    | YYYY-MM-DD HH:mm:ss | 创建时间                                                  |
+| updated | YYYY-MM-DD HH:mm:ss | 更新时间                                                  |
+| cover   | string              | 文档头部封面图，**但由于Notion 图片存在有效期，过期后不能正常展示，可通过自定义文档处理器解决** |
 
 
 ### FlowUs 预设
@@ -108,13 +108,13 @@ Elog 预设置了一些常用的属性，会在启用`front matter` 时默认下
 > 可通过在数据库新增字段来覆盖原有属性或增加你想要的属性
 
 
-| 属性      | 类型                  | 说明                               |
-| ------- | ------------------- | -------------------------------- |
-| title   | string              | 文章标题                             |
-| urlname | string              | url 名称                           |
-| date    | YYYY-MM-DD HH:mm:ss | 创建时间                             |
-| updated | YYYY-MM-DD HH:mm:ss | 更新时间                             |
-| cover   | string              | 文档头部封面图，**但由于FlowUs防盗链， 不能正常访问** |
+| 属性      | 类型                  | 说明                                             |
+| ------- | ------------------- | ---------------------------------------------- |
+| title   | string              | 文章标题                                           |
+| urlname | string              | url 名称                                         |
+| date    | YYYY-MM-DD HH:mm:ss | 创建时间                                           |
+| updated | YYYY-MM-DD HH:mm:ss | 更新时间                                           |
+| cover   | string              | 文档头部封面图，**但由于FlowUs防盗链， 不能正常访问，可通过自定义文档处理器解决** |
 
 
 ### cover 字段说明
