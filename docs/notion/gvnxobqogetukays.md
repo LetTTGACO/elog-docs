@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2023-11-30 18:21:00'
+updated: '2024-02-26 22:43:00'
 ---
 
 # 关键信息获取
@@ -93,6 +93,37 @@ updated: '2023-11-30 18:21:00'
 
 
 ![Untitled.png](https://image.1874.cool/elog-docs-images/ebb6c1646a35ff433ca7a5978d583481.png)
+
+
+## wolai
+
+
+### 配置流程
+
+1. 创建一个表格页面。目前暂无示例，根据自身需求创建即可，表格属性可参考上面的 notion/flowus 表格创建
+2. 获取账号 token
+3. 获取表格 页面的 pageId
+
+### token
+
+
+此 token 并非官方开发者文档中的 token，而是网页端请求头中 cookie 中所含的 token。而 elog 就是利用此 token 模拟 wolai 网页端的请求，从而获取到 md 文档。
+
+1. 打开 wolai 网页端
+2. F12 打开开发者模式
+3. 随便选择一个接口，点击标头
+4. 从请求标头中的 Cookie 中拿到当前账号的 token
+
+![Untitled.png](https://image.1874.cool/elog-docs-images/1d4a0bfde7c654de2f68275cb79e429a.png)
+
+
+### pageId
+
+
+当前表格的 URL 中的页面 ID
+
+
+![Untitled.png](https://image.1874.cool/elog-docs-images/d89fe38a8ec8fc2e2d349a5d74cd999b.png)
 
 
 ## 飞书

@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
 date: '2023-10-13 13:14:00'
-updated: '2024-01-16 21:49:00'
+updated: '2024-02-26 22:44:00'
 ---
 
 # 写作平台配置
@@ -280,7 +280,7 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 5. `catalog`字段为单选时，只能生成一层目录
 6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
 
-> 注意：对于Notion和FlowUs，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
+> 注意：对于Notion/FlowUs/wolai，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
 
 
 ## 飞书
@@ -336,6 +336,46 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 
 
 当`disableParentDoc=true`时，则只会下载「测试」和「四级文档」两篇文档。其他文档因为其`children`存在文档，会将其作为文件夹，下载到本地的「四级文档」会被放置在文件夹之中。
+
+
+## wolai
+
+
+> 内测阶段，`0.14.0-beta.0`及以上版本可用
+
+
+wolai 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#wolai) 页面。
+
+
+| 字段      | 必填 | 类型             | 说明              | 默认值   |
+| ------- | -- | -------------- | --------------- | ----- |
+| token   | 是  | string         | flowus 中的多维表格ID | -     |
+| pageId  | 否  | boolean｜object | 过滤条件            | false |
+| catalog | 否  | boolean｜object | 目录信息配置          | false |
+| limit   | 否  | number         | 文档下载并发数         | 3     |
+
+
+### Catalog 字段说明
+
+
+`catalog`字段是为了配置文档的目录信息，如果需要按照指定目录分类下载时，则需要进行配置，**对文档的同步不影响**。 
+
+1. 默认值为`false`，即不记录文档的目录信息
+2. 当`catalog=true`，则表示按照数据库的`catalog`字段进行记录
+3. 当需要自定义属性时，则可按照以下格式进行配置
+
+	```typescript
+	catalog = {
+	  enable: true,
+	  property: "自定义属性"
+	}
+	```
+
+4. 当需要配置`catalog`字段时，请保证数据库有相关属性存在（支持单选/多选）
+5. `catalog`字段为单选时，只能生成一层目录
+6. `catalog`字段为多选时，可生成多级目录，**但是需要保证标签的顺序**
+
+> 注意：对于Notion/FlowUs/wolai，想要开启按指定目录分类下载，还需要开启`deploy.local.catalog=true`
 
 
 ## 下一步
