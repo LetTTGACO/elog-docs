@@ -5,7 +5,7 @@ catalog: 社区生态
 tags: Elog-Docs
 title: 最佳实践
 date: '2023-04-06 21:31:00'
-updated: '2024-02-19 14:49:00'
+updated: '2024-02-27 23:07:00'
 ---
 
 # 最佳实践
@@ -161,4 +161,10 @@ Github: [https://github.com/Ymriri/Haven](https://github.com/Ymriri/Haven)
 
 
 Github: [https://github.com/xlenco/blog](https://github.com/xlenco/blog)
+
+
+### 【白】FlowUs+Hexo+Github Actions+Vercel 博客解决方案
+
+
+网站: [https://www.imbai.cn/posts/32113.html](https://www.imbai.cn/posts/32113.html)
 
