@@ -24,6 +24,7 @@
     "local:yuque-token": "elog sync -c elog.config.yuque-token.js -e .elog.env -a elog.cache.yuque-token.json",
     "local:yuque-pwd": "elog sync -c elog.config.yuque-pwd.js -e .elog.env -a elog.cache.yuque-pwd.json",
     "local:notion": "elog sync -c elog.config.notion.js -e .elog.env -a elog.cache.notion.json",
+    "local:wolai": "elog sync -c elog.config.wolai.js -e .elog.env -a elog.cache.wolai.json",
     "local:flowus": "elog sync -c elog.config.flowus.js -e .elog.env  -a elog.cache.flowus.json",
     "local:wordpress": "elog sync -c elog.config.wordpress.js -e .elog.env  -a elog.cache.wordpress.json",
     "local:halo": "elog sync -c elog.config.halo.js -e .elog.env  -a elog.cache.halo.json",
@@ -49,7 +50,7 @@
     "sync-all": "npm run local:yuque-token && npm run local:notion && npm run local:flowus && npm run local:wordpress && npm run local:feishu && npm run local:feishu-wiki"
   },
   "dependencies": {
-    "@elog/cli": "^0.13.2",
+    "@elog/cli": "^0.14.0-beta.0",
     "@types/node": "^18.11.9",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
