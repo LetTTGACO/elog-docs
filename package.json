@@ -50,7 +50,7 @@
     "sync-all": "npm run local:yuque-token && npm run local:notion && npm run local:flowus && npm run local:wordpress && npm run local:feishu && npm run local:feishu-wiki"
   },
   "dependencies": {
-    "@elog/cli": "^0.13.5",
+    "@elog/cli": "^0.14.0",
     "@types/node": "^18.11.9",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",

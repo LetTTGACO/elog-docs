@@ -4,13 +4,17 @@ module.exports = {
     wolai: {
       token: process.env.WOLAI_TOKEN,
       pageId: process.env.WOLAI_PAGE_ID,
+      filter: {
+        property: 'status',
+        value: '已发布',
+      },
     },
   },
   deploy: {
     platform: 'local',
     local: {
       outputDir: './docs/wolai',
-      filename: 'urlname',
+      filename: 'title',
       format: 'markdown',
       frontMatter: {
         enable: true
