@@ -41,6 +41,47 @@
       "realName": "flowus-example-2",
       "relativePath": "/flowus-example-2.md",
       "docPath": "./docs/flowus"
+    },
+    {
+      "id": "7e7d1764-f879-4fd3-8d46-593c96994656",
+      "doc_id": "7e7d1764-f879-4fd3-8d46-593c96994656",
+      "updated": 1714012674309,
+      "properties": {
+        "urlname": "flowus-test",
+        "title": "副本前后端分离",
+        "updated": "2024-04-25 10:37:54",
+        "date": "2024-04-01 08:00:00",
+        "categories": "技术记录",
+        "tags": [
+          "爱特"
+        ],
+        "summary": "dwdwd",
+        "catalog": "示例目录"
+      },
+      "realName": "flowus-test",
+      "relativePath": "/flowus-test.md",
+      "docPath": "./docs/flowus"
+    },
+    {
+      "id": "2aeb1710-7a8f-46db-883c-a3da0d0dc7ea",
+      "doc_id": "2aeb1710-7a8f-46db-883c-a3da0d0dc7ea",
+      "updated": 1714058163891,
+      "properties": {
+        "urlname": "flowus-test",
+        "title": "前后端分离",
+        "updated": "2024-04-25 23:16:03",
+        "date": "2024-04-01 08:00:00",
+        "cover": "https://cdn-53h3.flowus.net.cn/cover/photo14?time=1714134600&token=20bc22984da41786aba2ea56239aceaf&role=free",
+        "categories": "技术记录",
+        "tags": [
+          "爱特"
+        ],
+        "summary": "dwdwd",
+        "catalog": "示例目录"
+      },
+      "realName": "flowus-test_2aeb1710-7a8f-46db-883c-a3da0d0dc7ea",
+      "relativePath": "/flowus-test_2aeb1710-7a8f-46db-883c-a3da0d0dc7ea.md",
+      "docPath": "./docs/flowus"
     }
   ],
   "catalog": [
@@ -55,12 +96,13 @@
         "urlname": "flowus-example",
         "title": "FlowUs示例页面",
         "updated": "2024-01-16 15:22:34",
-        "date": "2023-07-07 00:00:00",
+        "date": "2023-07-07 08:00:00",
         "categories": "技术分享",
         "tags": [
           "FlowUs",
           "Elog"
         ],
+        "status": "已发布",
         "summary": "FlowUs示例页面",
         "catalog": "示例目录"
       }
@@ -76,13 +118,55 @@
         "urlname": "flowus-example-2",
         "title": "第二篇文档",
         "updated": "2024-01-16 15:22:33",
-        "date": "2023-11-28 00:00:00",
+        "date": "2023-11-28 08:00:00",
         "categories": "踩坑记录",
         "tags": [
           "Elog",
           "Blog"
         ],
+        "status": "已发布",
         "summary": "第二篇",
+        "catalog": "示例目录"
+      }
+    },
+    {
+      "id": "7e7d1764-f879-4fd3-8d46-593c96994656",
+      "doc_id": "7e7d1764-f879-4fd3-8d46-593c96994656",
+      "title": "副本前后端分离",
+      "updated": 1714012674309,
+      "createdAt": 1713511198493,
+      "updatedAt": 1714012674309,
+      "properties": {
+        "urlname": "flowus-test",
+        "title": "副本前后端分离",
+        "updated": "2024-04-25 10:37:54",
+        "date": "2024-04-01 08:00:00",
+        "categories": "技术记录",
+        "tags": [
+          "爱特"
+        ],
+        "summary": "dwdwd",
+        "catalog": "示例目录"
+      }
+    },
+    {
+      "id": "2aeb1710-7a8f-46db-883c-a3da0d0dc7ea",
+      "doc_id": "2aeb1710-7a8f-46db-883c-a3da0d0dc7ea",
+      "title": "前后端分离",
+      "updated": 1714058163891,
+      "createdAt": 1714013849769,
+      "updatedAt": 1714058163891,
+      "properties": {
+        "urlname": "flowus-test",
+        "title": "前后端分离",
+        "updated": "2024-04-25 23:16:03",
+        "date": "2024-04-01 08:00:00",
+        "cover": "https://cdn-53h3.flowus.net.cn/cover/photo14?time=1714134600&token=20bc22984da41786aba2ea56239aceaf&role=free",
+        "categories": "技术记录",
+        "tags": [
+          "爱特"
+        ],
+        "summary": "dwdwd",
         "catalog": "示例目录"
       }
     }

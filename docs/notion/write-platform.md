@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 写作平台配置
 date: '2023-10-13 13:14:00'
-updated: '2024-03-01 00:26:00'
+updated: '2024-04-26 20:36:00'
 ---
 
 # 写作平台配置
@@ -186,13 +186,13 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 ### Filter 字段说明
 
 
-`filter`字段是为了筛选 FlowUs 多维表文档，表示哪些文章需要被 Elog 下载。
+`filter`字段是为了筛选文档，表示哪些文章需要被 Elog 下载。
 
 1. 默认值为`false`，即不过滤文档，全部下载
 2. 如果设置为`true`，会按照以下规则进行过滤
 
 	```javascript
-	// 表示将按照多维表中的【status】字段进行过滤，保留所有【已发布】的文档
+	// 表示将按照表中的【status】字段进行过滤，保留所有【已发布】的文档
 	filter = {
 	  property: 'status',
 	  value: '已发布',
@@ -202,12 +202,12 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 3. 如果想自定义过滤文档，可以指定多维表的属性名称和值进行过滤。目前只支持**与**逻辑，不支持**或**逻辑
 
 	```javascript
-	// 表示将按照多维表中的【status】字段进行过滤，保留所有【已发布】的文档
+	// 表示将按照表中的【status】字段进行过滤，保留所有【已发布】的文档
 	filter = {
 	  property: "status"
 	  value: "已发布"
 	}
-	// 表示将按照多维表中的【status】和【tag】字段进行过滤，保留所有status=已发布 且 tag=技术方案的文档
+	// 表示将按照表中的【status】和【tag】字段进行过滤，保留所有status=已发布 且 tag=技术方案的文档
 	filter = [
 		{
 		  property: "status"
@@ -223,17 +223,17 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 ### sort 字段说明
 
 
-`sorts` 字段是为了对 FlowUs 多维表文档进行排序，以便生成一定顺序的目录信息，**对文档的同步不影响**。 
+`sorts` 字段是为了对文档进行排序，以便生成一定顺序的目录信息，**对文档的同步不影响**。 
 
 
 例如，使用 VitePress 部署文档时，需要对文档按照指定顺序和结构生成路由和 sidebar。 
 
 1. 默认值为`false`，不进行排序
 2. 当`sort=true`，会按照文档的创建时间倒序排列
-3. Elog 提供了一些预设参数，如下。例如`sort=sortDesc`即按照多维表中的 sort 字段进行倒序排列
+3. Elog 提供了一些预设参数，如下。例如`sort=sortDesc`即按照表中的 sort 字段进行倒序排列
 
 	```typescript
-	export enum FlowUsSortPresetEnum {
+	export enum SortPresetEnum {
 	  /** 按自定义日期排序 */
 	  dateDesc = 'dateDesc', // 倒序
 	  dateAsc = 'dateAsc', // 正序
@@ -252,7 +252,7 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 4. 如果需要自定义排序时，可以指定多维表的属性名称和值进行自定义排序。暂不支持多个排序条件
 
 	```typescript
-	// 表示将按照多维表中的【sort】字段进行【倒序】排列
+	// 表示将按照表中的【sort】字段进行【倒序】排列
 	sort = {
 	  property: "sort"
 	  direction: "descending" // descending：倒序， ascending：正序
@@ -347,12 +347,91 @@ FlowUs 模版获取、关键信息获取及配置流程请移步 [关键信息�
 wolai 模版获取、关键信息获取及配置流程请移步 [关键信息获取](/notion/gvnxobqogetukays#wolai) 页面。
 
 
-| 字段      | 必填 | 类型             | 说明                       | 默认值   |
-| ------- | -- | -------------- | ------------------------ | ----- |
-| token   | 是  | string         | wolai 请求头cookie 中的 token | -     |
-| pageId  | 否  | string         |  页面 ID                   | -     |
-| catalog | 否  | boolean｜object | 目录信息配置                   | false |
-| limit   | 否  | number         | 文档下载并发数                  | 3     |
+| 字段      | 必填 | 类型                      | 说明                       | 默认值   |
+| ------- | -- | ----------------------- | ------------------------ | ----- |
+| token   | 是  | string                  | wolai 请求头cookie 中的 token | -     |
+| pageId  | 否  | string                  |  页面 ID                   | -     |
+| catalog | 否  | boolean｜object          | 目录信息配置                   | false |
+| limit   | 否  | number                  | 文档下载并发数                  | 3     |
+| sort    | 否  | boolean｜string｜object[] | 排序条件                     | false |
+| catalog | 否  | boolean｜object          | 目录信息配置                   | false |
+
+
+### Filter 字段说明
+
+
+`filter`字段是为了筛选文档，表示哪些文章需要被 Elog 下载。
+
+1. 默认值为`false`，即不过滤文档，全部下载
+2. 如果设置为`true`，会按照以下规则进行过滤
+
+	```javascript
+	// 表示将按照表中的【status】字段进行过滤，保留所有【已发布】的文档
+	filter = {
+	  property: 'status',
+	  value: '已发布',
+	}
+	```
+
+3. 如果想自定义过滤文档，可以指定多维表的属性名称和值进行过滤。目前只支持**与**逻辑，不支持**或**逻辑
+
+	```javascript
+	// 表示将按照表中的【status】字段进行过滤，保留所有【已发布】的文档
+	filter = {
+	  property: "status"
+	  value: "已发布"
+	}
+	// 表示将按照表中的【status】和【tag】字段进行过滤，保留所有status=已发布 且 tag=技术方案的文档
+	filter = [
+		{
+		  property: "status"
+		  value: "已发布"
+		}, {
+		  property: "tag"
+		  value: "技术方案"
+		}
+	]
+	```
+
+
+### sort 字段说明
+
+
+`sorts` 字段是为了对文档进行排序，以便生成一定顺序的目录信息，**对文档的同步不影响**。 
+
+
+例如，使用 VitePress 部署文档时，需要对文档按照指定顺序和结构生成路由和 sidebar。 
+
+1. 默认值为`false`，不进行排序
+2. 当`sort=true`，会按照文档的创建时间倒序排列
+3. Elog 提供了一些预设参数，如下。例如`sort=sortDesc`即按照表中的 sort 字段进行倒序排列
+
+	```typescript
+	export enum SortPresetEnum {
+	  /** 按自定义日期排序 */
+	  dateDesc = 'dateDesc', // 倒序
+	  dateAsc = 'dateAsc', // 正序
+	  /** 按创建时间排序 */
+	  createTimeDesc = 'createTimeDesc', // 倒序
+	  createTimeAsc = 'createTimeAsc', // 正序
+	  /** 按更新时间排序 */
+	  updateTimeDesc = 'updateTimeDesc', // 倒序
+	  updateTimeAsc = 'updateTimeAsc', // 正序
+	  /** 按sort字段排序 */
+	  sortDesc = 'sortDesc', // 倒序
+	  sortAsc = 'sortAsc', // 正序
+	}
+	```
+
+4. 如果需要自定义排序时，可以指定多维表的属性名称和值进行自定义排序。暂不支持多个排序条件
+
+	```typescript
+	// 表示将按照表中的【sort】字段进行【倒序】排列
+	sort = {
+	  property: "sort"
+	  direction: "descending" // descending：倒序， ascending：正序
+	}
+	```
 
 
 ### Catalog 字段说明
