@@ -5,7 +5,7 @@ catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: '2023-07-23 03:37:00'
-updated: '2023-12-21 17:19:00'
+updated: '2024-07-06 16:33:00'
 ---
 
 # 常见问题
@@ -220,6 +220,29 @@ npx @elog/cli clean
 
 
 如果遇到图片下载失败，可升级到Elog最新版`@elog/cli@0.7.2`及以上版本，Elog会在上次同步时某文章存在图片下载失败时，第二次同步会重新尝试同步该文章
+
+
+## 飞书下载图片报错
+
+
+由于[飞书文档的频控策略](https://open.feishu.cn/document/server-docs/api-call-guide/frequency-control)：飞书对于机器人的API 限制频率为：100 次/分钟，5 次/秒。
+
+
+如果你遇到下载图片时以下报错，请尝试升级到 [v0.14.2-beta.1](https://github.com/LetTTGACO/elog/releases/tag/v0.14.2-beta.1) 及以上版本。
+
+
+```json
+{
+	"code": 99991400,
+	"msg": "request tigger frequency limit"
+}
+```
+
+
+Elog 会对图片下载进行并发接口限制，默认限制 `limit` 为 3，即同时请求 3 次，如果依然遇到错误，可以尝试调低limit来控制并发请求。
+
+
+> 注意：`limit` 数值越低，意味着从飞书下载图片的时间越长，会导致初次同步时，整个同步流程会变慢一些。
 
 
 ## Elog主要功能是批量导出
