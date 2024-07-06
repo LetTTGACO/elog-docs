@@ -12,31 +12,22 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node-version: [20]
 
     steps:
-      - name: 检查分支
-        uses: actions/checkout@master
-
-      - name: 安装node环境
-        uses: actions/setup-node@master
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: "16.x"
-
-      - name: 安装依赖
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install --prod
-
-      - name: 清除缓存
-        env:
-          CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
-        if: ${{ env.CLEAN_CACHE == 'true' }}
-        run: |
-          npm run clean:yuque-token
-          npm run clean:yuque-pwd
-          npm run clean:notion
-          npm run clean:flowus
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --prod
 
       - name: 拉取语雀&Notion&FlowUs&飞书的文档
         env:
@@ -65,13 +56,13 @@ jobs:
           HALO_POLICY_NAME: ${{ secrets.HALO_POLICY_NAME }}
           HALO_TOKEN: ${{ secrets.HALO_TOKEN }}
         run: |
-          npm run sync:flowus
-          npm run sync:yuque-token
-          npm run sync:notion
-          npm run sync:wordpress
-          npm run sync:halo
-          npm run sync:feishu
-          npm run sync:feishu-wiki
+          pnpm run sync:flowus
+          pnpm run sync:yuque-token
+          pnpm run sync:notion
+          pnpm run sync:wordpress
+          pnpm run sync:halo
+          pnpm run sync:feishu
+          pnpm run sync:feishu-wiki
 
       - name: 配置Git用户名邮箱
         run: |
@@ -93,7 +84,7 @@ jobs:
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
-          npm run docs:build
+          pnpm run docs:build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3

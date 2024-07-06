@@ -8,21 +8,22 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node-version: [20]
 
     steps:
-      - name: 检查分支
-        uses: actions/checkout@master
-
-      - name: 安装node环境
-        uses: actions/setup-node@master
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: "16.x"
-
-      - name: 安装依赖
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install --prod
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --prod
 
       - name: 生成静态文件
         env:
