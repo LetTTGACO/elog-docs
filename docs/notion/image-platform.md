@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 13:24:00'
-updated: '2024-07-06 16:04:00'
+updated: '2024-07-06 16:24:00'
 ---
 
 # 图床平台配置
@@ -23,6 +23,7 @@ updated: '2024-07-06 16:04:00'
 | platform     | 否  | string       | 图床平台`local/cos/oss/github/qiniu/upyun` | local |
 | enableForExt | 否  | boolean      | 是否为插件/自定义配置启用图床                        | false |
 | plugin       | 否  | string｜class | 自定义图床插件配置                              | -     |
+| limit        | 否  | number       | 图片请求并发限制                               | 3     |
 
 
 ### enableForExt 字段说明
@@ -179,7 +180,6 @@ R2_BUCKET=
 | prefixKey     | 否  | string  | 图片资源统一前缀 | -     |
 | pathFollowDoc | 否  | boolean | 路径根据文档计算 | false |
 | imagePathExt  | 否  | string  | 图片路径拓展点  | -     |
-| limit         | 否  | number  | 图片请求并发限制 | 3     |
 
 
 ### prefixKey 字段说明
