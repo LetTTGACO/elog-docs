@@ -6,5 +6,4 @@ dist/
 cache/
 link.sh
 .npmrc
-pnpm-lock.yaml
 .yuque
