@@ -29,7 +29,7 @@ jobs:
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
-          npm run docs:build
+          pnpm run docs:build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
