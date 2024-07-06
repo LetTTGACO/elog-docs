@@ -5,7 +5,7 @@ catalog: 配置详情
 tags: Elog-Docs
 title: 图床平台配置
 date: '2023-10-13 13:24:00'
-updated: '2024-01-29 20:34:00'
+updated: '2024-07-06 16:04:00'
 ---
 
 # 图床平台配置
@@ -179,6 +179,7 @@ R2_BUCKET=
 | prefixKey     | 否  | string  | 图片资源统一前缀 | -     |
 | pathFollowDoc | 否  | boolean | 路径根据文档计算 | false |
 | imagePathExt  | 否  | string  | 图片路径拓展点  | -     |
+| limit         | 否  | number  | 图片请求并发限制 | 3     |
 
 
 ### prefixKey 字段说明

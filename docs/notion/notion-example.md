@@ -5,7 +5,7 @@ catalog: 功能和API适配情况
 tags: Elog-Docs
 title: Notion示例文章
 date: '2023-04-26 20:37:00'
-updated: '2023-10-13 13:53:00'
+updated: '2024-07-06 15:28:00'
 ---
 
 # Notion-Markdown
@@ -110,7 +110,7 @@ Notion示例文章的子页面
 [bookmark](https://elog.1874.cool)
 
 
-[46_1677164223.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240129%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240129T125706Z&X-Amz-Expires=3600&X-Amz-Signature=f36ea86a1110da9bf00a40e1cadac22674293f771d3956a818296164585f6c9e&X-Amz-SignedHeaders=host&x-id=GetObject)
+[46_1677164223.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240706T081424Z&X-Amz-Expires=3600&X-Amz-Signature=6d532544739dba2b1f377c94d75bc129c33a4846edd9142a2c0edfdd30296d55&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ```python
@@ -122,7 +122,7 @@ print(f"password={pwd!r}")
 ```
 
 
-[example.txt](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240129%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240129T125707Z&X-Amz-Expires=3600&X-Amz-Signature=cf1bbbb6d1318bad6a8da6aec72c2c88c38a5becbfbdd01f654374f55d3f0cfc&X-Amz-SignedHeaders=host&x-id=GetObject)
+[example.txt](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240706T081424Z&X-Amz-Expires=3600&X-Amz-Signature=75771ba65f3e11f8234fde054de92e19d850d8640655c09fe3e639261b23ae1b&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## DataBase（数据库）
