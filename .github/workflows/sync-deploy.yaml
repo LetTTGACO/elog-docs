@@ -59,7 +59,6 @@ jobs:
           pnpm run sync:flowus
           pnpm run sync:yuque-token
           pnpm run sync:notion
-#          pnpm run sync:wordpress
           pnpm run sync:halo
           pnpm run sync:feishu
           pnpm run sync:feishu-wiki
