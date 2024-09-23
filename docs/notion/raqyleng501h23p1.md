@@ -5,7 +5,7 @@ catalog: 进阶玩法
 tags: Elog-Docs
 title: Front Matter
 date: '2023-04-06 21:31:00'
-updated: '2024-05-23 23:26:00'
+updated: '2024-09-22 23:56:00'
 ---
 
 # Front Matter
@@ -175,7 +175,7 @@ const { matterMarkdownAdapter } = require('@elog/cli')
 const format = async (doc, imageClient) => {
   const cover = doc.properties.cover
   // 将 cover 字段中的 notion 图片下载到本地
-  if (imageClient)  {
+  if (imageClient && cover)  {
     // 只有启用图床平台image.enable=true时或image.enablForExt=true，imageClient才能用，否则请自行实现图片上传
     const url = await imageClient.uploadImageFromUrl(cover, doc)
     // cover链接替换为本地图片
