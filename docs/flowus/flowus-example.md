@@ -1,14 +1,16 @@
 ---
 urlname: flowus-example
 title: FlowUs示例页面
-updated: '2024-01-16 15:22:34'
-date: '2023-07-07 00:00:00'
+updated: '2025-01-16 15:06:57'
+date: '2023-07-07 08:00:00'
 categories: 技术分享
 tags:
   - FlowUs
   - Elog
 summary: FlowUs示例页面
-catalog: 示例目录
+catalog:
+  - 示例目录
+  - 二级目录
 ---
 # FlowUs-Markdown
 [FlowUs示例文章源地址](https://flowus.cn/1874/share/7ad97e50-9e7a-4422-bb97-a557e9acb841)
@@ -89,7 +91,7 @@ $$
 </details>
 
 # 媒体
-![qwe.JPG](https://image.1874.cool/elog-docs-images/7e93fad1c696fc7d31c53bc9aabcd4d0.JPG)
+![qwe.JPG](https://image.1874.cool/elog-docs-images/a05dbf5b43170c36dfd85b215e5df6a8.JPG)
 [https://media.w3.org/2010/05/sintel/trailer.mp4](https://media.w3.org/2010/05/sintel/trailer.mp4)
 [http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3](http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3)
 
