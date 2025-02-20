@@ -27,11 +27,11 @@
     {
       "id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
       "doc_id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
-      "updated": 1737011299629,
+      "updated": 1740047119386,
       "properties": {
         "urlname": "flowus-example-2",
         "title": "第二篇文档",
-        "updated": "2025-01-16 15:08:19",
+        "updated": "2025-02-20 18:25:19",
         "date": "2023-11-28 08:00:00",
         "categories": "踩坑记录",
         "tags": [
@@ -132,6 +132,7 @@
           "FlowUs",
           "Elog"
         ],
+        "status": "已发布",
         "summary": "FlowUs示例页面",
         "catalog": [
           "示例目录",
@@ -143,13 +144,13 @@
       "id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
       "doc_id": "7016bfea-84f9-4c76-85cc-83215f7ec517",
       "title": "第二篇文档",
-      "updated": 1737011299629,
+      "updated": 1740047119386,
       "createdAt": 1701176902961,
-      "updatedAt": 1737011299629,
+      "updatedAt": 1740047119386,
       "properties": {
         "urlname": "flowus-example-2",
         "title": "第二篇文档",
-        "updated": "2025-01-16 15:08:19",
+        "updated": "2025-02-20 18:25:19",
         "date": "2023-11-28 08:00:00",
         "categories": "踩坑记录",
         "tags": [
@@ -179,6 +180,7 @@
         "tags": [
           "爱特"
         ],
+        "status": "已发布",
         "summary": "dwdwd",
         "catalog": [
           "示例目录",
@@ -198,11 +200,12 @@
         "title": "前后端分离",
         "updated": "2025-01-16 15:08:23",
         "date": "2024-04-01 08:00:00",
-        "cover": "https://tc-cdn.flowus.cn/cover/photo14?time=1737092700&token=c49fc6d44d57d4599b745ff3159f64999c19dcc4d40d4bf8b4f679a3fd654bc0&role=free",
+        "cover": "https://tc-cdn.flowus.cn/cover/photo14?time=1740072600&token=6e6b88eaaa99bca68b79f3bcf1c684e67b38c38ead465ba6287a325adb1768e1&role=free",
         "categories": "技术记录",
         "tags": [
           "爱特"
         ],
+        "status": "已发布",
         "summary": "dwdwd",
         "catalog": [
           "示例目录",
@@ -222,6 +225,7 @@
         "title": "你好",
         "updated": "2025-01-16 15:24:27",
         "date": "2025-01-16 15:23:10",
+        "status": "已发布",
         "catalog": [
           "一级",
           "二级"
