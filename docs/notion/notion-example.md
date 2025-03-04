@@ -5,7 +5,7 @@ catalog: 功能和API适配情况
 tags: Elog-Docs
 title: Notion示例文章
 date: '2023-04-26 20:37:00'
-updated: '2024-07-06 15:28:00'
+updated: '2025-03-05 06:32:00'
 ---
 
 # Notion-Markdown
@@ -110,7 +110,7 @@ Notion示例文章的子页面
 [bookmark](https://elog.1874.cool)
 
 
-[46_1677164223.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240706T081424Z&X-Amz-Expires=3600&X-Amz-Signature=6d532544739dba2b1f377c94d75bc129c33a4846edd9142a2c0edfdd30296d55&X-Amz-SignedHeaders=host&x-id=GetObject)
+[46_1677164223.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/5999649b-7796-46a0-abd4-2e17b7b607ab/46_1677164223.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664JDJFE65%2F20250304%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250304T224216Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIANheppl68wwSELaKcmwes476LBvANLgFZBobv16GGT%2BAiB0ezGBkd%2BEhqzv3V5fLYuy6CzVyiXouRZ194eyZXKexSqIBAj4%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMoCybH5sJl0hVmIsWKtwDR%2BbnyW0Y050lck53BJ6BcIHKM85lbys%2FkD3SE2OLADTqFbTv%2Bb8xidgtt6YNn5Qdc3ZwyrMmq8hW088M8OVulYRBXeHizNXcfZHhTN1%2Bgj8o1baWpR1x%2FjGgs3uH8YL9UQMAGNN4e%2B%2FpMZDUiLyjWGT8oX6fNa94AB6Xra2y2fT%2F2e19MTAxaMrMsBrhwJFpsWYp0rXN7QKOPKZYq0vno1h5AaemA004daTKhVvj65lZEnfdGXMq5YYpP5Tc84jQjx4xYC7auS2zKyQBe0aCqIzCJxrExH207x8mYnQX98ZjrJ55yYSUXkhUjD8GxtTRyTc9E%2Be7HpfEPjIxSU6Br9NpSccJPL6EpWdivZ1aYvxNvLBbJOMLIJMOIyUvBGV6u1fdK1wMLAs3OWoJZB4eExPi7276nO01SOtSmo31NiYLsqgiBOTjBfn7BXSccUgbUIW5uiqjqXxvdp9JVo7BCdTox5%2F6jYbIodCO7riy%2B6agtkgfaLoyiHYrN0rRPVJhgmkTNVB0IW56ez0gR8nB%2FNtE4ETK2SJRVG1J0ifr%2BsAKRrOzVX1YWbHIvT7pr1SrE4UWDxJPMD9RobdrsVXZB6uUTdYepogJbrtxj8mAZqiaqGrMp%2FjzfNXX58cwsv2dvgY6pgEwMq879NT70jlmS3sUl%2BJI65kvlrl2ATymoNrekKHbHGPo9QMQL1noD%2B%2BXv5txfZLzs3bvrXfBcytOpOQTklHRh9DFdfyS6SyXDg4xdguMclgdtG7Zzonjbz3iMV3VMreugYt2FUh88unlKwYRYP94%2F8jsx05Z3JZa3ygsprC%2BvdGUg9XdKE%2Bu58MGek4NTXYbomSn%2F3wbtlrHUFLWdL191KwkLB%2Ft&X-Amz-Signature=bd89099811a9537eddde1c50cecd6f21714a480c312d02cfb97a2b096053ff5a&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ```python
@@ -122,7 +122,7 @@ print(f"password={pwd!r}")
 ```
 
 
-[example.txt](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240706T081424Z&X-Amz-Expires=3600&X-Amz-Signature=75771ba65f3e11f8234fde054de92e19d850d8640655c09fe3e639261b23ae1b&X-Amz-SignedHeaders=host&x-id=GetObject)
+[example.txt](https://prod-files-secure.s3.us-west-2.amazonaws.com/13a508a2-de5b-47bc-b05f-367d31c13e36/753c8245-2aea-45de-8a5a-509c105f6236/example.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664JDJFE65%2F20250304%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250304T224216Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIANheppl68wwSELaKcmwes476LBvANLgFZBobv16GGT%2BAiB0ezGBkd%2BEhqzv3V5fLYuy6CzVyiXouRZ194eyZXKexSqIBAj4%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMoCybH5sJl0hVmIsWKtwDR%2BbnyW0Y050lck53BJ6BcIHKM85lbys%2FkD3SE2OLADTqFbTv%2Bb8xidgtt6YNn5Qdc3ZwyrMmq8hW088M8OVulYRBXeHizNXcfZHhTN1%2Bgj8o1baWpR1x%2FjGgs3uH8YL9UQMAGNN4e%2B%2FpMZDUiLyjWGT8oX6fNa94AB6Xra2y2fT%2F2e19MTAxaMrMsBrhwJFpsWYp0rXN7QKOPKZYq0vno1h5AaemA004daTKhVvj65lZEnfdGXMq5YYpP5Tc84jQjx4xYC7auS2zKyQBe0aCqIzCJxrExH207x8mYnQX98ZjrJ55yYSUXkhUjD8GxtTRyTc9E%2Be7HpfEPjIxSU6Br9NpSccJPL6EpWdivZ1aYvxNvLBbJOMLIJMOIyUvBGV6u1fdK1wMLAs3OWoJZB4eExPi7276nO01SOtSmo31NiYLsqgiBOTjBfn7BXSccUgbUIW5uiqjqXxvdp9JVo7BCdTox5%2F6jYbIodCO7riy%2B6agtkgfaLoyiHYrN0rRPVJhgmkTNVB0IW56ez0gR8nB%2FNtE4ETK2SJRVG1J0ifr%2BsAKRrOzVX1YWbHIvT7pr1SrE4UWDxJPMD9RobdrsVXZB6uUTdYepogJbrtxj8mAZqiaqGrMp%2FjzfNXX58cwsv2dvgY6pgEwMq879NT70jlmS3sUl%2BJI65kvlrl2ATymoNrekKHbHGPo9QMQL1noD%2B%2BXv5txfZLzs3bvrXfBcytOpOQTklHRh9DFdfyS6SyXDg4xdguMclgdtG7Zzonjbz3iMV3VMreugYt2FUh88unlKwYRYP94%2F8jsx05Z3JZa3ygsprC%2BvdGUg9XdKE%2Bu58MGek4NTXYbomSn%2F3wbtlrHUFLWdL191KwkLB%2Ft&X-Amz-Signature=40dd695239cdc56ba19e7e4ec09ba72e2866ec1ef535821a8188fb327c60e13a&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## DataBase（数据库）
@@ -145,7 +145,10 @@ f\left(\left[\frac{1+\{x, y\}}{\left(\frac{x}{y}+\frac{y}{x}\right)(u+1)}+a\righ
 $$
 
 
-Notion示例文章的同步块
+Notion示例文章的同步块123
+
+
+Notion示例文章的同步块123
 
 
 # 折叠一级标题
@@ -191,4 +194,10 @@ Mermaid思维导图-->研发
 
 
 [embed](https://elog.1874.cool)
+
+
+## Notion Diagram
+
+
+![86ce195f-eb5b-4e97-8101-49882c379a3e.svg](https://image.1874.cool/elog-docs-images/9cedb011330bf029cfbd301dcbe526ab.svg)
 
