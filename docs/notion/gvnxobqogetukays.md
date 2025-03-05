@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2024-02-26 22:43:00'
+updated: '2025-03-05 22:14:00'
 ---
 
 # 关键信息获取
@@ -19,14 +19,12 @@ updated: '2024-02-26 22:43:00'
 
 语雀个人路径。访问[工作台](https://www.yuque.com/dashboard) => 账户设置 => 账户设置 => 个人路径，设置语雀的简易的个人路径（建议），拿到个人路径。例如 `1874w` 才是 `login` 取值
 
-
 > 使用语雀团队知识库时，`login` 为团队路径，不是个人路径  
 > 假设这是你的语雀团队的某个知识库地址：`https://aaaa.yuque.com/bbbb/cccc`  
 > `host = https://aaaa.yuque.com`（账号密码模式）  
 > `baseUrl=https://aaaa.yuque.com/api/v2`（Token 模式）  
 > `login=bbbb`  
 > `repo=cccc`
-
 
 ![name=image.png](https://image.1874.cool/elog-docs-images/277511285f7328c7c6dfc595e1a429c2.png)
 
@@ -233,6 +231,50 @@ Notion平台可复制Notion模版库 [Elog-WordPress 模板](https://1874.notion
 	[插件地址](https://github.com/WP-API/Basic-Auth)，手动下载ZIP源码包后，无需解压，直接上传到WordPress插件即可
 
 
+## Outline
+
+
+### token
+
+
+在偏好设置中新增 API 密钥即可，创建时作用域字段留空即可
+
+
+![image.png](https://image.1874.cool/elog-docs-images/d3d75edd13e31382ba8468542e9151cd.png)
+
+
+### collectionId
+
+
+打开 outline API 文档，可以在线调试获取文档集 ID
+
+> ⚠️ 注意，文档集 ID 为 uuid，不是浏览器 URL 中的后缀 ID
+
+![image.png](https://image.1874.cool/elog-docs-images/6a103dcf6761324db4dce9797974f7a8.png)
+
+
+### userId
+
+
+![image.png](https://image.1874.cool/elog-docs-images/7a569a39a30535b08256ae1316e73c8a.png)
+
+
+### parentDocumentId
+
+> ⚠️ 注意，文档 ID 为 uuid，不是浏览器 URL 中的后缀 `urlId`
+1. 在浏览器打开目标文档，浏览器 URL 最后即为当前文档的 `urlId`。可以根据此方法找到你需要的父文档的 `urlId`
+
+```javascript
+https://your-name.getoutline.com/doc/56s123455pah56ug-Bz12345S9Y
+
+56s123455pah56ug-Bz12345S9Y  即为文档 urlId
+```
+
+1. 然后在 API 调试中找到父文档的真正的文档 ID
+
+![image.png](https://image.1874.cool/elog-docs-images/7f9b43c3506afb96962a174a2c8184ec.png)
+
+
 ## 图床
 
 
@@ -289,9 +331,7 @@ Github 访问 Token。访问 [GIthub Token 配置](https://github.com/settings/t
 
 访问[阿里云 Bucket 管理](https://oss.console.aliyun.com/bucket) => 查看图床 Bucket 所在的地域 => 对照[常用 Region](https://help.aliyun.com/document_detail/140601.html) => 获取 Region Id
 
-
 > 根据阿里云的开发文档，对象存储的 region 为 oss- 开头，所以需要给 region id 前面拼接上 oss- 才是完整的 region
-
 
 ![name=image.png](https://image.1874.cool/elog-docs-images/f44f27683f0e2498456d53c3260c32f3.png)
 
