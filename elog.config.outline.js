@@ -3,8 +3,8 @@ module.exports = {
     platform: 'outline',
     outline: {
       token: process.env.OUTLINE_TOKEN,
+      collectionId: process.env.OUTLINE_COLLECTION_ID,
       isTemplate: false,
-      collectionId: 'ffde68d5-d2b3-422f-87ed-762c98976ee0',
     },
   },
   deploy: {
