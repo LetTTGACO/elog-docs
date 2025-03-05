@@ -79,6 +79,7 @@ export default defineConfig({
           { text: '语雀版(Token方式)', link: '/yuque/start', activeMatch: '/yuque/' },
           { text: 'FlowUs示例', link: '/flowus/flowus-example', activeMatch: '/flowus/' },
           { text: '飞书示例', link: '/feishu/VULCdSLgxotcb1xLi1BcWwdPnVa', activeMatch: '/feishu/' },
+          { text: 'Outline示例', link: '/outline/axK11IQrhd', activeMatch: '/outline/' },
           { text: 'WordPress站点示例', link: 'https://wordpress.1874.cool' },
           { text: 'Halo站点示例', link: 'https://halo.1874.cool' },
         ]
@@ -86,7 +87,7 @@ export default defineConfig({
       { text: 'Elog 开发计划', link: 'https://1874.notion.site/Elog-91dd2037c9c847e6bc90b712b124189c' },
       { text: 'Elog 示例模版', link: 'https://1874.notion.site/9bac25294abc46cc822042e4a3b550a6' },
       {
-        text: 'V0.14.2',
+        text: 'V0.14.7',
         items: [
           {
             text: 'Changelog',

@@ -24,7 +24,7 @@ hero:
 features:
   - icon: 📝
     title: 多写作平台
-    details: 写作平台支持语雀/Notion/FlowUs/飞书/我来Wolai
+    details: 写作平台支持语雀/Notion/FlowUs/飞书/我来Wolai/Outline
   - icon: 🚀
     title: 多部署平台
     details: 部署平台支持所有通过渲染本地 Markdown 文档生成静态站点的博客平台，以及Halo/Confluence/WordPress站点
