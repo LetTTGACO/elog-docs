@@ -5,7 +5,7 @@ catalog: 入门指引
 tags: Elog-Docs
 title: 关键信息获取
 date: '2023-04-06 21:31:00'
-updated: '2025-03-05 22:14:00'
+updated: '2025-03-05 23:58:00'
 ---
 
 # 关键信息获取
@@ -246,7 +246,7 @@ Notion平台可复制Notion模版库 [Elog-WordPress 模板](https://1874.notion
 ### collectionId
 
 
-打开 outline API 文档，可以在线调试获取文档集 ID
+打开 [outline API 文档](https://www.getoutline.com/developers#tag/collections/POST/collections.list)，可以在线调试获取文档集 ID
 
 > ⚠️ 注意，文档集 ID 为 uuid，不是浏览器 URL 中的后缀 ID
 
