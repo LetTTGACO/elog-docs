@@ -55,6 +55,8 @@ jobs:
           HALO_ENDPOINT: ${{ secrets.HALO_ENDPOINT }}
           HALO_POLICY_NAME: ${{ secrets.HALO_POLICY_NAME }}
           HALO_TOKEN: ${{ secrets.HALO_TOKEN }}
+          OUTLINE_TOKEN: ${{ secrets.OUTLINE_TOKEN }}
+          OUTLINE_COLLECTION_ID: ${{ secrets.OUTLINE_COLLECTION_ID }}
         run: |
           pnpm run sync:flowus
           pnpm run sync:yuque-token
@@ -62,6 +64,7 @@ jobs:
           pnpm run sync:halo
           pnpm run sync:feishu
           pnpm run sync:feishu-wiki
+          pnpm run sync:outline
 
       - name: 配置Git用户名邮箱
         run: |

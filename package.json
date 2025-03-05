@@ -30,6 +30,7 @@
     "local:halo": "elog sync -c elog.config.halo.js -e .elog.env  -a elog.cache.halo.json",
     "local:feishu": "elog sync -c elog.config.feishu.js -e .elog.env  -a elog.cache.feishu.json",
     "local:feishu-wiki": "elog sync -c elog.config.feishu-wiki.js -e .elog.env  -a elog.cache.feishu-wiki.json",
+    "local:outline": "elog sync -c elog.config.outline.js -e .elog.env  -a elog.cache.outline.json",
     "sync:yuque-token": "elog sync -c elog.config.yuque-token.js -a elog.cache.yuque-token.json",
     "sync:yuque-pwd": "elog sync -c elog.config.yuque-pwd.js -a elog.cache.yuque-pwd.json",
     "sync:notion": "elog sync -c elog.config.notion.js -a elog.cache.notion.json",
@@ -38,6 +39,7 @@
     "sync:halo": "elog sync -c elog.config.halo.js -a elog.cache.halo.json",
     "sync:feishu": "elog sync -c elog.config.feishu.js -a elog.cache.feishu.json",
     "sync:feishu-wiki": "elog sync -c elog.config.feishu-wiki.js -a elog.cache.feishu-wiki.json",
+    "sync:outline": "elog sync -c elog.config.outline.js -a elog.cache.outline.json",
     "clean:yuque-token": "elog clean -c elog.config.yuque-token.js -a elog.cache.yuque-token.json",
     "clean:yuque-pwd": "elog clean -c elog.config.yuque-pwd.js -a elog.cache.yuque-pwd.json",
     "clean:notion": "elog clean -c elog.config.notion.js -a elog.cache.notion.json",
@@ -50,7 +52,7 @@
     "sync-all": "npm run local:yuque-token && npm run local:notion && npm run local:flowus && npm run local:wordpress && npm run local:feishu && npm run local:feishu-wiki"
   },
   "dependencies": {
-    "@elog/cli": "^0.14.2",
+    "@elog/cli": "0.15.0-beta.0",
     "@types/node": "^18.11.9",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
@@ -59,7 +61,7 @@
     "vitepress": "^1.0.0-rc.40",
     "vitepress-plugin-comment-with-giscus": "^1.1.12"
   },
-  "packageManager": "pnpm@8.6.1",
+  "packageManager": "pnpm@10.5.2",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
