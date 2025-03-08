@@ -51,13 +51,15 @@ export default {
       // 可以在页面使用 `comment: true` 前言单独启用
       true
     );
-    const aegis = new Aegis({
-      id: '8legRCovo1V8QOQrYm', // 上报 id
-      uin: 'xxx', // 用户唯一 ID（可选）
-      reportApiSpeed: true, // 接口测速
-      reportAssetSpeed: true, // 静态资源测速
-      spa: true, // spa 应用页面跳转的时候开启 pv 计算
-      hostUrl: 'https://rumt-zh.com'
-    });
+    if (inBrowser) {
+      const aegis = new Aegis({
+        id: '8legRCovo1V8QOQrYm', // 上报 id
+        uin: 'xxx', // 用户唯一 ID（可选）
+        reportApiSpeed: true, // 接口测速
+        reportAssetSpeed: true, // 静态资源测速
+        spa: true, // spa 应用页面跳转的时候开启 pv 计算
+        hostUrl: 'https://rumt-zh.com'
+      });
+    }
   }
 };
