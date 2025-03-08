@@ -14,6 +14,9 @@ importers:
       '@types/node':
         specifier: ^18.11.9
         version: 18.19.79
+      aegis-web-sdk:
+        specifier: ^1.39.2
+        version: 1.39.2
       markdown-it-mathjax3:
         specifier: ^4.3.2
         version: 4.3.2
@@ -696,6 +699,9 @@ packages:
   address@1.2.2:
     resolution: {integrity: sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==}
     engines: {node: '>= 10.0.0'}
+
+  aegis-web-sdk@1.39.2:
+    resolution: {integrity: sha512-mu2jfgACsyvfOaKN2auYmVcQjPCkWtzPWU/ywofIgU44oGmTfDSBNaskUa0CtdVOq5XDWdtiCxzjT+dKmyFPhw==}
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -2672,6 +2678,9 @@ packages:
     resolution: {integrity: sha512-QW95TCTaHmsYfHDybGMwO5IJIM93I/6vTRk+daHTWFPhwh+C8Cg7j7XyKrwrj8Ib6vYXe0ocYNrmzY4xAAN6ug==}
     engines: {node: '>= 14'}
 
+  web-vitals@3.5.2:
+    resolution: {integrity: sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==}
+
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
@@ -3546,6 +3555,10 @@ snapshots:
   acorn@8.14.1: {}
 
   address@1.2.2: {}
+
+  aegis-web-sdk@1.39.2:
+    dependencies:
+      web-vitals: 3.5.2
 
   agent-base@6.0.2:
     dependencies:
@@ -5793,6 +5806,8 @@ snapshots:
       - encoding
 
   web-streams-polyfill@4.0.0-beta.3: {}
+
+  web-vitals@3.5.2: {}
 
   webidl-conversions@3.0.1: {}
 
