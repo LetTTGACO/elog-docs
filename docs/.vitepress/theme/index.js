@@ -4,7 +4,6 @@ import { inBrowser, useData, useRoute } from 'vitepress';
 import './index.css'
 import mediumZoom from 'medium-zoom';
 import { nextTick, watch } from 'vue';
-import Aegis from 'aegis-web-sdk';
 
 export default {
   ...DefaultTheme,
@@ -52,13 +51,15 @@ export default {
       true
     );
     if (inBrowser) {
-      const aegis = new Aegis({
-        id: '8legRCovo1V8QOQrYm', // 上报 id
-        uin: 'xxx', // 用户唯一 ID（可选）
-        reportApiSpeed: true, // 接口测速
-        reportAssetSpeed: true, // 静态资源测速
-        spa: true, // spa 应用页面跳转的时候开启 pv 计算
-        hostUrl: 'https://rumt-zh.com'
+      import('aegis-web-sdk').then(({ default: Aegis }) => {
+        const aegis = new Aegis({
+          id: '8legRCovo1V8QOQrYm',
+          uin: 'xxx',
+          reportApiSpeed: true,
+          reportAssetSpeed: true,
+          spa: true,
+          hostUrl: 'https://rumt-zh.com'
+        });
       });
     }
   }
