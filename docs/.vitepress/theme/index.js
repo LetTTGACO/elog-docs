@@ -51,15 +51,18 @@ export default {
       true
     );
     if (inBrowser) {
-      import('aegis-web-sdk').then(({ default: Aegis }) => {
-        new Aegis({
-          id: '8legRCovo1V8QOQrYm',
-          reportApiSpeed: true,
-          reportAssetSpeed: true,
-          spa: true,
-          hostUrl: 'https://rumt-zh.com'
+      if (import.meta.env.MODE === 'production') {
+        import('aegis-web-sdk').then(({ default: Aegis }) => {
+          new Aegis({
+            id: '8legRCovo1V8QOQrYm',
+            reportApiSpeed: true,
+            reportAssetSpeed: true,
+            spa: true,
+            hostUrl: 'https://rumt-zh.com'
+          });
         });
-      });
+      }
+
     }
   }
 };
