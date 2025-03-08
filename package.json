@@ -68,6 +68,9 @@
         "@algolia/client-search",
         "search-insights"
       ]
-    }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
