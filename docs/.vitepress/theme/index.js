@@ -52,9 +52,8 @@ export default {
     );
     if (inBrowser) {
       import('aegis-web-sdk').then(({ default: Aegis }) => {
-        const aegis = new Aegis({
+        new Aegis({
           id: '8legRCovo1V8QOQrYm',
-          uin: 'xxx',
           reportApiSpeed: true,
           reportAssetSpeed: true,
           spa: true,
