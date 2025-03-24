@@ -5,7 +5,7 @@ catalog: 进阶玩法
 tags: Elog-Docs
 title: 持续集成
 date: '2023-04-06 21:31:00'
-updated: '2024-01-16 23:02:00'
+updated: '2025-03-23 16:07:00'
 ---
 
 # 持续集成
@@ -31,11 +31,9 @@ updated: '2024-01-16 23:02:00'
 
 在语雀知识库 - 更多设置 - 消息推送中可配置语雀webhooks，填写一个支持POST请求的APi链接即可（这里以serverless api为例）。当文档更新时，语雀会调用这个API进行推送
 
-
 > 令人遗憾的是，语雀将 webhooks 收费了  
 > 未开通会员的语雀小伙伴可直接手动调用API触发Github Actions进行自动化构建&部署  
 > ⚠️  知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
-
 
 ![Untitled.png](https://image.1874.cool/elog-docs-images/543de121db94bf2456b9973017219f3a.png)
 
@@ -48,9 +46,7 @@ updated: '2024-01-16 23:02:00'
 
 将其填入语雀Webhooks中即可
 
-
 > 未开通会员的语雀小伙伴可直接手动调用此API触发Github Actions进行自动化构建&部署
-
 
 ```javascript
 https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=xxx&token=xxx
@@ -62,13 +58,11 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 在自动化流程中不要忘记将@elog/cli安装到package.json
 
-
 > npm i @elog/cli  
 > 或者  
 > yarn add @elog/cli  
 > 或者  
 > pnpm i @elog/cli
-
 
 ```json
 {
@@ -221,9 +215,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 #### 第一步：选择Channels为Notion应用
 
-
 > 你也可以在Notion中配置发送消息到某个频道，然后在pipedream选择所选频道的Channel。支持多选Channels
-
 
 ![Untitled.png](https://image.1874.cool/elog-docs-images/b0308ef0043abae5ca865e09f58608f7.png)
 
@@ -242,13 +234,11 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 
 在自动化流程中不要忘记将@elog/cli安装到package.json
 
-
 > npm i @elog/cli  
 > 或者  
 > yarn add @elog/cli  
 > 或者  
 > pnpm i @elog/cli
-
 
 ```json
 {
