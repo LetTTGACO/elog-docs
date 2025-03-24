@@ -5,7 +5,7 @@ catalog: 关于Elog
 tags: Elog-Docs
 title: 常见问题
 date: '2023-07-23 03:37:00'
-updated: '2024-11-08 18:49:00'
+updated: '2025-03-24 23:52:00'
 ---
 
 # 常见问题
@@ -124,10 +124,8 @@ npm run sync:local
 elog sync -e .elog.env
 ```
 
-
 > `npm run`执行时会使用安装在 `package.json`中的 Elog 版本。而直接使用`elog sync -e .elog.env`使用的是安装在电脑全局环境的 Elog，需要注意区分。  
 > 如果你两种方式都安装了，尽量保证全局 Elog 版本和`package.json`中的 Elog 版本保持一致
-
 
 局部安装 Elog 的好处在于，如果你使用的是`vitepress/hexo` 等基于 JavaScript 的博客平台，那么他们天然会有 `package.json`文件。你只需要`npm install @elog/cli`局部安装 Elog，然后配置相关命令脚本，`npm run`运行同步命令即可。而使用 Github Actions 也不用额外全局安装 `@elog/cli` 了
 
@@ -161,9 +159,7 @@ elog sync -e .elog.env
 
 在 Notion 或其他写作平台也是如此，需要指定不同的配置文件`(elog.config.js)`、缓存文件`(elog.cache.json)`、本地环境变量文件`(.elog.env)`。
 
-
 > 如果有使用 github，请不要将`.elog.env`配置文件上传到 github，需要在`.gitignore`中忽略此文件
-
 
 具体可参考 本文档（Elog-Docs）源码：[https://github.com/LetTTGACO/elog-docs](https://github.com/LetTTGACO/elog-docs)
 
@@ -222,13 +218,13 @@ npx @elog/cli clean
 如果遇到图片下载失败，可升级到Elog最新版`@elog/cli@0.7.2`及以上版本，Elog会在上次同步时某文章存在图片下载失败时，第二次同步会重新尝试同步该文章
 
 
-## 飞书下载图片报错
+## 飞书文档/图片下载报错
 
 
 由于[飞书文档的频控策略](https://open.feishu.cn/document/server-docs/api-call-guide/frequency-control)：飞书对于机器人的API 限制频率为：100 次/分钟，5 次/秒。
 
 
-如果你遇到下载图片时以下报错，请尝试升级到 [v0.14.2](https://github.com/LetTTGACO/elog/releases/tag/v0.14.2) 及以上版本。
+如果你遇到下载文档/图片时以下报错，请尝试升级到 [v0.14.2](https://github.com/LetTTGACO/elog/releases/tag/v0.14.2) 及以上版本。
 
 
 ```json
@@ -239,11 +235,15 @@ npx @elog/cli clean
 ```
 
 
-Elog 会对图片下载进行并发接口限制，默认限制 `limit` 为 3，即同时请求 3 次，如果依然遇到错误，可以尝试调低`image`配置中`的limit`来控制并发请求。
+Elog 会对图片下载进行并发接口限制，默认限制 `limit` 为 3，即同时请求 3 次。
 
+
+如果依然遇到错误，遇到文档下载报错，可以尝试添加[写作平台配置](https://elog.1874.cool/notion/write-platform#%E9%A3%9E%E4%B9%A6)关于飞书部分的 `limit` 字段，并将其设置为 1 或 2
+
+
+遇到图片下载报错，可以尝试添加`image`配置中`的limit`来控制并发请求，并将其设置为 1 或 2
 
 > 注意：`limit` 数值越低，意味着从飞书下载图片的时间越长，会导致初次同步时，整个同步流程会变慢。
-
 
 ## Elog主要功能是批量导出
 
